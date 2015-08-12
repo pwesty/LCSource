@@ -1,0 +1,55 @@
+================================================================================
+구성
+----
+  inc/Trace.h               : Header
+
+  lib/
+      TraceToolVC60D.lib    : VC 6.0 Debug
+      TraceToolVC60DS.lib   : VC 6.0 Debug Static
+      TraceToolVC60R.lib    : VC 6.0 Release
+      TraceToolVC60RS.lib   : VC 6.0 Release Statc
+
+      TraceToolVC80D.lib    : VC 8.0 Debug
+      TraceToolVC80DS.lib   : VC 8.0 Debug Static
+      TraceToolVC80R.lib    : VC 8.0 Release
+      TraceToolVC80RS.lib   : VC 8.0 Release Statc
+
+      TraceToolVC90D.lib    : VC 9.0 Debug
+      TraceToolVC90DS.lib   : VC 9.0 Debug Static
+      TraceToolVC90R.lib    : VC 9.0 Release
+      TraceToolVC90RS.lib   : VC 9.0 Release Static
+
+      TraceToolVC100D.lib   : VC 10.0 Debug
+      TraceToolVC100DS.lib  : VC 10.0 Debug Static
+      TraceToolVC100R.lib   : VC 10.0 Release
+      TraceToolVC100RS.lib  : VC 10.0 Release Static
+
+  TraceTool.zip             : Trace Log Viewer
+
+================================================================================
+설치 방법
+---------
+  1. Trace.h를 공용 include 디렉토리에 추가.
+  2. *.lib를 공용 library 디렉토리에 추가.
+  3. TraceTool.zip 압축을 풀어 TraceTool.exe를 실행.
+     (처음 실행시 레지스트리에 자신의 위치가 저장되며,
+      이후 로그 출력시 자동으로 실행됨)
+
+================================================================================
+사용 방법
+---------
+  1. 로그 넣을 파일에 Trace.h를 include
+     ex) #include <Trace.h>
+  2. Trace.h에 정의된 매크로를 사용하여 로그 추가
+     ex) LOG(...), LOG_DUMP(...), ...
+  3. 프로그램 빌드 후 실행 (TraceTool.exe는 자동으로 실행됨)
+
+  - Trace.h 파일 상단에 정의된 SHOW_LOG를 주석처리하면 모든 로그 무시됨.
+  - 설정별 Trace 라이브러리를 해당 프로젝트 링크 설정에 추가할 필요 없음.
+  - Trace.h 내에서 해당 라이브러리를 링크하도록 설정되어 있음. (#pragma comment(...))
+
+================================================================================
+출처
+----
+  TraceTool 12.4: The Swiss-Army Knife of Trace
+  http://www.codeproject.com/Articles/5498/TraceTool-12-4-The-Swiss-Army-Knife-of-Trace

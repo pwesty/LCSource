@@ -1,0 +1,3809 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{62b8a299-adf0-431b-87e1-b8c769401707}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{4a9075b5-8ef4-4b86-a4e3-d778b950c361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{deca8680-fcf1-4484-932c-7ef7633ce676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sound">
+      <UniqueIdentifier>{f8e09a78-8ff3-4771-a36f-7dcb74916e4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Models">
+      <UniqueIdentifier>{2b89c7f8-555e-4d09-8ffe-bab34f83fc69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\World">
+      <UniqueIdentifier>{3ce453d6-2fe2-4f6d-b7bb-752ffd97095b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Templates">
+      <UniqueIdentifier>{e5ab90f8-132e-4d91-ad25-3f26e380aedf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{de91ad3b-73b2-4643-98e2-c6365edfa4f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rendering">
+      <UniqueIdentifier>{3ecde62e-c2dc-42b9-85e3-e7eaf9d69508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{93f2aa75-46ae-462d-a1a4-90c65d9eceaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Light">
+      <UniqueIdentifier>{6e9892a2-b74e-41a1-9226-6066d97f186e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ska">
+      <UniqueIdentifier>{a7554596-4b44-4cba-a24c-830f59cbf506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ska\Terrain">
+      <UniqueIdentifier>{a4488dcc-5a34-48f0-9a14-34376c7c07b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\XBox">
+      <UniqueIdentifier>{02e1c4e5-8850-4210-865a-ecfe9e630f7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Effect">
+      <UniqueIdentifier>{0ad422ff-b0a3-4201-bc79-fe84a2b38892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Effect\Effects">
+      <UniqueIdentifier>{c28dc6b5-a16c-4858-9d22-042b20b892ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Effect\Particle">
+      <UniqueIdentifier>{66bdd1ce-7a5d-459e-8c68-f117b30b00c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Effect\Tags">
+      <UniqueIdentifier>{6efb7cd2-393b-4ed0-b16c-965f40601183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interface">
+      <UniqueIdentifier>{235d9da7-2f53-4b1f-a493-f913454582b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base">
+      <UniqueIdentifier>{11cc5778-4cd9-4dcf-bd2f-07dbe03f19dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Brushes">
+      <UniqueIdentifier>{99786447-e91a-4fa4-af14-5d8a8ce0a03b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\XTrapInterface">
+      <UniqueIdentifier>{1dc7fadd-adfe-4f8a-a420-df62040eb8be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0830f945-a756-47c9-b568-3eb78a11d78c}</UniqueIdentifier>
+      <Extensions>h;inl;hxx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Base Headers">
+      <UniqueIdentifier>{f0d128d1-5fef-4c75-9490-d2ab169cde4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math Headers">
+      <UniqueIdentifier>{57870b06-069d-41d5-b3ae-068e6ac21073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics Headers">
+      <UniqueIdentifier>{8b5d5abd-7621-437d-bfaf-66f09ec3cae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sound Headers">
+      <UniqueIdentifier>{13cb4fd7-36c4-4330-a1de-84f6f62766b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Models Headers">
+      <UniqueIdentifier>{d1ea1f4b-4161-4c0c-9302-fad67a613d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Templates Headers">
+      <UniqueIdentifier>{09144a32-23c8-48c7-8d79-acc10b0763ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rendering Headers">
+      <UniqueIdentifier>{234459c3-2d36-4ad7-8542-e302acf274e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities Headers">
+      <UniqueIdentifier>{52d77d8a-267e-4250-94ef-523246caf95b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Brushes Headers">
+      <UniqueIdentifier>{8942d748-d9b7-4a1d-ac0e-d99a47f0269b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network Headers">
+      <UniqueIdentifier>{65c07880-44ac-4f57-a5d9-2f979b12d093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Light Headers">
+      <UniqueIdentifier>{7ff4c494-8e7f-46dd-a124-e69960b30e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\exploration3d">
+      <UniqueIdentifier>{4988f1d1-4139-4b99-888f-109231d7751a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Ska Headers">
+      <UniqueIdentifier>{16435b7d-3a50-4e21-97b9-df466b5d6ecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\World Headers">
+      <UniqueIdentifier>{96de7c30-61c3-4448-a92b-05ba56c8391a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Terrain Headers">
+      <UniqueIdentifier>{f766a139-7de1-4e53-848e-80aca48c64c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\XBox Headers">
+      <UniqueIdentifier>{c5de2e2c-0d2e-4dea-ae2a-64b275f77e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Effect Headers">
+      <UniqueIdentifier>{2199b378-adc1-4da2-a253-cdd017c5c8c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Effect Headers\Effects Headers">
+      <UniqueIdentifier>{e1dd8fae-c5ff-4d3b-b6a3-cf78d96b09e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Effect Headers\Particle Headers">
+      <UniqueIdentifier>{0d36ad38-542d-47ce-9a3c-978187b9aaa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Effect Headers\Tags Headers">
+      <UniqueIdentifier>{05ee1670-821a-4453-bd62-421090f3dd97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interface Headers">
+      <UniqueIdentifier>{be000808-b8c3-47f5-ac43-98d80227f9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Design Classes Headers">
+      <UniqueIdentifier>{a45cf9b5-ef0a-49a9-9510-c525c2e847dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Sources">
+      <UniqueIdentifier>{be4c47cc-ab9e-41b6-a6cb-b1050c5fed58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity Class Files">
+      <UniqueIdentifier>{5bae6a3c-2f2d-4dc9-a891-4a20a9bc3bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{8c7099ba-64b5-4d98-8a4d-a879f1819177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kalydo">
+      <UniqueIdentifier>{6dc18cc1-7a6c-4ad9-9fb0-86ac6e362a35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Secure">
+      <UniqueIdentifier>{8bdebf19-67de-4c81-b8e0-dad0b167ccec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{a97199cb-6584-45d6-9d2d-6915fc0c364a}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="UILib">
+      <UniqueIdentifier>{c9dba2f8-5ded-4c0e-a5a3-a6d1f59949c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Help">
+      <UniqueIdentifier>{86d9215a-fb32-4e76-941b-555f7c9da349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SEED_256_KISA">
+      <UniqueIdentifier>{e7fd1eaf-9a07-4e0b-9f3b-948393a54987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{3a8defaa-f5a4-4e7c-b75c-8214faae09f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Base">
+      <UniqueIdentifier>{65fbb65f-49d5-44fe-98cf-665c8051be7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameDataManager">
+      <UniqueIdentifier>{db0b54fb-eb8c-492c-8eb2-459342e066a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Effect\Item">
+      <UniqueIdentifier>{420651ac-45f2-48ec-a86f-436fcda5d993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Effect Headers\Item Headers">
+      <UniqueIdentifier>{b2b0c9cc-bf8c-4104-9f7a-fc464af4aee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grammar Files">
+      <UniqueIdentifier>{2e340a53-3d3d-484f-a595-9229cb7701c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Login">
+      <UniqueIdentifier>{e9c05ecb-76ad-436a-9080-96e3d79d19be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StageMgr">
+      <UniqueIdentifier>{429edbab-a14d-4277-8f24-3bcb15e3674e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{4aa36791-3fbb-4866-9b98-e3fe712f88d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Info">
+      <UniqueIdentifier>{9f3b51e1-3800-4bf1-9d7c-27fa54acb14b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\function">
+      <UniqueIdentifier>{af0a6beb-c67c-42d3-8325-188ed4dd1fdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIHelper">
+      <UniqueIdentifier>{594612cd-550c-458c-9cf6-90c5744bc3ec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Math\Float.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Functions.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Geometry.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Geometry_DOUBLE.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Object3D.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Object3D_CSG.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Object3D_IO.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\ObjectSector.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Placement.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Projection.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Projection_Isometric.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Projection_Parallel.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Projection_Perspective.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Projection_Simple.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Projection_Simple_DOUBLE.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\TextureMapping.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Adapter.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Benchmark.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Color.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DepthCheck.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DisplayMode.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DrawPort.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DrawPort_Particles.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DrawPort_RenderScene.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DXTC.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Fog.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Font.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Gfx_Direct3D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Gfx_Direct3D_Colors.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Gfx_Direct3D_Textures.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Gfx_Direct3D_XBox.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Gfx_OpenGL.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Gfx_OpenGL_Textures.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Gfx_wrapper.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Gfx_wrapper_Direct3D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Gfx_wrapper_OpenGL.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GfxLibrary.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Graphics.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ImageInfo.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\MultiMonitor.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Raster.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Shader.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ShadowMap.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Stereo.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Texture.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureEffects.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureRender.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ViewPort.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundData.cpp">
+      <Filter>Source Files\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundDecoder.cpp">
+      <Filter>Source Files\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundLibrary.cpp">
+      <Filter>Source Files\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundMixer.cpp">
+      <Filter>Source Files\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundObject.cpp">
+      <Filter>Source Files\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\EditModel.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MipMaker.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Model.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Normals.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\RenderModel.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\RenderModel_Mask.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\RenderModel_View.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\VertexGetting.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="World\World.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldCollision.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldCollisionGrid.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldCSG.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldEditingProfile.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldEntityHashing.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldIO.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldRayCasting.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\AllocationArray.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\BSP.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\DynamicArray.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\DynamicContainer.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\DynamicStackArray.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\HashTableTemplate.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\LinearAllocator.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\NameTable.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\NameTable_CTFileName.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\NameTable_CTranslationPair.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\ReusableContainer.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Selection.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\StaticArray.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\StaticStackArray.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CAnimData.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CAnimSet.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CEntityClass.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CFontData.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CMesh.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CModelData.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CModelInstance.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CShader.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CSkeleton.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CSoundData.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\Stock_CTextureData.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ActionBuffer.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Buffer.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\CharacterTarget.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ChatMsgBuffer.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ClientInterface.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\cmd.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\CNetwork.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\CommunicationInterface.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Compression.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\CPacket.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Diff.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\EMsgBuffer.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\EntityHashing.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\InputBuffer.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ItemTarget.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\MessageDispatcher.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\MobTarget.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\MultiTarget.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetworkMessage.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetworkProfile.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PetTarget.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PlayerSource.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PlayerTarget.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Server.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SessionState.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SessionStateExten.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SlaveTarget.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TcpIpConnection.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ThreadWrapper.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TxtQueue.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Web.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\WebAddress.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\RenCache.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\RendASER.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\RendClip.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\Render.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\RenderAdding.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\RenderBloom.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\RenderBrushes.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\RenderModels.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\RendMisc.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\SelectOnRender.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Action.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\AffinityData.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\CashShopData.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Entity.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\EntityClass.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\EntityCollision.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\EntityCopying.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\EntityProperties.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\FieldBSPTesting.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ItemData.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ItemEffect.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Items.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Lacarette.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\LastPositions.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\MissionCase.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\MobData.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\NearestPolygon.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\NoticeData.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\NpcHelp.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\OptionData.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\PlayerCharacter.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\QuestSystem.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ShopData.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Skill.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\SmcInfo.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\SmcParser.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\SpecialSkill.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\StatusEffect.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\TargetInfo.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\WildPetData.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Light\LayerMaker.cpp">
+      <Filter>Source Files\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Light\LayerMixer.cpp">
+      <Filter>Source Files\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Light\LightSource.cpp">
+      <Filter>Source Files\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\Terrain.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainArchive.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainInt.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TerrainTile.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TREditing.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRGenerate.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRLayer.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRLayerImp.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRMisc.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRRayCast.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRRender.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRShader_1TRL.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRShader_2TRL.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRShader_Base.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRShader_Fog.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRShader_Shadow.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain\TRShadows.cpp">
+      <Filter>Source Files\Ska\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\AnimSet.cpp">
+      <Filter>Source Files\Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\Mesh.cpp">
+      <Filter>Source Files\Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\ModelInstance.cpp">
+      <Filter>Source Files\Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\NmFileIO.cpp">
+      <Filter>Source Files\Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\RMMisc.cpp">
+      <Filter>Source Files\Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\RMRender.cpp">
+      <Filter>Source Files\Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\RMRenderMask.cpp">
+      <Filter>Source Files\Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\Skeleton.cpp">
+      <Filter>Source Files\Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\StringTable.cpp">
+      <Filter>Source Files\Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="XBox\IFeel_X.cpp">
+      <Filter>Source Files\XBox</Filter>
+    </ClCompile>
+    <ClCompile Include="XBox\Input_X.cpp">
+      <Filter>Source Files\XBox</Filter>
+    </ClCompile>
+    <ClCompile Include="XBox\SoundDecoder_X.cpp">
+      <Filter>Source Files\XBox</Filter>
+    </ClCompile>
+    <ClCompile Include="XBox\SymbolLocator_X.cpp">
+      <Filter>Source Files\XBox</Filter>
+    </ClCompile>
+    <ClCompile Include="XBox\VideoDecoder_X.cpp">
+      <Filter>Source Files\XBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CCameraEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CEffectControl.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CEffectGroup.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CEffectGroupManager.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CEffectManager.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CEntityEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CLightEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CMdlEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\COrbitEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticleEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CShockWaveEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CSkaEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CSoundEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CSplineBillboardEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CSplinePathEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CTerrainEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CTraceEffect.cpp">
+      <Filter>Source Files\Effect\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticle.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticleGroup.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticleGroupManager.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticles.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesAbsorption.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesAbsorptionDefault.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesAbsorptionSphere.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesCommonProcess.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesEmitter.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesEmitterCone.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesEmitterCylinder.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesEmitterSphere.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesProcessControl.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesProcessDynamicState.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesProcessForce.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesProcessPointGoal.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CParticlesProcessVelocity.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CRandomTable.cpp">
+      <Filter>Source Files\Effect\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CEntityTag.cpp">
+      <Filter>Source Files\Effect\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CGroupTag.cpp">
+      <Filter>Source Files\Effect\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CSkaTag.cpp">
+      <Filter>Source Files\Effect\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CTag.cpp">
+      <Filter>Source Files\Effect\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CTagManager.cpp">
+      <Filter>Source Files\Effect\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CWorldTag.cpp">
+      <Filter>Source Files\Effect\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CManager.cpp">
+      <Filter>Source Files\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\CNiceWater.cpp">
+      <Filter>Source Files\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\EffectCommon.cpp">
+      <Filter>Source Files\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIAD.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIAffinity.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIAffinityInfo.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIAutoHelp.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIBingoBox.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIBuff.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UICashShopEX.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UICheckButton.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIChildInvenSlot.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIChildQuickSlot.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UICollectBox.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UICompound.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIDrawFigure.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIExchange.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIFiltering.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIFlowerTree.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIFortune.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIGamble.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIGroup.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIGuild.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIGuildBattle.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIGuildMark.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIGuildNotice.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIGuildStash.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIGuildWarPortal.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIGWMix.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIHelp.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIHelper.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIHelpIcon.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIImageBox.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIInitJob.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIInventory.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIItemProduct.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UILacarette.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIListBoxMultiList.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMap.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMessageBox.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMessageBoxL.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMessenger.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMinigame.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMix.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMixNew.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMonsterCombo.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMonsterMercenary.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMultList.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UINickName.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UINpcHelp.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UINpcScroll.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIOption.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIOXQuizEvent.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIPartyAuto.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIPersonalShop.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIPetFree.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIPetInfo.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIPetItemMix.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIPetTarget.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIPetTraining.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIPlayerInfo.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIProcess.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIProcessNPC.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIProduct.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIQuickSlot.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIRadar.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIRanking.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIRectString.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIRefine.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIReformSystem.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIResurrection.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIScrollBar.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISecurity.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISelectList.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISelectResource.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISelectWord.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIShop.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISiegeWarfare.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISiegeWarfareDoc.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISiegeWarfareNew.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISignBoard.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISimplePop.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISingleBattle.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISkillLearn.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISocketSystem.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISpinButton.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISummon.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISystemMenu.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITalk.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITatoo.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITeleport.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITextureManager.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITrackPopup.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIWareHouse.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIWebBoard.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIWildPetInfo.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Anim.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Changeable.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Console.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\CRC.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\CRCTable.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\CTString.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\CTWString.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\DamageLogInfo.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Directory.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ErrorReporting.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\FileName.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\IFeel.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Input.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Lists.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\md5.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Memory.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\MemoryTracking.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Profiling.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Protection.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Registry.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Relations.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ReplaceFile.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Serial.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Shell.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ShellTypes.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\SimpleHashTable.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\StackDump.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Statistics.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Stream.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Synchronization.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Timer.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\TLVar.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Translation.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Unzip.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Updateable.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\Brush.cpp">
+      <Filter>Source Files\Brushes</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\BrushArchive.cpp">
+      <Filter>Source Files\Brushes</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\BrushExport.cpp">
+      <Filter>Source Files\Brushes</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\BrushImport.cpp">
+      <Filter>Source Files\Brushes</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\BrushIO.cpp">
+      <Filter>Source Files\Brushes</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\BrushMip.cpp">
+      <Filter>Source Files\Brushes</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\BrushPolygon.cpp">
+      <Filter>Source Files\Brushes</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\BrushSector.cpp">
+      <Filter>Source Files\Brushes</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\BrushShadows.cpp">
+      <Filter>Source Files\Brushes</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\BrushTriangularize.cpp">
+      <Filter>Source Files\Brushes</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniDump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SharedWebData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\BaseEvents.cpp">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\MovableBrushEntity.cpp">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\MovableEntity.cpp">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\MovableModelEntity.cpp">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Parser.cpp">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\PlayerEntity.cpp">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\SCANNER.CPP">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\smcPars.cpp">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Ska\SMCSCAN.CPP">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="lua\LuaInterface.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Kalydo\PackageManager.cpp">
+      <Filter>Kalydo</Filter>
+    </ClCompile>
+    <ClCompile Include="Secure\FileSecure.cpp">
+      <Filter>Secure</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIButton.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIComboBox.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIEditBox.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIListBox.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIListBoxEx.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIProgressBar.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISlideBar.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIMultiEditBox.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Help\Util_Help.cpp">
+      <Filter>Help</Filter>
+    </ClCompile>
+    <ClCompile Include="SEED_256_KISA\SEED_256_KISA.cpp">
+      <Filter>SEED_256_KISA</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIExpressSystem.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\ExpressSystem.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDataManager\GameDataManager.cpp">
+      <Filter>GameDataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIExpressItemList.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\TimerItem.cpp">
+      <Filter>Source Files\Effect\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIArray.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIArrayItem.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\Auction.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIAuctionNew.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIAuctionNew_regist.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIAuctionNew_search.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIAuctionNew_favorite.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIBase.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIFocus.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIIcon.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIImage.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIImageFont.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIList.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIListItem.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Help\UISupport.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITab.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIText.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIIME.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITextBox.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\Calendar.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UICalendar.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UICalendarEventInfo.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SessionStateItem.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Help\ItemHelp.cpp">
+      <Filter>Help</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMysteriousBead.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISpriteAni.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\PetStash.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIPetStash.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIPetStashSelectEffect.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIInvenCashBag.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIInvenCashBagBox.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIRankingSystem.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UISkillNew.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UISkillNew.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISkillToolTip.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\SkillTree.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\RankingList.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIChatting_GMCmd.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIEventPopup.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\InvenData.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIImageArray.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Login\UIServerSelect.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Login\ServerSelect.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Login\UICharacterSelect.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Login\CharacterSelect.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Login\BackImageManager.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Login\LoginNew.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Login\UILoginNew.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Login\CharacterCreateNew.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Login\UICharacterCreateNew.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ArmorPreview.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Login\UIHardCoreWarning.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Help\Loader.cpp">
+      <Filter>Help</Filter>
+    </ClCompile>
+    <ClCompile Include="Help\DefineHelp.cpp">
+      <Filter>Help</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldString.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ZoneData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SessionStateExtendNew.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UICharacterInfoNew.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMySyndicateInfo.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStageManager\StageMgr.cpp">
+      <Filter>StageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStageManager\StageIntro.cpp">
+      <Filter>StageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStageManager\StageLogin.cpp">
+      <Filter>StageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStageManager\StageSelServer.cpp">
+      <Filter>StageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStageManager\StageSelChar.cpp">
+      <Filter>StageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStageManager\StageCreateChar.cpp">
+      <Filter>StageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStageManager\StageLoading.cpp">
+      <Filter>StageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStageManager\StageGamePlay.cpp">
+      <Filter>StageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStageManager\StageGameEnd.cpp">
+      <Filter>StageMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ActorMgr.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIImageSplit.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SessionStateDebug.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\Durability.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIDurability.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SessionStateInfo.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Help\GMCommand.cpp">
+      <Filter>Help</Filter>
+    </ClCompile>
+    <ClCompile Include="Loading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\Notice.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UINoticeNew.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\TEventString.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SessionStateComm.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UITrade.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\TradeItem.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITooltip.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITooltipResource.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIImageText.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Info\MyInfo.cpp">
+      <Filter>Info</Filter>
+    </ClCompile>
+    <ClCompile Include="Info\MyInfoSkill.cpp">
+      <Filter>Info</Filter>
+    </ClCompile>
+    <ClCompile Include="Help\LoadString.cpp">
+      <Filter>Help</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITree.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMapOption.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\gps.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\UIGps.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\LevelupGuide.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UISpinControl.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\Quest.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIQuestAccept.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIQuestComplete.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIQuestDesign.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIQuestRestore.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIQuestView.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\LevelupGuide.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIQuestBookNew.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBox.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxYesNo.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxIcon.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxInput.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxMgr.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxNumeric_only.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxTimer.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIFactory.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIManager.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIWindowDeclare.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIQuestNew.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\ChangeWeapon.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIChangeWeaponNew.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIChangeEquipment.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBox.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxYesNo.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxIcon.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxInput.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxMgr.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIMsgBoxTimer.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Help\UISupport.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITooltipMgr.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITooltipResource.cpp">
+      <Filter>UIHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SessionStateEvent.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginJobInfo.cpp">
+      <Filter>Contents\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIImageText.cpp">
+      <Filter>UILib</Filter>
+    </ClCompile>
+    <ClCompile Include="JobInfo.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="PetInfo.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="SlaveInfo.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformInfo.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\Syndicate.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIPartyNew.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\UIExpedition.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\Party.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\UIPortalNew.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetClient.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\attendance.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\ItemCollection.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\ItemCollectionData.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\ItemCollectionUI.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\PremiumCharUI.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\PremiumChar.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\PremiumCharDesign.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\SimplePlayerInfoUI.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\SimplePlayerMenuUI.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Info\ServerInfo.cpp">
+      <Filter>Info</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\Base\ChattingUI.cpp">
+      <Filter>Contents\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITextEx.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UITextBoxEx.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\TargetInfoNewUI.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\NewsUI.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\News.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\News_Web_UI.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\ItemCompose.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\ItemComposeUI.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+    <ClCompile Include="Contents\function\HelpWebUI.cpp">
+      <Filter>Contents\function</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XTrapInterface\XTrapInterface.h">
+      <Filter>Source Files\XTrapInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Anim.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Assert.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Base.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Changeable.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ChangeableRT.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Console.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Console_internal.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\CRC.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\CRCTable.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\CTString.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\CTWString.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\DamageLogInfo.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ErrorReporting.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ErrorTable.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\FileName.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\GroupFile.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\IFeel.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Input.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\KeyNames.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Lists.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\md5.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\md5_loc.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Memory.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\MemoryTracking.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ObjectRestore.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ParsingSymbols.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\PersistentSymbolsEncode.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Profiling.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ProfilingEnabled.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Protection.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Rect.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Registry.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Relations.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ReplaceFile.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Serial.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Shell.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Shell_internal.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\SimpleHashTable.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\StackDump.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Statistics.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Statistics_Internal.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Stream.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Synchronization.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Timer.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\TLVar.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Translation.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\TranslationPair.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Types.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Unzip.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Updateable.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\UpdateableRT.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\AABBox.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\AdditionalFunction.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\ExtensionMath.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\FixInt.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Float.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Functions.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Geometry.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix12.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\OBBox.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Object3D.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Placement.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Plane.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Projection.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Projection_DOUBLE.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Quaternion.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\TextureMapping.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector.h">
+      <Filter>Header Files\Math Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Adapter.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Color.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DisplayMode.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DrawPort.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\dxtlib.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Fog.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Fog_internal.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Font.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Gfx_wrapper.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GfxLibrary.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\gl_functions.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\gl_types.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ImageInfo.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\MultiMonitor.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\OpenGL.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Raster.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderPoly.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderScene.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Shader.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ShaderCode.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ShadowMap.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Stereo.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Texture.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureEffects.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Vertex.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ViewPort.h">
+      <Filter>Header Files\Graphics Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\al_functions.h">
+      <Filter>Header Files\Sound Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\eax.h">
+      <Filter>Header Files\Sound Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundData.h">
+      <Filter>Header Files\Sound Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundDecoder.h">
+      <Filter>Header Files\Sound Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundLibrary.h">
+      <Filter>Header Files\Sound Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundObject.h">
+      <Filter>Header Files\Sound Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\EditModel.h">
+      <Filter>Header Files\Models Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MipMaker.h">
+      <Filter>Header Files\Models Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Model.h">
+      <Filter>Header Files\Models Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Model_internal.h">
+      <Filter>Header Files\Models Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\ModelData.h">
+      <Filter>Header Files\Models Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\ModelObject.h">
+      <Filter>Header Files\Models Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Normals.h">
+      <Filter>Header Files\Models Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\RenderModel.h">
+      <Filter>Header Files\Models Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\RenderModel_internal.h">
+      <Filter>Header Files\Models Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\AllocationArray.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\BSP.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\BSP_internal.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\DynamicArray.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\DynamicContainer.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\DynamicStackArray.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\HashTableTemplate.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\LinearAllocator.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\MapOfData.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\NameTable.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\NameTable_CTFileName.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\NameTable_CTranslationPair.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\ReusableContainer.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Selection.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\StaticArray.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\StaticStackArray.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CAnimData.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CAnimSet.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CEntityClass.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CFontData.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CMesh.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CModelData.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CModelInstance.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CShader.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CSkeleton.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CSoundData.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\Stock_CTextureData.h">
+      <Filter>Header Files\Templates Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\Render.h">
+      <Filter>Header Files\Rendering Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\Render_internal.h">
+      <Filter>Header Files\Rendering Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Action.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\AffinityData.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\CashShopData.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\CharacterAnimation.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Entity.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EntityClass.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EntityCollision.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EntityEvent.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EntityPointer.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EntityProperties.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\FieldSettings.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\InternalClasses.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ItemData.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ItemEffect.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Items.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Lacarette.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\LastPositions.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\MissionCase.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\MobData.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\NoticeData.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\NpcHelp.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\OptionData.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\PlayerCharacter.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Precaching.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\QuestSystem.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ShadingInfo.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ShopData.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Skill.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\SmcInfo.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\SmcParser.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\SpecialSkill.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\StatusEffect.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\TargetInfo.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\WildPetData.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\Brush.h">
+      <Filter>Header Files\Brushes Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\BrushArchive.h">
+      <Filter>Header Files\Brushes Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\BrushBase.h">
+      <Filter>Header Files\Brushes Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\BrushTransformed.h">
+      <Filter>Header Files\Brushes Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ActionBuffer.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Buffer.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\CharacterTarget.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ChatMsgBuffer.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ClientInterface.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\cmd.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\CNetwork.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Common.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\CommunicationInterface.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Compression.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\CPacket.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\CryptNetMsg.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Diff.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\EMsgBuffer.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\EntityHashing.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\InputBuffer.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ItemTarget.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\LevelChange.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\MessageDefine.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\MessageDispatcher.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\MobTarget.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\MultiTarget.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetworkMessage.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetworkProfile.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PetTarget.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PlayerSource.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PlayerTarget.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Server.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SessionSocket.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SessionState.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Light\Shadows_internal.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SharedWebData.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SlaveTarget.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TcpIpConnection.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ThreadWrapper.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TxtQueue.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Web.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\WebAddress.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Light\Gradient.h">
+      <Filter>Header Files\Light Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Light\LensFlares.h">
+      <Filter>Header Files\Light Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Light\LightSource.h">
+      <Filter>Header Files\Light Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="exploration3d\E3BASE.H">
+      <Filter>Header Files\exploration3d</Filter>
+    </ClInclude>
+    <ClInclude Include="exploration3d\E3CALL.H">
+      <Filter>Header Files\exploration3d</Filter>
+    </ClInclude>
+    <ClInclude Include="exploration3d\E3EXT.H">
+      <Filter>Header Files\exploration3d</Filter>
+    </ClInclude>
+    <ClInclude Include="exploration3d\E3TYPES.H">
+      <Filter>Header Files\exploration3d</Filter>
+    </ClInclude>
+    <ClInclude Include="exploration3d\EXPLOR3D.H">
+      <Filter>Header Files\exploration3d</Filter>
+    </ClInclude>
+    <ClInclude Include="Ska\AnimSet.h">
+      <Filter>Header Files\Ska Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ska\Mesh.h">
+      <Filter>Header Files\Ska Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ska\ModelInstance.h">
+      <Filter>Header Files\Ska Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ska\NmFileIO.h">
+      <Filter>Header Files\Ska Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ska\ParsingSmbs.h">
+      <Filter>Header Files\Ska Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ska\Render.h">
+      <Filter>Header Files\Ska Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ska\SkaAssert.h">
+      <Filter>Header Files\Ska Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ska\Skeleton.h">
+      <Filter>Header Files\Ska Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Ska\StringTable.h">
+      <Filter>Header Files\Ska Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="World\World.h">
+      <Filter>Header Files\World Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldCollision.h">
+      <Filter>Header Files\World Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldEditingProfile.h">
+      <Filter>Header Files\World Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldEntityHashing.h">
+      <Filter>Header Files\World Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldRayCasting.h">
+      <Filter>Header Files\World Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldSettings.h">
+      <Filter>Header Files\World Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\Terrain.h">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\Terrain.hpp">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainArchive.h">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainTile.h">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TerrainTile.hpp">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TRDataArray.hpp">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TREditing.hpp">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TRGenerate.hpp">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TRLayer.h">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TRLayer.hpp">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TRMisc.hpp">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TRRayCast.hpp">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain\TRShadows.hpp">
+      <Filter>Header Files\Terrain Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="XBox\SymbolLocator_X.h">
+      <Filter>Header Files\XBox Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="XBox\VideoDecoder_X.h">
+      <Filter>Header Files\XBox Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="XBox\XKeyboard.h">
+      <Filter>Header Files\XBox Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CCameraEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CEffectControl.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CEffectGroup.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CEffectGroupManager.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CEffectManager.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CEntityEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CLightEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CMdlEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\COrbitEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticleEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CShockWaveEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CSkaEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CSoundEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CSplineBillboardEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CSplinePathEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CTerrainEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CTraceEffect.h">
+      <Filter>Header Files\Effect Headers\Effects Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CConeSpace.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CCylinderSpace.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CForce.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticle.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticleGroup.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticleGroupManager.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticles.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesAbsorption.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesAbsorptionDefault.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesAbsorptionSphere.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesCommonProcess.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesEmitter.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesEmitterCone.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesEmitterCylinder.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesEmitterSphere.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesProcessControl.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesProcessDynamicState.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesProcessForce.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesProcessPointGoal.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CParticlesProcessVelocity.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CRandomTable.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CSphereSpace.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CVelocity.h">
+      <Filter>Header Files\Effect Headers\Particle Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CEntityTag.h">
+      <Filter>Header Files\Effect Headers\Tags Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CGroupTag.h">
+      <Filter>Header Files\Effect Headers\Tags Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CRefCountPtr.h">
+      <Filter>Header Files\Effect Headers\Tags Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CSkaTag.h">
+      <Filter>Header Files\Effect Headers\Tags Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CTag.h">
+      <Filter>Header Files\Effect Headers\Tags Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CTagManager.h">
+      <Filter>Header Files\Effect Headers\Tags Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CWorldTag.h">
+      <Filter>Header Files\Effect Headers\Tags Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CManager.h">
+      <Filter>Header Files\Effect Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CNiceWater.h">
+      <Filter>Header Files\Effect Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\CSampleSpline.h">
+      <Filter>Header Files\Effect Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\EffectCommon.h">
+      <Filter>Header Files\Effect Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\FreeMemStack.h">
+      <Filter>Header Files\Effect Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIAD.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIAffinity.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIAffinityInfo.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIAutoHelp.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIBingoBox.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIBuff.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UICashShopEX.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UICheckButton.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIChildInvenSlot.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIChildQuickSlot.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UICollectBox.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UICompound.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIDrawFigure.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIExchange.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIFiltering.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIFlowerTree.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIFortune.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIGamble.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIGroup.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIGuild.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIGuildBattle.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIGuildMark.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIGuildNotice.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIGuildStash.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIGuildWarPortal.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIGWMix.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIHelp.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIHelper.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIHelpIcon.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIImageBox.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIInitJob.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIInternalClasses.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIInventory.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIItemProduct.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UILacarette.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIListBoxMultiList.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMap.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMessageBox.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMessageBoxL.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMessenger.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMinigame.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMix.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMixNew.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMonsterCombo.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMonsterMercenary.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMouseCursor.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMultList.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UINickName.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UINpcHelp.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UINpcScroll.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIOption.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIOXQuizEvent.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIPartyAuto.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIPersonalShop.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIPetFree.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIPetInfo.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIPetItemMix.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIPetTarget.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIPetTraining.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIPlayerInfo.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIProcess.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIProcessNPC.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIProduct.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIQuickSlot.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIRadar.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIRanking.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIRectString.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIRefine.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIReformSystem.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIResurrection.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISecurity.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISelectList.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISelectResource.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISelectWord.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIShop.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISiegeWarfare.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISiegeWarfareDoc.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISiegeWarfareNew.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISignBoard.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISimplePop.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISingleBattle.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISkillLearn.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISocketSystem.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISpinButton.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISummon.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISystemMenu.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITalk.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITatoo.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITeleport.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITextureManager.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITrackPopup.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIWareHouse.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIWebBoard.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIWildPetInfo.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DesignClasses\Singleton\SingletonBase.h">
+      <Filter>Header Files\Design Classes Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Build.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameGuardInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameShell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalDefinition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniDump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\ov_functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lauxlib.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lua.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\LuaInterface.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lualib.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Kalydo\PackageManager.h">
+      <Filter>Kalydo</Filter>
+    </ClInclude>
+    <ClInclude Include="Secure\FileSecure.h">
+      <Filter>Secure</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIButton.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIEditBox.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIListBox.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIListBoxEx.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIWindow.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIComboBox.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIMultiEditBox.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIProgressBar.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIScrollBar.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISlideBar.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Help\Util_Help.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Command.h">
+      <Filter>Header Files\Base Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SEED_256_KISA\SEED_256_KISA.h">
+      <Filter>SEED_256_KISA</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIExpressSystem.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\ExpressSystem.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataManager\GameDataManager.h">
+      <Filter>GameDataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIExpressItemList.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\TimerItem.h">
+      <Filter>Header Files\Effect Headers\Item Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIArray.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIArrayItem.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\Auction.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIAuctionNew.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\AuctionCmd.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIBase.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIIcon.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIFocus.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIDefine.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UICommon.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UICommand.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIImage.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIImageFont.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIList.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIListItem.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Help\UISupport.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITab.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIText.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIIME.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITextBox.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\Calendar.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UICalendarEventInfo.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UICalendar.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Help\ItemHelp.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIMysteriousBead.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISpriteAni.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIPetStashSelectEffect.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\PetStash.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\PetStashCmd.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIPetStash.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\PetStashSelectEffectCmd.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIInvenCashBag.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIInvenCashBagBox.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIRankingSystem.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UISkillNew.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\RankingSystemCmd.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UISkillNew.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISkillToolTip.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\SkillTree.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\RankingList.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Define_BRA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Define_GAMIGO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Define_KOR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Define_RUS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Define_THAI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Define_USA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIEventPopup.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\InvenData.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIImageArray.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\UIServerSelect.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\ServerSelect.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\UICharacterSelect.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\CharacterSelect.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\BackImageManager.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\LoginNew.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\UILoginNew.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\LoginNewCmd.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\CharacterCreateNew.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\CharacterCreateNewCmd.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\UICharacterCreateNew.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ArmorPreview.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Login\UIHardCoreWarning.h">
+      <Filter>Contents\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Help\Loader.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="Help\DefineHelp.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ZoneData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UICharacterInfoNew.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\CharacterInfoCmd.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIMySyndicateInfo.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStageManager\StageMgr.h">
+      <Filter>StageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStageManager\StageLogin.h">
+      <Filter>StageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStageManager\StageCreateChar.h">
+      <Filter>StageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStageManager\StageGamePlay.h">
+      <Filter>StageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStageManager\StageIntro.h">
+      <Filter>StageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStageManager\StageLoading.h">
+      <Filter>StageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStageManager\StageSelChar.h">
+      <Filter>StageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStageManager\StageSelServer.h">
+      <Filter>StageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStageManager\StageGameEnd.h">
+      <Filter>StageMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ObjectBase.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ActorMgr.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DefineObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIImageSplit.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\Durability.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIDurability.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Help\GMCommand_Decl.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="Loading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\Notice.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UINoticeNew.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\TEventString.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UITrade.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\TradeItem.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITooltip.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITooltipResource.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIImageText.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Info\MyInfo.h">
+      <Filter>Info</Filter>
+    </ClInclude>
+    <ClInclude Include="Info\MyInfoSkill.h">
+      <Filter>Info</Filter>
+    </ClInclude>
+    <ClInclude Include="Help\LoadLod.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="Help\LoadString.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITree.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIMapOption.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\gps.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\UIGps.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\LevelupGuide.h">
+      <Filter>Header Files\Entities Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UISpinControl.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\Quest.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIQuestAccept.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIQuestBookNew.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIQuestComplete.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIQuestDesign.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIQuestRestore.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIQuestView.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIMsgBoxMgr.h">
+      <Filter>UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIMsgBoxNumeric_only.h">
+      <Filter>UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIQuestNew.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\ChangeWeapon.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIChangeWeaponNew.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIChangeEquipment.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginJobInfo.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="PetInfo.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="SlaveInfo.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIImageText.h">
+      <Filter>UILib</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIFactory.h">
+      <Filter>UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIManager.h">
+      <Filter>UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIMsgBoxMgr.h">
+      <Filter>UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Help\UISupport.h">
+      <Filter>UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITooltipMgr.h">
+      <Filter>UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITooltipResource.h">
+      <Filter>UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIWindowDeclare.h">
+      <Filter>UIHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformInfo.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\Syndicate.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="JobInfo.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIPartyNew.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\UIExpedition.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\CommunityDefines.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\Party.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\UIPortalNew.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetClient.h">
+      <Filter>Header Files\Network Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\attendance.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\ItemCollection.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\ItemCollectionCmd.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\ItemCollectionData.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\ItemCollectionUI.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\PremiumCharUI.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\PremiumChar.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\PremiumCharDesign.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\SimplePlayerInfoUI.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\SimplePlayerMenuUI.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Info\ServerInfo.h">
+      <Filter>Info</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\ChattingUI.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\Base\ChattingCmd.h">
+      <Filter>Contents\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITextEx.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UITextBoxEx.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\TargetInfoNewUI.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\NewsUI.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\News.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\News_Web_UI.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\ItemCompose.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\ItemComposeUI.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Contents\function\HelpWebUI.h">
+      <Filter>Contents\function</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIGuildArrangeMemberCont.h">
+      <Filter>Header Files\Interface Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Engine.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\CTString.inl">
+      <Filter>Header Files\Base Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\ListIterator.inl">
+      <Filter>Header Files\Base Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\Lists.inl">
+      <Filter>Header Files\Base Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\Priority.inl">
+      <Filter>Header Files\Base Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Base\Timer.inl">
+      <Filter>Header Files\Base Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Math\Clipping.inl">
+      <Filter>Header Files\Math Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Math\Geometry.inl">
+      <Filter>Header Files\Math Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Network\CryptNetMsg_TransTable">
+      <Filter>Header Files\Network Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\BaseEvents.es">
+      <Filter>Entity Class Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\MovableBrushEntity.es">
+      <Filter>Entity Class Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\MovableEntity.es">
+      <Filter>Entity Class Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\MovableModelEntity.es">
+      <Filter>Entity Class Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\PlayerEntity.es">
+      <Filter>Entity Class Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ChangeLog.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SEED_256_KISA\SEED_256_KISA.tab">
+      <Filter>SEED_256_KISA</Filter>
+    </None>
+    <None Include="Base\FLEX.SKL">
+      <Filter>Grammar Files</Filter>
+    </None>
+    <None Include="Ska\smcFlex.skl">
+      <Filter>Grammar Files</Filter>
+    </None>
+    <None Include="Base\Scanner.l">
+      <Filter>Grammar Files</Filter>
+    </None>
+    <None Include="Ska\smcPars.y">
+      <Filter>Grammar Files</Filter>
+    </None>
+    <None Include="Ska\smcScan.l">
+      <Filter>Grammar Files</Filter>
+    </None>
+    <None Include="Base\Parser.y">
+      <Filter>Grammar Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

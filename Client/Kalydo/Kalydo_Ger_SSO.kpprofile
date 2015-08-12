@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<KPProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DemoKRFReadLib>false</DemoKRFReadLib>
+  <DemoUsingLauncher>false</DemoUsingLauncher>
+  <MuteAuto>true</MuteAuto>
+  <FullscreenKeys Name="ENTER" Mod="ALT" Toggle="Toggle" />
+  <FullscreenKeys Name="ESCAPE" Mod="None" Toggle="Exit only" />
+  <FullscreenAuto>true</FullscreenAuto>
+  <KRFMakeSequence>false</KRFMakeSequence>
+  <KRFSyncDownloads>false</KRFSyncDownloads>
+  <KRFRequiredPackages>false</KRFRequiredPackages>
+  <LoadKRFReadLib>false</LoadKRFReadLib>
+  <DefaultAdvSettings>true</DefaultAdvSettings>
+  <RequireElevation>false</RequireElevation>
+  <AllowHooking>true</AllowHooking>
+  <DXScaleBackBuffer>false</DXScaleBackBuffer>
+  <DXResetAfterSize>false</DXResetAfterSize>
+  <WindowHideAll>false</WindowHideAll>
+  <WindowScale>false</WindowScale>
+  <SimulateDownload>true</SimulateDownload>
+  <BgDownloader>false</BgDownloader>
+  <MaxBandwidth />
+  <XMLPath>D:\Kalydo\GER_SSO\Release\LastChaos_Test_SSO_2.00.00.0.xml</XMLPath>
+  <DestinationPath>D:\Kalydo\GER_SSO\Download</DestinationPath>
+  <DownloadPath>D:\Kalydo\GER_SSO\Release</DownloadPath>
+  <Browser Name="Google Chrome (Detected)" default="true">C:\Program Files\Google\Chrome\Application\chrome.exe</Browser>
+  <UseDefaultPaths>true</UseDefaultPaths>
+  <AppPath />
+  <AppDLL>D:\Kalydo\GER_SSO\Download\</AppDLL>
+</KPProfile>

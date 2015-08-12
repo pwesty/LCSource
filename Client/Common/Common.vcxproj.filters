@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Packet">
+      <UniqueIdentifier>{f62216dd-7beb-4314-9897-b51f5811a886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{b52a9805-3dac-4548-b15f-80049133c190}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonDef.h" />
+    <ClInclude Include="Packet\ptype_express_system.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_base.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_tradeAgent_system.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_char_status.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_inventory.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_exsocket.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_guild.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_item.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_pk.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_reform_system.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_stash.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_affinity.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_event.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_exapet.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_reserved_gm_command.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_pet_stash.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_timer_item.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_extend.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_syndicate.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_durability.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_mempos.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_action.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_attack.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_changejob.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_move.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_skill.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_monstercombo.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_sskill.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_appear.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_do_friend.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_action.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_affinity.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_apet.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_combo.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_item.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_lacarette.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_map.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_npc.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_option.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_quest.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_skill.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_title.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\EventTrade.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_base.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_gps.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_authentication.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_attendance.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_item_collection.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="header\def_item_collection.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_old_login.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_premium_char.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_notice.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet\ptype_artifact.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dummy.cpp" />
+  </ItemGroup>
+</Project>

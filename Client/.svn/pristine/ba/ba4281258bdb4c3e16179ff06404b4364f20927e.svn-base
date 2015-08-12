@@ -1,0 +1,139 @@
+# Microsoft Developer Studio Project File - Name="Common" - Package Owner=<4>
+# Microsoft Developer Studio Generated Build File, Format Version 6.00
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (x86) Generic Project" 0x010a
+
+CFG=Common - Win32 Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "Common.mak".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "Common.mak" CFG="Common - Win32 Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "Common - Win32 Release" (based on "Win32 (x86) Generic Project")
+!MESSAGE "Common - Win32 Debug" (based on "Win32 (x86) Generic Project")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+MTL=midl.exe
+
+!IF  "$(CFG)" == "Common - Win32 Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "Release"
+# PROP BASE Intermediate_Dir "Release"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "Release"
+# PROP Intermediate_Dir "Release"
+# PROP Target_Dir ""
+
+!ELSEIF  "$(CFG)" == "Common - Win32 Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "Debug"
+# PROP BASE Intermediate_Dir "Debug"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "_Debug"
+# PROP Intermediate_Dir "_Debug"
+# PROP Target_Dir ""
+
+!ENDIF 
+
+# Begin Target
+
+# Name "Common - Win32 Release"
+# Name "Common - Win32 Debug"
+# Begin Group "Packet"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\Packet\ptype_base.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_char_status.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_express_system.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_inventory.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_old_do_affinity.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_old_do_event.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_old_do_exapet.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_old_do_exsocket.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_old_do_guild.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_old_do_item.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_old_do_pk.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_old_do_reform_system.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_old_do_stash.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_pet_stash.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_reserved_gm_command.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_timer_item.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Packet\ptype_tradeAgent_system.h
+# End Source File
+# End Group
+# Begin Source File
+
+SOURCE=.\CommonDef.h
+# End Source File
+# End Target
+# End Project

@@ -1,0 +1,144 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 447, 351
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Font generator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Save",IBC_SAVE_FONT,345,248,25,13
+    COMBOBOX        ICB_TEX_WIDTH,372,248,35,45,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ICB_TEX_HEIGHT,409,248,35,45,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Texture",IBC_SHOW_TEXTURE,345,265,35,13,WS_GROUP
+    EDITTEXT        IEC_FONT_SIZE,410,265,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IEC_FIRST_CHAR,378,280,16,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IEC_LAST_CHAR,425,280,17,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Table",IBC_LOAD_CHAR_TABLE,400,295,20,11
+    PUSHBUTTON      "Clear",IBC_CLEAR_CHAR_TABLE,425,295,20,11
+    COMBOBOX        ICB_FONT_NAMES,345,308,100,88,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IEC_PADDINGX,386,335,14,12,ES_AUTOHSCROLL
+    EDITTEXT        IEC_PADDINGY,402,335,14,12,ES_AUTOHSCROLL
+    EDITTEXT        IEC_WIDTH_ADD,417,335,14,12,ES_AUTOHSCROLL
+    EDITTEXT        IEC_HEIGHT_ADD,433,335,14,12,ES_AUTOHSCROLL
+    LTEXT           "Sample text:",IDC_STATIC,5,250,45,10
+    CONTROL         "Bold",ICB_BOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,
+                    250,30,10
+    CONTROL         "Italic",ICB_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,83,250,31,10
+    CONTROL         "Underilne",ICB_UNDERLINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,115,250,50,10
+    CONTROL         "Strike out",ICB_STRIKE_OUT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,170,250,45,10
+    CONTROL         "Antialiased",ICB_ANTIALIASED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,250,50,10
+    CONTROL         "Shadow",ICB_HAS_SHADOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,270,250,42,10
+    EDITTEXT        IEC_SHADOW_PASSES,315,247,17,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IEC_SAMPLE_TEXT,5,260,335,85,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    COMBOBOX        ICB_FONT_SIZES,410,225,35,84,CBS_DROPDOWN | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",IDC_CANVAS,5,5,435,240,SS_NOTIFY,
+                    WS_EX_STATICEDGE
+    CTEXT           "First char",IDC_STATIC,345,281,29,10,SS_CENTERIMAGE
+    CTEXT           "Padding",IDC_STATIC,387,323,28,10,SS_CENTERIMAGE
+    CTEXT           "Sizing",IDC_STATIC,418,323,26,10,SS_CENTERIMAGE
+    LTEXT           "",IDC_CHARACTER_TABLE,345,295,50,10,0,WS_EX_STATICEDGE
+    CTEXT           "Align",IDC_STATIC,347,323,30,10,SS_CENTERIMAGE
+    CTEXT           "Last char",IDC_STATIC,395,281,30,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_ALIGN_H,344,335,21,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ALIGN_V,365,335,21,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Grid",IBC_SHOW_GRID,385,265,20,13,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 440
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 344
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

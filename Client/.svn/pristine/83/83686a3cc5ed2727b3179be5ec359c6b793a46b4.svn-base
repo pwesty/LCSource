@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<KPProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <KRFSyncDownloads>false</KRFSyncDownloads>
+  <KRFRequiredPackages>false</KRFRequiredPackages>
+  <KRFReadLibInitDir />
+  <LoadKRFReadLib>true</LoadKRFReadLib>
+  <DefaultAdvSettings>false</DefaultAdvSettings>
+  <LogElevationReject>false</LogElevationReject>
+  <LogElevationAccept>false</LogElevationAccept>
+  <RequireElevation>true</RequireElevation>
+  <AllowHooking>true</AllowHooking>
+  <FullscreenF11>true</FullscreenF11>
+  <FullscreenAltEnter>true</FullscreenAltEnter>
+  <FullscreenEscQuits>true</FullscreenEscQuits>
+  <DXScaleBackBuffer>false</DXScaleBackBuffer>
+  <DXResetAfterSize>false</DXResetAfterSize>
+  <WindowAllowFullscreen>false</WindowAllowFullscreen>
+  <WindowHideAll>false</WindowHideAll>
+  <WindowScale>false</WindowScale>
+  <WindowClass />
+  <WindowName>BarunsonGames.Inc</WindowName>
+  <AppWorkingDir>D:\kalydo_packages\Bin</AppWorkingDir>
+  <AppParameters />
+  <SimulateDownload>true</SimulateDownload>
+  <MaxBandwidth>0</MaxBandwidth>
+  <XMLPath>C:\package\LCPack\Release\LastChaos_Test_1.00.16.4.xml</XMLPath>
+  <DestinationPath>D:\kalydo_packages</DestinationPath>
+  <DownloadPath>C:\package\LCPack\Release</DownloadPath>
+  <Browser Name="Google Chrome (Detected)" default="true">C:\Documents and Settings\rumist\Local Settings\Application Data\Google\Chrome\Application\chrome.exe</Browser>
+  <UseDefaultPaths>false</UseDefaultPaths>
+  <AppPath>D:\kalydo_packages\Bin</AppPath>
+  <AppDLL>D:\kalydo_packages\Bin\nksp.exe</AppDLL>
+</KPProfile>

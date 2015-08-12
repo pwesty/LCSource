@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TraceTool", "TraceTool.vcxproj", "{927DD265-9948-4D1D-8906-207DDC52AF1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugStatic|Win32 = DebugStatic|Win32
+		Release|Win32 = Release|Win32
+		ReleaseStatic|Win32 = ReleaseStatic|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{927DD265-9948-4D1D-8906-207DDC52AF1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{927DD265-9948-4D1D-8906-207DDC52AF1C}.Debug|Win32.Build.0 = Debug|Win32
+		{927DD265-9948-4D1D-8906-207DDC52AF1C}.DebugStatic|Win32.ActiveCfg = DebugStatic|Win32
+		{927DD265-9948-4D1D-8906-207DDC52AF1C}.DebugStatic|Win32.Build.0 = DebugStatic|Win32
+		{927DD265-9948-4D1D-8906-207DDC52AF1C}.Release|Win32.ActiveCfg = Release|Win32
+		{927DD265-9948-4D1D-8906-207DDC52AF1C}.Release|Win32.Build.0 = Release|Win32
+		{927DD265-9948-4D1D-8906-207DDC52AF1C}.ReleaseStatic|Win32.ActiveCfg = ReleaseStatic|Win32
+		{927DD265-9948-4D1D-8906-207DDC52AF1C}.ReleaseStatic|Win32.Build.0 = ReleaseStatic|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

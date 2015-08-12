@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8a4f3546-fda5-4833-bff3-42d7f8a8afd0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Effect GUI">
+      <UniqueIdentifier>{86c76462-0df7-4b1b-8a3c-bfb16750e554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Original Ska">
+      <UniqueIdentifier>{2a89bba7-8e83-458c-b653-6f0ea7a1d192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{426b207c-bd15-4290-ac6a-e6113e584b12}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Effect GUI Header">
+      <UniqueIdentifier>{29d6023d-8531-4231-85d8-57f5858e79ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Original Ska Header">
+      <UniqueIdentifier>{cb79a98f-faf0-4411-bea0-ba22b3c1b15c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{51ee4e6c-8587-4537-a423-827964e2f965}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Help Files">
+      <UniqueIdentifier>{5688e749-e40d-45f7-9edf-affe672641ea}</UniqueIdentifier>
+      <Extensions>cnt;rtf</Extensions>
+    </Filter>
+    <Filter Include="Generated Sources">
+      <UniqueIdentifier>{84e30406-6dba-4e02-8269-c2301a848b1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wizard Files">
+      <UniqueIdentifier>{e8d2f2b0-05ec-4e14-a41b-d362be7f2b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grammar Files">
+      <UniqueIdentifier>{f5419600-589c-4bc4-a4d2-037bef5d3e69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgAutosettingFeatherFall.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCCameraEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCCone.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCCylinder.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCEffectControlProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCEffectGroupProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCEntityEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCForce.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCLightEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCMdlEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCOrbitEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPADefaultProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPAProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCParticleEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCParticleGroupProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPASphereProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPEConeProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPECylinderProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPEProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPESphereProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPPControlProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPPDSOffsetPosAutoSetting.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPPDynamicStateProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPPForceProcessProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPPPointGoalProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPPProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCPPVelocityProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCShockWaveEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCSkaEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCSoundEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCSphere.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCSplineBillboardEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCSplinePathEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCTerrainEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCTraceEffectProperty.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgEffectEditType.cpp">
+      <Filter>Source Files\Effect GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckBox.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="ColoredButton.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgBarTreeView.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgClient.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgProperties.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTemplate.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="DropDown.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="MDIClientWnd.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelTreeCtrl.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="SeriousSkaStudio.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="SeriousSkaStudioDoc.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="SeriousSkaStudioView.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="SplitterFrame.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="Stripper.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBox.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="TexView.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgExtensionEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="scanner.cpp">
+      <Filter>Generated Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSkaStudio.cpp">
+      <Filter>Source Files\Original Ska</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgAutosettingFeatherFall.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCCameraEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCCone.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCCylinder.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCEffectControlProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCEffectGroupProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCEntityEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCForce.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCLightEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCMdlEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCOrbitEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPADefaultProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPAProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCParticleEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCParticleGroupProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPASphereProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPEConeProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPECylinderProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPEProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPESphereProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPPControlProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPPDSOffsetPosAutoSetting.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPPDynamicStateProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPPForceProcessProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPPPointGoalProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPPProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCPPVelocityProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCShockWaveEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCSkaEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCSoundEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCSphere.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCSplineBillboardEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCSplinePathEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCTerrainEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCTraceEffectProperty.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgEffectEditType.h">
+      <Filter>Header Files\Effect GUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckBox.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ColoredButton.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgBarTreeView.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgClient.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgProperties.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTemplate.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DropDown.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MDIClientWnd.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelTreeCtrl.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ParsingSymbols.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SeriousSkaStudio.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SeriousSkaStudioDoc.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SeriousSkaStudioView.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SplitterFrame.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBox.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="TexView.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgExtensionEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSkaStudio.h">
+      <Filter>Header Files\Original Ska Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SeriousSkaStudio.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlp\SeriousSkaStudio.hpj">
+      <Filter>Source Files\Original Ska</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Icons.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\SeriousSkaStudio.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\SeriousSkaStudio.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\SeriousSkaStudioDoc.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\AfxCore.rtf">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\AppExit.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\Bullet.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\CurArw2.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\CurArw4.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\CurHelp.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\EditCopy.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\EditCut.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\EditPast.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\EditUndo.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\FileNew.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\FileOpen.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\FilePrnt.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\FileSave.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\HlpSBar.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\HlpTBar.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\RecFirst.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\RecLast.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\RecNext.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\RecPrev.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\Scmax.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\ScMenu.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\Scmin.bmp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\SeriousSkaStudio.cnt">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SeriousSkaStudio.clw">
+      <Filter>Wizard Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Parser.y">
+      <Filter>Grammar Files</Filter>
+    </None>
+    <None Include="Scanner.l">
+      <Filter>Grammar Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

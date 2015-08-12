@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!-- Gameble -->
+<Window id="gamble" x="0" y="0" w="255" h="213" hide="0">
+    <UIImage id="img_back_top" x="0" y="0" w="255" h="148" hide="0" 
+       tex="MoonStone.tex" l="0" t="0" r="255" b="148" />
+    <UIImage id="img_back_mid" x="0" y="149" w="255" h="17" hide="0" 
+       tex="MoonStone.tex" l="0" t="149" r="255" b="166" />
+    <UIImage id="img_back_bot" x="0" y="167" w="255" h="46" hide="0"
+       tex="MoonStone.tex" l="0" t="167" r="255" b="213" />
+
+    <UIImage id="img_select" x="92" y="262" w="45" h="45" hide="0"
+       tex="MoonStone.tex" l="92" t="262" r="137" b="307" />
+    
+    <UIImage id="img_num0" x="10" y="358" w="10" h="10" hide="0"
+       tex="MoonStone.tex" l="10" t="358" r="20" b="368" />
+    <UIImage id="img_num1" x="20" y="358" w="10" h="10" hide="0"
+       tex="MoonStone.tex" l="20" t="358" r="30" b="368" />
+    <UIImage id="img_num2" x="30" y="358" w="10" h="10" hide="0"
+       tex="MoonStone.tex" l="30" t="358" r="40" b="368" />
+    <UIImage id="img_num3" x="40" y="358" w="10" h="10" hide="0"
+       tex="MoonStone.tex" l="40" t="358" r="50" b="368" />
+    <UIImage id="img_num4" x="50" y="358" w="10" h="10" hide="0"
+       tex="MoonStone.tex" l="50" t="358" r="60" b="368" />
+    <UIImage id="img_num5" x="60" y="358" w="10" h="10" hide="0"
+       tex="MoonStone.tex" l="60" t="358" r="70" b="368" />
+    <UIImage id="img_num6" x="70" y="358" w="10" h="10" hide="0"
+       tex="MoonStone.tex" l="70" t="358" r="80" b="368" />
+    <UIImage id="img_num7" x="80" y="358" w="10" h="10" hide="0"
+       tex="MoonStone.tex" l="80" t="358" r="90" b="368" />
+    <UIImage id="img_num8" x="90" y="358" w="10" h="10" hide="0"
+       tex="MoonStone.tex" l="90" t="358" r="100" b="368" />
+    <UIImage id="img_num9" x="100" y="358" w="10" h="10" hide="0"
+       tex="MoonStone.tex" l="100" t="358" r="110" b="368" />
+    
+    <!-- Button -->
+    <UIButton id="btn_start" x="8" y="167" w="113" h="29" hide="0"
+              tex="MoonStone.tex" str ="" str_desc="" >
+        <uv type="0" l="0" t="374" r="112" b="402" />
+        <uv type="2" 	l="114" t="374" r="226" b="402" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_stop" x="8" y="193" w="113" h="29" hide="0"
+              tex="MoonStone.tex" str ="" str_desc="" >
+        <uv type="0" l="0" t="404" r="112" b="432" />
+        <uv type="2" 	l="114" t="404" r="226" b="432" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_cancel" x="135" y="193" w="113" h="29" hide="0"
+              tex="MoonStone.tex" str ="" str_desc="" >
+        <uv type="0" l="0" t="434" r="112" b="462" />
+        <uv type="2" 	l="114" t="434" r="226" b="462" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_ready" x="8" y="167" w="113" h="29" hide="0"
+              tex="MoonStone.tex" str ="" str_desc="" >
+        <uv type="0" l="0" t="464" r="112" b="492" />
+        <uv type="2" 	l="114" t="464" r="226" b="492" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    
+</Window>

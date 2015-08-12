@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DEVTEST|Win32">
+      <Configuration>DEVTEST</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SkaStudio|Win32">
+      <Configuration>SkaStudio</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A3109CCC-B83D-4D6C-A214-03C10084F276}</ProjectGuid>
+    <RootNamespace>Common</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEVTEST|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SkaStudio|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DEVTEST|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SkaStudio|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CLIENT_;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CLIENT_;_WIN32;WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DEVTEST|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CLIENT_;_WIN32;WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SkaStudio|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CLIENT_;_WIN32;WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonDef.h" />
+    <ClInclude Include="header\def_action.h" />
+    <ClInclude Include="header\def_affinity.h" />
+    <ClInclude Include="header\def_apet.h" />
+    <ClInclude Include="header\def_base.h" />
+    <ClInclude Include="header\def_combo.h" />
+    <ClInclude Include="header\def_item.h" />
+    <ClInclude Include="header\def_item_collection.h" />
+    <ClInclude Include="header\def_lacarette.h" />
+    <ClInclude Include="header\def_map.h" />
+    <ClInclude Include="header\def_npc.h" />
+    <ClInclude Include="header\def_option.h" />
+    <ClInclude Include="header\def_quest.h" />
+    <ClInclude Include="header\def_skill.h" />
+    <ClInclude Include="header\def_title.h" />
+    <ClInclude Include="header\EventTrade.h" />
+    <ClInclude Include="Packet\ptype_appear.h" />
+    <ClInclude Include="Packet\ptype_artifact.h" />
+    <ClInclude Include="Packet\ptype_authentication.h" />
+    <ClInclude Include="Packet\ptype_attendance.h" />
+    <ClInclude Include="Packet\ptype_base.h" />
+    <ClInclude Include="Packet\ptype_char_status.h" />
+    <ClInclude Include="Packet\ptype_durability.h" />
+    <ClInclude Include="Packet\ptype_express_system.h" />
+    <ClInclude Include="Packet\ptype_gps.h" />
+    <ClInclude Include="Packet\ptype_inventory.h" />
+    <ClInclude Include="Packet\ptype_item_collection.h" />
+    <ClInclude Include="Packet\ptype_notice.h" />
+    <ClInclude Include="Packet\ptype_old_do_action.h" />
+    <ClInclude Include="Packet\ptype_old_do_affinity.h" />
+    <ClInclude Include="Packet\ptype_old_do_attack.h" />
+    <ClInclude Include="Packet\ptype_old_do_changejob.h" />
+    <ClInclude Include="Packet\ptype_old_do_event.h" />
+    <ClInclude Include="Packet\ptype_old_do_exapet.h" />
+    <ClInclude Include="Packet\ptype_old_do_exsocket.h" />
+    <ClInclude Include="Packet\ptype_old_do_friend.h" />
+    <ClInclude Include="Packet\ptype_old_do_guild.h" />
+    <ClInclude Include="Packet\ptype_old_do_item.h" />
+    <ClInclude Include="Packet\ptype_old_do_monstercombo.h" />
+    <ClInclude Include="Packet\ptype_old_do_move.h" />
+    <ClInclude Include="Packet\ptype_old_do_pk.h" />
+    <ClInclude Include="Packet\ptype_old_do_reform_system.h" />
+    <ClInclude Include="Packet\ptype_old_do_skill.h" />
+    <ClInclude Include="Packet\ptype_old_do_sskill.h" />
+    <ClInclude Include="Packet\ptype_old_do_stash.h" />
+    <ClInclude Include="Packet\ptype_old_extend.h" />
+    <ClInclude Include="Packet\ptype_old_login.h" />
+    <ClInclude Include="Packet\ptype_old_mempos.h" />
+    <ClInclude Include="Packet\ptype_pet_stash.h" />
+    <ClInclude Include="Packet\ptype_premium_char.h" />
+    <ClInclude Include="Packet\ptype_reserved_gm_command.h" />
+    <ClInclude Include="Packet\ptype_syndicate.h" />
+    <ClInclude Include="Packet\ptype_timer_item.h" />
+    <ClInclude Include="Packet\ptype_tradeAgent_system.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dummy.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DEVTEST|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SkaStudio|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

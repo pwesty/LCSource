@@ -1,0 +1,33 @@
+
+2002_05_13 DrawPort cloning and lock/unlock recoded
+---------------------------------------------------
+
+Drawports are no longer linked in list per raster, and do not store their dimensions in floating point relative 
+to the raster size. They store only the fixed integer dimensions. Raster is only aware of its main drawport. On 
+resizing, raster adjusts dimensions of the main drawport to be 1:1 to the raster, all cloned drawports are assumed 
+to be recreated for each frame. If you have used the relative dimensions, you have to change the code to calculate 
+them by directly dividing the drawport dimensions by raster dimensions.
+
+Drawports can now be copied around and passed by value. Drawport cloning is extensively recoded. It is now possible 
+to resize drawports in-place.
+
+You can imagine a DrawPort as a window to a virtual drawing space. The window is physically placed on a specific place in its raster. So effectively, you have two different coordinate spaces: logical coordinate space inside the drawport and physical coordinate space in the raster. Default drawport maps those coordinates in a 1:1 fashion. 
+
+Using CreateSubDrawPort() or CreateSubDrawPortRatio(), you can create a smaller drawport that maps only a smaller part of the raster, and has its logical origin in its upper left corner. Still, its logial size is same as its physical size. Using functions:
+SetPhysicalRectInPhysical(),
+SetPhysicalRectInLogical(),
+SetPhysicalRectInRaster(),
+SetLogicalRectInLogical(),
+SetLogicalRectInPhysical() and
+SetLogicalRectInRaster()
+you can manually adjust the mappings to your linking and create drawport whose logical origin is outside of its phyisical rectangle. Basically, those 6 functions are in fact just 2 functions, with 3 variations each. One sets the drawports logical coordinates, and the other sets its physical coordinates. The extensions: -InPhysical, -InLogical and -InRaster determine in which coordinate frame the new rectangle is specified.
+
+Setting a logical rectangle larger than the drawports physical size is, for instance, useful when implementing scrollable views (like a text-edit window, or similar).
+
+SetAsCurrent is a new function that replaces the functionality of Lock/Unlock pair. The Lock/Unlock system will be 
+supported for a while, but it is now considered deprecated. Lock/Unlock is a dinosaur dating from the time of DDraw3, 
+and is not neccessary any more. SetAsCurrent is much simpler to use and less error-prone. It is recommended that all 
+code that uses Lock/Unlock on drawports is changed to use SetAsCurrent instead. This is done by simply replacing 
+Lock() calls with SetAsCurrent() and removing Unlock() calls entirely. Note that SetAsCurrent() does not return 
+success code. It always succeeds, and you don't need to test for the return value.
+

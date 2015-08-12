@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<Window id="teleport" x="0" y="0" w="472" h="160" hide="0">
+
+    <UIImage id="" x="0" y="0" w="472" h="160" hide="1" desc="BG"
+        tex="Teleport.tex" l="0" t="0"  r="472" b="160"/>
+
+    <UIImage id="" x="20" y="68" w="418" h="15" hide="1" desc="SelectBar"
+        tex="Teleport.tex" l="0" t="215"  r="418" b="231"/>
+
+    <!--PREMIUM 테두리-->
+    <UIImage id="" x="0" y="0" w="13" h="13" hide="0"
+        tex="NamePopup.tex" l="35" t="0"  r="48" b="13"/>
+    <UIImage id="" x="13" y="0" w="446" h="13" hide="0"
+        tex="NamePopup.tex" l="49" t="0"  r="50" b="13"/>
+    <UIImage id="" x="459" y="0" w="13" h="13" hide="0"
+        tex="NamePopup.tex" l="51" t="0"  r="64" b="13"/>
+    
+    <UIImage id="" x="0" y="13" w="13" h="13" hide="0"
+        tex="NamePopup.tex" l="35" t="16" r="48" b="29"/>
+    <UIImage id="" x="13" y="13" w="446" h="13" hide="0"
+        tex="NamePopup.tex" l="49" t="16" r="50" b="29"/>
+    <UIImage id="" x="459" y="13" w="13" h="13" hide="0"
+        tex="NamePopup.tex" l="51" t="16" r="64" b="29"/>
+
+    <UIImage id="" x="0" y="26" w="5" h="129" hide="0"
+        tex="NamePopup.tex" l="35" t="14" r="40" b="16"/>
+    <UIImage id="" x="467" y="26" w="5" h="129" hide="0"
+        tex="NamePopup.tex" l="58" t="14" r="64" b="16"/>
+
+    <UIImage id="" x="0" y="155" w="5" h="5" hide="0"
+        tex="NamePopup.tex" l="35" t="23" r="40" b="29"/>
+    <UIImage id="" x="5" y="155" w="462" h="5" hide="0"
+        tex="NamePopup.tex" l="49" t="23" r="50" b="29"/>
+    <UIImage id="" x="467" y="155" w="5" h="5" hide="0"
+        tex="NamePopup.tex" l="58" t="23" r="64" b="29"/>    
+    
+    <UIImage id="" x="4" y="26" w="371" h="24" hide="0"
+        tex="Teleport.tex" l="4" t="131" r="375" b="155" />    
+    <UIImage id="" x="375" y="26" w="93" h="24" hide="0"
+        tex="Teleport.tex" l="376" t="131" r="468" b="155" />
+    <UIImage id="" x="4" y="50" w="415" h="106" hide="0"
+        tex="Teleport.tex" l="4" t="28" r="419" b="156" />
+    <UIImage id="" x="419" y="50" w="48" h="106" hide="0"
+        tex="Teleport.tex" l="420" t="28" r="468" b="155" />
+
+    <UIButton id="btn_close" x="442" y="4" w="14" h="14" 
+              tex="Teleport.tex" str="" desc="나가기">
+        <normal  l="182" t="164" r="196" b="178" />
+        <on 	l="182" t="179" r="196" b="193" />
+        <click 	l="182" t="164" r="196" b="178" />
+        <disable l="182" t="164" r="196" b="178" />
+    </UIButton>
+
+    <UIButton id="btn_move" x="268" y="133" w="63" h="21"
+              tex="Teleport.tex" str="289" desc="이동">
+        <normal l="0" t="164" r="63" b="185" />
+        <on 	l="66" t="164" r="129" b="185" />
+        <click 	l="0" t="164" r="63" b="185" />
+        <disable l="0" t="164" r="63" b="185" />
+    </UIButton>
+
+    <UIButton id="btn_save" x="334" y="133" w="63" h="21"
+              tex="Teleport.tex" str="290" desc="저장">
+        <normal l="0" t="164" r="63" b="185" />
+        <on 	l="66" t="164" r="129" b="185" />
+        <click 	l="0" t="164" r="63" b="185" />
+        <disable l="0" t="164" r="63" b="185" />
+    </UIButton>
+
+    <UIButton id="btn_cancel" x="400" y="133" w="63" h="21"
+              tex="Teleport.tex" str="139" desc="취소">
+        <normal l="0" t="164" r="63" b="185" />
+        <on 	l="66" t="164" r="129" b="185" />
+        <click 	l="0" t="164" r="63" b="185" />
+        <disable l="0" t="164" r="63" b="185" />
+    </UIButton>
+    
+    
+        
+</Window>              

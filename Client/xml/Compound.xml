@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<!-- Compound -->
+<Window id="compound" x="0" y="0" w="216" h="190" hide="0">
+    <UIImage id="img_title" x="0" y="0" w="216" h="22" hide="0" 
+       tex="MessageBox.tex" l="0" t="0" r="216" b="26" />
+
+    <UIImage id="img_back_m1" x="0" y="31" w="216" h="2" hide="0"
+       tex="MessageBox.tex" l="0" t="31" r="216" b="33" />
+    <UIImage id="img_back_m2" x="0" y="35" w="216" h="2" hide="0"
+       tex="MessageBox.tex" l="0" t="35" r="216" b="37" />
+    <UIImage id="img_back_b" x="0" y="38" w="216" h="7" hide="0"
+       tex="MessageBox.tex" l="0" t="38" r="216" b="45" />
+
+    <UIImage id="img_slot" x="0" y="68" w="34" h="34" hide="0"
+       tex="MessageBox.tex" l="0" t="68" r="34" b="102" />
+
+    <UIImage id="img_info_u_l" x="164" y="45" w="7" h="18" hide="0"
+       tex="MessageBox.tex" l="164" t="45" r="171" b="63" />
+    <UIImage id="img_info_u_m" x="174" y="45" w="2" h="18" hide="0"
+       tex="MessageBox.tex" l="174" t="45" r="176" b="63" />
+    <UIImage id="img_info_u_r" x="179" y="45" w="7" h="18" hide="0"
+       tex="MessageBox.tex" l="179" t="45" r="186" b="63" />
+
+    <UIImage id="img_info_m_l" x="164" y="55" w="7" h="3" hide="0"
+       tex="MessageBox.tex" l="164" t="55" r="171" b="58" />
+    <UIImage id="img_info_m_m" x="174" y="55" w="2" h="3" hide="0"
+       tex="MessageBox.tex" l="174" t="55" r="176" b="58" />
+    <UIImage id="img_info_m_r" x="179" y="55" w="7" h="3" hide="0"
+       tex="MessageBox.tex" l="179" t="55" r="186" b="58" />
+
+    <UIImage id="img_info_l_l" x="164" y="60" w="7" h="8" hide="0"
+       tex="MessageBox.tex" l="164" t="60" r="171" b="68" />
+    <UIImage id="img_info_l_m" x="174" y="60" w="2" h="8" hide="0"
+       tex="MessageBox.tex" l="174" t="60" r="176" b="68" />
+    <UIImage id="img_info_l_r" x="179" y="60" w="7" h="8" hide="0"
+       tex="MessageBox.tex" l="179" t="60" r="186" b="68" />
+    
+    <!-- Button -->
+    <UIButton id="btn_close" x="184" y="4" w="14" h="14" hide="0"
+              tex="MessageBox.tex" str ="" str_desc="" >
+        <uv type="0" l="219" t="0" r="233" b="14" />
+        <uv type="2" 	l="234" t="0" r="248" b="14" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_ok" x="36" y="154" w="63" h="21" hide="0"
+              tex="MessageBox.tex" str ="191" str_desc="확인" >
+        <uv type="0" l="0" t="46" r="63" b="67" />
+        <uv type="2" 	l="66" t="46" r="129" b="67" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_cancel" x="117" y="154" w="63" h="21" hide="0"
+              tex="MessageBox.tex" str ="139" str_desc="취소" >
+        <uv type="0" l="0" t="46" r="63" b="67" />
+        <uv type="2" 	l="66" t="46" r="129" b="67" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+</Window>

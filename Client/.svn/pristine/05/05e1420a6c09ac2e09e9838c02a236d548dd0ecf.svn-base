@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "zlib.vcxproj", "{4892426A-DE1B-4EAB-A0F8-3982EA532971}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4892426A-DE1B-4EAB-A0F8-3982EA532971}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4892426A-DE1B-4EAB-A0F8-3982EA532971}.Debug|Win32.Build.0 = Debug|Win32
+		{4892426A-DE1B-4EAB-A0F8-3982EA532971}.Release|Win32.ActiveCfg = Release|Win32
+		{4892426A-DE1B-4EAB-A0F8-3982EA532971}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+// needed for parser and scanner
+extern int yylex(void);
+extern void yyerror(const char *strFormat, ...);
+extern int yyparse(void);
+extern void yyrestart(FILE *f);
+extern FILE *yyin;
+
+// surface shader for parser
+struct SurfaceShader
+{
+  CTString fnShaderName;
+  INDEX ss_iSurfaceID;
+  ShaderParams ss_spShaderParams;
+};
+
+
+#define YY_NEVER_INTERACTIVE 1
+#define MAX_INCLUDE_DEPTH 32
+
+#define	YY_SKIP_YYWRAP
+
+// temporary values for parsing
+extern INDEX _yy_iLine;
+extern CMesh *_yy_pMesh;
+extern CSkeleton *_yy_pSkeleton;
+extern CAnimSet *_yy_pAnimSet;
+extern INDEX _yy_iIndex;
+extern INDEX _yy_jIndex;
+extern INDEX _yy_iWIndex; // index for weightmaps
+extern INDEX _yy_iMIndex; // index for mophmaps

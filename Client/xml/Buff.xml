@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!-- Buff -->
+<Window id="buff" x="0" y="0" w="0" h="0" hide="0">
+     <UIImage id="img_outline_big_good" x="50" y="0" w="22" h="22" hide="0"
+         tex="Buff.tex" l="0" t="0" r="18" b="18" />
+     <UIImage id="img_outline_small_good" x="72" y="0" w="22" h="22" hide="0"
+         tex="Buff.tex" l="19" t="0" r="37" b="18" />
+
+     <UIImage id="img_outline_big_bad" x="50" y="22" w="22" h="22" hide="0"
+         tex="Buff.tex" l="38" t="0" r="37" b="18" />
+     <UIImage id="img_outline_small_bad" x="72" y="22" w="22" h="22" hide="0"
+         tex="Buff.tex" l="61" t="0" r="83" b="22" />
+
+    <UIImage id="img_info_u_l" x="0" y="0" w="7" h="7" hide="0"
+        tex="Buff.tex" l="85" t="0" r="92" b="7" />
+    <UIImage id="img_info_u_m" x="7" y="0" w="7" h="7" hide="0"
+        tex="Buff.tex" l="95" t="0" r="97" b="7" />
+    <UIImage id="img_info_u_r" x="14" y="0" w="7" h="7" hide="0"
+        tex="Buff.tex" l="100" t="0" r="107" b="7" />
+
+     <UIImage id="img_info_m_l" x="0" y="7" w="7" h="7" hide="0"
+         tex="Buff.tex" l="85" t="10" r="92" b="12" />
+     <UIImage id="img_info_m_m" x="7" y="7" w="7" h="7" hide="0"
+         tex="Buff.tex" l="95" t="10" r="97" b="12" />
+     <UIImage id="img_info_m_r" x="14" y="7" w="7" h="7" hide="0"
+         tex="Buff.tex" l="100" t="0" r="107" b="12" />
+
+     <UIImage id="img_info_l_l" x="0" y="14" w="7" h="7" hide="0"
+         tex="Buff.tex" l="85" t="15" r="92" b="22" />
+     <UIImage id="img_info_l_m" x="7" y="14" w="7" h="7" hide="0"
+         tex="Buff.tex" l="95" t="15" r="97" b="22" />
+     <UIImage id="img_info_l_r" x="14" y="14" w="7" h="7" hide="0"
+         tex="Buff.tex" l="100" t="15" r="107" b="22" />
+    
+</Window>

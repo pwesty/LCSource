@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<Window id="warehouse" x="0" y="0" w="216" h="392" hide="0">
+
+    <UIImage id="" x="0" y="0" w="216" h="24" hide="0"
+        tex="Shop.tex" l="0" t="0" r="216" b="24" />
+    
+    <UIImage id="" x="0" y="24" w="216" h="330" hide="0" desc="back_mid"
+        tex="Shop.tex" l="0" t="25" r="216" b="28" />
+    <UIImage id="" x="0" y="354" w="216" h="36" hide="0" desc="back_bottom"
+        tex="Shop.tex" l="0" t="31" r="216" b="33" />
+    <UIImage id="" x="0" y="390" w="216" h="2" hide="0" desc="line"
+        tex="Shop.tex" l="0" t="59" r="216" b="61" />
+
+
+    <UIImage id="" x="0" y="22" w="216" h="27" hide="0"
+        tex="Shop.tex" l="0" t="98" r="216" b="129" />
+
+    <UIImage id="" x="0" y="49" w="216" h="74" hide="0"
+        tex="Shop.tex" l="0" t="131" r="216" b="205" />
+    <UIImage id="" x="0" y="123" w="216" h="34" hide="0"
+        tex="Shop.tex" l="0" t="206" r="216" b="240" />
+    <UIImage id="" x="0" y="157" w="216" h="34" hide="0"
+        tex="Shop.tex" l="0" t="206" r="216" b="240" />
+    <UIImage id="" x="0" y="191" w="216" h="41" hide="0"
+        tex="Shop.tex" l="0" t="241" r="216" b="282" />
+
+    <UIImage id="" x="0" y="232" w="216" h="1" hide="0" desc="seperator"
+        tex="Shop.tex" l="0" t="382" r="216" b="385" />     
+    
+    <UIImage id="" x="0" y="233" w="216" h="75" hide="0" desc="bottom_inven"
+        tex="Shop.tex" l="0" t="283" r="216" b="358" />
+
+    <UIImage id="" x="0" y="308" w="216" h="23" hide="0" desc="priceinven"
+        tex="Shop.tex" l="0" t="359" r="216" b="381" />
+    <UIImage id="" x="0" y="331" w="216" h="23" hide="0" desc="priceinven"
+        tex="Shop.tex" l="0" t="359" r="216" b="381" />
+
+    <UIImage id="" x="0" y="354" w="216" h="1" hide="0" desc="seperator"
+        tex="Shop.tex" l="0" t="382" r="216" b="385" />
+
+
+    <UIImage id="" x="0" y="22" w="216" h="27" hide="1" desc="back_inven"
+        tex="Shop.tex" l="0" t="387" r="216" b="393" />
+
+    <UIButton id="btn_close" x="184" y="4" w="14" h="14" tex="Shop.tex"
+          str ="" desc="close">
+        <normal l="217" t="0" r="231" b="14" />
+        <on 	l="232" t="0" r="246" b="14"/>
+        <click 	l="217" t="0" r="231" b="14" />
+        <disable l="217" t="0" r="231" b="14" />
+    </UIButton>
+
+    <UIButton id="btn_nas_in" x="51" y="362" w="51" h="21" tex="Shop.tex"
+          str_idx="812" desc="입금">
+        <normal l="0" t="454" r="51" b="474" />
+        <on 	l="53" t="454" r="104" b="474"/>
+        <click 	l="0" t="454" r="51" b="474" />
+        <disable l="0" t="454" r="51" b="474" />
+    </UIButton>
+
+    <UIButton id="btn_nas_out" x="51" y="362" w="51" h="21" hide="1"
+              tex="Shop.tex" str_idx="812" desc="출금">
+        <normal l="0" t="454" r="51" b="474" />
+        <on 	l="53" t="454" r="104" b="474"/>
+        <click 	l="0" t="454" r="51" b="474" />
+        <disable l="0" t="454" r="51" b="474" />
+    </UIButton>
+
+    <UIButton id="btn_take" x="105" y="362" w="51" h="21" tex="Shop.tex"
+          str_idx="812" desc="보관">
+        <normal l="0" t="454" r="51" b="474" />
+        <on 	l="53" t="454" r="104" b="474"/>
+        <click 	l="0" t="454" r="51" b="474" />
+        <disable l="0" t="454" r="51" b="474" />
+    </UIButton>
+
+    <UIButton id="btn_take" x="105" y="362" w="51" h="21" hide="1"
+              tex="Shop.tex" str_idx="813" desc="찾기">
+        <normal l="0" t="454" r="51" b="474" />
+        <on 	l="53" t="454" r="104" b="474"/>
+        <click 	l="0" t="454" r="51" b="474" />
+        <disable l="0" t="454" r="51" b="474" />
+    </UIButton>
+    
+    <UIButton id="btn_cancel" x="159" y="362" w="51" h="21" tex="Shop.tex"
+          str_idx="139" desc="취소">
+        <normal l="0" t="454" r="51" b="474" />
+        <on 	l="53" t="454" r="104" b="474"/>
+        <click 	l="0" t="454" r="51" b="474" />
+        <disable l="0" t="454" r="51" b="474" />
+    </UIButton>
+
+    <UIText id="" x="25" y="5" w="0" h="0" str_idx="823" desc="창고" />
+
+    <UIText id="" x="17" y="312" w="0" h="0" str_idx="5908" desc="입금금액" />
+    <UIText id="" x="17" y="335" w="0" h="0" str_idx="824" desc="보관료" />
+
+    <UIText id="" x="15" y="26" w="0" h="0" str_idx="2150" desc="확장기간 :" />
+    
+</Window>

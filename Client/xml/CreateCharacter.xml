@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<!-- 서버 선택 윈도우 -->
+
+<Window id="CreateCharacter" x="0" y="0" w="255" h="83" hide="0">
+    <!-- Image -->
+    <UIImage id="img_back_top" x="0" y="0" w="255" h="386" hide="0"
+        tex="CreateCharacter.tex" l="0" t="0" r="255" b="386" />
+
+    <UIImage id="img_back_bottom" x="0" y="386" w="255" h="214" hide="0"
+       tex="CreateCharacter.tex" l="0" t="390" r="255" b="393" />
+    <!-- button -->
+    <UIButton id="btn_ok" x="117" y="360" w="63" h="21" tex="CreateCharacter.tex"
+     str ="138" str_desc="결정">
+        <uv type="0" l="0" t="397" r="63" b="418" />
+        <uv type="2" 	l="66" t="397" r="129" b="418" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_cancel" x="184" y="360" w="63" h="21" tex="CreateCharacter.tex"
+     str ="139" str_desc="취소">
+        <uv type="0" l="0" t="397" r="63" b="418" />
+        <uv type="2" 	l="66" t="397" r="129" b="418" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_zoomin" x="50" y="0" w="38" h="37" tex="CreateCharacter.tex" hide="1"
+     str ="" str_desc="">
+        <uv type="0" l="151" t="418" r="189" b="455" />
+        <uv type="2" 	l="151" t="418" r="189" b="455" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_zoomout" x="50" y="50" w="38" h="37" tex="CreateCharacter.tex" hide="1"
+     str ="" str_desc="">
+        <uv type="0" l="151" t="464" r="189" b="501" />
+        <uv type="2" 	l="151" t="464" r="189" b="501" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_rot_left" x="100" y="0" w="38" h="37" tex="CreateCharacter.tex" hide="1"
+     str ="" str_desc="">
+        <uv type="0" l="209" t="441" r="247" b="478" />
+        <uv type="2" 	l="209" t="441" r="247" b="478" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_rot_right" x="100" y="50" w="38" h="37" tex="CreateCharacter.tex" hide="1"
+     str ="" str_desc="">
+        <uv type="0" l="94" t="441" r="132" b="478" />
+        <uv type="2" 	l="94" t="441" r="132" b="478" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_prev_job" x="83" y="264" w="13" h="13" tex="CreateCharacter.tex"
+     str ="" str_desc="">
+        <uv type="0" l="0" t="421" r="13" b="434" />
+        <uv type="2" 	l="0" t="436" r="13" b="449" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_next_job" x="166" y="264" w="13" h="13" tex="CreateCharacter.tex"
+     str ="" str_desc="">
+        <uv type="0" l="16" t="421" r="29" b="434" />
+        <uv type="2" 	l="16" t="436" r="29" b="449" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_prev_head" x="83" y="283" w="13" h="13" tex="CreateCharacter.tex"
+     str ="" str_desc="">
+        <uv type="0" l="0" t="421" r="13" b="434" />
+        <uv type="2" 	l="0" t="436" r="13" b="449" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_next_head" x="166" y="283" w="13" h="13" tex="CreateCharacter.tex"
+     str ="" str_desc="">
+        <uv type="0" l="16" t="421" r="29" b="434" />
+        <uv type="2" 	l="16" t="436" r="29" b="449" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_prev_hair" x="83" y="303" w="13" h="13" tex="CreateCharacter.tex"
+     str ="" str_desc="">
+        <uv type="0" l="0" t="421" r="13" b="434" />
+        <uv type="2" 	l="0" t="436" r="13" b="449" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_next_hair" x="166" y="303" w="13" h="13" tex="CreateCharacter.tex"
+    str ="" str_desc="">
+        <uv type="0" l="16" t="421" r="29" b="434" />
+        <uv type="2" 	l="16" t="436" r="29" b="449" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_prev_face" x="83" y="323" w="13" h="13" tex="CreateCharacter.tex"
+    str ="" str_desc="">
+        <uv type="0" l="0" t="421" r="13" b="434" />
+        <uv type="2" 	l="0" t="436" r="13" b="449" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_next_face" x="166" y="323" w="13" h="13" tex="CreateCharacter.tex"
+    str ="" str_desc="">
+        <uv type="0" l="16" t="421" r="29" b="434" />
+        <uv type="2" 	l="16" t="436" r="29" b="449" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <!-- EditBox - Character Name -->
+    <UIEdit id="edit_char_name" x="0" y="100" w="88" h="13" tex="CreateCharacter.tex"
+        max="16" focus="1" cursor_move="0" >
+        <ReadUV l="34" t="423" r="51" b="439" />
+        <CandidateUV l="34" t="423" r="51" b="439" />
+    </UIEdit>
+
+    <!-- MultilineText -->
+    <UIMultiText id="multitxt" x="20" y="45" w="187" h="62" hide="0"
+        color="0xF2F2F2FF" start_pos="left" str ="4794" str_desc ="나이트쉐도우 캐릭터를 생성할 수 있는 조건을 만족하였습니다.
+        나이트쉐도우 캐릭터를 생성하여 육성하십시오."/>
+
+</Window>

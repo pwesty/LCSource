@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+<!-- 서버 선택 윈도우 -->
+
+<Window id="SelectServer" x="0" y="0" w="416" h="236" hide="0">
+    <!-- Texture -->
+    <UIImage id="img_back_top0" x="0" y="0" w="416" h="28" hide="0"
+        tex="SelectServer.tex" l="0" t="0" r="416" b="28" />
+
+    <UIImage id="img_back_top1" x="0" y="28" w="416" h="141" hide="0"
+        tex="SelectServer.tex" l="0" t="23" r="416" b="27" />
+    
+    <UIImage id="img_back_top2" x="13" y="29" w="390" h="109" hide="0"
+        tex="SelectServer.tex" l="20" t="50" r="30" b="60" />
+
+    <UIImage id="img_back_mid0" x="0" y="141" w="416" h="29" hide="0"
+    tex="SelectServer.tex" l="0" t="29" r="416" b="59" />
+
+    <UIImage id="img_back_mid1" x="0" y="170" w="416" h="139" hide="0"
+        tex="SelectServer.tex" l="0" t="50" r="416" b="62" />
+    
+    <UIImage id="img_back_bottom" x="0" y="309" w="416" h="39" hide="0"
+        tex="SelectServer.tex" l="0" t="66" r="416" b="105" />
+<!--   
+    <UIImage id="img_recommend" x="133" y="160" w="63" h="15" hide="0"
+        tex="SelectServer.tex" l="17" t="112" r="80" b="128" />
+-->
+  
+   
+    <!-- Button -->
+    <UIButton id="btn_ok" x="274" y="317" w="63" h="21" tex="SelectServer.tex"
+    str ="249" str_desc="접속">
+        <uv type="0" l="449" t="0" r="512" b="21" />
+        <uv type="2" 	l="449" t="23" r="512" b="44" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton> 
+    
+    <UIButton id="btn_cancel" x="208" y="317" w="63" h="21" tex="SelectServer.tex"
+    str ="2681" str_desc="이전">
+        <uv type="0" l="449" t="0" r="512" b="21" />
+        <uv type="2" 	l="449" t="23" r="512" b="44" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    
+    <UIButton id="btn_exit" x="340" y="317" w="63" h="21" tex="SelectServer.tex"
+    str ="286" str_desc="종료">
+        <uv type="0" l="449" t="0" r="512" b="21" />
+        <uv type="2" 	l="449" t="23" r="512" b="44" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    
+    <!-- ListBox -->
+    <UIListBox id="lb_server_group" x="14" y="159" w="183" h="150" 
+                tex="SelectServer.tex" line_height="15" space_x="6" space_y="2"
+                column="2" select_list="0" least_one_select="0" >
+        <subcol col="1" pos_x="133" align="left" />
+    </UIListBox>
+    
+       
+    <UIListBox id="lb_server" x="214" y="159" w="183" h="150" 
+                tex="SelectServer.tex" line_height="15" space_x="6" space_y="2"
+                column="2" select_list="0" least_one_select="0" test_add="1">
+        <subcol col="1" pos_x="133" align="left" />
+    </UIListBox>
+       
+    <!-- ScrollBar -->
+    <!-- ServerGroup ScrollBar -->
+    <UIScrollBar id="lb_group_scroll"  x="197" y="159" w="9" h="150" tex="SelectServer.tex"
+                 vertical="1" >
+        <updown_btn btn_w="9" btn_h="9" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <wheel l="-9" t="0" r="9" b="150" />
+        <thumb pos="0" l="503" t="47" r="512" b="57" />
+        <thumb pos="1" l="503" t="58" r="512" b="61" />
+        <thumb pos="2" l="503" t="62" r="512" b="72" /> 
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="SelectServer.tex"
+                  str="" str_desc="">
+            <uv type="0"     l="482" t="49" r="491" b="56" />
+            <uv type="2"      l="492" t="49" r="501" b="56" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="SelectServer.tex"
+                  str="" str_desc="">
+            <uv type="0"     l="482" t="59" r="491" b="66" />
+            <uv type="2"      l="492" t="59" r="501" b="66" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton> 
+    </UIScrollBar>
+    
+    <!-- ServerList ScrollBar -->
+    <UIScrollBar id="lb_group_scroll"  x="393" y="159" w="9" h="150" tex="SelectServer.tex"
+                 vertical="1" scroll_pos="0" scroll_range="30" cur_item_cnt="0" item_per_page="4" >
+        <updown_btn btn_w="9" btn_h="9" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <wheel l="-9" t="0" r="9" b="150" />
+        <thumb pos="0" l="503" t="47" r="512" b="57" />
+        <thumb pos="1" l="503" t="58" r="512" b="61" />
+        <thumb pos="2" l="503" t="62" r="512" b="72" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="SelectServer.tex"
+                  str="" str_desc="">
+            <uv type="0"     l="482" t="49" r="491" b="56" />
+            <uv type="2"      l="492" t="49" r="501" b="56" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="SelectServer.tex"
+                  str="" str_desc="">
+            <uv type="0"     l="482" t="59" r="491" b="66" />
+            <uv type="2"      l="492" t="59" r="501" b="66" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+    </UIScrollBar>
+
+    <!-- test -->
+    <!-- Text -->
+    <UIText id="" x="25" y="5" w="0" h="0" str_idx="250" desc="서버 선택"  />
+
+    <UIText id="" x="20" y="143" w="0" h="0" str_idx="251" desc="서버군"
+            color="0xFFB500FF" shadow="0" shaodw_color="0" depth="0.0" />
+
+    <UIText id="" x="218" y="143" w="0" h="0" str_idx="370" desc="서버"
+            color="0xFFB500FF" shadow="0" shaodw_color="0" depth="0.0" />
+
+    <UIText id="" x="25" y="40" w="0" h="0" str_idx="4874" desc="♣초보지원 서버란?"
+            color="0xFFAAFFFF" shadow="0" shaodw_color="0" depth="0.0" />
+    <UIText id="" x="25" y="60" w="0" h="0" str_idx="4875" desc="라스트카오스를 처음 시작하신다면 3채널(초보지원) 서버를 추천" />
+    <UIText id="" x="25" y="75" w="0" h="0" str_idx="4876" desc="해 드립니다. 3채널에 있는 '초보지원사'를 통해 경험치/숙련도" />
+    <UIText id="" x="25" y="90" w="0" h="0" str_idx="4877" desc="2배, 물리/마법 공격력이 20% 향상되는 '초보지원 버프'를 받으" />
+    <UIText id="" x="25" y="105" w="0" h="0" str_idx="4878" desc="실 수 있습니다. '초보지원 버프'는 레벨 60까지만 제공됩니다." />
+
+</Window>

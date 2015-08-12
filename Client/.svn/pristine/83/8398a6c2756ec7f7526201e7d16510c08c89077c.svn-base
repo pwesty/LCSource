@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<!-- Character Server Move -->
+<Window id="Character Server Move" x="100" y="100" w="216" h="267" hide="0">
+    <!-- RectSurFace로 잡혀 있는 부분을 이미지로 처리. -->
+    <UIImage id="img_back_title" x="0" y="0" w="216" h="22" hide="0" 
+       tex="MonsterCombo.tex" l="4" t="4" r="220" b="26" />
+    <UIImage id="img_back_mid" x="0" y="22" w="216" h="230" hide="0" 
+       tex="MonsterCombo.tex" l="4" t="30" r="220" b="102" />
+
+    <UIImage id="img_linebox_top" x="4" y="24" w="210" h="2" hide="0"
+       tex="MonsterCombo.tex" l="4" t="26" r="206" b="119" />
+    <UIImage id="img_linebox_mid" x="4" y="24" w="210" h="190" hide="0"
+       tex="MonsterCombo.tex" l="4" t="119" r="206" b="144" />
+     <UIImage id="img_linebox_bot" x="4" y="216" w="210" h="2" hide="0"
+       tex="MonsterCombo.tex" l="4" t="144" r="206" b="147" />
+
+     <UIImage id="img_bot_box" x="0" y="252" w="216" h="15" hide="0" 
+       tex="MonsterCombo.tex" l="4" t="102" r="220" b="112" />
+
+    <UIImage id="img_sub_title" x="4" y="24" w="210" h="55" hide="0"
+      tex="MonsterCombo.tex" l="4" t="116" r="206" b="147" />
+
+    <!-- ListBox -->
+    <UIListBox id="lb_sel_content" x="4" y="57" w="195" h="157"
+      tex="MonsterCombo.tex" line_height="15" space_x="0" space_y="0"
+      column="1" select_list="1" least_one_select="0" >
+        <color over="0xF8E1B5FF" select="0xF8E1B5FF" />
+        <subcol col="0" pos_x="5" align="left" />
+    </UIListBox>
+    <!-- ScrollBar -->
+    <UIScrollBar id="sb_sel_content"  x="0" y="0" w="9" h="157" tex="MonsterCombo.tex"
+                 vertical="1">
+        <!-- <wheel l="-430" t="0" r="430" b="322" /> -->
+        <updown_btn btn_w="9" btn_h="7" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <thumb pos="0" l="224" t="20" r="233" b="25" />
+        <thumb pos="1" l="224" t="25" r="233" b="39" />
+        <thumb pos="2" l="224" t="39" r="233" b="44" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="MonsterCombo.tex"
+                  str="" str_desc="">
+            <uv type="0"     l="235" t="20" r="244" b="27" />
+            <uv type="2"      l="245" t="20" r="254" b="27" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="MonsterCombo.tex"
+                  str="" str_desc="">
+            <uv type="0"     l="235" t="28" r="244" b="35" />
+            <uv type="2"      l="245" t="28" r="254" b="35" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+    </UIScrollBar>
+
+    <!-- ListBox -->
+    <UIListBox id="lb_once_content" x="4" y="57" w="195" h="157"
+      tex="MonsterCombo.tex" line_height="15" space_x="0" space_y="0"
+      column="1" select_list="0" least_one_select="0" >
+        <color over="0xF8E1B5FF" select="0xF8E1B5FF" />
+        <subcol col="0" pos_x="5" align="left" />
+    </UIListBox>
+    <!-- ScrollBar -->
+    <UIScrollBar id="sb_once_content"  x="0" y="0" w="9" h="157" tex="MonsterCombo.tex"
+                 vertical="1">
+        <!-- <wheel l="-430" t="0" r="430" b="322" /> -->
+        <updown_btn btn_w="9" btn_h="7" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <thumb pos="0" l="224" t="20" r="233" b="25" />
+        <thumb pos="1" l="224" t="25" r="233" b="39" />
+        <thumb pos="2" l="224" t="39" r="233" b="44" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="MonsterCombo.tex"
+                  str="" str_desc="">
+            <uv type="0"     l="235" t="20" r="244" b="27" />
+            <uv type="2"      l="245" t="20" r="254" b="27" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="MonsterCombo.tex"
+                  str="" str_desc="">
+            <uv type="0"     l="235" t="28" r="244" b="35" />
+            <uv type="2"      l="245" t="28" r="254" b="35" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+    </UIScrollBar>
+
+    <UIButton id="btn_ok" x="98" y="231" w="53" h="21" hide="0" tex="MonsterCombo.tex"
+        str="" str_desc="확인">
+        <RSurface type="0" x="0" y="0" w="7" h="21" tex="MonsterCombo.tex"
+                    l="231" t="116" r="270" b="137" />
+        <RSurface type="0" x="7" y="0" w="46" h="21" tex="MonsterCombo.tex"
+                    l="231" t="116" r="270" b="137" />
+        <RSurface type="0" x="46" y="0" w="53" h="21" tex="MonsterCombo.tex"
+                    l="270" t="116" r="277" b="137" />
+        <RSurface type="click" x="0" y="0" w="7" h="21" tex="MonsterCombo.tex"
+                    l="224" t="116" r="231" b="137" />
+        <RSurface type="click" x="7" y="0" w="46" h="21" tex="MonsterCombo.tex"
+                    l="231" t="116" r="270" b="137" />
+        <RSurface type="click" x="46" y="0" w="53" h="21" tex="MonsterCombo.tex"
+                    l="270" t="116" r="277" b="137" />
+        <RSurface type="on" x="0" y="0" w="7" h="21" tex="MonsterCombo.tex"
+                    l="231" t="116" r="270" b="137" />
+        <RSurface type="disable" x="0" y="0" w="7" h="21" tex="MonsterCombo.tex"
+                    l="231" t="116" r="270" b="137" />
+         
+    </UIButton>
+
+    <UIButton id="btn_cancel" x="156" y="231" w="53" h="21" hide="1" tex="MonsterCombo.tex"
+         str="" str_desc="취소">
+        <RSurface type="normal" x="0" y="0" w="7" h="21" tex="MonsterCombo.tex"
+                       l="224" t="116" r="231" b="137" />
+        <RSurface type="normal" x="7" y="0" w="46" h="21" tex="MonsterCombo.tex"
+                       l="231" t="116" r="270" b="137" />
+        <RSurface type="normal" x="46" y="0" w="53" h="21" tex="MonsterCombo.tex"
+                       l="270" t="116" r="277" b="137" />
+        <RSurface type="click" x="0" y="0" w="7" h="21" tex="MonsterCombo.tex"
+                       l="224" t="116" r="231" b="137" />
+        <RSurface type="click" x="7" y="0" w="46" h="21" tex="MonsterCombo.tex"
+                       l="231" t="116" r="270" b="137" />
+        <RSurface type="click" x="46" y="0" w="53" h="21" tex="MonsterCombo.tex"
+                       l="270" t="116" r="277" b="137" />
+        <RSurface type="on" x="0" y="0" w="7" h="21" tex="MonsterCombo.tex"
+                       l="231" t="116" r="270" b="137" />
+        <RSurface type="disable" x="0" y="0" w="7" h="21" tex="MonsterCombo.tex"
+                       l="231" t="116" r="270" b="137" />
+
+    </UIButton>
+
+</Window>

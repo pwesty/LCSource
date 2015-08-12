@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<!-- Fortune -->
+<Window id="fortune" x="0" y="0" w="410" h="410" hide="0">
+    <UIImage id="img_back" x="0" y="0" w="410" h="410" hide="0" 
+       tex="fortune.tex" l="0" t="0" r="410" b="410" />
+    
+    <!-- Text -->
+    <UIText id="" x="0" y="0" w="410" h="37" str_idx="5868" desc="포츈 코스튬" />
+    
+    <!-- ImageBox -->
+    <UIImageBox id="ibox_card0" x="33" y="111" w="32" h="32" hide="0">
+        <region l="0" t="0" r="32" b="32" />
+    </UIImageBox>
+    <UIImageBox id="ibox_card1" x="85" y="103" w="32" h="32" hide="0">
+        <region l="0" t="0" r="32" b="32" />
+    </UIImageBox>
+    <UIImageBox id="ibox_card2" x="137" y="95" w="32" h="32" hide="0">
+        <region l="0" t="0" r="32" b="32" />
+    </UIImageBox>
+    <UIImageBox id="ibox_card3" x="189" y="95" w="32" h="32" hide="0">
+        <region l="0" t="0" r="32" b="32" />
+    </UIImageBox>
+    <UIImageBox id="ibox_card4" x="241" y="95" w="32" h="32" hide="0">
+        <region l="0" t="0" r="32" b="32" />
+    </UIImageBox>
+    <UIImageBox id="ibox_card5" x="293" y="103" w="32" h="32" hide="0">
+        <region l="0" t="0" r="32" b="32" />
+    </UIImageBox>
+    <UIImageBox id="ibox_card6" x="345" y="111" w="32" h="32" hide="0">
+        <region l="0" t="0" r="32" b="32" />
+    </UIImageBox>
+
+    <!-- Image -->
+    <UIImage id="img_highlight" x="179" y="67" w="231" h="164" hide="0"
+       tex="fortune.tex" l="413" t="27" r="465" b="124" />
+
+    <!-- Button -->
+    <UIButton id="btn_close" x="390" y="4" w="16" h="16" hide="0"
+              tex="fortune.tex" str ="" str_desc="" >
+        <uv type="0" l="411" t="0" r="427" b="16" />
+        <uv type="2" 	l="427" t="0" r="444" b="16" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_ok" x="149" y="377" w="108" h="21" hide="0"
+              tex="fortune.tex" str ="191" str_desc="확인" >
+        <uv type="0" l="0" t="411" r="118" b="432" />
+        <uv type="2" 	l="0" t="433" r="108" b="454" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <!-- ListBox -->
+    <UIListBox id="lb_description" x="15" y="201" w="368" h="159"
+      tex="fortune.tex" line_height="15" space_x="4" space_y="4"
+      column="1" select_list="0" least_one_select="0" >
+       <subcol col="0" pos_x="180" align="center"/>
+    </UIListBox>
+    <UIScrollBar id="sb_description" x="0" y="2" w="10" h="156" tex="fortune.tex"
+          vertical="1" >
+        <!--   <wheel l="-9" t="0" r="9" b="150" />    -->
+        <updown_btn btn_w="10" btn_h="10" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <thumb pos="0" l="460" t="0" r="470" b="8" />
+        <thumb pos="1" l="460" t="8" r="470" b="16" />
+        <thumb pos="2" l="460" t="16" r="470" b="24" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="fortune.tex"
+           str="" str_desc="">
+            <uv type="0"     l="471" t="0" r="481" b="10" />
+            <uv type="2"      l="491" t="0" r="501" b="10" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="fortune.tex"
+            str="" str_desc="">
+            <uv type="0"     l="471" t="11" r="481" b="21" />
+            <uv type="2"      l="491" t="11" r="501" b="21" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+    </UIScrollBar>
+    
+</Window>

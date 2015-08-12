@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!-- Flower Tree -->
+<Window id="flower_tree" x="0" y="0" w="164" h="213" hide="0">
+  
+    <UIImage id="img_title_l" x="0" y="0" w="82" h="22" hide="0" 
+       tex="MessageBox.tex" l="0" t="0" r="81" b="21" />
+    <UIImage id="img_title_r" x="82" y="0" w="82" h="22" hide="0" 
+       tex="MessageBox.tex" l="134" t="0" r="215" b="21" />
+
+    <UIImage id="img_gap_l" x="0" y="22" w="82" h="4" hide="0"
+       tex="MessageBox.tex" l="0" t="22" r="81" b="25" />
+    <UIImage id="img_gap_r" x="82" y="22" w="82" h="4" hide="0"
+       tex="MessageBox.tex" l="134" t="22" r="215" b="25" />
+
+    <UIImage id="img_mid_l" x="0" y="26" w="82" h="150" hide="0"
+       tex="MessageBox.tex" l="0" t="26" r="81" b="33" />
+    <UIImage id="img_mid_r" x="82" y="26" w="82" h="150" hide="0"
+       tex="MessageBox.tex" l="134" t="26" r="215" b="33" />
+    
+    <UIImage id="img_btn_gap_l" x="0" y="176" w="82" h="10" hide="0"
+       tex="MessageBox.tex" l="0" t="34" r="81" b="41" />
+    <UIImage id="img_btn_gap_r" x="82" y="176" w="82" h="10" hide="0"
+       tex="MessageBox.tex" l="134" t="34" r="215" b="41" />
+
+    <UIImage id="img_bot_l" x="0" y="184" w="82" h="2" hide="0"
+       tex="MessageBox.tex" l="0" t="42" r="81" b="44" />
+    <UIImage id="img_bot_r" x="82" y="184" w="82" h="2" hide="0"
+       tex="MessageBox.tex" l="134" t="42" r="215" b="44" />
+    
+    <UIImage id="img_score_l" x="101" y="30" w="3" h="13" hide="0"
+       tex="MessageBox.tex" l="205" t="46" r="207" b="58" />
+    <UIImage id="img_score_m" x="104" y="30" w="46" h="13" hide="0"
+       tex="MessageBox.tex" l="208" t="46" r="214" b="58" />
+    <UIImage id="img_score_l" x="150" y="30" w="3" h="13" hide="0"
+       tex="MessageBox.tex" l="215" t="46" r="217" b="58" />
+
+    <!-- Button -->
+    <UIButton id="btn_close" x="129" y="4" w="14" h="14" hide="0"
+              tex="MessageBox.tex" str ="" str_desc="" >
+        <uv type="0" l="219" t="0" r="232" b="13" />
+        <uv type="2" 	l="234" t="0" r="247" b="13" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_ok" x="7" y="182" w="63" h="21" hide="0"
+              tex="MessageBox.tex" str ="3485" str_desc="개화돕기" >
+        <uv type="0" l="0" t="46" r="62" b="66" />
+        <uv type="2" 	l="66" t="46" r="128" b="66" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_refresh" x="94" y="182" w="63" h="21" hide="0"
+              tex="MessageBox.tex" str ="3449" str_desc="갱신" >
+        <uv type="0" l="0" t="46" r="62" b="66" />
+        <uv type="2" 	l="66" t="46" r="128" b="66" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    
+</Window>

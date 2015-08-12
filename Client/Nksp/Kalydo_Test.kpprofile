@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<KPProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DefaultAdvSettings>true</DefaultAdvSettings>
+  <RequireElevation>false</RequireElevation>
+  <AllowHooking>true</AllowHooking>
+  <FullscreenAltEnter>true</FullscreenAltEnter>
+  <FullscreenEscQuits>true</FullscreenEscQuits>
+  <DXScaleBackBuffer>false</DXScaleBackBuffer>
+  <DXResetAfterSize>false</DXResetAfterSize>
+  <WindowHideAll>false</WindowHideAll>
+  <WindowScale>false</WindowScale>
+  <SimulateDownload>true</SimulateDownload>
+  <XMLPath>C:\package\LC_Eng\Release\LastChaos_Eng_1.00.02.2.xml</XMLPath>
+  <DestinationPath>D:\kalydo_packages</DestinationPath>
+  <DownloadPath>C:\package\LC_Eng\Release</DownloadPath>
+  <Browser Name="Google Chrome (Detected)" default="true">C:\Documents and Settings\rumist\Local Settings\Application Data\Google\Chrome\Application\chrome.exe</Browser>
+  <AppPath>D:\kalydo_packages\Bin</AppPath>
+  <AppDLL>D:\kalydo_packages\Bin\Nksp.dll</AppDLL>
+</KPProfile>

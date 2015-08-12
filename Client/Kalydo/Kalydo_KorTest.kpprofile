@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<KPProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DemoKRFInitDir />
+  <DemoKRFReadLib>false</DemoKRFReadLib>
+  <DemoGameProcess />
+  <DemoUsingLauncher>false</DemoUsingLauncher>
+  <MuteAuto>true</MuteAuto>
+  <FullscreenKeys Name="ESCAPE" Mod="None" Toggle="Exit only" />
+  <FullscreenKeys Name="ENTER" Mod="ALT" Toggle="Toggle" />
+  <FullscreenKeys Name="F11" Mod="None" Toggle="Toggle" />
+  <FullscreenAuto>true</FullscreenAuto>
+  <KRFMakeSequence>false</KRFMakeSequence>
+  <KRFSyncDownloads>false</KRFSyncDownloads>
+  <KRFRequiredPackages>false</KRFRequiredPackages>
+  <KRFReadLibInitDir />
+  <LoadKRFReadLib>true</LoadKRFReadLib>
+  <DefaultAdvSettings>false</DefaultAdvSettings>
+  <RequireElevation>false</RequireElevation>
+  <AllowHooking>true</AllowHooking>
+  <DXScaleBackBuffer>false</DXScaleBackBuffer>
+  <DXResetAfterSize>false</DXResetAfterSize>
+  <WindowHideAll>false</WindowHideAll>
+  <WindowScale>false</WindowScale>
+  <WindowClass />
+  <WindowName />
+  <AppWorkingDir>D:\Kalydo\KOR_TEST\download\Bin</AppWorkingDir>
+  <AppParameters />
+  <SimulateDownload>true</SimulateDownload>
+  <BgDownloader>false</BgDownloader>
+  <MaxBandwidth />
+  <XMLPath>D:\Kalydo\KOR_TEST\packages\Release\LC_Kor_1.00.00.0.xml</XMLPath>
+  <DestinationPath>D:\Kalydo\KOR_TEST\download</DestinationPath>
+  <DownloadPath>D:\Kalydo\KOR_TEST\packages\Release</DownloadPath>
+  <Browser Name="Google Chrome (Detected)" default="true">C:\Program Files\Google\Chrome\Application\chrome.exe</Browser>
+  <UseDefaultPaths>true</UseDefaultPaths>
+  <AppPath />
+  <AppDLL>D:\Kalydo\KOR_TEST\download\BinTest\nksp_kalydo.exe</AppDLL>
+</KPProfile>

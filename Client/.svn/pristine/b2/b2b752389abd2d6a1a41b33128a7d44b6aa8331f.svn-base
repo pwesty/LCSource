@@ -1,0 +1,13 @@
+﻿<Window x:Class="UVCapture.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="179" Width="369" PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="71,20,0,0" Name="textBox1" VerticalAlignment="Top" Width="254" TextChanged="textBox1_TextChanged" KeyDown="textBox1_KeyDown" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="71,58,0,0" Name="textBox2" VerticalAlignment="Top" Width="254" TextChanged="textBox2_TextChanged" KeyDown="textBox2_KeyDown" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="71,99,0,0" Name="textBox3" VerticalAlignment="Top" Width="254" TextChanged="textBox3_TextChanged" KeyDown="textBox3_KeyDown" />
+        <Label Content="Pos" Height="28" HorizontalAlignment="Left" Margin="0,20,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Abs Pos" Height="28" HorizontalAlignment="Left" Margin="0,60,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="UV" Height="28" HorizontalAlignment="Left" Margin="0,99,0,0" Name="label3" VerticalAlignment="Top" />
+    </Grid>
+</Window>

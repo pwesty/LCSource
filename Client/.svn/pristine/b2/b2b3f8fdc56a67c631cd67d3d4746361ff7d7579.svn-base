@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<!-- ExChange -->
+<Window id="exchage" x="0" y="0" w="216" h="452" hide="0">
+    <UIImage id="img_back" x="0" y="0" w="216" h="452" hide="0" 
+       tex="Exchange.tex" l="0" t="0" r="216" b="452" />
+
+    <UIImage id="img_info_l" x="0" y="478" w="7" h="22" hide="0" 
+       tex="Exchange.tex" l="0" t="478" r="7" b="500" />
+    <UIImage id="img_info_m" x="10" y="478" w="2" h="22" hide="0"
+       tex="Exchange.tex" l="10" t="478" r="12" b="500" />
+    <UIImage id="img_info_r" x="15" y="478" w="7" h="22" hide="0"
+       tex="Exchange.tex" l="15" t="478" r="22" b="500" />
+
+    <UIImage id="img_info_u_l" x="0" y="478" w="7" h="7" hide="0"
+       tex="Exchange.tex" l="0" t="478" r="7" b="485" />
+    <UIImage id="img_info_u_m" x="10" y="478" w="2" h="7" hide="0"
+       tex="Exchange.tex" l="10" t="478" r="12" b="485" />
+    <UIImage id="img_info_u_r" x="15" y="478" w="7" h="7" hide="0"
+       tex="Exchange.tex" l="15" t="478" r="22" b="485" />
+
+    <UIImage id="img_info_m_l" x="0" y="488" w="7" h="2" hide="0"
+       tex="Exchange.tex" l="0" t="488" r="7" b="490" />
+    <UIImage id="img_info_m_m" x="10" y="488" w="2" h="2" hide="0"
+       tex="Exchange.tex" l="10" t="488" r="12" b="490" />
+    <UIImage id="img_info_m_r" x="15" y="488" w="7" h="2" hide="0"
+       tex="Exchange.tex" l="15" t="488" r="22" b="490" />
+
+    <UIImage id="img_info_l_l" x="0" y="493" w="12" h="7" hide="0"
+       tex="Exchange.tex" l="0" t="493" r="12" b="500" />
+    <UIImage id="img_info_l_m" x="10" y="493" w="2" h="7" hide="0"
+       tex="Exchange.tex" l="10" t="493" r="12" b="500" />
+    <UIImage id="img_info_l_r" x="15" y="493" w="7" h="7" hide="0"
+       tex="Exchange.tex" l="15" t="493" r="22" b="500" />
+
+    <UIImage id="img_wear_outline" x="218" y="115" w="32" h="32" hide="0"
+       tex="Exchange.tex" l="218" t="115" r="250" b="147" />
+    <UIImage id="img_sel_outline" x="218" y="80" w="32" h="32" hide="0"
+       tex="Exchange.tex" l="218" t="80" r="250" b="112" />
+    
+    <!-- Button -->
+    <UIButton id="btn_close" x="184" y="4" w="14" h="14" hide="0"
+              tex="Exchange.tex" str ="" str_desc="" >
+        <uv type="0" l="219" t="0" r="233" b="14" />
+        <uv type="2" 	l="219" t="15" r="233" b="29" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_ready" x="11" y="420" w="63" h="21" hide="0"
+              tex="Exchange.tex" str ="148" str_desc="준비완료" >
+        <uv type="0" l="0" t="454" r="63" b="475" />
+        <uv type="2" 	l="64" t="454" r="127" b="475" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    
+    <UIButton id="btn_exchange" x="76" y="420" w="63" h="21" hide="0"
+              tex="Exchange.tex" str ="149" str_desc="교환" >
+        <uv type="0" l="0" t="454" r="63" b="475" />
+        <uv type="2" 	l="64" t="454" r="127" b="475" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_cancel" x="141" y="420" w="63" h="21" hide="0"
+              tex="Exchange.tex" str ="139" str_desc="취소" >
+        <uv type="0" l="0" t="454" r="63" b="475" />
+        <uv type="2" 	l="64" t="454" r="127" b="475" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <!-- ScrollBar -->
+    <UIScrollBar id="scrollbar"  x="195" y="249" w="9" h="137" tex="Exchange.tex"
+                 vertical="1" scroll_pos="0" scroll_range="20" cur_item_cnt="20" item_per_page="4" >
+        <updown_btn btn_w="9" btn_h="7" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <wheel l="-193" t="-5" r="192" b="145" />
+        <thumb pos="0" l="219" t="32" r="228" b="42" />
+        <thumb pos="1" l="219" t="43" r="228" b="45" />
+        <thumb pos="2" l="219" t="46" r="228" b="56" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="Exchange.tex"
+                  str="" str_desc="">
+            <uv type="0"     l="219" t="62" r="228" b="69" />
+            <uv type="2"      l="230" t="62" r="239" b="69" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="Exchange.tex"
+                  str="" str_desc="">
+            <uv type="0"     l="219" t="71" r="228" b="78" />
+            <uv type="2"      l="230" t="71" r="239" b="78" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+    </UIScrollBar>
+
+
+</Window>

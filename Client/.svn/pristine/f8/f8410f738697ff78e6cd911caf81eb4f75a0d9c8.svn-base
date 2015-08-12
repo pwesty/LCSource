@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!-- 로그인 윈도우 -->
+<Window id="login" x="0" y="0" w="183" h="116" hide="0">
+    <UIImage id="" x="0" y="0" w="183" h="116" hide="0" 
+        tex="Login.tex" l="0" t="0" r="183" b="116" />
+
+    <UIText id="" x="35" y="5" w="0" h="0" str_idx="182" desc="로그인"
+            color="0xF2F2F2FF" shadow="0" shadow_color="0x181818B2" depth="0.0" />
+
+    <UIText id="" x="9" y="38" w="0" h="0" str_idx="183" desc="아이디" />
+    <UIText id="" x="9" y="57" w="0" h="0" str_idx="184" desc="패스워드" />
+    <!--
+    <UIImage id="security_top" x="0" y="100" w="183" h="36" visible="1"
+		tex="Login.tex" l="0" t="0" r="183" b="36" />
+    <UIImage id="security_mid" x="0" y="23" w="183" h="32" visible="1"
+		tex="Login.tex" l="0" t="23" r="183" b="32" />
+    <UIImage id="security_bottom" x="0" y="54" w="183" h="116" visible="1"
+		tex="Login.tex" l="0" t="54" r="183" b="116" />
+    -->
+    <UIButton id="btn_ok" x="38" y="88" w="63" h="21" tex="Login.tex"
+      str ="180" str_desc="접속">
+        <uv type="0" l="193" t="4" r="256" b="25" />
+        <uv type="2" 	l="193" t="26" r="256" b="47" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_cancel" x="105" y="88" w="63" h="21" tex="Login.tex" 
+        str="181" str_desc="나가기">
+        <uv type="0"  l="193" t="4" r="256" b="25" />
+        <uv type="2" 	l="193" t="26" r="256" b="47" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIEdit id="edit_id" x="75" y="37" w="91" h="15" max="15" tex="Login.tex">
+        <ReadUV l="239" t="49" r="256" b="65" />
+        <CandidateUV l="239" t="49" r="256" b="65" />
+    </UIEdit>
+    <UIEdit id="edit_pw" x="75" y="56" w="91" h="15" tex="Login.tex" max="15" passwd="1"/>
+    <UIEdit id="edit_security" x="75" y="56" w="91" h="15" tex="Login.tex" max="4" passwd="1"/>
+
+    <UICheck id="chk_save" x="10" y="74" w="13" h="13" str_idx="290" desc="저장"
+        posleft="0" text_x ="15" region="0"
+        color_on="0xF2F2F2FF" color_off="0xF2F2F2FF" tex="CommonBtn.tex">
+        <none l="139" t="75" r="152" b="88" />
+        <check l="119" t="75" r="132" b="88" />
+    </UICheck>
+</Window>

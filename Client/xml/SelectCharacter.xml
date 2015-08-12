@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!-- 캐릭터 선택 -->
+
+<Window id="SelectCharacter" x="0" y="0" w="504" h="22" hide="0">
+
+    <!-- Button -->
+    <UIButton id="btn_back" x="0" y="0" w="100" h="21" tex="SelectCharacter.tex"
+              str="2681" str_desc="이전">
+        <uv type="0" l="0" t="0" r="63" b="21" />
+        <uv type="2" 	l="0" t="23" r="63" b="44" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    
+    <UIButton id="btn_ok" x="0" y="0" w="100" h="21" tex="SelectCharacter.tex"
+              str="239" str_desc="게임 시작">
+        <uv type="0" l="0" t="107" r="100" b="128" />
+        <uv type="2" 	l="102" t="107" r="202" b="128" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_create" x="120" y="0" w="100" h="21" tex="SelectCharacter.tex"
+              str="140" str_desc="캐릭터 생성">
+        <uv type="0" l="0" t="107" r="100" b="128" />
+        <uv type="2" 	l="102" t="107" r="202" b="128" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_del_cancel" x="240" y="0" w="100" h="21" tex="SelectCharacter.tex"
+              str="2902" str_desc="삭제/취소">
+        <uv type="0" l="0" t="107" r="100" b="128" />
+        <uv type="2" 	l="102" t="107" r="202" b="128" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_option" x="360" y="0" w="63" h="21" tex="SelectCharacter.tex"
+              str="196" str_desc="옵션">
+        <uv type="0" l="0" t="0" r="63" b="21" />
+        <uv type="2" 	l="0" t="23" r="63" b="44" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_exit" x="440" y="0" w="63" h="21" tex="SelectCharacter.tex"
+              str="181" str_desc="나가기">
+        <uv type="0" l="0" t="107" r="100" b="128" />
+        <uv type="2" 	l="102" t="107" r="202" b="128" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    
+    <!-- Image -->
+    <UIImage id="img_char_info_background" x="0" y="0" w="256" h="68" hide="0"
+        tex="SelectCharacter.tex" l="74" t="0" r="256" b="68" />
+    
+    <UIImage id="img_char_info_hp" x="9" y="25" w="100" h="8" hide="0"
+        tex="SelectCharacter.tex" l="2" t="45" r="4" b="52" />
+    
+    <UIImage id="img_char_info_mp" x="9" y="39" w="100" h="8" hide="0"
+        tex="SelectCharacter.tex" l="7" t="45" r="9" b="52" />
+    
+    <UIImage id="img_char_info_exp" x="9" y="53" w="100" h="8" hide="0"
+        tex="SelectCharacter.tex" l="12" t="45" r="14" b="52" />
+    
+    <!-- MultilineText -->
+    <UIMultiText id="" x="20" y="45" w="187" h="62" hide="0"
+        color="0xF2F2F2FF" start_pos="left" str ="4794" str_desc ="나이트쉐도우 캐릭터를 생성할 수 있는 조건을 만족하였습니다.
+        나이트쉐도우 캐릭터를 생성하여 육성하십시오."/>
+
+</Window>

@@ -1,0 +1,20 @@
+// Animation names
+#define TREE02_DEBRIS00_ANIM_DEFAULT 0
+#define TREE02_DEBRIS00_ANIM_SHAKE 1
+#define TREE02_DEBRIS00_ANIM_WAVE01 2
+#define TREE02_DEBRIS00_ANIM_WAVE02 3
+#define TREE02_DEBRIS00_ANIM_WAVE03 4
+#define TREE02_DEBRIS00_ANIM_WAVE04 5
+#define TREE02_DEBRIS00_ANIM_WAVE05 6
+#define TREE02_DEBRIS00_ANIM_WAVE06 7
+
+// Color names
+
+// Patch names
+
+// Names of collision boxes
+#define TREE02_DEBRIS00_COLLISION_BOX_PART_NAME 0
+
+// Attaching position names
+
+// Sound names

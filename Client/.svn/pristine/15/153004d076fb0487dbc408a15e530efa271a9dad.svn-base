@@ -1,0 +1,138 @@
+//-----------------------------------  Control ---- Total = 24 + 3 -------------------------------------
+* Button
+* CheckButton
+* EditBox
+	MultiEditBox (EditBox 확장 (라인기능))
+* Image
+* ListBox
+	ListBoxEx
+	ListBoxMultiCol (랭킹에 사용중)
+	MultiList (img + text)
+* ScrollBar
+* Text
+	RectString
+*	MultiLineText (라인기능)
+
+* ProgressBar
+* ComboBox
+* SlideBar
+SpinButton
+
+
+//-------------------------------------------------------------------------------------------------
+UI Help(er)
+	TrackPopup
+	<ButtonTextureManager>
+	<FontTextureManager>
+	<UIIME.cpp>
+	<MouseCursor>
+	RectSurface
+	ButtonEx	
+	ColorBox (아이콘 연출용?)
+	DrawBox (9분할 UI 배경)
+*	ImageBox (타입별 이미지 출력)
+	<UIFiltering.cpp>
+	
+//-----------------------------------  UI ---- Total = 101 + 3 -------------------------------------
+
+*UIAD.cpp		( 일본 컨텐츠 )
+*UIAffinityInfo.cpp	( MultiList, ImageBox )			
+*UIAuction.cpp		( RectSurface )	
+*UIAutoHelp.cpp		( Window를 상속받지 않음 )
+UIBilling.cpp			UIBillItem.cpp
+*UIBingoBox.cpp			
+*UIBuff.cpp		( Window를 상속받지 않음 )	
+UICashShop.cpp			
+UICashShopEX.cpp			
+*UIChangeWeapon.cpp			
+*UICharacterInfo.cpp			
+*UICharServerMove.cpp			
+UIChatting.cpp			
+*UICollectBox.cpp			
+*UICompound.cpp			
+*UICreateChar.cpp			
+*UIExchange.cpp			
+*UIFlowerTree.cpp			
+*UIFortune.cpp			
+*UIGamble.cpp			
+UIGroup.cpp		( 일단 보류 )
+UIGuild.cpp			
+*UIGuildBattle.cpp			
+*UIGuildMark.cpp			
+UIGuildNotice.cpp			
+UIGuildStash.cpp			
+UIGuildWarPortal.cpp			
+UIGWMix.cpp			
+UIHelp.cpp			
+UIHelper.cpp			
+UIHelpIcon.cpp			
+UIInitJob.cpp			
+UIInventory.cpp			UIChildInvenSlot.cpp
+UIItemProduct.cpp			
+UILacarette.cpp			
+UILogin.cpp			
+UIMail.cpp 			(사용 유무 조사 필요)
+UIMap.cpp			
+UIMessenger.cpp			
+UIMinigame.cpp			
+UIMix.cpp			
+UIMixNew.cpp			
+UIMonsterCombo.cpp			
+UIMonsterMercenary.cpp			
+UINickName.cpp			
+UINotice.cpp			
+UINpcHelp.cpp			
+UINpcScroll.cpp			
+UIOption.cpp			
+UIOXQuizEvent.cpp			
+UIParty.cpp			
+UIPartyAuto.cpp			
+UIPersonalShop.cpp			
+UIPetFree.cpp			
+UIPetInfo.cpp			
+UIPetItemMix.cpp			
+UIPetTarget.cpp			
+UIPetTraining.cpp			
+UIPlayerInfo.cpp			
+UIPortal.cpp			
+UIProcess.cpp			
+UIProcessNPC.cpp			
+UIProduct.cpp			
+UIQuest.cpp			
+UIQuestBook.cpp			
+UIQuickSlot.cpp			UIChildQuickSlot.cpp
+UIQuiz.cpp			
+UIRadar.cpp			
+UIRanking.cpp			
+UIRankingClassify.cpp			
+UIRankingView.cpp			
+UIRankingViewEX.cpp			
+UIRefine.cpp			
+UIReformSystem.cpp			
+UIRemission.cpp			
+UIResurrection.cpp			
+UISecurity.cpp			
+UISelChar.cpp			
+UISelectList			
+UISelectList.cpp			
+UISelectResource.cpp			
+UISelectServer.cpp			
+UISelectWord.cpp			
+UIShop.cpp			
+UISiegeWarfare.cpp			
+UISiegeWarfareDoc.cpp			
+UISiegeWarfareNew.cpp			
+UISignBoard.cpp			
+UISimplePop.cpp			
+UISingleBattle.cpp			
+UISkillLearn.cpp			
+UISocketSystem.cpp			
+* UISummon.cpp			
+* UISystemMenu.cpp			
+* UITalk.cpp			
+UITargetInfo.cpp			
+UITatoo.cpp			
+* UITeleport.cpp			
+* UIWareHouse.cpp			
+UIWebBoard.cpp			
+* UIWildPetInfo.cpp

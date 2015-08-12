@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!-- 캐릭터 선택 -->
+
+<Window id="SelectCharacter_Next_Prev_Btn" x="0" y="0" w="504" h="22" hide="0">
+
+    <!-- Button -->
+    <UIButton id="btn_nex" x="150" y="0" w="100" h="32" tex="SelectCharacter.tex"
+              str="" str_desc="">
+        <uv type="0" l="4" t="191" r="110" b="254" />
+        <uv type="2" 	l="120" t="191" r="226" b="254" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_prev" x="0" y="0" w="100" h="32" tex="SelectCharacter.tex"
+              str="" str_desc="">
+        <uv type="0" l="4" t="129" r="110" b="192" />
+        <uv type="2" 	l="120" t="129" r="226" b="192" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+</Window>

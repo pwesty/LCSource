@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<!-- Collect Box -->
+<Window id="collectbox" x="0" y="0" w="184" h="194" hide="0">
+    <UIImage id="img_title" x="0" y="0" w="21" h="21" hide="0" 
+       tex="Shop.tex" l="0" t="0" r="21" b="21" />
+    <UIImage id="img_title_m" x="22" y="0" w="29" h="21" hide="0" 
+       tex="Shop.tex" l="22" t="0" r="51" b="21" />
+    <UIImage id="img_title_r" x="198" y="0" w="17" h="21" hide="0"
+       tex="Shop.tex" l="198" t="0" r="215" b="21" />
+
+    <UIImage id="img_item_slot_l" x="0" y="119" w="21" h="9" hide="0"
+       tex="Shop.tex" l="0" t="119" r="21" b="128" />
+    <UIImage id="img_item_slot_m" x="10" y="131" w="138" h="48" hide="0"
+       tex="Shop.tex" l="10" t="131" r="148" b="279" />
+    <UIImage id="img_item_slot_r" x="194" y="119" w="21" h="9" hide="0"
+       tex="Shop.tex" l="194" t="119" r="215" b="128" />
+
+    <UIImage id="img_point_desc_l" x="0" y="103" w="15" h="15" hide="0"
+       tex="Shop.tex" l="0" t="103" r="15" b="118" />
+    <UIImage id="img_point_desc_m" x="16" y="103" w="131" h="15" hide="0"
+       tex="Shop.tex" l="16" t="103" r="147" b="118" />
+    <UIImage id="img_point_desc_r" x="200" y="103" w="15" h="15" hide="0"
+       tex="Shop.tex" l="200" t="103" r="215" b="118" />
+
+    <UIImage id="img_bottom_l" x="0" y="94" w="4" h="2" hide="0"
+       tex="Shop.tex" l="0" t="94" r="4" b="96" />
+    <UIImage id="img_bottom_m" x="5" y="94" w="173" h="2" hide="0"
+       tex="Shop.tex" l="5" t="94" r="178" b="96" />
+    <UIImage id="img_bottom_r" x="211" y="94" w="4" h="2" hide="0"
+       tex="Shop.tex" l="211" t="94" r="215" b="96" />
+
+    <UIImage id="img_select_outline" x="218" y="51" w="32" h="67" hide="0"
+             tex="Shop.tex" l="218" t="51" r="250" b="118" />
+
+    <UIImage id="img_info_l" x="133" y="404" w="7" h="22" hide="0"
+             tex="Inventory.tex" l="133" t="404" r="140" b="426" />
+    <UIImage id="img_info_m" x="143" y="404" w="2" h="22" hide="0"
+             tex="Inventory.tex" l="143" t="404" r="145" b="426" />
+    <UIImage id="img_info_r" x="148" y="404" w="7" h="22" hide="0"
+             tex="Inventory.tex" l="148" t="404" r="155" b="426" />
+    
+    <UIImage id="img_info_u_l" x="133" y="404" w="7" h="7" hide="0"
+             tex="Inventory.tex" l="133" t="404" r="140" b="411" />
+    <UIImage id="img_info_u_m" x="143" y="404" w="2" h="7" hide="0"
+             tex="Inventory.tex" l="143" t="404" r="145" b="411" />
+    <UIImage id="img_info_u_r" x="148" y="404" w="7" h="7" hide="0"
+             tex="Inventory.tex" l="148" t="404" r="155" b="411" />
+
+    <UIImage id="img_info_m_l" x="133" y="414" w="7" h="2" hide="0"
+             tex="Inventory.tex" l="133" t="414" r="140" b="416" />
+    <UIImage id="img_info_m_m" x="143" y="414" w="2" h="2" hide="0"
+             tex="Inventory.tex" l="143" t="414" r="145" b="416" />
+    <UIImage id="img_info_m_r" x="148" y="404" w="7" h="22" hide="0"
+             tex="Inventory.tex" l="148" t="414" r="155" b="416" />
+
+    <UIImage id="img_info_l_l" x="133" y="419" w="7" h="7" hide="0"
+             tex="Inventory.tex" l="133" t="419" r="140" b="426" />
+    <UIImage id="img_info_l_m" x="143" y="419" w="2" h="7" hide="0"
+             tex="Inventory.tex" l="143" t="419" r="145" b="426" />
+    <UIImage id="img_info_r" x="148" y="419" w="7" h="7" hide="0"
+             tex="Inventory.tex" l="148" t="419" r="155" b="426" />
+    
+    <!-- Button -->
+    <UIButton id="btn_close" x="153" y="4" w="14" h="14" hide="0"
+              tex="Shop.tex" str ="" str_desc="" >
+        <uv type="0" l="217" t="1" r="230" b="14" />
+        <uv type="2" 	l="232" t="1" r="245" b="14" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <!-- ListBox -->
+    <UIListBox id="lb_item_info" x="0" y="0" w="100" h="100"
+                tex="Shop.tex" line_height="15" space_x="6" space_y="3"
+                column="1" select_list="0" least_one_select="0" >
+    </UIListBox>
+    
+    
+</Window>

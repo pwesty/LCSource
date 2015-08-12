@@ -1,0 +1,179 @@
+<?xml version="1.0" ?>
+<Window id="login" x="0" y="0" w="273" h="401" hide="0">
+    <!--BG-->
+    <UIImage id="" x="0" y="0" w="273" h="37" hide="0"
+        tex="new_PetInfo.tex" l="239" t="389" r="511" b="425" />
+    <UIImage id="" x="0" y="37" w="273" h="354" hide="0"
+        tex="new_PetInfo.tex" l="239" t="425" r="511" b="502" />
+    <UIImage id="" x="0" y="391" w="273" h="10" hide="0"
+        tex="new_PetInfo.tex" l="239" t="502" r="511" b="511" />
+
+    <UIText id="" x="107" y="15" w="0" h="0" str_idx="2173" desc="펫 정보" />
+
+    <UIImage id="" x="273" y="118" w="124" h="282" hide="0" desc="AI 설정창"
+        tex="new_PetInfo.tex" l="525" t="0" r="649" b="282" />    
+
+    <!--TAB-->
+    <UITab id="tab_normal" x="10" y="41" w="21" h="100" >
+        <UIButton id="btn_tab_base" x="10" y="41" w="21" h="100" tex="CommonBtn.tex"
+          str ="4204" str_desc="기본정보">
+            <normal l="86" t="0" r="107" b="101" />
+            <on 	l="59" t="0" r="80" b="101"/>
+            <click 	l="59" t="0" r="80" b="101"/>
+            <disable l="86" t="0" r="107" b="101" />
+        </UIButton>
+        <UIButton id="btn_tab_skill" x="10" y="144" w="21" h="100" tex="CommonBtn.tex"
+          str ="4205" str_desc="기본정보">
+            <normal l="86" t="0" r="107" b="101" />
+            <on 	l="59" t="0" r="80" b="101"/>
+            <click 	l="59" t="0" r="80" b="101"/>
+            <disable l="86" t="0" r="107" b="101" />
+        </UIButton>
+    
+        <!--CLOSE-->
+        <UIButton id="btn_close" x="247" y="4" w="16" h="16" tex="CommonBtn.tex"
+          str ="" >
+            <normal l="211" t="33" r="226" b="48" />
+            <on 	l="229" t="33" r="244" b="48"/>
+            <click 	l="211" t="33" r="226" b="48" />
+            <disable l="211" t="33" r="226" b="48" />
+        </UIButton>
+    
+        <!--INFO TAB-->
+
+        <UIImage id="img_bg_base" x="30" y="37" w="235" h="356" desc="기본배경" hide="0"
+            tex="new_PetInfo.tex" l="0" t="0" r="235" b="357" />
+
+        <UIImage id="bg_type1" x="35" y="112" w="221" h="94" desc="타입배경1"
+            tex="new_PetInfo.tex" l="517" t="417" r="738" b="511" />
+        <UIImage id="bg_type2" x="35" y="112" w="221" h="94" desc="타입배경2"
+            tex="new_PetInfo.tex" l="745" t="417" r="966" b="511" />
+
+        <UIText id="" x="41" y="49" w="0" h="0" str_idx="71" desc="이름" />
+        <UIText id="str_name" x="92" y="49" w="0" h="0" str="ABCDEFGHIJKLMN" desc="펫 정보" />
+    
+        <UIText id="" x="41" y="69" w="0" h="0" str_idx="73" desc="레벨" />
+        <UIText id="str_level" x="102" y="69" w="0" h="0" str="77" />
+    
+        <UIText id="" x="141" y="69" w="0" h="0" str_idx="4206" desc="종족" />
+    
+        <UIText id="str_pet_type" x="182" y="69" w="0" h="0" str="ABCDEFGHIJKLMN" desc="인간형/동물형/데몬형" />
+    
+        <UIText id="" x="41" y="89" w="0" h="0" str_idx="89" desc="경험치" />
+        <UIText id="" x="140" y="89" w="0" h="0" str="000 / 000" />
+    
+        <UIText id="" x="214" y="116" w="0" h="0" str_idx="4209" desc="충성도" />
+        <UIImage id="img_faith1" x="224" y="130" w="20" h="20" desc="기본배경" hide="0"
+            tex="new_PetInfo.tex" l="69" t="405" r="87" b="423" />
+        <UIImage id="img_faith2" x="224" y="130" w="20" h="20" desc="기본배경" hide="0"
+            tex="new_PetInfo.tex" l="92" t="405" r="110" b="423" />
+        <UIImage id="img_faith3" x="224" y="130" w="20" h="20" desc="기본배경" hide="0"
+            tex="new_PetInfo.tex" l="115" t="405" r="133" b="423" />
+        <UIText id="" x="211" y="152" w="0" h="0" str="000/000" />
+    
+        <UIText id="" x="39" y="116" w="0" h="0" str_idx="4210" desc="배고픔" />
+        <UIImage id="img_hungry1" x="46" y="130" w="20" h="20"
+            tex="new_PetInfo.tex" l="0" t="405" r="18" b="423" />
+        <UIImage id="img_hungry2" x="46" y="130" w="20" h="20"
+            tex="new_PetInfo.tex" l="23" t="405" r="41" b="423" />
+        <UIImage id="img_hungry3" x="46" y="130" w="20" h="20"
+            tex="new_PetInfo.tex" l="46" t="405" r="64" b="423" />
+        <UIText id="" x="37" y="152" w="0" h="0" str="000/000" />
+    
+        <!--toggle button 추가할 것!!-->
+        <UIImage id="img_ai_on" x="48" y="177" w="25" h="25"
+            tex="new_PetInfo.tex" l="2" t="375" r="26" b="399" />
+        <UIImage id="img_ai_off" x="48" y="177" w="25" h="25"
+                tex="new_PetInfo.tex" l="58" t="375" r="82" b="399" />
+
+        <UIButton id="btn_ok" x="219" y="177" w="25" h="25" tex="new_PetInfo.tex" hide="0"
+          str ="" str_desc="AI 버튼">
+            <normal l="114" t="375" r="138" b="399" />
+            <on 	l="142" t="375" r="166" b="399"/>
+            <click 	l="142" t="375" r="166" b="399"/>
+            <disable l="142" t="375" r="166" b="399"/>
+        </UIButton>
+
+        <UIText id="" x="41" y="216" w="0" h="0" str_idx="4406" desc="힘" />    
+        <UIText id="" x="146" y="216" w="0" h="0" str_idx="4409" desc="지혜" />
+        <UIText id="" x="41" y="238" w="0" h="0" str_idx="4407" desc="민첩" />
+        <UIText id="" x="146" y="238" w="0" h="0" str_idx="4408" desc="지혜" />
+
+        <UIText id="str_str" x="79" y="216" w="0" h="0" str="000(0)" />
+        <UIText id="str_con" x="184" y="216" w="0" h="0" str="000(0)" />
+        <UIText id="str_dex" x="79" y="238" w="0" h="0" str="000(0)" />
+        <UIText id="str_int" x="184" y="238" w="0" h="0" str="000(0)" />
+
+        <!-- + Button-->
+        <UIButton id="btn_close" x="126" y="215" w="15" h="15" tex="CommonBtn.tex"
+          str ="" >
+            <normal l="121" t="49" r="135" b="63" />
+            <on 	l="138" t="49" r="152" b="63"/>
+            <click 	l="121" t="49" r="135" b="63" />
+            <disable l="121" t="49" r="135" b="63" />
+        </UIButton>
+        <UIButton id="btn_close" x="234" y="215" w="15" h="15" tex="CommonBtn.tex"
+          str ="" >
+            <normal l="121" t="49" r="135" b="63" />
+            <on 	l="138" t="49" r="152" b="63"/>
+            <click 	l="121" t="49" r="135" b="63" />
+            <disable l="121" t="49" r="135" b="63" />
+        </UIButton>
+        <UIButton id="btn_close" x="126" y="237" w="15" h="15" tex="CommonBtn.tex"
+          str ="" >
+            <normal l="121" t="49" r="135" b="63" />
+            <on 	l="138" t="49" r="152" b="63"/>
+            <click 	l="121" t="49" r="135" b="63" />
+            <disable l="121" t="49" r="135" b="63" />
+        </UIButton>
+        <UIButton id="btn_close" x="234" y="237" w="15" h="15" tex="CommonBtn.tex"
+          str ="" >
+            <normal l="121" t="49" r="135" b="63" />
+            <on 	l="138" t="49" r="152" b="63"/>
+            <click 	l="121" t="49" r="135" b="63" />
+            <disable l="121" t="49" r="135" b="63" />
+        </UIButton>
+    
+        <UIText id="" x="41" y="258" w="0" h="0" str_idx="84" desc="성장포인트" />
+        <UIText id="" x="188" y="258" w="0" h="0" str="0" />
+
+        <UIText id="" x="41" y="281" w="0" h="0" str_idx="85" desc="공격력" />
+        <UIText id="" x="41" y="299" w="0" h="0" str_idx="86" desc="마법공격력" />
+        <UIText id="" x="41" y="317" w="0" h="0" str_idx="87" desc="방어력" />
+        <UIText id="" x="41" y="335" w="0" h="0" str_idx="88" desc="마법방어력" />
+        <UIText id="" x="41" y="353" w="0" h="0" str_idx="4211" desc="명중도" />
+        <UIText id="" x="41" y="371" w="0" h="0" str_idx="4212" desc="회피" />
+
+        <UIText id="str_att" x="188" y="281" w="0" h="0" str="000" />
+        <UIText id="str_mag" x="188" y="299" w="0" h="0" str="000" />
+        <UIText id="str_def" x="188" y="317" w="0" h="0" str="000" />
+        <UIText id="str_mdef" x="188" y="335" w="0" h="0" str="000" />
+        <UIText id="str_hit" x="188" y="353" w="0" h="0" str="000" />
+        <UIText id="str_avo" x="188" y="371" w="0" h="0" str="000" />       
+
+        <!--SCROLLBAR-->
+
+    </UITab>
+
+
+    <!--<UITab>-->
+        <UIImage id="img_bg_skill" x="30" y="37" w="235" h="356" desc="스킬배경" hide="0"
+            tex="new_PetInfo.tex" l="277" t="0" r="511" b="356" />
+
+        <!--SCROLLBAR-->
+    
+    <!--</UITab>-->
+    
+    <!--WILDPET_AI_MAXSLOT 세팅해야함 -->
+
+    <!--m_rvAccuback DrawBox 세팅필요-->
+
+    <UIImage id="" x="45" y="260" w="246" h="275" hide="1"
+        tex="new_PetInfo.tex" l="60" t="50" r="220" b="65" />
+    <UIImage id="" x="45" y="300" w="246" h="315" hide="1"
+        tex="new_PetInfo.tex" l="60" t="50" r="220" b="65" />
+    <UIImage id="" x="45" y="340" w="246" h="355" hide="1"
+        tex="new_PetInfo.tex" l="60" t="50" r="220" b="65" />
+
+
+</Window>

@@ -1,0 +1,377 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Common"=.\Common\Common.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DecodeReport"=.\DecodeReport\DecodeReport.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DedicatedServer"=.\DedicatedServer\DedicatedServer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Entities
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Game
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name EntitiesMP
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GameMP
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Ecc"=.\Ecc\Ecc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Engine"=.\Engine\Engine.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "EngineGUI"=.\EngineGUI\EngineGUI.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "EntitiesMP"=.\EntitiesMP\EntitiesMP.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Ecc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "FontGen"=.\FontGen\FontGen.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name EngineGUI
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "GameGUIMP"=.\GameGUIMP\GameGUIMP.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name GameMP
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name EngineGUI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "GameMP"=.\GameMP\GameMP.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name EntitiesMP
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "LWSkaExporter"=.\LWSkaExporter\LWSkaExporter.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "MakeFONT"=.\MakeFONT\MakeFONT.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Modeler"=.\Modeler\Modeler.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name EngineGUI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Nksp"=.\Nksp\Nksp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name GameMP
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Shaders
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name EngineGUI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name EntitiesMP
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GameGUIMP
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Nksp_Kalydo"=.\Nksp\Nksp_Kalydo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Shaders
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name EntitiesMP
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GameMP
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name EngineGUI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GameGUIMP
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "PersistentSymbolTool"=.\PersistentSymbolTool\PersistentSymbolTool.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SeriousSkaStudio"=.\SeriousSkaStudio\SeriousSkaStudio.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name EngineGUI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Shaders
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Shaders"=.\Shaders\Shaders.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "WorldEditor"=.\WorldEditor\WorldEditor.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Shaders
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GameGUITVS
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GameGUI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GameGUIMP
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GameGUISWD
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GameGUIX
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name EngineGUI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name EntitiesMP
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

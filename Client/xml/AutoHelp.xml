@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!-- AutoHelp -->
+<Window id="autohelp" x="0" y="0" w="112" h="131" hide="0">
+    
+    <UIImage id="notice_l" x="0" y="119" w="32" h="19" hide="0"
+        tex="Notice.tex" l="365" t="131" r="397" b="150" />
+    <UIImage id="notice_m" x="32" y="119" w="7" h="19" hide="0"
+        tex="Notice.tex" l="404" t="131" r="411" b="150" />
+    <UIImage id="notice_r" x="39" y="119" w="32" h="19" hide="0"
+        tex="Notice.tex" l="419" t="131" r="451" b="150" />
+   
+    <UIImage id="classification" x="0" y="0" w="112" h="131" hide="0"
+        tex="Loading\\Classification_15_kor.tex" l="7" t="53" r="120" b="184" />
+    
+</Window>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TraceTool", "TraceTool.vcproj", "{C5740F94-DA29-464F-A18E-8C15431BD220}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugStatic|Win32 = DebugStatic|Win32
+		Release|Win32 = Release|Win32
+		ReleaseStatic|Win32 = ReleaseStatic|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5740F94-DA29-464F-A18E-8C15431BD220}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C5740F94-DA29-464F-A18E-8C15431BD220}.Debug|Win32.Build.0 = Debug|Win32
+		{C5740F94-DA29-464F-A18E-8C15431BD220}.DebugStatic|Win32.ActiveCfg = DebugStatic|Win32
+		{C5740F94-DA29-464F-A18E-8C15431BD220}.DebugStatic|Win32.Build.0 = DebugStatic|Win32
+		{C5740F94-DA29-464F-A18E-8C15431BD220}.Release|Win32.ActiveCfg = Release|Win32
+		{C5740F94-DA29-464F-A18E-8C15431BD220}.Release|Win32.Build.0 = Release|Win32
+		{C5740F94-DA29-464F-A18E-8C15431BD220}.ReleaseStatic|Win32.ActiveCfg = ReleaseStatic|Win32
+		{C5740F94-DA29-464F-A18E-8C15431BD220}.ReleaseStatic|Win32.Build.0 = ReleaseStatic|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

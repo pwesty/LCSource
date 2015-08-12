@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatchParserTool", "PatchParserTool\PatchParserTool.vcxproj", "{6948F117-4E44-4B81-89A0-B2C261B4CDBA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{85FB35BE-F424-44B4-90A5-A394774CD9B7} = {85FB35BE-F424-44B4-90A5-A394774CD9B7}
+		{9D16CCC9-0C4F-4057-862D-C1DDB17ABDE4} = {9D16CCC9-0C4F-4057-862D-C1DDB17ABDE4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatchParser2", "PatchParser2\PatchParser2.vcxproj", "{85FB35BE-F424-44B4-90A5-A394774CD9B7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D16CCC9-0C4F-4057-862D-C1DDB17ABDE4} = {9D16CCC9-0C4F-4057-862D-C1DDB17ABDE4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SVNController", "SVNController\SVNController.vcxproj", "{9D16CCC9-0C4F-4057-862D-C1DDB17ABDE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6948F117-4E44-4B81-89A0-B2C261B4CDBA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6948F117-4E44-4B81-89A0-B2C261B4CDBA}.Debug|Win32.Build.0 = Debug|Win32
+		{6948F117-4E44-4B81-89A0-B2C261B4CDBA}.Release|Win32.ActiveCfg = Release|Win32
+		{6948F117-4E44-4B81-89A0-B2C261B4CDBA}.Release|Win32.Build.0 = Release|Win32
+		{85FB35BE-F424-44B4-90A5-A394774CD9B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{85FB35BE-F424-44B4-90A5-A394774CD9B7}.Debug|Win32.Build.0 = Debug|Win32
+		{85FB35BE-F424-44B4-90A5-A394774CD9B7}.Release|Win32.ActiveCfg = Release|Win32
+		{85FB35BE-F424-44B4-90A5-A394774CD9B7}.Release|Win32.Build.0 = Release|Win32
+		{9D16CCC9-0C4F-4057-862D-C1DDB17ABDE4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D16CCC9-0C4F-4057-862D-C1DDB17ABDE4}.Debug|Win32.Build.0 = Debug|Win32
+		{9D16CCC9-0C4F-4057-862D-C1DDB17ABDE4}.Release|Win32.ActiveCfg = Release|Win32
+		{9D16CCC9-0C4F-4057-862D-C1DDB17ABDE4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

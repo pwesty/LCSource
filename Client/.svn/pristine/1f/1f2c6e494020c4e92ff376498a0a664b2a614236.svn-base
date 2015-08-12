@@ -1,0 +1,86 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libpng - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Petrus\LOCALS~1\Temp\RSP626.tmp" with contents
+[
+/nologo /G6 /MDd /W3 /Gm /GX /ZI /Od /I "..\zlib-1.2.8" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"_Debug/" /Fo"_Debug/" /Fd"_Debug/" /FD /GZ /c 
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\example.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\png.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngerror.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngget.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngmem.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngpread.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngread.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngrio.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngrtran.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngrutil.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngset.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngtrans.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngwio.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngwrite.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngwtran.c"
+"C:\_WORK\_SRC_Dev\3rdparty\lpng163\pngwutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Petrus\LOCALS~1\Temp\RSP626.tmp" 
+Creating temporary file "C:\DOCUME~1\Petrus\LOCALS~1\Temp\RSP627.tmp" with contents
+[
+/nologo /out:"_Debug\libpngd.lib" 
+.\_Debug\example.obj
+.\_Debug\png.obj
+.\_Debug\pngerror.obj
+.\_Debug\pngget.obj
+.\_Debug\pngmem.obj
+.\_Debug\pngpread.obj
+.\_Debug\pngread.obj
+.\_Debug\pngrio.obj
+.\_Debug\pngrtran.obj
+.\_Debug\pngrutil.obj
+.\_Debug\pngset.obj
+.\_Debug\pngtrans.obj
+.\_Debug\pngwio.obj
+.\_Debug\pngwrite.obj
+.\_Debug\pngwtran.obj
+.\_Debug\pngwutil.obj
+\_WORK\_SRC_Dev\lib\zlibd.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Petrus\LOCALS~1\Temp\RSP627.tmp"
+Creating temporary file "C:\DOCUME~1\Petrus\LOCALS~1\Temp\RSP628.bat" with contents
+[
+@echo off
+copy _Debug\libpngd.lib ..\..\lib >nul
+]
+Creating command line "C:\DOCUME~1\Petrus\LOCALS~1\Temp\RSP628.bat"
+Compiling...
+example.c
+png.c
+pngerror.c
+pngget.c
+pngmem.c
+pngpread.c
+pngread.c
+pngrio.c
+pngrtran.c
+pngrutil.c
+pngset.c
+pngtrans.c
+pngwio.c
+pngwrite.c
+pngwtran.c
+pngwutil.c
+Generating Code...
+Creating library...
+<h3>Output Window</h3>
+Performing Custom Build Step on .\_Debug\libpngd.lib
+
+
+
+<h3>Results</h3>
+libpngd.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

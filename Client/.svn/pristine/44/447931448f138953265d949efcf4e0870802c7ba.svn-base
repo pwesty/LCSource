@@ -1,0 +1,154 @@
+<?xml version="1.0" ?>
+<Window id="test" x="0" y="0" w="500" h="500" hide="0">
+
+	<!-- 체크 박스 -->
+	<UICheck id="btn_tab_search" x="13" y="2" w="101" h="22" str_idx="386"
+            posleft="0" text_x ="30" region="0"
+			color_on="0xF2F2F2FF" color_off="0xF2F2F2FF" tex="Auction.tex">
+        <check   l="0" t="621" r="101" b="643" />
+        <none  l="0" t="644" r="101" b="666" />
+    </UICheck>
+	
+	<!-- 에디트 박스 -->
+	<UIEdit id="edit_name" parent="list_item_001" x="22" y="17" w="150" h="16" max="19" tex="Auction.tex" >
+		<back x="-4" y="-2" w="150" h="14" l="198" t="621" r="352" b="637" />
+	</UIEdit>
+						
+	<!-- 리스트 ! -->
+	<UIList id="list_event_name" x="14" y="289" w="222" h="135" hide="0" itemx="0" itemy="0" itemshow_num="6" itemgap="3" item_count="1" pre_create="0">
+        <UIListItem id="list_item_001" x="0" y="0" w="212" h="20" hide="0">
+            <UIText id="text_evt_name" x="25" y="4" w="187" h="15" hide="0" tex="CalendarUi.tex" str_idx="-1" str="" color="0xf2f2f2ff" shadow="0" shadow_color="0x181818b2" h_align="0">
+                <back x="-25" y="-4" w="184" h="16" l="692" t="506" r="876" b="526" />
+            </UIText>
+        </UIListItem>
+    </UIList>
+	
+	<!-- 텍스트 박스 -->
+	<UIText id="text_evt_name" x="14" y="38" w="222" h="13" hide="0" str_idx="-1" str="" color="0xf2f2f2ff" shadow="0" shadow_color="0x181818b2" h_align="1">
+        <back x="0" y="0" w="0" h="0" l="0" t="0" r="0" b="0" />
+    </UIText>
+	
+	<!-- 텍스트 박스  ! 멀티라인 텍스트 대체 ! -->
+	<UITextBox id="tb_event_desc" x="18" y="98" w="218" h="180" hide="0" tex="CalendarUI.tex"
+             lineheight="0" space_x="3" space_y="3" str="" showline="10" maxline="15">
+        <back x="0" y="0" w="0" h="0" l="0" t="0" r="0" b="0" />
+        
+        <UIScrollBar x="0" y="0" w="218" h="180" tex="CalendarUI.tex" vertical="1" right="1"
+                    item_per_page="10" item_count="10" move_unit="15" >
+            <back x="0" y="0" w="10" h="180" l="33" t="513" r="43" b="561" />
+            <button1 x="0" y="0" w="10" h="10"
+                l1="0" t1="513" r1="10" b1="523"
+                l0="11" t0="513" r0="21" b0="523" />
+            <button2 x="0" y="0" w="10" h="10"
+                    l1="0" t1="524" r1="10" b1="534"
+                    l0="11" t0="524" r0="21" b0="534" />
+            <thumb x="0" y="0" w="9" h="28" unit="10"
+                    l="22" t="513" r="32" b="553" />
+        </UIScrollBar>
+    </UITextBox>
+	
+	<!-- 어레이 ! ArrayItem이 포함하고 있는 요소들을 row * col만큼 찍어냄. -->
+	<UIArray id="day_array" x="18" y="88" w="655" h="405" hide="0" tex="CalendarUi.tex" row="7" col="6" sx="0" sy="0" gapx="2" gapy="2">
+        <select x="0" y="0" w="90" h="64" l="786" t="440" r="876" b="504" />	<!-- 셀렉트 이미지 -->
+        <mouse_over x="-1" y="-1" w="92" h="66" l="692" t="439" r="784" b="505" />	<!-- 마우스 오버 이미지 -->
+        <UIArrayItem id="array_item_001" x="0" y="0" w="90" h="64" hide="0">        
+            <UIImage id="img_date_back" x="0" y="0" w="90" h="64" hide="0" tex="CalendarUi.tex" l="878" t="439" r="970" b="505" />
+        </UIArrayItem>
+    </UIArray>
+	
+	<UIImage x="0" y="0" w="90" h="64" hide="0" tex="Calendar1.tex" l="90" t="0" r="180" b="64" />
+
+	<!-- 스핀버튼 -->
+	<UISpinButton x="0" y="0" w="73" h="18" hide="0" tex="CalendarUi.tex" title="Ex" l="0" t="564" r="126" b="584"
+			data_back_w="50" btn_w="7" btn_h="8" btn_gap="1" auto_info="1"> <!-- auto_info가 true라면 버튼 위치 자동으로 세팅. -->
+        <wheel x="0" y="0" w="73" h="18" /> 								<!-- 마우스 휠 이벤트 처리 범위 -->
+        <UIButton id="btn_up" x="65" y="0" w="7" h="8" hide="0" tex="CalendarUi.tex" str_idx="-1" str="">
+            <uv type="0" l="0" t="513" r="10" b="523" />
+            <uv type="1" l="0" t="0" r="0" b="0" />
+            <uv type="2" l="11" t="513" r="21" b="523" />
+            <uv type="3" l="0" t="0" r="0" b="0" />
+        </UIButton>
+        <UIButton id="btn_down" x="65" y="9" w="7" h="8" hide="0" tex="CalendarUi.tex" str_idx="-1" str="">
+            <uv type="0" l="0" t="524" r="10" b="534" />
+            <uv type="1" l="0" t="0" r="0" b="0" />
+            <uv type="2" l="11" t="524" r="21" b="534" />
+            <uv type="3" l="0" t="0" r="0" b="0" />
+        </UIButton>
+    </UISpinButton>
+
+	<!-- 이미지 폰트 -->
+	<!--
+    <UIImageFont x="30" y="30" w="300" h="14" hide="0" tex="Auction.tex"
+                 fsizex="14" fsizey="14" fgap="5" src="1234" ogap="-5" str="1344144" >
+        <srcuv l="635" t="588" r="706" b="602" /> 
+    </UIImageFont>
+
+    <UIComboBox x="100" y="0" w="154" h="176" hide="0" tex="Auction.tex"
+                showline="10" maxline="15" lineheight="16" space_x="0" space_y="0">
+        <back x="0" y="0" w="154" h="16"
+              l="198" t="621" r="352" b="637" />
+        <button x="135" y="1" w="15" h="9"
+                l0="354" t0="626" r0="369" b0="636"
+                l1="354" t1="626" r1="369" b1="636"/>
+        <drop_bg x="0" y="16" w="154" h="176"
+                 l="198" t="655" r="352" b="673" />
+
+        <UIScrollBar x="0" y="16" w="154" h="160" tex="Auction.tex"
+                 vertical="1" right="1"
+                 item_per_page="10" item_count="15" move_unit="16" >
+            <back x="190" y="0" w="10" h="160"
+                  l="198" t="621" r="352" b="637" />
+            <button1 x="190" y="0" w="9" h="7"
+                     l0="727" t0="566" r0="736" b0="573"
+                     l1="727" t1="583" r1="736" b1="590" />
+            <button2 x="190" y="142" w="9" h="7"
+                     l0="727" t0="575" r0="736" b0="582"
+                     l1="727" t1="592" r1="736" b1="599" />
+            <thumb x="0" y="0" w="10" h="50" unit="9"
+                     l="716" t="566" r="725" b="591" />
+        </UIScrollBar>
+    </UIComboBox>    
+    
+    <UIEdit id="edit_name" x="22" y="16" w="154" h="16" tex="Auction.tex">
+        <back x="0" y="0" w="154" h="16"
+              l="198" t="621" r="352" b="637" />
+    </UIEdit>
+    
+    <UIScrollBar x="0" y="0" w="200" h="114" tex="Auction.tex" 
+                 vertical="1" right="1" 
+                 item_per_page="10" item_count="23" move_unit="16" >
+        <back x="190" y="0" w="10" h="114"
+              l="198" t="621" r="352" b="637" />
+        <button1 x="190" y="0" w="9" h="7"
+                 l0="727" t0="566" r0="736" b0="573"
+                 l1="727" t1="583" r1="736" b1="590" />
+        <button2 x="190" y="142" w="9" h="7"
+                 l0="727" t0="575" r0="736" b0="582" 
+                 l1="727" t1="592" r1="736" b1="599" />
+        <thumb x="0" y="0" w="10" h="50" unit="9"
+                 l="716" t="566" r="725" b="591" />
+    </UIScrollBar>
+              
+    
+    <UIProgressBar x="250" y="0" w="250" h="20" hide="0" tex="CommonBtn.tex" l="265" t="42" r="426" b="62" lower="0" upper="100" step="0" offset_pos="50" auto_complite="0">
+        <bar sx="1" sy="2" l="428" t="44" r="441" b="60" />
+        <idle_text str="string string" color="0xFFFFFFFF" show_percent="0" />
+        <doing_text str="string to string" color="0xFFFFFFFF" show_percent="0" />
+        <complite_text str="string from string" color="0xFFFFFFFF" show_percent="0" />
+    </UIProgressBar>
+    
+    <UIIcon x="0" y="0" w="32" h="32" hide="0"
+            type="2" texid="0" row="1" col="1" />   
+
+    <UIComboBox x="100" y="100" w="154" h="116" hide="0" tex="Auction.tex"
+                maxline="5" lineheight="16" space_x="0" space_y="0">
+        <back x="0" y="0" w="154" h="16"
+              l="198" t="621" r="352" b="637" />
+        <button x="135" y="1" w="15" h="9"
+                l0="354" t0="626" r0="369" b0="636"
+                l1="354" t1="626" r1="369" b1="636"/>
+        <drop_bg x="0" y="16" w="154" h="100"
+                 l="198" t="655" r="352" b="673" />
+    </UIComboBox>
+    -->
+</Window>

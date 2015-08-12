@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<!-- Change Weapon -->
+<Window id="change_weapon" x="0" y="0" w="216" h="400" hide="0">
+    <!-- Image -->
+    <UIImage id="img_back_top" x="0" y="0" w="216" h="26" hide="0"
+        tex="MessageBox.tex" l="0" t="0" r="216" b="26" />
+    <UIImage id="img_back_mid0" x="0" y="26" w="216" h="103" hide="0"
+         tex="MessageBox.tex" l="0" t="31" r="216" b="33" />
+    <UIImage id="img_back_mid1" x="0" y="129" w="216" h="11" hide="0"
+         tex="MessageBox.tex" l="0" t="35" r="216" b="37" />
+    <UIImage id="img_back_mid2" x="0" y="140" w="216" h="18" hide="0"
+         tex="MessageBox.tex" l="36" t="86" r="252" b="104" />
+    <UIImage id="img_back_bottom" x="0" y="393" w="216" h="7" hide="0"
+         tex="MessageBox.tex" l="0" t="38" r="216" b="45" />
+
+    <!-- Rendering  부분에서 추가로 랜더 되는 부분 -->
+    <UIImage id="img_back_mid0_0" x="0" y="158" w="216" h="101" hide="0"
+         tex="MessageBox.tex" l="0" t="31" r="216" b="33" />
+    <UIImage id="img_back_mid1_0" x="0" y="259" w="216" h="4" hide="0"
+         tex="MessageBox.tex" l="0" t="35" r="216" b="37" />
+    <UIImage id="img_back_mid0_1" x="0" y="263" w="216" h="101" hide="0"
+         tex="MessageBox.tex" l="0" t="31" r="216" b="33" />
+    <UIImage id="img_back_mid1_1" x="0" y="364" w="216" h="29" hide="0"
+         tex="MessageBox.tex" l="0" t="35" r="216" b="37" />
+
+    <UIImage id="img_item_slot" x="97" y="51" w="34" h="34" hide="0"
+         tex="MessageBox.tex" l="0" t="68" r="34" b="102" />
+    
+    <UIImage id="img_input_box_l" x="95" y="102" w="4" h="13" hide="0"
+         tex="MessageBox.tex" l="205" t="46" r="209" b="59" />
+    <UIImage id="img_input_box_m" x="99" y="102" w="80" h="13" hide="0"
+         tex="MessageBox.tex" l="211" t="46" r="213" b="59" />
+    <UIImage id="img_input_box_r" x="179" y="102" w="4" h="13" hide="0"
+         tex="MessageBox.tex" l="215" t="46" r="219" b="59" />
+    
+    <!-- Button -->
+    <UIButton id="btn_ok" x="78" y="371" w="63" h="21" tex="MessageBox.tex"
+      str ="191" str_desc="확인" >
+        <uv type="0" l="0" t="46" r="63" b="67" />
+        <uv type="2" 	l="66" t="46" r="129" b="67" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_cancel" x="146" y="371" w="63" h="21" tex="MessageBox.tex"
+      str ="139" str_desc="취소" >
+        <uv type="0" l="0" t="46" r="63" b="67" />
+        <uv type="2" 	l="66" t="46" r="129" b="67" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    
+    <!-- ListBox -->
+    <UIListBox id="lb_weapon_desc" x="8" y="263" w="193" h="101"
+      tex="MessageBox.tex" line_height="15" space_x="13" space_y="3"
+      column="1" select_list="0" least_one_select="0" >
+    </UIListBox>
+    <UIScrollBar id="lb_weapon_scroll"  x="190" y="263" w="9" h="101" tex="MessageBox.tex"
+          vertical="1" >
+        <updown_btn btn_w="9" btn_h="7" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <thumb pos="0" l="219" t="16" r="228" b="26" />
+        <thumb pos="1" l="219" t="27" r="228" b="29" />
+        <thumb pos="2" l="219" t="30" r="228" b="40" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+           str="" str_desc="">
+            <uv type="0"     l="230" t="16" r="239" b="23" />
+            <on         l="230" t="16" r="239" b="23" />
+            <uv type="2"      l="240" t="16" r="249" b="23" />
+            <disable    l="240" t="16" r="249" b="23" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+            str="" str_desc="">
+            <uv type="0"     l="230" t="24" r="239" b="31" />
+            <on         l="230" t="24" r="239" b="31" />
+            <uv type="2"      l="240" t="24" r="249" b="31" />
+            <disable    l="240" t="24" r="249" b="31" />
+        </UIButton>
+    </UIScrollBar>
+    
+    <!-- ListBox -->
+    <UIListBox id="lb_weapon_list" x="8" y="158" w="193" h="101"
+      tex="MessageBox.tex" line_height="15" space_x="13" space_y="3"
+      column="1" select_list="0" least_one_select="0" >
+    </UIListBox>
+    <UIScrollBar id="lb_weapon_scroll"  x="190" y="158" w="9" h="101" tex="MessageBox.tex"
+          vertical="1" >
+        <updown_btn btn_w="9" btn_h="7" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <thumb pos="0" l="219" t="16" r="228" b="26" />
+        <thumb pos="1" l="219" t="27" r="228" b="29" />
+        <thumb pos="2" l="219" t="30" r="228" b="40" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+           str="" str_desc="">
+            <uv type="0"     l="230" t="16" r="239" b="23" />
+            <on         l="230" t="16" r="239" b="23" />
+            <uv type="2"      l="240" t="16" r="249" b="23" />
+            <disable    l="240" t="16" r="249" b="23" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+            str="" str_desc="">
+            <uv type="0"     l="230" t="24" r="239" b="31" />
+            <on         l="230" t="24" r="239" b="31" />
+            <uv type="2"      l="240" t="24" r="249" b="31" />
+            <disable    l="240" t="24" r="249" b="31" />
+        </UIButton>
+    </UIScrollBar>
+
+</Window>

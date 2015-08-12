@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<!-- BingoBox -->
+<Window id="BingoBox" x="0" y="0" w="254" h="165" hide="0">
+    <UIImage id="img_item_gap_l" x="0" y="22" w="10" h="26" hide="0"
+       tex="Shop.tex" l="0" t="131" r="9" b="135" />
+    <UIImage id="img_item_gap_m" x="10" y="22" w="124" h="26" hide="0"
+      tex="Shop.tex" l="10" t="131" r="113" b="135" />
+    <UIImage id="img_item_gap_r" x="134" y="22" w="10" h="26" hide="0"
+       tex="Shop.tex" l="206" t="131" r="215" b="135" />
+
+    
+    <UIImage id="img_title_l" x="0" y="0" w="23" h="22" hide="0" 
+       tex="Shop.tex" l="0" t="0" r="23" b="21" />
+    <UIImage id="img_title_m" x="23" y="0" w="103" h="22" hide="0"
+       tex="Shop.tex" l="36" t="0" r="117" b="21" />
+    <UIImage id="img_title_r" x="126" y="0" w="17" h="22" hide="0"
+       tex="Shop.tex" l="192" t="0" r="215" b="21" />
+    
+    <UIImage id="img_bingo_num_l" x="40" y="27" w="9" h="15" hide="0"
+       tex="Shop.tex" l="22" t="38" r="31" b="53" />
+    <UIImage id="img_bingo_num_m" x="49" y="27" w="45" h="15" hide="0"
+       tex="Shop.tex" l="32" t="38" r="61" b="53" />
+    <UIImage id="img_bingo_num_r" x="94" y="27" w="20" h="15" hide="0"
+       tex="Shop.tex" l="92" t="38" r="101" b="53" />
+   
+    <UIImage id="img_bottom_l" x="0" y="157" w="10" h="3" hide="0"
+       tex="Shop.tex" l="0" t="94" r="9" b="96" />
+    <UIImage id="img_bottom_m" x="10" y="157" w="124" h="3" hide="0"
+       tex="Shop.tex" l="10" t="94" r="113" b="96" />
+    <UIImage id="img_bottom_r" x="134" y="157" w="10" h="3" hide="0"
+       tex="Shop.tex" l="206" t="94" r="215" b="96" />
+   
+    <UIImage id="img_item_slot_l" x="0" y="48" w="10" h="105" hide="0" 
+       tex="Shop.tex" l="0" t="136" r="9" b="239" />  
+    <UIImage id="img_item_slot_m" x="20" y="48" w="104" h="105" hide="0"
+       tex="Shop.tex" l="10" t="136" r="113" b="239" />
+    <UIImage id="img_item_slot_r" x="134" y="48" w="10" h="105" hide="0"
+       tex="Shop.tex" l="206" t="136" r="215" b="239" />
+    
+    <!--
+    <UIImage id="img_info_l" x="0" y="0" w="0" h="0" hide="0"
+       tex="Shop.tex" l="0" t="476" r="2" b="495" />
+    <UIImage id="img_info_m" x="0" y="0" w="0" h="0" hide="0"
+       tex="Shop.tex" l="3" t="476" r="15" b="495" />
+    <UIImage id="img_info_r" x="0" y="0" w="0" h="0" hide="0"
+       tex="Shop.tex" l="16" t="476" r="19" b="495" />
+    -->
+    <UIImage id="img_bingo_mark" x="20" y="24" w="20" h="20" hide="0"
+        tex="Shop.tex" l="218" t="163" r="238" b="183" />
+
+    <UIImage id="img_out_line" x="0" y="0" w="31" h="31" hide="0"
+        tex="Shop.tex" l="218" t="86" r="249" b="117" />
+
+    <!-- Button -->
+    <UIButton id="btn_close" x="114" y="4" w="14" h="14" tex="Shop.tex"
+    str ="" str_desc="" >
+        <uv type="0" l="217" t="1" r="230" b="14" />
+        <uv type="2" 	l="232" t="1" r="245" b="14" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    
+    
+    <!-- ListBox -->
+    <!--
+    <UIListBox id="lb_item_info" x="20" y="2" w="100" h="100"
+                tex="Shop.tex" line_height="15" space_x="6" space_y="3"
+                column="1" select_list="0" least_one_select="0" >
+    </UIListBox>
+    -->
+    
+</Window>

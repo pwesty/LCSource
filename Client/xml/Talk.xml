@@ -1,0 +1,180 @@
+<?xml version="1.0" ?>
+<Window id="talk" x="0" y="0" w="300" h="269" hide="0">
+
+    <!--Header-->
+    <UIImage id="" x="0" y="0" w="40" h="25" hide="0"
+        tex="MessageBox.tex" l="0"   t="0"  r="40"  b="26" />
+    <UIImage id="" x="40" y="0" w="220" h="25" hide="0"
+        tex="MessageBox.tex" l="40"  t="0"  r="176" b="26" />
+    <UIImage id="" x="260" y="0" w="40" h="25" hide="0"
+        tex="MessageBox.tex" l="176" t="0"  r="216" b="26" />
+    
+    <!--member info-->
+    <UIImage id="" x="0" y="25" w="40" h="5" hide="0"
+        tex="MessageBox.tex" l="36"  t="69" r="76"  b="75" />
+    <UIImage id="" x="40" y="25" w="220" h="5" hide="0"
+        tex="MessageBox.tex" l="76"  t="69" r="212" b="75" />
+    <UIImage id="" x="260" y="25" w="40" h="5" hide="0"
+        tex="MessageBox.tex" l="212" t="69" r="252" b="75" />
+        
+    <UIImage id="" x="0" y="30" w="40" h="9" hide="0"
+        tex="MessageBox.tex" l="36"  t="75" r="76"  b="81" />
+    <UIImage id="" x="40" y="30" w="220" h="9" hide="0"
+        tex="MessageBox.tex" l="76"  t="75" r="212" b="81" />
+    <UIImage id="" x="260" y="30" w="40" h="9" hide="0"
+        tex="MessageBox.tex" l="212" t="75" r="252" b="81" />
+    
+    <UIImage id="" x="0" y="39" w="40" h="5" hide="0"
+        tex="MessageBox.tex" l="36"  t="81" r="76"  b="87" />
+    <UIImage id="" x="40" y="39" w="220" h="5" hide="0"
+        tex="MessageBox.tex" l="76"  t="81" r="212" b="87" />
+    <UIImage id="" x="260" y="39" w="40" h="5" hide="0"
+        tex="MessageBox.tex" l="212" t="81" r="252" b="87" />
+    
+    <!--talk list-->
+    <UIImage id="" x="0" y="44" w="40" h="5" hide="0"
+        tex="MessageBox.tex" l="36"  t="103"r="76"  b="108" />
+    <UIImage id="" x="40" y="44" w="220" h="5" hide="0"
+        tex="MessageBox.tex" l="76"  t="103"r="212" b="108" />
+    <UIImage id="" x="260" y="44" w="40" h="5" hide="0"
+        tex="MessageBox.tex" l="212" t="103"r="252" b="108" />
+    
+    <UIImage id="" x="0" y="49" w="40" h="185" hide="0"
+        tex="MessageBox.tex" l="36"  t="108"r="76"  b="111" />
+    <UIImage id="" x="40" y="49" w="220" h="185" hide="0"
+        tex="MessageBox.tex" l="76"  t="108"r="212" b="111" />
+    <UIImage id="" x="260" y="49" w="40" h="185" hide="0"
+        tex="MessageBox.tex" l="212" t="108"r="252" b="111" />
+   
+    <UIImage id="" x="0" y="234" w="40" h="5" hide="0"
+        tex="MessageBox.tex" l="36"  t="111"r="76"  b="116" />
+    <UIImage id="" x="40" y="234" w="220" h="5" hide="0"
+        tex="MessageBox.tex" l="76"  t="111"r="212" b="116" />
+    <UIImage id="" x="260" y="234" w="40" h="5" hide="0"
+        tex="MessageBox.tex" l="212" t="111"r="252" b="116" />
+ 
+    <!--bottom-->
+    <UIImage id="" x="0" y="239" w="40" h="17" hide="0"
+        tex="MessageBox.tex" l="0"   t="35" r="40"  b="37" />
+    <UIImage id="" x="40" y="239" w="220" h="17" hide="0"
+        tex="MessageBox.tex" l="40"  t="35" r="176" b="37" />
+    <UIImage id="" x="260" y="239" w="40" h="17" hide="0"
+        tex="MessageBox.tex" l="176" t="35" r="216" b="37" />
+
+    <UIImage id="" x="0" y="256" w="28" h="13" hide="0"
+        tex="MessageBox.tex" l="73"  t="162"r="101" b="175" />
+    <UIImage id="" x="28" y="256" w="244" h="13" hide="0"
+        tex="MessageBox.tex" l="101" t="162"r="129" b="175" />
+    <UIImage id="" x="272" y="256" w="28" h="13" hide="0"
+        tex="MessageBox.tex" l="129" t="162"r="157" b="175" />
+
+
+    <UIListBox id="lb_talk" x="6" y="44" w="277" h="190"
+               tex="MessageBox.tex" line_height="15" space_x="6" space_y="3"
+               column="1" select_list="0" least_one_select="0" test_str="test" />
+
+    <UIButton id="btn_close" x="272" y="4" w="14" h="14" tex="MessageBox.tex"
+      str="" str_desc="">
+        <normal l="219" t="0" r="233" b="14" />
+        <on 	l="234" t="0" r="248" b="14" />
+        <click 	l="193" t="26" r="256" b="47" />
+        <disable l="193" t="4" r="256" b="25" />
+    </UIButton>
+
+    <UIButton id="btn_mem_list" x="277" y="28" w="13" h="13"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal l="230" t="147" r="243" b="160" />
+        <on 	l="230" t="161" r="243" b="174" />
+        <click 	l="230" t="147" r="243" b="160" />
+        <disable l="230" t="147" r="243" b="160" />
+    </UIButton>
+
+    <UIButton id="btn_color" x="278" y="244" w="13" h="13"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal l="230" t="147" r="243" b="160" />
+        <on 	l="230" t="161" r="243" b="174" />
+        <click 	l="230" t="147" r="243" b="160" />
+        <disable l="230" t="147" r="243" b="160" />
+    </UIButton>
+
+    <UIEdit id="edit_input" x="10" y="244" w="317" h="13" tex="Login.tex" max="256" passwd="0"/>
+
+<!--    
+    <UIImage id="" x="4" y="7" w="4" h="18" hide="0"
+        tex="MessageBox.tex" l="87" t="46" r="87" b="59" />
+    <UIImage id="" x="8" y="7" w="279" h="18" hide="0"
+        tex="MessageBox.tex" l="87" t="46" r="88" b="59" />
+    <UIImage id="" x="289" y="7" w="4" h="18" hide="0"
+        tex="MessageBox.tex" l="215" t="46" r="219" b="59" />
+-->
+
+    <UIButton id="btn_color" x="0" y="0" w="15" h="15"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal  l="328" t="177" r="337" b="186" />
+        <on 	 l="328" t="177" r="337" b="186" />
+        <click 	 l="328" t="177" r="337" b="186" />
+        <disable l="328" t="177" r="337" b="186" />
+    </UIButton>
+    <UIButton id="btn_color" x="15" y="0" w="15" h="15"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal  l="338" t="177" r="347" b="186" />
+        <on 	 l="338" t="177" r="347" b="186" />
+        <click 	 l="338" t="177" r="347" b="186" />
+        <disable l="338" t="177" r="347" b="186" />
+    </UIButton>
+    <UIButton id="btn_color" x="30" y="0" w="15" h="15"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal  l="348" t="177" r="357" b="186" />
+        <on 	 l="348" t="177" r="357" b="186" />
+        <click 	 l="348" t="177" r="357" b="186" />
+        <disable l="348" t="177" r="357" b="186" />
+    </UIButton>
+    
+    <UIButton id="btn_color" x="0" y="15" w="15" h="15"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal  l="328" t="187" r="337" b="196" />
+        <on 	 l="328" t="187" r="337" b="196" />
+        <click 	 l="328" t="187" r="337" b="196" />
+        <disable l="328" t="187" r="337" b="196" />
+    </UIButton>
+    <UIButton id="btn_color" x="15" y="15" w="15" h="15"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal  l="338" t="187" r="347" b="196" />
+        <on 	 l="338" t="187" r="347" b="196" />
+        <click 	 l="338" t="187" r="347" b="196" />
+        <disable l="338" t="187" r="347" b="196" />
+    </UIButton>
+    <UIButton id="btn_color" x="30" y="15" w="15" h="15"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal  l="348" t="187" r="357" b="196" />
+        <on 	 l="348" t="187" r="357" b="196" />
+        <click 	 l="348" t="187" r="357" b="196" />
+        <disable l="348" t="187" r="357" b="196" />
+    </UIButton>
+    
+    <UIButton id="btn_color" x="0" y="30" w="15" h="15"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal  l="328" t="197" r="337" b="206" />
+        <on 	 l="328" t="197" r="337" b="206" />
+        <click 	 l="328" t="197" r="337" b="206" />
+        <disable l="328" t="197" r="337" b="206" />
+    </UIButton>    
+    <UIButton id="btn_color" x="15" y="30" w="15" h="15"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal  l="338" t="197" r="347" b="206" />
+        <on 	 l="338" t="197" r="347" b="206" />
+        <click 	 l="338" t="197" r="347" b="206" />
+        <disable l="338" t="197" r="347" b="206" />
+    </UIButton>
+    <UIButton id="btn_color" x="30" y="30" w="15" h="15"
+              tex="MessageBox.tex" str="" str_desc="" >
+        <normal  l="348" t="197" r="357" b="206" />
+        <on 	 l="348" t="197" r="357" b="206" />
+        <click 	 l="348" t="197" r="357" b="206" />
+        <disable l="348" t="197" r="357" b="206" />
+    </UIButton>
+
+    <UIText id="" x="25" y="6" w="0" h="0" str="TITLE" desc="타이틀" />
+    <UIText id="" x="25" y="28" w="0" h="0" str_idx="3035" desc="대화 참가 인원 (%d)" />
+
+</Window>

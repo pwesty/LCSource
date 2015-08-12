@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!-- Affinity Info -->
+<Window id="affiniti_info" x="0" y="0" w="512" h="427" hide="0">
+    <!-- todo 이미지 뿌리는 부분 Rectsurface로 바꿔야함. -->
+    <UIImage id="img_back" x="0" y="0" w="512" h="427" hide="0" 
+       tex="Affinity.tex" l="0" t="0" r="512" b="421" />
+
+    <UIImage id="img_map" x="127" y="64" w="140" h="82" hide="1"
+       tex="Map.tex" l="127" t="64" r="140" b="82" />
+
+    <!-- Button -->
+    <UIButton id="btn_item" x="292" y="210" w="63" h="21" tex="Affinity.tex"
+      str ="4288" str_desc="아이템" >
+        <uv type="0" l="513" t="263" r="576" b="284" />
+        <uv type="2" 	l="693" t="263" r="702" b="284" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_quest" x="362" y="210" w="63" h="21" tex="Affinity.tex"
+      str ="168" str_desc="퀘스트" >
+        <uv type="0" l="513" t="263" r="576" b="284" />
+        <uv type="2" 	l="693" t="263" r="702" b="284" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_monster" x="432" y="210" w="63" h="21" tex="Affinity.tex"
+      str ="448" str_desc="몬스터" >
+        <uv type="0" l="513" t="263" r="576" b="284" />
+        <uv type="2" 	l="693" t="263" r="702" b="284" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_close" x="490" y="4" w="16" h="16" tex="CommonBtn.tex"
+      str ="" str_desc="" >
+        <uv type="0" l="211" t="33" r="227" b="49" />
+        <uv type="2" 	l="229" t="33" r="245" b="49" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    
+</Window>

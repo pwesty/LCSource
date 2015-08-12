@@ -1,0 +1,295 @@
+<?xml version="1.0" ?>
+<!-- Guild -->
+<Window id="guild" x="0" y="0" w="216" h="284" hide="0">
+    <UIImage id="img_back_top" x="0" y="0" w="216" h="33" hide="0" 
+       tex="MessageBox.tex" l="0" t="0" r="216" b="33" />
+    <UIImage id="img_back_mid0" x="0" y="31" w="216" h="2" hide="0" 
+       tex="MessageBox.tex" l="0" t="31" r="216" b="33" />
+    <UIImage id="img_back_mid0" x="0" y="35" w="216" h="2" hide="0"
+       tex="MessageBox.tex" l="0" t="35" r="216" b="37" />
+    <UIImage id="img_manager_top" x="36" y="69" w="216" h="2" hide="0"
+       tex="MessageBox.tex" l="36" t="69" r="252" b="106" />
+    <UIImage id="img_manager_mid" x="36" y="106" w="216" h="6" hide="0"
+       tex="MessageBox.tex" l="36" t="106" r="252" b="112" />
+    <UIImage id="img_manager_bot" x="36" y="106" w="216" h="4" hide="0"
+       tex="MessageBox.tex" l="36" t="112" r="252" b="116" />
+    <UIImage id="img_back_bot" x="0" y="38" w="216" h="7" hide="0"
+       tex="MessageBox.tex" l="0" t="38" r="216" b="45" />
+
+    <UIImage id="img_input_box_l" x="131" y="46" w="4" h="13" hide="0"
+       tex="MessageBox.tex" l="131" t="46" r="135" b="59" />
+    <UIImage id="img_input_box_m" x="137" y="46" w="2" h="13" hide="0"
+       tex="MessageBox.tex" l="137" t="46" r="139" b="59" />
+    <UIImage id="img_input_box_r" x="141" y="46" w="4" h="13" hide="0"
+       tex="MessageBox.tex" l="141" t="46" r="145" b="59" />
+
+    <UIImage id="img_tab" x="43" y="69" w="1" h="17" hide="0"
+       tex="MessageBox.tex" l="43" t="69" r="44" b="86" />
+
+    <!-- Button -->
+    <UIButton id="btn_close" x="184" y="4" w="14" h="14" hide="0"
+              tex="MessageBox.tex" str ="" str_desc="" >
+        <uv type="0" l="219" t="0" r="233" b="14" />
+        <uv type="2" 	l="234" t="0" r="248" b="14" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_ok" x="250" y="255" w="63" h="21" hide="0"
+              tex="MessageBox.tex" str ="191" str_desc="확인" >
+        <uv type="0" l="0" t="46" r="63" b="67" />
+        <uv type="2" 	l="66" t="46" r="129" b="67" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_cancel" x="350" y="255" w="63" h="21" hide="0"
+              tex="MessageBox.tex" str ="139" str_desc="취소" >
+        <uv type="0" l="0" t="46" r="63" b="67" />
+        <uv type="2" 	l="66" t="46" r="129" b="67" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_exit" x="450" y="255" w="63" h="21" hide="0"
+              tex="MessageBox.tex" str ="870" str_desc="닫기" >
+        <uv type="0" l="0" t="46" r="63" b="67" />
+        <uv type="2" 	l="66" t="46" r="129" b="67" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_change_boss" x="92" y="255" w="115" h="21" hide="0"
+              tex="MessageBox.tex" str ="871" str_desc="길드장 이임" >
+        <uv type="0" l="134" t="117" r="228" b="138" />
+        <uv type="2" 	l="134" t="139" r="228" b="160" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_accept" x="92" y="278" w="115" h="21" hide="0"
+              tex="MessageBox.tex" str ="872" str_desc="길드부장 임명" >
+        <uv type="0" l="134" t="117" r="228" b="138" />
+        <uv type="2" 	l="134" t="139" r="228" b="160" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_reject" x="92" y="301" w="115" h="21" hide="0"
+              tex="MessageBox.tex" str ="873" str_desc="길드부장 해임" >
+        <uv type="0" l="134" t="117" r="228" b="138" />
+        <uv type="2" 	l="134" t="139" r="228" b="160" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_reject" x="92" y="324" w="115" h="21" hide="0"
+              tex="MessageBox.tex" str ="874" str_desc="길드원 퇴출" >
+        <uv type="0" l="134" t="117" r="228" b="138" />
+        <uv type="2" 	l="134" t="139" r="228" b="160" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <!-- Edit Box -->
+    <UIEdit id="edit_guildname" x="100" y="225" w="90" h="16" max="16"
+           tex="MessageBox.tex">
+        <ReadUV l="146" t="46" r="163" b="62" />
+        <CandidateUV l="146" t="46" r="163" b="62" />
+    </UIEdit>
+
+    <!-- ListBox -->
+    <UIListBox id="lb_guild_desc" x="8" y="28" w="190" h="190"
+      tex="MessageBox.tex" line_height="15" space_x="13" space_y="3"
+      column="2" select_list="1" least_one_select="0" >
+        <!--<subcol col="0" pos_x="180" align="center"/>-->
+    </UIListBox>
+    <UIScrollBar id="sb_guild_desc" x="190" y="0" w="9" h="190" tex="MessageBox.tex" vertical="1" >
+        <!--   <wheel l="-9" t="0" r="9" b="150" />    -->
+        <updown_btn btn_w="9" btn_h="7" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <thumb pos="0" l="219" t="16" r="228" b="26" />
+        <thumb pos="1" l="219" t="27" r="228" b="29" />
+        <thumb pos="2" l="219" t="30" r="228" b="40" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+           str="" str_desc="">
+            <uv type="0"     l="230" t="16" r="239" b="23" />
+            <uv type="2"      l="240" t="16" r="249" b="23" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+            str="" str_desc="">
+            <uv type="0"     l="230" t="24" r="239" b="31" />
+            <uv type="2"      l="240" t="24" r="249" b="31" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+    </UIScrollBar>
+
+    <UIListBox id="lb_member_list" x="8" y="63" w="190" h="88"
+      tex="MessageBox.tex" line_height="15" space_x="13" space_y="3"
+      column="2" select_list="0" least_one_select="0" >
+        <color over="0xF8E1B5FF" select="0xF8E1B5FF" />
+        <subcol col="1" pos_x="110" align="left" />
+    </UIListBox>
+    <UIScrollBar id="sb_member_list" x="190" y="0" w="9" h="190" tex="MessageBox.tex" vertical="1" >
+        <!--   <wheel l="-9" t="0" r="9" b="150" />    -->
+        <updown_btn btn_w="9" btn_h="7" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <thumb pos="0" l="219" t="16" r="228" b="26" />
+        <thumb pos="1" l="219" t="27" r="228" b="29" />
+        <thumb pos="2" l="219" t="30" r="228" b="40" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+           str="" str_desc="">
+            <uv type="0"     l="230" t="16" r="239" b="23" />
+            <uv type="2"      l="240" t="16" r="249" b="23" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+            str="" str_desc="">
+            <uv type="0"     l="230" t="24" r="239" b="31" />
+            <uv type="2"      l="240" t="24" r="249" b="31" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+    </UIScrollBar>
+
+    <UIListBox id="lb_applicant_list" x="8" y="63" w="176" h="88"
+      tex="MessageBox.tex" line_height="15" space_x="13" space_y="3"
+      column="2" select_list="0" least_one_select="0" >
+        <color over="0xF8E1B5FF" select="0xF8E1B5FF" align="left" />
+        <subcol col="1" pos_x="115" align="left" />
+    </UIListBox>
+    <UIScrollBar id="sb_applicant_list" x="176" y="0" w="9" h="190" tex="MessageBox.tex" vertical="1" >
+        <!--   <wheel l="-9" t="0" r="9" b="150" />   -->
+        <updown_btn btn_w="9" btn_h="7" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <thumb pos="0" l="219" t="16" r="228" b="26" />
+        <thumb pos="1" l="219" t="27" r="228" b="29" />
+        <thumb pos="2" l="219" t="30" r="228" b="40" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+           str="" str_desc="">
+            <uv type="0"     l="230" t="16" r="239" b="23" />
+            <uv type="2"      l="240" t="16" r="249" b="23" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+            str="" str_desc="">
+            <uv type="0"     l="230" t="24" r="239" b="31" />
+            <uv type="2"      l="240" t="24" r="249" b="31" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+    </UIScrollBar>
+
+    <UIListBox id="lb_user_info" x="270" y="178" w="140" h="70"
+      tex="MessageBox.tex" line_height="15" space_x="13" space_y="3"
+      column="1" select_list="0" least_one_select="0" >
+    </UIListBox>
+    <UIScrollBar id="sb_user_info" x="270" y="178" w="9" h="70" tex="MessageBox.tex" vertical="1" >
+        <!--   <wheel l="-9" t="0" r="9" b="150" />   -->
+        <updown_btn btn_w="9" btn_h="7" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <thumb pos="0" l="219" t="16" r="228" b="26" />
+        <thumb pos="1" l="219" t="27" r="228" b="29" />
+        <thumb pos="2" l="219" t="30" r="228" b="40" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+           str="" str_desc="">
+            <uv type="0"     l="230" t="16" r="239" b="23" />
+            <uv type="2"      l="240" t="16" r="249" b="23" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+            str="" str_desc="">
+            <uv type="0"     l="230" t="24" r="239" b="31" />
+            <uv type="2"      l="240" t="24" r="249" b="31" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+    </UIScrollBar>
+
+    <UIListBox id="lb_learn_info" x="427" y="178" w="140" h="70"
+      tex="MessageBox.tex" line_height="15" space_x="13" space_y="3"
+      column="1" select_list="0" least_one_select="0" >
+    </UIListBox>
+    <UIScrollBar id="sb_learn_info" x="140" y="178" w="9" h="70" tex="MessageBox.tex" vertical="1" >
+        <!--   <wheel l="-9" t="0" r="9" b="150" />   -->
+        <updown_btn btn_w="9" btn_h="7" bar_gap_x="0" bar_gap_y="0" btn_edge="10" />
+        <thumb pos="0" l="219" t="16" r="228" b="26" />
+        <thumb pos="1" l="219" t="27" r="228" b="29" />
+        <thumb pos="2" l="219" t="30" r="228" b="40" />
+        <UIButton id="btn_up" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+           str="" str_desc="">
+            <uv type="0"     l="230" t="16" r="239" b="23" />
+            <uv type="2"      l="240" t="16" r="249" b="23" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+        <UIButton id="btn_down" auto_info="1" x="0" y="0" w="0" h="0" tex="MessageBox.tex"
+            str="" str_desc="">
+            <uv type="0"     l="230" t="24" r="239" b="31" />
+            <uv type="2"      l="240" t="24" r="249" b="31" />
+            <copyuv src="0" dst="1" />
+            <copyuv src="0" dst="3" />
+        </UIButton>
+    </UIScrollBar>
+
+    <UIButton id="btn_use_skill" x="295" y="256" w="100" h="21" tex="MessageBox.tex"
+    str ="5013" str_desc="사용하기">
+        <uv type="0" l="134" t="117" r="228" b="138" />
+        <uv type="2" 	l="134" t="139" r="228" b="160" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIComboBox id="cbb_corps" x="218" y="98" w="143" h="22" tex="MessageBox.tex"
+       maxline="7" lineheight="15" space_x="8" space_y="4" >
+        <btn_pos l="123" t="6" r="13" b="7" />
+        <thumb pos="back" l="54" t="162" r="72" b="177" />
+        <thumb pos="btn_down" l="230" t="162" r="242" b="172" />
+        <thumb pos="btn_up" l="242" t="172" r="230" b="162" />
+        <thumb pos="drop_list" l="54" t="162" r="70" b="176" />
+    </UIComboBox>
+     
+    <!-- Image -->
+    <UIImage id="img_sel_skill_box" x="145" y="138" w="95" h="28" hide="0"
+             tex="CommonBtn.tex" l="145" t="138" r="240" b="172" />
+    <UIImage id="img_sel_side_tab" x="59" y="0" w="21" h="101" hide="0"
+             tex="CommonBtn.tex" l="59" t="0" r="80" b="101" />
+    <UIImage id="img_unsel_side_tab" x="86" y="0" w="21" h="101" hide="0"
+             tex="CommonBtn.tex" l="86" t="0" r="107" b="101" />
+
+    <UIImage id="img_popup_u_l" x="0" y="229" w="8" h="8" hide="0"
+             tex="CommonBtn.tex" l="0" t="229" r="8" b="237" />
+    <UIImage id="img_popup_u_m" x="8" y="229" w="68" h="8" hide="0"
+             tex="CommonBtn.tex" l="8" t="229" r="76" b="237" />
+    <UIImage id="img_popup_u_r" x="76" y="229" w="8" h="8" hide="0"
+             tex="CommonBtn.tex" l="76" t="229" r="84" b="237" />
+
+    <UIImage id="img_popup_m_l" x="0" y="237" w="8" h="6" hide="0"
+             tex="CommonBtn.tex" l="0" t="237" r="8" b="243" />
+    <UIImage id="img_popup_m_m" x="8" y="237" w="68" h="6" hide="0"
+             tex="CommonBtn.tex" l="8" t="237" r="76" b="243" />
+    <UIImage id="img_popup_m_r" x="76" y="237" w="8" h="6" hide="0"
+             tex="CommonBtn.tex" l="76" t="237" r="84" b="243" />
+
+    <UIImage id="img_popup_l_l" x="0" y="243" w="8" h="8" hide="0"
+             tex="CommonBtn.tex" l="0" t="243" r="8" b="251" />
+    <UIImage id="img_popup_l_m" x="8" y="243" w="68" h="8" hide="0"
+             tex="CommonBtn.tex" l="8" t="243" r="76" b="251" />
+    <UIImage id="img_popup_l_r" x="76" y="243" w="8" h="8" hide="0"
+             tex="CommonBtn.tex" l="76" t="243" r="84" b="251" />
+    
+    <!-- 길드 스킬 탭 위에 그려지는 텍스쳐 -->
+    
+    <UIImage id="img_passive_tab0" x="183" y="222" w="13" h="14" hide="0"
+            tex="CommonBtn.tex" l="183" t="222" r="196" b="236" />
+    <UIImage id="img_passive_tab1" x="200" y="222" w="13" h="14" hide="0"
+            tex="CommonBtn.tex" l="200" t="222" r="213" b="236" />
+
+    <UIImage id="img_active_tab0" x="183" y="205" w="13" h="14" hide="0"
+        tex="CommonBtn.tex" l="183" t="205" r="196" b="219" />
+    <UIImage id="img_active_tab1" x="200" y="205" w="13" h="14" hide="0"
+        tex="CommonBtn.tex" l="200" t="205" r="213" b="219" />
+
+</Window>

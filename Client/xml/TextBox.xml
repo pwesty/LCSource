@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window id="test" x="0" y="0" w="500" h="500" hide="0">
+  <UITextBox x="100" y="50" w="154" h="155" hide="0" tex="Auction.tex"
+             lineheight="0" space_x="3" space_y="3"
+             str="aaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccccddddddddddddddddddddeeeeeeeeeeeeeeeeeeaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccccddddddddddddddddddddeeeeeeeeeeeeeeeeeeaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccccddddddddddddddddddddeeeeeeeeeeeeeeeeee"
+             showline="10" maxline="15">
+    <back x="0" y="0" w="154" h="155" l="198" t="621" r="352" b="637" />
+  <UIScrollBar x="0" y="0" w="154" h="155" tex="Auction.tex"
+             vertical="1" right="1"
+             item_per_page="10" item_count="10" move_unit="15" >
+    <back x="144" y="0" w="10" h="155"
+           l="198" t="621" r="352" b="637" />
+    <button1 x="145" y="0" w="9" h="7"
+           l0="727" t0="566" r0="736" b0="573"
+           l1="727" t1="583" r1="736" b1="590" />
+    <button2 x="145" y="148" w="9" h="7"
+               l0="727" t0="575" r0="736" b0="582"
+               l1="727" t1="592" r1="736" b1="599" />
+    <thumb x="0" y="0" w="8" h="155" unit="10"
+               l="716" t="566" r="725" b="591" />
+  </UIScrollBar>
+  </UITextBox>
+</Window>

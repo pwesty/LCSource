@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="기본클래스">
+      <UniqueIdentifier>{4d0b3737-f61e-4bdd-9034-31d59e9dca42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="기본클래스\스레드">
+      <UniqueIdentifier>{b1b2442a-f578-49c4-9db8-630195aef840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="기본클래스\소켓">
+      <UniqueIdentifier>{f8078034-a295-4510-9d2d-2942210d3b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="기본클래스\크리티컬 세션">
+      <UniqueIdentifier>{0eaa9935-efdb-4173-8e72-646d21bf35f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="기본클래스\버퍼">
+      <UniqueIdentifier>{0e059185-47db-421e-bd2e-a9bf9013ebc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소켓스레드">
+      <UniqueIdentifier>{6800ad60-c32b-478d-a144-486bebd62be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="이벤트 소켓">
+      <UniqueIdentifier>{c9caebda-d548-4949-b583-32931e74b537}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F_Thread.cpp">
+      <Filter>기본클래스\스레드</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CSocket.cpp">
+      <Filter>기본클래스\소켓</Filter>
+    </ClCompile>
+    <ClCompile Include="F_Critical.cpp">
+      <Filter>기본클래스\크리티컬 세션</Filter>
+    </ClCompile>
+    <ClCompile Include="F_Buffer_L.cpp">
+      <Filter>기본클래스\버퍼</Filter>
+    </ClCompile>
+    <ClCompile Include="F_WSThread.cpp">
+      <Filter>소켓스레드</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CSocket_Event.cpp">
+      <Filter>이벤트 소켓</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F_Thread.h">
+      <Filter>기본클래스\스레드</Filter>
+    </ClInclude>
+    <ClInclude Include="F_CSocket.h">
+      <Filter>기본클래스\소켓</Filter>
+    </ClInclude>
+    <ClInclude Include="F_Critical.h">
+      <Filter>기본클래스\크리티컬 세션</Filter>
+    </ClInclude>
+    <ClInclude Include="F_Buffer_L.h">
+      <Filter>기본클래스\버퍼</Filter>
+    </ClInclude>
+    <ClInclude Include="F_WSThread.h">
+      <Filter>소켓스레드</Filter>
+    </ClInclude>
+    <ClInclude Include="F_CSocket_Event.h">
+      <Filter>이벤트 소켓</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

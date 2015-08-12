@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<Window id="login" x="0" y="0" w="178" h="191" hide="0">
+    <UIImage id="" x="0" y="0" w="178" h="191" hide="0"
+        tex="NewOption.tex" l="270" t="104" r="448" b="295" />
+
+    <UIButton id="btn_close" x="153" y="4" w="16" h="16" tex="CommonBtn.tex"
+        str="" str_desc="나가기">
+        <uv type="0" l="211" t="33" r="227" b="49" />
+        <uv type="1" l="229" t="33" r="245" b="49" />
+        <copyuv src="0" dst="2" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+
+    <UIButton id="btn_option" x="9" y="44" w="78" h="22" tex="CommonBtn.tex"
+        str_idx="283" str_desc="옵션">
+        <uv type="0"  l="113" t="0" r="182" b="22" />
+        <on 	 l="186" t="0" r="256" b="22" />
+        <click 	 l="113" t="0" r="182" b="22" />
+        <disable l="113" t="0" r="182" b="22" />
+    </UIButton>
+
+    <UIButton id="btn_help" x="91" y="44" w="78" h="22" tex="CommonBtn.tex"
+        str_idx="284" str_desc="도움말">
+        <uv type="0"  l="113" t="0" r="182" b="22" />
+        <on 	 l="186" t="0" r="256" b="22" />
+        <copyuv  src="0" dst="2" />
+        <copyuv  src="0" dst="3" />
+    </UIButton>
+
+    <UIText id="" x="55" y="18" w="0" h="0" str_idx="287" desc="시스템 메뉴" />
+<!--
+    <UIImage id="" x="0" y="0" w="178" h="191" hide="0"
+        tex="NewOption.tex" l="270" t="104" r="448" b="295" />
+    <UIImage id="" x="0" y="0" w="178" h="191" hide="0"
+        tex="NewOption.tex" l="270" t="104" r="448" b="295" />
+    <UIImage id="" x="0" y="0" w="178" h="191" hide="0"
+        tex="NewOption.tex" l="270" t="104" r="448" b="295" />
+-->
+    <UIButton id="btn_help" x="9" y="130" w="160" h="22" 
+              tex="CommonBtn.tex" str_idx="4195" str_desc="서버선택창으로" newtype="1" >
+        <RSurface type="0" x="0" y="0" w="14" h="21"
+                  l="113" t="0" r="127" b="22" />
+        <RSurface type="0" x="14" y="0" w="146" h="21"
+                  l="127" t="0" r="168" b="22" />
+        <RSurface type="0" x="146" y="0" w="160" h="21"
+                  l="168" t="0" r="183" b="22" />
+
+        <RSurface type="2" x="146" y="0" w="160" h="21"
+                  l="187" t="0" r="201" b="22" />
+        <RSurface type="2" x="146" y="0" w="160" h="21"
+                  l="201" t="0" r="242" b="22" />
+        <RSurface type="2" x="146" y="0" w="160" h="21"
+                  l="242" t="0" r="256" b="22" />
+        <copyrsurf src="0" dst="1" />
+        <copyrsurf src="0" dst="3" />                  
+    </UIButton>
+
+    <UIButton id="btn_help" x="9" y="158" w="160" h="22" 
+              tex="CommonBtn.tex" str_idx="5778" str_desc="로그인 화면으로" newtype="1" >
+        <RSurface type="0" x="0" y="0" w="14" h="21"
+                  l="113" t="0" r="127" b="22" />
+        <RSurface type="0" x="14" y="0" w="146" h="21"
+                  l="127" t="0" r="168" b="22" />
+        <RSurface type="0" x="146" y="0" w="160" h="21"
+                  l="168" t="0" r="183" b="22" />
+
+        <RSurface type="2" x="146" y="0" w="160" h="21"
+                  l="187" t="0" r="201" b="22" />
+        <RSurface type="2" x="146" y="0" w="160" h="21"
+                  l="201" t="0" r="242" b="22" />
+        <RSurface type="2" x="146" y="0" w="160" h="21"
+                  l="242" t="0" r="256" b="22" />
+        <copyrsurf src="0" dst="1" />
+        <copyrsurf src="0" dst="3" />
+    </UIButton>
+
+    <UIText id="" x="55" y="82" w="0" h="0" str_idx="4167" desc="접속중인 서버" />
+    <UIText id="str_server" x="55" y="99" w="0" h="0" str="ABCDEFGHJKIL" desc="접속중인 서버" />
+    
+</Window>

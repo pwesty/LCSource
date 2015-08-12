@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<Window id="auction" x="0" y="0" w="750" h="550" hide="0">
+    <UIImage id="img_back" x="0" y="0" w="750" h="550" hide="0" 
+             tex="Auction.tex" l="0" t="0" r="750" b="550" />
+    <UIButton id="btn_first" x="252" y="480" w="17" h="19" hide="0" 
+              tex="Auction.tex" str_idx="-1" str_desc="">
+        <uv type="0" l="138" t="515" r="155" b="534" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="160" t="515" r="155" b="534" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_prev" x="274" y="480" w="11" h="19" hide="0" tex="Auction.tex" str_idx="-1" str_desc="">
+        <uv type="0" l="160" t="515" r="171" b="534" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="2" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_next" x="372" y="480" w="11" h="19" hide="0" tex="Auction.tex" str_idx="-1" str_desc="">
+        <uv type="0" l="179" t="515" r="190" b="534" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="2" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_last" x="388" y="480" w="17" h="19" hide="0" tex="Auction.tex" str_idx="-1" str_desc="">
+        <uv type="0" l="196" t="515" r="213" b="534" />
+        <copyuv src="0" dst="1" />
+        <copyuv src="0" dst="2" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_sort_item" x="16" y="90" w="325" h="17" hide="0" tex="Auction.tex" str_idx="-1" str_desc="아이템">
+        <uv type="0" l="0" t="560" r="325" b="577" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="0" t="579" r="325" b="534" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_sort_count" x="343" y="90" w="50" h="17" hide="0" tex="Auction.tex" str_idx="-1" str_desc="수량">
+        <uv type="0" l="327" t="560" r="377" b="577" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="327" t="579" r="377" b="596" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_sort_nas" x="395" y="90" w="113" h="17" hide="0" tex="Auction.tex" str_idx="-1" str_desc="총액">
+        <uv type="0" l="379" t="560" r="492" b="577" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="379" t="579" r="492" b="596" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_sort_level" x="510" y="90" w="118" h="17" hide="0" tex="Auction.tex" str_idx="-1" str_desc="레벨">
+        <uv type="0" l="494" t="560" r="612" b="577" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="494" t="579" r="612" b="596" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_sort_finish" x="510" y="90" w="118" h="17" hide="0" tex="Auction.tex" str_idx="-1" str_desc="마감일자">
+        <uv type="0" l="494" t="560" r="612" b="577" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="494" t="579" r="612" b="596" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_sort_pass" x="510" y="90" w="118" h="17" hide="0" tex="Auction.tex" str_idx="-1" str_desc="상태">
+        <uv type="0" l="494" t="560" r="612" b="577" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="494" t="579" r="612" b="596" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_close" x="619" y="4" w="16" h="16" hide="0" tex="CommonBtn.tex" str_idx="-1" str_desc="">
+        <uv type="0" l="211" t="33" r="227" b="49" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="229" t="33" r="245" b="49" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_search" x="552" y="62" w="79" h="22" hide="0" tex="CommonBtn.tex" str_idx="-1" str_desc="검색">
+        <uv type="0" l="113" t="0" r="183" b="21" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="186" t="0" r="256" b="21" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_buy" x="533" y="478" w="98" h="22" hide="0" tex="CommonBtn.tex" str_idx="-1" str_desc="구입">
+        <uv type="0" l="113" t="0" r="183" b="21" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="186" t="0" r="256" b="21" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_cancel_resi" x="533" y="478" w="98" h="22" hide="0" tex="CommonBtn.tex" str_idx="-1" str_desc="등록취소">
+        <uv type="0" l="113" t="0" r="183" b="21" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="186" t="0" r="256" b="21" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIButton id="btn_cancel_resi" x="533" y="478" w="98" h="22" hide="0" tex="CommonBtn.tex" str_idx="-1" str_desc="정산">
+        <uv type="0" l="113" t="0" r="183" b="21" />
+        <copyuv src="0" dst="1" />
+        <uv type="2" l="186" t="0" r="256" b="21" />
+        <copyuv src="0" dst="3" />
+    </UIButton>
+    <UIComboBox id="cbb_item_type" x="11" y="65" w="105" h="16" hide="0" tex="Auction.tex" maxline="16" lineheight="15" space_x="8" space_y="4">
+        <btn_pos l="87" t="6" r="13" b="7" />
+        <thumb pos="back" l="0" t="518" r="105" b="534" />
+        <thumb pos="btn_down" l="117" t="522" r="130" b="529" />
+        <thumb pos="btn_up" l="117" t="522" r="130" b="529" />
+        <thumb pos="drop_list" l="0" t="537" r="105" b="555" />
+    </UIComboBox>
+    <UIComboBox id="cbb_sub_type" x="112" y="65" w="141" h="16" hide="0" tex="Auction.tex" maxline="17" lineheight="15" space_x="8" space_y="4">
+        <btn_pos l="123" t="6" r="13" b="7" />
+        <thumb pos="back" l="0" t="518" r="105" b="534" />
+        <thumb pos="btn_down" l="117" t="522" r="130" b="529" />
+        <thumb pos="btn_up" l="117" t="522" r="130" b="529" />
+        <thumb pos="drop_list" l="0" t="537" r="105" b="555" />
+    </UIComboBox>
+    <UIComboBox id="cbb_class" x="269" y="65" w="141" h="16" hide="0" tex="Auction.tex" maxline="16" lineheight="15" space_x="8" space_y="4">
+        <btn_pos l="123" t="6" r="13" b="7" />
+        <thumb pos="back" l="0" t="518" r="105" b="534" />
+        <thumb pos="btn_down" l="117" t="522" r="130" b="529" />
+        <thumb pos="btn_up" l="117" t="522" r="130" b="529" />
+        <thumb pos="drop_list" l="0" t="537" r="105" b="555" />
+    </UIComboBox>
+    <UIEdit id="edit_search" x="521" y="65" w="126" h="15" hide="0" tex="Auction.tex" max="40" passwd="1" focus="1" cursor_move="1">
+        <CandidateUV l="0" t="518" r="105" b="534" />
+        <ReadUV l="0" t="518" r="105" b="534" />
+    </UIEdit>
+</Window>
