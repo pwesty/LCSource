@@ -1,0 +1,415 @@
+#define ITEM_NAME_FIELD			"a_name"
+#define NPC_NAME_FIELD			"a_name"
+#define ITEM_PRICE_FIELD		"a_price"
+
+#define IP_BLOCK_AUTO
+#define	IP_BLOCK_BAND
+#if defined (IP_BLOCK_AUTO ) || defined (IP_BLOCK_BAND)
+#define IP_BLOCKNOKICK_AUTO	// 아이피 블럭모드 일때 킥하지 않고 로그만 남김
+// #define IP_BLOCKNOKICK_BAND	// 아이피 블럭모드 일때 킥하지 않고 로그만 남김
+#endif
+
+//0707
+#define SECRET_KEY						// 메시지 체크섬
+#define COMPRESSION_MESSAGE				// 메시지 압축
+
+#define CRYPT_NET_MSG					// 패킷 암호화
+
+#define AUTOSKILL
+
+#define	CHARDEL_CHECKID					// 케릭터 삭제시 민증번호 체크
+// #define EVENT_OPENBETA_CONN				// 오픈베타 접속자 저장 : 일본 클로즈베타 이벤트
+// #define	EVENT_OPENBETA_GIVE				// 오픈 베타 접속자 지급 : 일본 클로즈베타 이벤트
+#define FEEITEM							// 유료아이템
+// #define CHARSLOTEXT_CARD				// 케릭 슬롯 확장 카드 사용하지 않음.(풀면 사용)
+
+#define EMPAS_LOGIN						// 엠파스 로그인 
+#define	EVENT_PROMOTION_SITE			// 프로모션 사이트에서 가입한 계정의 첫번째 케릭터 
+
+#define NEW_DIVISION_EXPSP				// 새로 작성한 경험치 분배루틴 사용 여부
+#define NEW_BALANCE						// 새로 작업한 밸런스 관련
+#define	NEW_PK
+
+#define RECOMMEND_SERVER_SYSTEM			// 추천 서버 시스템
+#define RECOMMEND_SERVER_POTION_INDEX	1393
+#define RECOMMEND_SERVER_LEVEL			30
+
+#define MESSENGER_NEW					// 새로운 메신저 시스템
+
+#define	LIMIT_CATALOG					// 한정판매 아이템 
+#define PLATINUM						// 플래티늄 아이템
+#define CASH_ITEM_GIFT			 	    // 캐쉬 아이템 선물 
+
+#ifdef BWTEST
+#define	EVENT_PCBANG					// 등록된 피시방에서 접속시 아이템 지급 
+#define EVENT_PCBANG_TIME_SAVE			// 시간 저장하여 4시간 동안 접속 없으면 초기화 
+#define CASH_MOONSTONE
+#define MAGIC_MONSTER_DROP_ACC			// 마법 몬스터 드롭 옵션 악세사리 기사의 반지등
+#define EVENT_PARTNER_CODENEO			// 파트너 이벤트 codeNEO
+#define	EVENT_PACKAGE_ITEM				// 패키지 시리얼을 이용한 아이템 지급
+#define EVENT_OPEN_BETA_GIFT			// 오픈 베타 사은품
+#endif
+#define PANDOR_REGEN_TIME		PULSE_REAL_TENMIN // 판도라 상자 공격이 없을 경우  10분 뒤 설정
+
+#define ENABLE_OXQUIZ					// OX 퀴즈 활성화
+#define OX_QUIZ_COUNTRY_CODE	1		// OX 퀴즈 국가 코드, 1 - KOREA
+#define LC_TIME							// 라카력 작동 여부 
+
+#define NEW_PARTY_SYSTEM				// 새로운 파티 시스템
+
+#ifdef NEW_PARTY_SYSTEM
+#define PARTY_MATCHING					// 파티 매칭 시스템
+#endif // NEW_PARTY_SYSTEM
+
+#ifdef BSTEST
+#define GUILD_RANKING								// 길드 랭킹용 경험치 저장 여부
+#define PULSE_GUILD_RANKING_UPDATE		(5 * 60)	// 길드 랭킬용 경험치 저장 간격
+#define BLESS_WARRIOR					// 전사의 축복
+#define ENABLE_LOGOUT_DELAY				15		// 로그아웃 딜레이 15초
+#define PARTY_EXP_DIVISION_CHANGE_2006			// 파티 경험치 분배 수정
+#endif // BSTEST
+
+#define UPDATE_USER_TO_MASTERDB		// 마스터 디비에 유저 정보 추가 기능 사용 여부
+
+#ifdef BSTEST
+#define MONSTER_RAID_SYSTEM				// 몬스터 레이드 시스템
+#ifdef MONSTER_RAID_SYSTEM
+#define RAID_NPC_RAGE_SKILL				394		// 레이드 몹 분노 스킬 인덱스
+#define RAID_NPC_RAGE_SKILL_LEVEL		2		// 레이드 몹 분노 스킬 레벨
+#define RAID_NPC_NOTICE_CELL_EXT		5
+#define MAX_RARE_OPTION_SETTING			10		// 레어 옵션당 옵션 세팅 수
+#define MAX_RARE_OPTION_ITEM			10		// 아이템당 레어 옵션 수
+#ifdef BSTEST
+#define PULSE_MONSTER_RAID_MOVE		(3 * PULSE_REAL_MIN)	// 몬스터 레이드 이동 시간
+#else
+#define PULSE_MONSTER_RAID_MOVE		(14 * PULSE_REAL_MIN)	// 몬스터 레이드 이동 시간
+#endif // BSTEST
+#endif // MONSTER_RAID_SYSTEM
+#define RESTRICT_PK						(3 * 60 * 60)	// 엄격한 PK 규칙 : 카오 푸는 시간 조정, 성향 수치 변경 조점
+#define RESTRICT_PVP_SKILL				3		// 엄격한 스킬 규칙 : 몹에 타겟팅 되어 있을 경우, PK모드, 정당방위 모드 인비/데스모션 불가능
+#endif // BSTEST
+
+#define QUEST_DATA_EXTEND				// 퀘스트 데이터 디비 구조 확장
+
+#define ENABLE_CHARACTER_DELETE_DELAY	// 캐릭터 삭제 딜레이
+
+#define ITEM_COMPOSITE					// 아이템 합성
+
+#define LEND_ITEM_SYSTEM				// 아이템 대여 시스템 : kor 060721적용
+
+#define LIMIT_EXP_INCREASE				// 경험치 증가 제한 : 250%
+
+// #define ENABLE_FAST_REGEN	5			// 신섭만 30초 리젠을 10초로 줄임
+
+#define DROP_MAKE_DOCUMENT				// 제작서 드롭
+#define	MAX_UPGRADE_PLUS	15			// 아이템 업그레이드 최대 플러스 수치
+//#define EVENT_PREOPEN_GIFT				// 프리오픈 사은품
+//#define EVENT_OPENBETA_LEVELUP			// 오픈베타 레벨업 이벤트
+#define	EVENT_DOUBLE					// 더블 이벤트 : 경험치, SP, 나스, 생산품 2배
+//#define	EVENT_LATTO						// 라또 이벤트
+//#define	EVENT_NEWYEAR					// 설날 이벤트
+//#define	EVENT_VALENTINE					// 발렌타인 이벤트
+//#define		EVENT_WHITEDAY					// 화이트데이 이벤트
+//#define EVENT_LETTER						// 낱말 맞추기 이벤트
+#define EVENT_LETTER_CHANGE				// 낱말 맞추기 이벤트 : 낱말 교환 가능 : 드롭 불가
+//#define EVENT_CHANGEWEAPON				// 무기 교환 이벤트
+
+#define EVENT_MOONSTONE					// 문스톤 이벤트
+#define EVENT_MOONSTONE_DROP			// 문스톤 드랍
+//#define EVENT_CLOSEBETA_LEVELUP			// 클로즈베타 레벨업 이벤트 : 태국
+// #define MARGADUM_PVP						// 마르가둠 PVP : 태국
+
+#define EVENT_TREASUREBOX			1	// 보물상자 이벤트
+//#define EVENT_TEACH					2	// 후견인 이벤트
+//#define EVENT_TEACH_NAS			2	// 후견인 이벤트시 학생에게 나스 지급
+//#define EVENT_FRUIT_WATERMELON		3	// 과일 이벤트 : 수박
+//#define EVENT_FRUIT_MELON			3	// 과일 이벤트 : 참외
+//#define EVENT_FRUIT_PLUM			3	// 과일 이벤트 : 자두
+//#define EVENT_CHUSEOK				4	// 추석 이벤트
+//#define EVENT_SEPTEMBER				5	// 9월 이벤트
+//#define EVENT_CHANGE_WITHOUT_OPTION		6	// 2판4판 리뉴얼 이벤트 : 무기교환
+//#define EVENT_2PAN4PAN_LETTER			6	// 2판4판 리뉴얼 이벤트 : 문자모으기
+//#ifndef TEST_SERVER
+//#define EVENT_2PAN4PAN_GOODS			7	// 2판4판 리뉴얼 이벤트 : 아이템 지급
+//#define EVENT_2PAN4PAN_BOX				7	// 2판4판 리뉴얼 이벤트 : 아이템 지급
+//#define EVENT_2PAN4PAN_MONEY			7	// 2판4판 연계 이벤트 : 2판4판 머니 지급
+//#endif // #ifndef TEST_SERVER
+//#define EVENT_PEPERO					8	// 빼빼로데이 이벤트
+//#define EVENT_CHANGE_ARMOR_2005			11	// 무기/방어구 교환 이벤트
+//#define EVENT_XMAS_2005					9		// 2005 크리스마스 이벤트 : 꿈 희망
+//#define EVENT_XMAS_2005_DEFAULT			true	// 2005 크리스마스 이벤트 : 기본 시작 여부
+//#define EVENT_NEWYEAR_2006				10		// 2006 신년이벤트 : 사냥시간
+//#define EVENT_NEWYEAR_2006_TIME			false	// 2006 신년이벤트 : 사냥시간 누적시키기
+//#define EVENT_NEWYEAR_2006_GOODS				// 2006 신년이벤트 : 보상 받기
+
+// 친구찾기 이벤트
+//#ifndef TEST_SERVER
+//#define EVENT_SEARCHFRIEND				12		// 휴면케릭 : 친구등록
+//#define EVENT_SEARCHFRIEND_TIME			true	// 휴면케릭 : 사냥시간 누적시키기
+//#define EVENT_SEARCHFRIEND_GOODS				// 휴면케릭 : 보상 받기 개인
+//#endif
+
+//#define EVENT_VALENTINE_2006				13		// 2006 발렌타인 이벤트 : 초콜릿
+//#define EVENT_VALENTINE_2006_START			true	// 2006 발렌타인 이벤트 : 자동 시작 여부
+
+//#define EVENT_WHITEDAY_2006				14		// 2006 화이트데이 이벤트
+
+//#define EVENT_NEW_SERVER_2006_OLDSERVER		15		// 2006 업데이트 기념 이벤트 : 기존 서버용 : 공방향상 포션 이벤트
+//#ifndef TEST_SERVER
+//#define EVENT_NEW_SERVER_2006_NEWSERVER		16		// 2006 업데이트 기념 이벤트 : 신규 서버용 : 부스터, 경험치 포션, 공방향상 포션 이벤트
+//#define EVENT_NEW_SERVER_2006_SERVERNO		4
+//#endif // #ifndef TEST_SERVER
+//#define EVENT_SAKURA							17		// 사쿠라 이벤트 : 일본
+
+//#define EVENT_OX_QUIZ						18		// OX 퀴즈 이벤트, 공지용으로 사용되며 이벤트 자체는 운영자 명령으로 상시로 수행된다
+
+//#define EVENT_WORLDCUP_2006					19		// 2006 월드컵 이벤트
+//#define EVENT_WORLDCUP_2006_VOTE					// 2006 월드컵 이벤트 승리 국가 맞추가 응모
+//#define EVENT_WORLDCUP_2006_GIFT					// 2006 월드컵 이벤트 승리 국가 맞추기 지급
+
+//#define EVENT_RAIN_2006						20		// 장마 이벤트 : 빗방울 빗물병 모으기
+//#define EVENT_TLD_BUDDHIST					21		// 태국 불교 촛불 이벤트
+
+//#define EVENT_COLLECT_BUG					22		// 곤충 채집 이벤트
+//#define EVENT_COLLECT_BUG_DROP						// 곤충 채집 이벤트용 곤충 드롭 여부
+//#define EVENT_NEWSERVER_BASTARD				23		// 신섭 바스타드 오픈 이벤트 : 신섭
+//#define EVENT_NEWSERVER_BASTARD_OLD_NOTICE	24		// 신섭 바스타드 오픈 이벤트 : 구섭
+
+//#define EVENT_CHUSEOK_2006					25		// 2006년 추석 이벤트
+//#define EVENT_CHUSEOK_2006_GIFT							// 2006년 추석 이벤트 교환 여부
+// #define EVENT_HALLOWEEN_2006	26		// 할로윈 이벤트 
+
+#define NOTICE_EVENT					// 게임내 이벤트 공지.
+#define ETC_EVENT
+
+#ifdef ETC_EVENT
+#define		ETC_EVENT_UNIFY_NAMECHANGE				(1 << 0) // 통합후 이름 바꾸기 아이템
+#define		ETC_EVENT_UNIFY_GUILDNAMECHANGE			(1 << 1) // 통합후 길드 이름 바꾸기 아이템
+#define		ETC_EVENT_NEWYEAR_2006					(1 << 2) // 2006년 신년 이벤트
+#define		ETC_EVENT_NEW_SERVER_2006_STATPOTION	(1 << 3) // 2006년 신섭 오픈 이벤트 : 공방 향상
+#define		ETC_EVENT_NEW_SERVER_2006_EXPPOTION		(1 << 4) // 2006년 신섭 오픈 이벤트 : 경험치 향상
+#endif // #ifdef ETC_EVENT
+
+#define ENABLE_CHANGEJOB				// 전직 여부
+
+#define ENABLE_STATISTICS				// 아이템 통계 내기
+#define ENABLE_PET						// 펫 시스템
+#define	MAX_OWN_PET				2		// 펫을 소유 할수 있는 갯수
+#define ENABLE_WAR_CASTLE				// 공성 활성화
+//#define TLD_WAR_TEST					// 테스트 공성일떄 처리 사항
+//#define	SPECIALREFINE_UPGRAGE_DOWN		// 태국 고제 드롭 사고로 인한 업그레이드 확률 조정 : 하드코딩 드롭율 정상화 : 060321
+
+#define	EXTERNAL_COUNT_MAX		30		// 최대 외부 카운터 테이블 갯수
+// 060427 현재 1은 넷마블, 2는 엠파스, User_db의 t_count_external_id 테이블의 인덱스와 동일하게 맞추어야 함.
+#define	EXTERNAL_COUNT  ( 1 << 2 )		// 2 - 엠파스
+
+
+
+#define ENABLE_SINGLEDUNGEON_DATA		// 퍼스널 던전 입장권 드롭 & 입장 제한 : BW
+
+#define	ENABLE_MESSENGER				// 메신저.
+
+#define CREATE_SORCERER					// 소서러 생성 허용
+#define ENABLE_DROP_PETEGG				// 펫 알 드롭
+
+#ifdef TEST_SERVER
+#define DISABLE_PKPENALTY				// PK 페널티 제거
+#endif // #ifdef TEST_SERVER
+
+#ifdef BSTEST
+#undef DISABLE_PKPENALTY
+#endif // BSTEST
+
+#define CONNECTOR_SERVER_NAME	"LC_CONN_SERV"
+
+#define BILL_REAL_SEC_WARN			10						// 10초마다 경고 검사
+#define PULSE_BILL_WARN				(BILL_REAL_SEC_WARN * PULSE_REAL_SEC)
+#define PULSE_BILL_REFRESH			PULSE_REAL_HOUR			// 1시간마다 정보 갱신
+
+
+
+#define LEN_BILL_GUID			30
+#define LEN_BILL_VIEWNAME		60
+#define LEN_CATALOG_GUID		30
+#define LEN_ITEM_GUID			30
+
+#define LEN_CATALOG_ID			30
+#define LEN_USER_ID				30
+
+#define BILL_SECTION_HOUR		6
+#define BILL_SECTION_DAY		4
+#define BILL_SECTION_BEGIN		2
+#define BILL_SECTION_FREE		50
+
+#define	ENABLE_MESSENGER				// 메신저.
+// echo <zone | server | all / subserver> <chat>
+#define		GM_CMD_ECHO				"echo"			// 운영자 알림 메시지
+#define		GM_LEVEL_ECHO			8
+#define		GM_CMD_ECHO_ZONE		"zone"			// 존 알림 메시지
+#define		GM_CMD_ECHO_SERVER		"server"		// 서버군 알림 메시지
+#define		GM_CMD_ECHO_ALL			"all"			// 모든 서버 알림 메시지
+#define		GM_CMD_ECHO_SUBSERVER	"subserver"		// 서버군 서브서버 알림 메시지
+#define		GM_CMD_ECHO_ALLZONE		"allzone"		// 모든 서버군의 존에 알림
+
+// go_zone <zone> <extra>
+#define		GM_CMD_GO_ZONE			"go_zone"		// 존 이동
+#define		GM_LEVEL_GO_ZONE		3
+// goto <x> <z> <y>
+#define		GM_CMD_GOTO				"goto"			// 장소 이동
+#define		GM_LEVEL_GOTO			3
+// itemdrop <index> <plus> <flag> <count> <option_count> <option_type> <option_level>
+#define		GM_CMD_ITEMDROP			"itemdrop"		// 아이템 강제 드롭
+#define		GM_LEVEL_ITEMDROP		10
+// count_pc
+#define		GM_CMD_COUNT_PC			"count_pcc"		// 사용자 수 조사
+#define		GM_LEVEL_COUNT_PC		10
+// loopcount
+#define		GM_CMD_LOOPCOUNT		"loopcount"		// 루프 카운트 조사
+#define		GM_LEVEL_LOOPCOUNT		10
+// immortal
+#define		GM_CMD_IMMORTAL			"immortal"		// 몹에게 공격 당하지 않음: 토글
+#define		GM_LEVEL_IMMORTAL		3
+// shutdown <time:sec> <msg>
+#define		GM_CMD_SHUTDOWN			"shutdown"		// 셧다운: 자동 재실행 없음(서버군 다운)
+#define		GM_LEVEL_SHUTDOWN		9
+// reboot <all | server | subserver> <time:sec> <msg>
+#define		GM_CMD_REBOOT			"reboot"		// 리부트: 자동 재실행 함
+#define		GM_LEVEL_REBOOT			9
+// count_npc
+#define		GM_CMD_COUNT_NPC		"count_npc"		// npc 수 조사
+#define		GM_LEVEL_COUNT_NPC		9				
+// visible
+#define		GM_CMD_VISIBLE			"visible"		// 투명/불투명 설정
+#define		GM_LEVEL_VISIBLE		3
+// go_pc <char name>
+#define		GM_CMD_GO_PC			"go_pc"			// 지정한 캐릭터 옆으로 이동
+#define		GM_LEVEL_GO_PC			3
+// go_npc <name or index>
+#define		GM_CMD_GO_NPC			"go_npc"		// 지정한 몹 옆으로 이동
+#define		GM_LEVEL_GO_NPC			3
+// levelup <level>
+#define		GM_CMD_LEVELUP			"levelup"		// 지정한 레벨로 변경
+#define		GM_LEVEL_LEVELUP		8
+// kick <char name>
+#define		GM_CMD_KICK				"kick"			// 캐릭터를 서버로부터 튕겨냄
+#define		GM_LEVEL_KICK			5
+// comon <char name>
+#define		GM_CMD_COMON			"common"		// 캐릭터를 운영자 캐릭터 앞으로
+#define		GM_LEVEL_COMON			8
+// summon <name or index>
+#define		GM_CMD_SUMMON			"summon"		// 지정한 몹 운영자 캐릭터 앞으로 소환
+#define		GM_LEVEL_SUMMON			8
+// silence <char name> <time:sec>
+#define		GM_CMD_SILENCE			"silence"		// 캐릭터에게 시간동안 채팅 금지
+#define		GM_LEVEL_SILENCE		5
+// whereami 
+#define		GM_CMD_WHERE_AM_I		"whereami"		// 캐릭터의 zone, area 번호
+#define		GM_LEVEL_WHERE_AM_I		3
+// QuestComplete <QuestTypeNum>
+#define		GM_CMD_QUEST_COMPLETE	"questcomplete"	// 퀘스트 강제 완료
+#define		GM_LEVEL_QUEST_COMPLETE	7
+// statpoint <remain> [<str> <dex> <int> <con>]
+#define		GM_CMD_STATPOINT		"statpoint"		// 스탯 포인트 강제 설정
+#define		GM_LEVEL_STATPOINT		7
+// skillpoint <count>
+#define		GM_CMD_SKILLPOINT		"skillpoint"	// 스킬 포인트 강제 설정
+#define		GM_LEVEL_SKILLPOINT		7
+// set_regensec <index> <time:1/10sec>
+#define		GM_CMD_SET_REGENSEC		"set_regensec"	// 해당 npc regensec 조정
+#define		GM_LEVEL_SET_REGENSEC	8
+// npc_regen <index>
+#define		GM_CMD_NPC_REGEN		"npc_regen"		// 해당 npc 중 리젠 되야 하는것들 모두 강제 리젠
+#define		GM_LEVEL_NPC_REGEN		8
+// kill_npc <meter :m>
+#define		GM_CMD_KILL_NPC			"kill_npc"		// 운영자와 거리안에 있는 npc들 모두 강제 죽임 
+#define		GM_LEVEL_KILL_NPC		1
+// expup <exp%>
+#define		GM_CMD_EXPUP			"expup"			// 캐릭터 경험치 변경
+#define		GM_LEVEL_EXPUP			8
+// bloodpoint <bloodpoint>
+#define		GM_CMD_BLOODPOINT		"bloodpoint"	// 캐릭터 현재 Blood Point 변경
+#define		GM_LEVEL_BLOODPOINT		8
+// endgame <time:sec> <msg>
+#define		GM_CMD_ENDGAME			"endgame"		// 메신저를 제외한 모든 서버 다운
+#define		GM_LEVEL_ENDGAME		9
+// observe
+#define		GM_CMD_OBSERVE			"observe"		// 관찰자 설정
+#define		GM_LEVEL_OBSERVE		9
+// chatmonitor <character name>
+#define		GM_CMD_CHATMONITOR		"chatmonitor"	// 채팅 감시
+#define		GM_LEVEL_CHATMONITOR	5
+// double_event <"start" or "stop" or "ing">
+#define		GM_CMD_DOUBLE_EVENT		"double_event"	// 경험치, 나스, SP, 생산품 2배 이벤트
+#define		GM_LEVEL_DOUBLE_EVENT		9
+// latto_event <"start" or "stop" or "ing">
+#define		GM_CMD_LATTO_EVENT		"latto_event"	// 라또 이벤트
+#define		GM_LEVEL_LATTO_EVENT		9
+// doubleexp_event <serverno | all | cur> <start | stop | ing> <0~200%>
+#define		GM_CMD_DOUBLE_EXP_EVENT		"doubleexp_event"	// 경험치 2배 이벤트(퍼센티지에 따라 바꾸는 것으로 수정)
+#define		GM_LEVEL_DOUBLE_EXP_EVENT		9
+// newyear_event <"start" or "stop" or "ing">
+#define		GM_CMD_NEWYEAR_EVENT		"newyear_event"	// 설날 이벤트
+#define		GM_LEVEL_NEWYEAR_EVENT		9
+// valentine_event <"start" or "stop" or "ing">
+#define		GM_CMD_VALENTINE_EVENT		"valentine_event"	// 발렌타인데이 이벤트
+#define		GM_LEVEL_VALENTINE_EVENT		9
+// whiteday_event <"start" or "stop" or "ing">
+#define		GM_CMD_WHITEDAY_EVENT		"whiteday_event"	// 화이트데이 이벤트
+#define		GM_LEVEL_WHITEDAY_EVENT		9
+// letter_event <"start" or "stop" or "ing">
+#define		GM_CMD_LETTER_EVENT		"letter_event"	// 낱말 맞추기 이벤트
+#define		GM_LEVEL_LETTER_EVENT		9
+// reloadgmip
+#define		GM_CMD_RELOAD_GMIP		"reloadgmip"	// GM IP 설정 테이블 다시 읽기
+#define		GM_LEVEL_RELOAD_GMIP	10
+// speedup
+#define		GM_CMD_SPEEDUP			"speedup"		// 빨리 달리기
+#define		GM_LEVEL_SPEEDUP		3
+// fameup
+#define		GM_CMD_FAMEUP			"fameup"		// 명성치 조정
+#define		GM_LEVEL_FAMEUP			9
+// event <name> <start | stop | ing>
+#define		GM_CMD_EVENT			"event"			// 이벤트 통합
+#define		GM_LEVEL_EVENT			9
+// pd4 <rankinit | rewardinit | rewardend>
+#define		GM_CMD_PD4				"pd4"
+#define		GM_LEVEL_PD4			9				// 차원의문 랭크
+// kickid <id>
+#define		GM_CMD_KICK_ID			"kickid"		// id로 강제 접속 해제
+#define		GM_LEVEL_KICK_ID		5
+// resurrection <name>
+#define		GM_CMD_RESURRECTION		"resurrection"	// 해당 케릭터 부활
+#define		GM_LEVEL_RESURRECTION	9
+// recommend <server no>
+#define		GM_CMD_RECOMMEND		"recommend"		// 해당 서버군 추천 설정, -1이면 모두 추천 아닌 것으로
+#define		GM_LEVEL_RECOMMEND		9
+// setlimit	 <ctid> <sellNo>
+#define		GM_CMD_SETLIMIT			"setlimit"		// 해당 서버군의 판매상품 설정, sellNo 더 판매할 숫자. 캐쉬툴에 설정된 리미트보다 많을수는 없음
+#define		GM_LEVEL_SETLIMIT		9			
+// disguise
+#define		GM_CMD_DISGUISE			"disguise"		// 해당 서버군의 판매상품 설정, sellNo 더 판매할 숫자. 캐쉬툴에 설정된 리미트보다 많을수는 없음
+#define		GM_LEVEL_DISGUISE		9
+// loginserver <open | close | reboot>
+#define		GM_CMD_LOGINSERVER		"loginserver"	// 로그인 서버 제어
+#define		GM_LEVEL_LOGINSERVER	9
+
+#define		NOTADULTMIN				6
+#define		NOTADULTMAX				22
+#define		NOTADULTNOTICE			21
+#define		NOTADULTNOTICE_INTERVAL	10
+
+// #define NEW_DOUBLE_GM
+#ifdef NEW_DOUBLE_GM
+#define DEFAULT_NAS_PERCENT		100		// 나스 드롭확률 조절
+#define DEFAULT_NAS_GET_PERCENT	100		// 나스 습득량 조절 
+#define DEFAULT_EXP_PERCENT		100		// 경험치 획득량 조절
+#define DEFAULT_SP_PERCENT		100		// sp 획득량 조절
+#define DEFAULT_PRO_PERCENT		80		// 생산 습득 확률 조절
+#define DEFAULT_PRO_GET_NUMBER	1		// 생산 습득 갯수
+#endif
+
+#ifdef COMPRESSION_MESSAGE
+	#define COMPRESSION_TYPE	2  // 1: LZ, 2: Zlib
+#else
+	#define COMPRESSION_TYPE	0
+#endif

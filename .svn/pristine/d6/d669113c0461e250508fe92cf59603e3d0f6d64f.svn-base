@@ -1,0 +1,16 @@
+1.
+특정 폴더 제외하고 업데이트 하길 원할 때
+$ svn update --set-depth exclude bigFolder  #Removes "bigFolder" from workdir
+D bigFolder
+
+후에 업데이트를 할 시에는 해당 bigFolder는 업데이트 대상에서 제외될 것이다.
+
+svn:ignore is only for files that are not already in the Subversion repository. This folder already is.
+*svn:ignore 는 특정 파일이지 디렉토리가 아니다.
+
+
+
+1번의 작업을 다시 원상태로 돌리고 싶으면
+
+$ svn update --set-depth infinity
+명령어를 이용한다.

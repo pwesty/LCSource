@@ -1,0 +1,29 @@
+cd CHSMD
+make clean ; make
+RETVAL=$?
+[ $RETVAL -ne 0 ] && exit
+cd ..
+
+cd TIFB
+make clean ; make
+RETVAL=$?
+[ $RETVAL -ne 0 ] && exit
+cd ..
+
+cd CDB_STSOC
+make clean ; make
+RETVAL=$?
+[ $RETVAL -ne 0 ] && exit
+cd ..
+
+cd CDB_CTSOC
+make clean ; make
+RETVAL=$?
+[ $RETVAL -ne 0 ] && exit
+cd ..
+
+cd CHAR_RELOCATE
+make clean ; make
+RETVAL=$?
+[ $RETVAL -ne 0 ] && exit
+cd ..

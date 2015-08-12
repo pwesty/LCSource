@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8fb142ff-3ecb-4de0-a14e-f1e38196213d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4e80a1f3-47e6-4363-9a65-347896ac7c80}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Makefile">
+      <UniqueIdentifier>{f5d2ea5b-2fd2-4aa1-a953-b02da4d280d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Localize">
+      <UniqueIdentifier>{425419c1-f63f-4715-ad85-cc091aa3859a}</UniqueIdentifier>
+      <Extensions>inc;inh</Extensions>
+    </Filter>
+    <Filter Include="Localize\KOR">
+      <UniqueIdentifier>{8f5bca09-8095-43db-891e-5e58124f7ce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Localize\TLD">
+      <UniqueIdentifier>{1c012a49-125c-43d1-a2ac-f0a3ba696c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting Files">
+      <UniqueIdentifier>{b36a6f4c-215d-4d86-b3a9-396cfba95774}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CmdMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Connector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Descriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcConnMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerRun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitPlayerList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BillingClient_KOR.cpp">
+      <Filter>Localize\KOR</Filter>
+    </ClCompile>
+    <ClCompile Include="BillingClient_TLD.cpp">
+      <Filter>Localize\TLD</Filter>
+    </ClCompile>
+    <ClCompile Include="BillCmdMsg_KOR.cpp">
+      <Filter>Localize\KOR</Filter>
+    </ClCompile>
+    <ClCompile Include="BillCmdMsg_TLD.cpp">
+      <Filter>Localize\TLD</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcConnMsg_KOR.cpp">
+      <Filter>Localize\KOR</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcConnMsg_TLD.cpp">
+      <Filter>Localize\TLD</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BillCmdMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BillingClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Descriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcConnMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdhdrs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitPlayerList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BillingClient_KOR.h">
+      <Filter>Localize\KOR</Filter>
+    </ClInclude>
+    <ClInclude Include="BillingClient_TLD.h">
+      <Filter>Localize\TLD</Filter>
+    </ClInclude>
+    <ClInclude Include="BillCmdMsg_KOR.h">
+      <Filter>Localize\KOR</Filter>
+    </ClInclude>
+    <ClInclude Include="BillCmdMsg_TLD.h">
+      <Filter>Localize\TLD</Filter>
+    </ClInclude>
+    <ClInclude Include="BillMessage_KOR.h">
+      <Filter>Localize\KOR</Filter>
+    </ClInclude>
+    <ClInclude Include="BillMessage_TLD.h">
+      <Filter>Localize\TLD</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcConnMsg_KOR.h">
+      <Filter>Localize\KOR</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcConnMsg_TLD.h">
+      <Filter>Localize\TLD</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile">
+      <Filter>Makefile</Filter>
+    </None>
+    <None Include="newStobm.bin.new">
+      <Filter>Setting Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

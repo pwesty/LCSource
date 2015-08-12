@@ -1,0 +1,28 @@
+cd APPLOG
+make clean
+make
+RETVAL=$?
+[ $RETVAL -ne 0 ] && exit
+cd ..
+
+cd SHMUTIL_LIB
+make clean
+make
+RETVAL=$?
+[ $RETVAL -ne 0 ] && exit
+cd ..
+
+cd HASHSHM_LIB
+make clean
+make
+RETVAL=$?
+[ $RETVAL -ne 0 ] && exit
+make install
+cd ..
+
+cd SOCKLIB
+make clean
+make
+RETVAL=$?
+[ $RETVAL -ne 0 ] && exit
+cd ..

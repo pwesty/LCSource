@@ -1,0 +1,81 @@
+#--------------------- Makefile which have no SubDir ---------------------
+SHELL  		= /bin/sh
+SRCDIR 		= .
+
+CC 			= cc
+
+TARGET		= all
+
+SUBDIRS		= 
+
+INSTALL 	= cp
+MAKEDEPEND 	= makedepend
+
+LOC_INCDIR	= ../../INC
+MY_INCDIR	=	../../LIB
+
+LOC_LIBDIR	= ../../LIB
+MY_LIBDIR	= ../../LIB
+
+
+INC_DIRS	= -I. -I$(LOC_INCDIR)
+#INC_DIRS	= -I. -I$(MY_INCDIR) -I$(LOC_INCDIR)
+
+#LIB_DIRS	= -L$(MY_LIBDIR) -L$(LOC_LIBDIR)
+LIB_DIRS	= -L$(LOC_LIBDIR)
+#LIBS    	= $(LIB_PATH_ORACLE)   -lUtil -lnsl -ldl -lSHMUTIL_LIB
+LIBS       =  -lUtil -lnsl -ldl -lShmUtil
+OPTIMIZE    = -O
+#-------------------- Source & Objects & Libraries------------------------
+PROGRAMS	= StartMC
+PROGRAMS2	= KillMC
+PROGRAMS3	= DisMC
+
+#DEFINES 	= -DDEBUG -DPRINT
+#DEFINES 	= -DDEBUG -DLIBPRN
+#DEFINES 	= -DDEBUG -DPRINT -DPERROR -DTEST
+DEFINES 	= -DDEBUG -erroff=%none -errwarn=%all
+
+MFLAGS		= 
+CFLAGS		= $(DEFINES) $(INC_DIRS) -g -xarch=v9
+
+LDFLAGS		=	
+LDOPTIONS	=
+
+
+LIBRARIES	= 
+
+DEPLIBS1	= 
+
+SOURCE		=	StartMC.c tifb_util.c 
+SOURCE2		=	KillMC.c tifb_util.c 
+SOURCE3		=	DisMC.c tifb_util.c 
+
+OBJS		= $(SOURCE:.c=.o)
+OBJS2		= $(SOURCE2:.c=.o)
+OBJS3		= $(SOURCE3:.c=.o)
+
+#-------------------------------------------------------------------------
+
+all:: $(PROGRAMS) $(PROGRAMS2) $(PROGRAMS3) install
+#all:: $(PROGRAMS3)
+
+$(PROGRAMS): $(OBJS)
+	$(CC) -o $@ $(OBJS) $(CFLAGS) $(LIB_DIRS) $(LDFLAGS) $(LIBS) -g
+
+$(PROGRAMS2): $(OBJS2)
+	$(CC) -o $@ $(OBJS2) $(CFLAGS) $(LIB_DIRS) $(LDFLAGS) $(LIBS) -g
+
+$(PROGRAMS3): $(OBJS3)
+	$(CC) -o $@ $(OBJS3) $(CFLAGS) $(LIB_DIRS) $(LDFLAGS) $(LIBS) -g
+
+lint:
+	lint $(INC_DIRS) -Xarch=v9 -errchk=longptr64 $(SOURCE) $(SOURCE1) $(SOURCE2)
+
+clean::
+	rm -f $(PROGRAMS) $(PROGRAMS2) $(PROGRAMS3) $(OBJS) $(OBJS2) $(OBJS3) core
+
+install::
+	$(INSTALL) $(PROGRAMS) ../../BIN
+	$(INSTALL) $(PROGRAMS2) ../../BIN
+	$(INSTALL) $(PROGRAMS3) ../../BIN

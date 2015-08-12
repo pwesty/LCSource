@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+<appender name="DATE_LOGFILE" class="org.apache.log4j.DailyRollingFileAppender">
+	<param name="Append" value="true" />
+	<param name="File"   value="../LogFiles/${logfile}.log" />
+	<param name="DatePattern" value="'.'yyyy-MM-dd" />
+
+	<layout class="org.apache.log4j.PatternLayout">
+		<!-- <param name="TimeZoneID" value="GMT"/> -->
+		<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%20F : %5L] - %m%n"/>
+	</layout>
+	
+	<filter class="LevelRangeFilter">
+		<param name="LevelMin" value="TRACE" />
+       <param name="LevelMax" value="FATAL" />
+	</filter>
+</appender>
+
+<appender name="DATE_LOGCONSOLE" class="org.apache.log4j.ConsoleAppender">
+	<layout class="org.apache.log4j.PatternLayout">
+		<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p - %m%n"/>
+	</layout>
+	
+	<filter class="LevelMatchFilter">
+		<param name="LevelToMatch" value="TRACE" />
+		<param name="AcceptOnMatch" value="true"/>
+	</filter>
+	
+	<filter class="LevelMatchFilter">
+		<param name="LevelToMatch" value="DEBUG" />
+		<param name="AcceptOnMatch" value="true"/>
+	</filter>
+	
+	<filter class="LevelMatchFilter">
+		<param name="LevelToMatch" value="INFO" />
+		<param name="AcceptOnMatch" value="true"/>
+	</filter>
+	
+	<filter class="LevelMatchFilter">
+		<param name="LevelToMatch" value="WARN" />
+		<param name="AcceptOnMatch" value="true"/>
+	</filter>
+	
+	<filter class="LevelMatchFilter">
+		<param name="LevelToMatch" value="ERROR" />
+		<param name="AcceptOnMatch" value="true"/>
+	</filter>
+	
+	<filter class="LevelMatchFilter">
+		<param name="LevelToMatch" value="FATAL" />
+		<param name="AcceptOnMatch" value="true"/>
+	</filter>
+	
+</appender>
+
+<root>
+  <priority value="trace"/>
+	<appender-ref ref="DATE_LOGFILE"/>
+	<appender-ref ref="DATE_LOGCONSOLE"/>
+</root>
+
+</log4j:configuration> 

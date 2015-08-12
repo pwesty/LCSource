@@ -1,0 +1,7 @@
+cd LIBSRC
+./MakeLIB
+cd ..
+cd SRC
+./MakeSRC
+cd ..
+

@@ -1,0 +1,42 @@
+[Server]
+IP=127.0.0.1
+Port=7999
+
+[Catalog DB]
+Number=1
+IP=127.0.0.1
+DBName=newproject_data_060621_mal_ob
+User=laka
+Password=lakabsdh
+
+[Catalog Table_0]
+GAMEID=1
+
+[Catalog Table_1]
+GAMEID=3
+
+;[DB]
+;SOURCE=61.78.55.183
+;USER=tbilluser
+;PASSWORD=ghdwoqlffldgk3
+;DBNAME=tbilldb
+
+;[DB]
+;SOURCE=61.90.198.47
+;USER=tbilltest
+;PASSWORD=gW9lacatLD
+;DBNAME=tbilltestdb
+
+
+[DB]
+SOURCE=61.104.44.152
+USER=TEnter
+PASSWORD=TEnterBilling
+DBNAME=LC_Billing
+
+
+;[DB]
+;SOURCE=61.90.198.47
+;USER=tbilluser
+;PASSWORD=!crypt!895F1C8C2AC66313A66D67
+;DBNAME=tbilldb

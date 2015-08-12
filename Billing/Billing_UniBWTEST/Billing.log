@@ -1,0 +1,8 @@
+﻿Build started 8/2/2015 2:02:08 PM.
+     1>Project "C:\Users\EZ Rentals\Downloads\home\EvilMonkey\Server\Billing\Billing.vcxproj" on node 2 (CustomBuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(151,5): warning MSB8018: No outputs specified for item "newStobm.bin". Its custom build command will be skipped.
+     1>Done Building Project "C:\Users\EZ Rentals\Downloads\home\EvilMonkey\Server\Billing\Billing.vcxproj" (CustomBuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.31

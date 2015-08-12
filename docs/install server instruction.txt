@@ -1,0 +1,342 @@
+﻿- 필요한 프로그램 다운로드 하는 곳
+wget http://samba.org/ftp/ccache/ccache-3.1.9.tar.gz
+wget http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tgz
+wget http://files.randombit.net/botan/v1.10/Botan-1.10.5.tgz
+wget http://mirror.apache-kr.org//apr/apr-1.5.1.tar.gz
+wget http://mirror.apache-kr.org//apr/apr-util-1.5.4.tar.gz
+wget http://www.apache.org/dyn/closer.cgi/logging/log4cxx/0.10.0/apache-log4cxx-0.10.0.tar.gz
+wget http://www.sourceforge.net/projects/jsoncpp/files/jsoncpp/0.6.0-rc2/jsoncpp-src-0.6.0-rc2.tar.gz
+wget http://www.sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.gz
+wget http://www.sourceforge.net/projects/boost/files/boost/1.54.0/boost_1_54_0.tar.gz
+wget http://mirror.apache-kr.org/subversion/subversion-1.8.11.tar.gz
+wget http://mirror.cogentco.com/pub/mysql/MySQL-5.1/mysql-5.1.71.tar.gz
+wget http://sourceforge.net/projects/sqlite.mirror/files/SQLite%203.7.17/sqlite-autoconf-3071700.tar.gz
+wget https://distcc.googlecode.com/files/distcc-3.2rc1.tar.gz
+
+< CentOS 5.9를 기준으로 작성됨 >
+yum upgrade
+ - CentOS 5.10으로 업그레이드
+
+# cd / 
+- gcc 4.4.7 설치
+# yum install gcc44.i386 gcc44-c++.i386
+# cd /usr/bin
+# ln -s gcc44 gcc
+# ln -s g++44 g++
+# yum groupinstall "Development Tools"
+# whereis gcc
+# gcc --version
+##stop goto cd /
+location of gcc 
+##gcc: /usr/bin/gcc /usr/lib/gcc /usr/libexec/gcc /usr/share/man/man1/gcc.1.gz
+
+
+
+# cd /
+- ccache 설치
+# wget http://samba.org/ftp/ccache/ccache-3.1.9.tar.gz
+# tar xvzf ccache-3.1.9.tar.gz
+# cd ccache-3.1.9
+# ./configure
+# make
+# make install
+##stop goto cd /
+Location
+##
+/usr/bin/install -c -d /usr/local/bin
+/usr/bin/install -c -m 755 ccache /usr/local/bin
+/usr/bin/install -c -d /usr/local/share/man/man1
+/usr/bin/install -c -m 644 ./ccache.1 /usr/local/share/man/man1/
+
+
+
+
+# cd /
+- Python 2.7 설치 (Botan 10.5를 설치하기 위한 작업)
+# wget --no-check-certificate http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tgz
+# tar xvzf Python-2.7.5.tgz
+# cd Python-2.7.5
+# ./configure --prefix=/usr/local/python2.7.5 --with-threads --enable-shared
+# make -j2
+# make install
+# echo "/usr/local/python2.7.5/lib/" >> /etc/ld.so.conf.d/python2.7.5.conf
+# ldconfig
+##stop goto cd /
+location
+## /user/local/python2.7.5/
+
+
+
+# cd /
+- Botan library 설치
+# cd /usr/bin
+# wget http://files.randombit.net/botan/v1.10/Botan-1.10.5.tgz
+# rm -rf python
+# ln -s /usr/local/python2.7.5 /bin/python2.7 python
+# tar xvzf Botan-1.10.5.tgz
+# cd Botan-1.10.5
+# ./configure.py --disable-shared
+# yum install gcc-c++
+# make -j2
+# make install
+# cd /usr/bin
+# rm -rf python
+# ln -s python2.4 python
+##stop goto cd /
+location
+install -m 644 libbotan-1.10.a /usr/local/lib
+install -m 755 build/botan-config-1.10 /usr/local/bin
+install -m 644 build/botan-1.10.pc /usr/local/lib/pkgconfig
+
+
+
+# cd /
+- check yum fix if needed
+- Fixing yum
+# cd usr/bin/
+# vi yum
+# change top line from
+- #!/usr/bin/pythonxxx.x   to specific version     #!/usr/bin/python2.6
+#
+
+# cd /
+- Log4cxx 설치
+# yum erase apr-devel.i386 apr-util-devel.i386
+
+# cd /
+apr-1.5.0기준
+# wget http://mirror.apache-kr.org/apr/apr-1.5.1.tar.gz
+# tar xvzf apr-1.5.1.tar.gz
+# cd apr-1.5.1
+# ./configure --prefix=/usr/local/apr-1.5.1 --enable-shared=no
+# make -j2
+# make install
+# ln -s /usr/local/apr-1.5.1 /usr/local/apr
+##goto cd /
+location
+/usr/local/apr-1.5.1/lib
+/usr/local/apr-1.5.1/build-1
+/usr/local/apr-1.5.1/bin/apr-1-config
+
+
+# cd /
+apr-util-1.5.3 기준
+# wget http://mirror.apache-kr.org/apr/apr-util-1.5.4.tar.gz
+# tar xvzf apr-util-1.5.4.tar.gz
+# cd apr-util-1.5.4
+# ./configure --with-apr=/usr/local/apr
+# make -j2
+# make install
+##goto cd /
+location
+/usr/local/apr/lib
+/usr/local/apr/bin/apu-1-config
+
+# cd /
+-apache-log4cxx-0.10.0
+# wget http://mirror.apache-kr.org/logging/log4cxx/0.10.0/apache-log4cxx-0.10.0.tar.gz
+# tar xvzf apache-log4cxx-0.10.0.tar.gz
+# cd apache-log4cxx-0.10.0
+# ./configure --enable-shared=no --enable-static=yes --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr
+
+----Fix-for-error---memove---------Potential Pitfall---------------------------------
+[Potential Pitfall]: RHEL 6.3 gave me the following build 
+[prompt]$ make inputstreamreader.cpp:66: error: 'memmove' was not declared in this scope
+make[3]: *** [inputstreamreader.lo] Error 1
+
+Edit the following three files to fix this error:
+
+File: apache-log4cxx-0.10.0/src/main/cpp/inputstreamreader.cpp 
+Add the include file: #include <string.h> 
+Change from:
+#include <log4cxx/logstring.h>
+#include <log4cxx/helpers/inputstreamreader.h>
+#include <log4cxx/helpers/exception.h>
+#include <log4cxx/helpers/pool.h>
+#include <log4cxx/helpers/bytebuffer.h>
+    
+to:
+#include <string.h>
+#include <log4cxx/logstring.h>
+#include <log4cxx/helpers/inputstreamreader.h>
+#include <log4cxx/helpers/exception.h>
+#include <log4cxx/helpers/pool.h>
+#include <log4cxx/helpers/bytebuffer.h>
+    
+File: apache-log4cxx-0.10.0/src/main/cpp/socketoutputstream.cpp 
+Add the include file: #include <string.h>
+
+File: apache-log4cxx-0.10.0/src/examples/cpp/console.cpp 
+Add the include file: 
+#include <stdio.h> 
+#include <string.h>
+--------------------------------Potential Pitfall-------------------------------
+
+# make -j2  <-- possible error memove see above (possible 64 issue) then rebuild last command
+# make install
+##goto cd /
+location
+Native headers and libraries are in turn found in “/usr/include” and “/usr/lib”, respectively. We can see that all these directories are rooted in “/usr”
+
+
+# cd /
+- jsoncpp 설치
+# wget http://www.sourceforge.net/projects/jsoncpp/files/jsoncpp/0.6.0-rc2/jsoncpp-src-0.6.0-rc2.tar.gz
+# tar xvzf jsoncpp-src-0.6.0-rc2.tar.gz
+# cd jsoncpp-src-0.6.0-rc2
+# cd src/lib_json/
+# g++ -I../../include -O2 -c *.cpp
+# ar rs libjsoncpp.a *.o
+# cp libjsoncpp.a /usr/local/lib
+# cp -R /jsoncpp-src-0.6.0-rc2/include/json /usr/local/include
+
+# cd /
+- Boost 1.55.0 설치
+# wget http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.gz
+# tar xvzf boost_1_55_0.tar.gz
+# cd boost_1_55_0
+# ./bootstrap.sh
+# ./b2 -j2 --toolset=gcc --build-type=complete --layout=versioned link=static threading=multi install
+
+now copy the headers to window and build the libs with these .....
+
+Native headers and libraries are in turn found in “/usr/include” and “/usr/lib”, respectively. We can see that all these directories are rooted in “/usr”
+
+
+STOP STOP STOP Setup for Server should be done at this time ... everything below is needed for server creation but Sql 
+# cd /
+- Sqlite-autoconf-3071700 설치
+# wget http://sourceforge.net/projects/sqlite.mirror/files/SQLite%203.7.17/sqlite-autoconf-3071700.tar.gz
+# tar xzvf sqlite-autoconf-3071700.tar.gz
+# cd sqlite-autoconf-3071700
+# ./configure
+# make -j4
+# make install
+
+# cd /
+- Fixing yum again
+# cd usr/bin/
+# vi yum
+# change top line from
+- #!/usr/bin/pythonxxx.x   to specific version     #!/usr/bin/python2.6
+#
+
+# cd /
+- zlib, zlib-devel 설치
+# yum install zlib zlib-devel
+
+
+*** would not configure
+# cd /
+- Subversion 1.8.5 기준 설치
+# wget https://archive.apache.org/dist/subversion/subversion-1.8.5.tar.gz
+# tar xzvf subversion-1.8.5.tar.gz
+# cd subversion-1.8.5
+# ./configure --with-zlib --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr
+# make -j4
+# make install
+
+- ncurses-devel 설치
+# yum -y install ncurses-devel
+
+- MySQL (mysql-5.1.73.tar.gz) 설치
+# wget http://mirror.cogentco.com/pub/mysql/MySQL-5.1/mysql-5.1.73.tar.gz
+# tar xvzf mysql-5.1.73.tar.gz
+# cd mysql-5.1.73
+# ./configure --without-server --enable-static=yes --enable-shared=no --includedir=/usr/include --libdir=/usr/lib
+# make -j2
+# make install
+
+- curl 설치
+# wget http://curl.haxx.se/download/curl-7.31.0.tar.gz
+# tar xvzf curl-7.31.0.tar.gz
+# cd curl-7.31.0
+# ./configure --enable-shared=no --libdir=/usr/local/lib
+# make -j4
+# make install
+
+- 추가 설치
+# yum install libidn-devel.i386
+# yum install openldap-devel.i386
+# yum install openssl-devel.i386
+
+- 분산 컴파일(distcc) 설정
+# yum install python-devel.i386
+# wget https://distcc.googlecode.com/files/distcc-3.2rc1.tar.gz
+# tar xvzf distcc-3.2rc1.tar.gz
+# cd distcc-3.2rc1
+# ./configure 
+# make -j4
+# make install
+
+.bashrc 파일 마지막에 추가
+	export CCACHE_PREFIX="distcc"
+	export DISTCC_HOSTS="10.1.90.80 10.1.90.81 10.1.90.82 10.1.90.83 10.1.90.84 10.1.90.85 10.1.90.86 10.1.90.87 10.1.90.88 10.1.90.25 10.1.90.26 10.1.90.27 10.1.90.28 10.1.90.29 10.1.90.30 10.1.90.31 10.1.90.32 10.1.90.33 localhost"
+	
+/etc/rc.local 파일 마지막에 추가	
+	/usr/local/bin/distccd --daemon -a 10.1.0.0/16
+
+수동으로 한번 실행	
+# /usr/local/bin/distccd --daemon -a 10.1.0.0/16
+#. .bashrc (재실행 해줘야 적용 됨)
+
+
+아래 검사 후 설치
+# yum list | grep expat
+# yum install expat-devel.i386
+
+# cd /usr/local/lib
+# ln -s /usr/lib/libexpat.a
+
+
+- 삼바 설치
+# yum list | grep samba
+# yum install samba
+# cd /etc/samba
+# vi smb.conf
+	[global]
+	unix charset = cp949
+	dos charset = cp949
+	display charset = cp949
+	hosts allow = 10.1.
+	
+	맨아래 추가
+	[root]
+	comment = root
+	path = /
+	writable = yes
+	guest ok = no
+	browseable = no
+	create mask = 0644
+	directory mode = 0755
+	valid users = root
+
+	
+// 주석 처리
+	;[homes]
+	;       comment = Home Directories
+	;       browseable = no
+	;       writable = yes
+	;       valid users = %S
+	;       valid users = MYDOMAIN\%S
+	
+	;[printers]
+	;       comment = All Printers
+	;       path = /var/spool/samba
+	;       browseable = no
+	;       guest ok = no
+	;       writable = no
+	;       printable = yes
+
+# service smb start
+# smbpasswd -a root
+
+# cd /usr/local/lib
+# ln -s /usr/lib/libldap.a 
+# ln -s /usr/lib/libexpat.a
+# ln -s /usr/lib/libidn.a
+# ln -s /usr/lib/liblber.a
+# ln -s /usr/lib/libsasl2.a
+# ln -s /usr/lib/libsepol.a
+
+

@@ -1,0 +1,22 @@
+cd CHSMD
+make clean
+cd ..
+
+cd TIFB
+make clean
+cd ..
+
+cd CDB_STSOC
+make clean
+cd ..
+
+cd CDB_CTSOC
+make clean
+cd ..
+
+cd CHAR_RELOCATE
+make clean
+cd ..
+
+rm -f ../BIN/*
+

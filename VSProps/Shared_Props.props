@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>E:\LCD\3rdparty\boost;E:\LCD\3rdparty\boost\boost;E:\LCD\Server Client Source 3-20th2015\log4cxx\src\main\include;E:\LCD\3rdparty\mariadb-5.5.42-win32\include\mysql;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LibraryPath>E:\LCD\3rdparty\boost\lib32-msvc-10.0;E:\LCD\Server Client Source 3-20th2015\log4cxx\msvc9-proj\Release_Static;E:\LCD\3rdparty\mariadb-5.5.42-win32\lib;E:\LCD\Server Client Source 3-20th2015\Server\LIB;E:\LCD\Server Client Source 3-20th2015\Server\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalOptions>/D "WIN32" /D "LC_USA" /D _WIN32_WINNT=0x0602 /D WINVER=0x0602 /D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_ITERATOR_DEBUG_LEVEL=0;_VC80_UPGRADE=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>xml.lib;aprutil.lib;apr.lib;log4cxx.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

@@ -1,0 +1,4 @@
+ # tar xvzf boost_1_53_0.tar.gz
+ # cd boost_1_53_0
+ # ./bootstrap.sh
+ # ./b2 -j2 --toolset=gcc --build-type=complete --layout=versioned link=static install

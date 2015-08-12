@@ -1,0 +1,166 @@
+﻿1. 필드추가(스트링)
+
+ALTER TABLE `t_item`
+	ADD COLUMN `a_name_uk` VARCHAR(255) NOT NULL DEFAULT '' AFTER `a_descr_nld`,
+	ADD COLUMN `a_descr_uk` VARCHAR(255) NOT NULL DEFAULT '' AFTER `a_name_uk`;
+	
+ALTER TABLE `t_npc`
+	ADD COLUMN `a_name_uk` VARCHAR(50) NOT NULL AFTER `a_descr_nld`,
+	ADD COLUMN `a_descr_uk` TEXT NOT NULL AFTER `a_name_uk`;
+	
+
+ALTER TABLE `t_eventsettings`
+	ADD COLUMN `a_name_uk` VARCHAR(50) NOT NULL DEFAULT '' AFTER `a_extra_nld`,
+	ADD COLUMN `a_enable_uk` INT(11) NOT NULL DEFAULT '0' AFTER `a_name_uk`,
+	ADD COLUMN `a_description_uk` VARCHAR(50) NOT NULL DEFAULT '' AFTER `a_enable_uk`,
+	ADD COLUMN `a_extra_uk` INT(11) NOT NULL DEFAULT '0' AFTER `a_description_uk`;
+
+ALTER TABLE `t_option`
+	ADD COLUMN `a_name_uk` VARCHAR(50) NOT NULL DEFAULT '' AFTER `a_name_nld`;
+
+ALTER TABLE `t_quest`
+	ADD COLUMN `a_name_uk` VARCHAR(50) NOT NULL AFTER `a_desc3_nld`,
+	ADD COLUMN `a_desc_uk` TEXT NOT NULL AFTER `a_name_uk`,
+	ADD COLUMN `a_desc2_uk` TEXT NOT NULL AFTER `a_desc_uk`,
+	ADD COLUMN `a_desc3_uk` TEXT NOT NULL AFTER `a_desc2_uk`;
+
+ALTER TABLE `t_action`
+	ADD COLUMN `a_name_uk` VARCHAR(50) NOT NULL DEFAULT '' AFTER `a_client_description_nld`,
+	ADD COLUMN `a_client_description_uk` VARCHAR(255) NOT NULL DEFAULT '' AFTER `a_name_uk`;
+
+ALTER TABLE `t_skill`
+	ADD COLUMN `a_name_uk` VARCHAR(50) NOT NULL DEFAULT '' AFTER `a_client_tooltip_nld`,
+	ADD COLUMN `a_client_description_uk` VARCHAR(255) NOT NULL DEFAULT '' AFTER `a_name_uk`,
+	ADD COLUMN `a_client_tooltip_uk` VARCHAR(255) NOT NULL DEFAULT '' AFTER `a_client_description_uk`;
+
+ALTER TABLE `t_special_skill`
+	ADD COLUMN `a_name_uk` VARCHAR(50) NOT NULL DEFAULT '' AFTER `a_desc_nld`,
+	ADD COLUMN `a_desc_uk` VARCHAR(255) NOT NULL DEFAULT '' AFTER `a_name_uk`;
+
+ALTER TABLE `t_string`
+	ADD COLUMN `a_string_uk` VARCHAR(255) NOT NULL DEFAULT '' AFTER `a_string_nld`;
+	
+ALTER TABLE `t_missioncase`
+	ADD COLUMN `a_name_uk` VARCHAR(50) NOT NULL DEFAULT '' AFTER `a_name_nld`;
+	
+ALTER TABLE `t_rareoption`
+	ADD COLUMN `a_prefix_uk` VARCHAR(255) NOT NULL DEFAULT '' AFTER `a_name_nld`,
+	ADD COLUMN `a_name_uk` VARCHAR(255) NOT NULL DEFAULT '' AFTER `a_prefix_uk`;
+
+ALTER TABLE `t_set_item`
+	ADD COLUMN `a_set_name_uk` VARCHAR(50) NOT NULL DEFAULT '' AFTER `a_set_name_thai`;
+
+ALTER TABLE `t_help1`
+	ADD COLUMN `a_name_uk` VARCHAR(255) NOT NULL AFTER `a_desc_nld`,
+	ADD COLUMN `a_desc_uk` TEXT NOT NULL AFTER `a_name_uk`;
+
+ALTER TABLE `t_lacarette`
+	ADD COLUMN `a_name_uk` VARCHAR(50) NOT NULL DEFAULT '' AFTER `a_name_tur`;
+	
+ALTER TABLE `t_affinity`
+	ADD COLUMN `a_name_uk` VARCHAR(50) NOT NULL DEFAULT '' AFTER `a_name_thai`;
+	
+
+*********************************************************************************
+2.툴 수정
+
+affinity
+item
+event
+quest
+skill
+specialSkillTool
+rareoption (config.bin 생성 필요)
+
+3. 스트링 업데이트
+
+update t_item set 
+a_name_uk = a_name_ger,
+a_descr_uk = a_descr_ger;
+
+update t_npc set 
+a_name_uk = a_name_ger,
+a_descr_uk = a_descr_ger;
+
+
+update t_eventsettings set 
+a_name_uk = a_name_ger,
+a_enable_uk = a_enable_ger,
+a_description_uk = a_description_ger,
+a_extra_uk = a_extra_ger;
+
+update t_option set 
+a_name_uk = a_name_ger;
+
+update t_quest set 
+a_name_uk = a_name_ger,
+a_desc_uk = a_desc_ger,
+a_desc2_uk = a_desc2_ger,
+a_desc3_uk = a_desc3_ger;
+
+update t_action set 
+a_name_uk = a_name_ger,
+a_client_description_uk = a_client_description_ger;
+
+update t_skill set 
+a_name_uk = a_name_ger,
+a_client_description_uk = a_client_description_ger,
+a_client_tooltip_uk = a_client_tooltip_ger;
+
+update t_special_skill set 
+a_name_uk = a_name_ger,
+a_desc_uk = a_desc_ger;
+
+update t_string set 
+a_string_uk = a_string_ger;
+
+update t_missioncase set 
+a_name_uk = a_name_ger;
+
+update t_rareoption set 
+a_prefix_uk = a_prefix_ger,
+a_name_uk = a_name_ger;
+
+update t_set_item set 
+a_set_name_uk = a_set_name_ger;
+
+update t_help1 set 
+a_name_uk = a_name_ger,
+a_desc_uk = a_desc_ger;
+
+update t_lacarette set 
+a_name_uk = a_name_ger;
+
+update t_affinity set 
+a_name_uk = a_name_ger;
+
+4. 스트링 툴 접근 권한 추가(스트링 툴도 수정)
+insert into columns_priv (Host, Db,	User, Table_name, Column_name, Timestamp, Column_priv) values
+('%',	'newproject_data',	'lclocalger',	't_action'		,'a_name_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_action'		,'a_client_description_uk'	,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_affinity'		,'a_name_uk'			,2.01009E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_factory_item'	,'a_name_uk'			,2.01005E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_help1'		,'a_name_uk'			,2.00705E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_help1'		,'a_desc_uk'			,2.00705E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_item'		,'a_name_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_item'		,'a_descr_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_lacarette'		,'a_name_uk'			,2.01005E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_missioncase'		,'a_name_uk'			,2.00902E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_npc'			,'a_name_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_npc'			,'a_descr_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_option'		,'a_name_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_quest'		,'a_name_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_quest'		,'a_desc_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_quest'		,'a_desc2_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_quest'		,'a_desc3_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_rareoption'		,'a_prefix_uk'			,2.0081E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_set_item'		,'a_set_name_uk'		,2.01012E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_skill'		,'a_name_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_skill'		,'a_client_description_uk'	,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_skill'		,'a_client_tooltip_uk'		,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_special_skill'	,'a_name_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_special_skill'	,'a_desc_uk'			,2.00703E+13		,'Select,Update'),
+('%',	'newproject_data',	'lclocalger',	't_string'		,'a_string_uk'			,2.00703E+13		,'Select,Update');
+
+
+5. 캐쉬아이템 툴에 로컬 추가!!!

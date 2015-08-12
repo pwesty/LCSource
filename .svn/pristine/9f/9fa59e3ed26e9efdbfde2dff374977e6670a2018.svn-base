@@ -1,0 +1,6 @@
+cd LIBSRC
+./CleanLIB
+cd ..
+cd SRC
+./CleanSRC
+cd ..

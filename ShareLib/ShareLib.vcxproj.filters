@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="packetType">
+      <UniqueIdentifier>{47e975e9-f6e6-4a31-8d4e-2cd75742b7b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resouce Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Conf.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config_Localize.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config_Localize_BILA.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config_Localize_event.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config_Localize_gamigo.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config_Localize_KOR.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config_Localize_RUS.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config_Localize_TLD.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config_Localize_USA.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="config_packet.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="CryptMem.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="LCString.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryPoolBase.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageType.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="des3.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="des3_randomkey.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="des3_static.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="LCCrypt.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="LCCRC32.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="NetMsg.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="unordered_map_ts.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="timer_session.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="session_base.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="seq_manager.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="rntype.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="rnsocketioserviceTcp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="rnsocketioservice.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="rnsocketiohandler.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="rnpacket.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="random_machine.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="queue_ts.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="network_util.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="minilzo.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="map_ts.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="map_for_function.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="lzodefs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="lzoconf.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="logsystem.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="listen_sessionTcp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="listen_sessionImpl.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="listen_session.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="list_ts.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="deque_ts.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="bnf.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="BPacket.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="event_session.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="mysqldb.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="common_util.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEED_256_KISA.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_express_system.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_base.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="SignalProcess.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="md5_loc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckPassword.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintExcuteInfo.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_timer_item.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_tradeAgent_system.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_reserved_gm_command.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_tradeAgent_system.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_server_to_server.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="LogInOutManager.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBCmd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="il_config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="il_crypt.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="il_profile.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="il_system.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="il_values.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="LCSha256.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_char_status.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_inventory.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="LCHttps.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_item.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_affinity.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_event.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_exapet.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_exsocket.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_guild.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_stash.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_reform_system.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_pk.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_pet_stash.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_extend.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_syndicate.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_durability.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="gm_command.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_mempos.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_action.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_attack.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_changejob.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_move.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_skill.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_monstercombo.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_sskill.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_appear.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_server_to_server_kick.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_do_friend.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_gps.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_item_collection.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerAuthentication.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_authentication.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_attendance.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_old_login.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_premium_char.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_notice.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+    <ClInclude Include="packetType\ptype_artifact.h">
+      <Filter>packetType</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LCCrypt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NetMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timer_session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rnsocketioserviceTcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rnsocketiohandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rnpacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="random_machine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="minilzo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logsystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listen_sessionTcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bnf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BPacket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="event_session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mysqldb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEED_256_KISA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckPassword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintExcuteInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogInOutManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBCmd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LCSha256.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LCHttps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerAuthentication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="SEED_256_KISA.tab" />
+  </ItemGroup>
+</Project>

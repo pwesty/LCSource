@@ -1,0 +1,81 @@
+; 주석문은 처음 문자가 반드시 세미콜론(;) 이어야 하고 인라인 주석은 불가능
+; [그룹]
+; 필드=값
+; '=' 앞뒤에는 공백 문자 없게
+; 값에는 공백 가능
+; 주석문은
+
+[Server]
+No=1
+IP=61.104.44.146
+Port=4001
+;AllowExternalIP=61.104.44.146/255.255.255.0
+AllowExternalIP=TRUE
+
+[GM ID]
+egbs=1
+
+
+[User DB]
+IP=61.104.44.152
+DBName=newproject_db
+User=laka
+Password=lakabsdh
+
+
+[Data DB]
+IP=61.104.44.152
+DBName=newproject_data
+User=laka
+Password=lakabsdh
+
+
+[Auth DB]
+IP=61.104.44.152
+DBName=newproject_db_auth
+User=laka
+Password=lakabsdh
+
+
+[Messenger Server]
+IP=61.104.44.146
+Port=4000
+
+
+[Connector Server]
+Count=1
+
+
+[Connector_0]
+Number=1
+MaxSubNumber=1
+IP=61.104.44.146
+Port=4006
+
+
+[Connector_1]
+Number=2
+MaxSubNumber=6
+IP=61.104.44.146
+Port=4016
+
+[Block IP]
+Number=0
+
+[Block Band]
+Number=0
+Band0=A-211.094.000.000-211.103.255.255
+
+[Auto Block]
+; Refresh : 특정 시간에 한번씩 자동 블록한 IP를 리셋함, 시간단위
+; MaxTry : Refresh 동한 한 IP에서 접근할 수 있는 계정 수
+; ExIPxxx.xxx.xxx.xxx : 특정 아이피는 검사 안함, 값은 무조건 1로 설정하며, Key에 IP를 적음
+; 예) 111.222.123.1를 제외하고자 할때,
+;     ExIP111.222.123.1=1
+Refresh=2
+MaxTry=5
+ExIP61.104.44.146=1
+
+
+[Block ExID]
+ExIDckh386=1

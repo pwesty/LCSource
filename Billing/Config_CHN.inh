@@ -1,0 +1,153 @@
+#define ITEM_NAME_FIELD			"a_name_chn"
+#define NPC_NAME_FIELD			"a_name_chn"
+#define ITEM_PRICE_FIELD		"a_price"
+
+#define USING_GMIP_TABLE				// GM 권한 허용 검사 IP 테이블 사용 여부
+
+#define EVENT_MOONSTONE					// 문스톤 이벤트
+#define EVENT_MOONSTONE_DROP			// 문스톤 드랍
+
+#define EVENT_TREASUREBOX				// 보물상자 이벤트
+
+#define NOTICE_EVENT					// 게임내 이벤트 공지.
+
+
+#define ENABLE_CHANGEJOB				// 전직 여부
+
+#define ENABLE_SINGLEDUNGEON_DATA		// 퍼스널 던전 입장권 드롭 & 입장 제한 : BW
+
+#define	ENABLE_MESSENGER				// 메신저.
+// echo <zone | server | all / subserver> <chat>
+#define		GM_CMD_ECHO				"echo"			// 운영자 알림 메시지
+#define		GM_LEVEL_ECHO			3
+#define		GM_CMD_ECHO_ZONE		"zone"			// 존 알림 메시지
+#define		GM_CMD_ECHO_SERVER		"server"		// 서버군 알림 메시지
+#define		GM_CMD_ECHO_ALL			"all"			// 모든 서버 알림 메시지
+#define		GM_CMD_ECHO_SUBSERVER	"subserver"		// 서버군 서브서버 알림 메시지
+
+// go_zone <zone> <extra>
+#define		GM_CMD_GO_ZONE			"go_zone"		// 존 이동
+#define		GM_LEVEL_GO_ZONE		3
+// goto <x> <z> <y>
+#define		GM_CMD_GOTO				"goto"			// 장소 이동
+#define		GM_LEVEL_GOTO			3
+// itemdrop <index> <plus> <flag> <count> <option_count> <option_type> <option_level>
+#define		GM_CMD_ITEMDROP			"itemdrop"		// 아이템 강제 드롭
+#define		GM_LEVEL_ITEMDROP		10
+// count_pc
+#define		GM_CMD_COUNT_PC			"count_pcc"		// 사용자 수 조사
+#define		GM_LEVEL_COUNT_PC		10
+// loopcount
+#define		GM_CMD_LOOPCOUNT		"loopcount"		// 루프 카운트 조사
+#define		GM_LEVEL_LOOPCOUNT		3
+// immortal
+#define		GM_CMD_IMMORTAL			"immortal"		// 몹에게 공격 당하지 않음: 토글
+#define		GM_LEVEL_IMMORTAL		10
+// shutdown <time:sec> <msg>
+#define		GM_CMD_SHUTDOWN			"shutdown"		// 셧다운: 자동 재실행 함
+#define		GM_LEVEL_SHUTDOWN		3
+// reboot <time:sec> <msg>
+#define		GM_CMD_REBOOT			"reboot"		// 리부트: 자동 재실행 없음
+#define		GM_LEVEL_REBOOT			3
+// count_npc
+#define		GM_CMD_COUNT_NPC		"count_npc"		// npc 수 조사
+#define		GM_LEVEL_COUNT_NPC		10				
+// visible
+#define		GM_CMD_VISIBLE			"visible"		// 투명/불투명 설정
+#define		GM_LEVEL_VISIBLE		3
+// go_pc <char name>
+#define		GM_CMD_GO_PC			"go_pc"			// 지정한 캐릭터 옆으로 이동
+#define		GM_LEVEL_GO_PC			3
+// go_npc <name or index>
+#define		GM_CMD_GO_NPC			"go_npc"		// 지정한 몹 옆으로 이동
+#define		GM_LEVEL_GO_NPC			10
+// levelup <level>
+#define		GM_CMD_LEVELUP			"levelup"		// 지정한 레벨로 변경
+#define		GM_LEVEL_LEVELUP		10
+// kick <char name>
+#define		GM_CMD_KICK				"kick"			// 캐릭터를 서버로부터 튕겨냄
+#define		GM_LEVEL_KICK			3
+// comon <char name>
+#define		GM_CMD_COMON			"common"			// 캐릭터를 운영자 캐릭터 앞으로
+#define		GM_LEVEL_COMON			3
+// summon <name or index>
+#define		GM_CMD_SUMMON			"summon"		// 지정한 몹 운영자 캐릭터 앞으로 소환
+#define		GM_LEVEL_SUMMON			10
+// silence <char name> <time:sec>
+#define		GM_CMD_SILENCE			"silence"		// 캐릭터에게 시간동안 채팅 금지
+#define		GM_LEVEL_SILENCE		3
+// whereami 
+#define		GM_CMD_WHERE_AM_I		"whereami"		// 캐릭터의 zone, area 번호
+#define		GM_LEVEL_WHERE_AM_I		3
+// QuestComplete <QuestTypeNum>
+#define		GM_CMD_QUEST_COMPLETE	"questcomplete"	// 퀘스트 강제 완료
+#define		GM_LEVEL_QUEST_COMPLETE	10
+// statpoint <remain> [<str> <dex> <int> <con>]
+#define		GM_CMD_STATPOINT		"statpoint"		// 스탯 포인트 강제 설정
+#define		GM_LEVEL_STATPOINT		10
+// skillpoint <count>
+#define		GM_CMD_SKILLPOINT		"skillpoint"	// 스킬 포인트 강제 설정
+#define		GM_LEVEL_SKILLPOINT		10
+// set_regensec <index> <time:1/10sec>
+#define		GM_CMD_SET_REGENSEC		"set_regensec"	// 해당 npc regensec 조정
+#define		GM_LEVEL_SET_REGENSEC	10
+// npc_regen <index>
+#define		GM_CMD_NPC_REGEN		"npc_regen"		// 해당 npc 중 리젠 되야 하는것들 모두 강제 리젠
+#define		GM_LEVEL_NPC_REGEN		10
+// kill_npc <meter :m>
+#define		GM_CMD_KILL_NPC			"kill_npc"		// 운영자와 거리안에 있는 npc들 모두 강제 죽임 
+#define		GM_LEVEL_KILL_NPC		10
+// expup <exp%>
+#define		GM_CMD_EXPUP			"expup"			// 캐릭터 경험치 변경
+#define		GM_LEVEL_EXPUP			10
+// bloodpoint <bloodpoint>
+#define		GM_CMD_BLOODPOINT		"bloodpoint"	// 캐릭터 현재 Blood Point 변경
+#define		GM_LEVEL_BLOODPOINT		10
+// endgame <time:sec> <msg>
+#define		GM_CMD_ENDGAME			"endgame"		// 메신저를 제외한 모든 서버 다운
+#define		GM_LEVEL_ENDGAME		3
+// observe
+#define		GM_CMD_OBSERVE			"observe"		// 관찰자 설정
+#define		GM_LEVEL_OBSERVE		10
+// chatmonitor <character name>
+#define		GM_CMD_CHATMONITOR		"chatmonitor"	// 채팅 감시
+#define		GM_LEVEL_CHATMONITOR	7
+// double_event <"start" or "stop" or "ing">
+#define		GM_CMD_DOUBLE_EVENT		"double_event"	// 경험치, 나스, SP, 생산품 2배 이벤트
+#define		GM_LEVEL_DOUBLE_EVENT		10
+// latto_event <"start" or "stop" or "ing">
+#define		GM_CMD_LATTO_EVENT		"latto_event"	// 라또 이벤트
+#define		GM_LEVEL_LATTO_EVENT		10
+// doubleexp_event <serverno | all | cur> <start | stop | ing> <0~200%>
+#define		GM_CMD_DOUBLE_EXP_EVENT		"doubleexp_event"	// 경험치 2배 이벤트
+#define		GM_LEVEL_DOUBLE_EXP_EVENT	10
+// newyear_event <"start" or "stop" or "ing">
+#define		GM_CMD_NEWYEAR_EVENT		"newyear_event"	// 설날 이벤트
+#define		GM_LEVEL_NEWYEAR_EVENT		10
+// valentine_event <"start" or "stop" or "ing">
+#define		GM_CMD_VALENTINE_EVENT		"valentine_event"	// 발렌타인데이 이벤트
+#define		GM_LEVEL_VALENTINE_EVENT	10
+// whiteday_event <"start" or "stop" or "ing">
+#define		GM_CMD_WHITEDAY_EVENT		"whiteday_event"	// 화이트데이 이벤트
+#define		GM_LEVEL_WHITEDAY_EVENT		10
+// letter_event <"start" or "stop" or "ing">
+#define		GM_CMD_LETTER_EVENT		"letter_event"	// 낱말 맞추기 이벤트
+#define		GM_LEVEL_LETTER_EVENT		10
+// reloadgmip
+#define		GM_CMD_RELOAD_GMIP		"reloadgmip"	// GM IP 설정 테이블 다시 읽기
+#define		GM_LEVEL_RELOAD_GMIP		10
+// speedup
+#define		GM_CMD_SPEEDUP			"speedup"		// 빨리 달리기
+#define		GM_LEVEL_SPEEDUP		3
+// fameup
+#define		GM_CMD_FAMEUP			"fameup"		// 명성치 조정
+#define		GM_LEVEL_FAMEUP			9
+// event <name> <start | stop | ing>
+#define		GM_CMD_EVENT			"event"			// 이벤트 통합
+#define		GM_LEVEL_EVENT			10
+// pd4 <rankinit | rewardinit | rewardend>
+#define		GM_CMD_PD4				"pd4"
+#define		GM_LEVEL_PD4			9				// 차원의문 랭크
+
+//0704
+#define		EVENT_TREASUREBOX_NUM		1

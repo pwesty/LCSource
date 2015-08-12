@@ -1,0 +1,74 @@
+* 홍콩 서버 빌드하는 법
+. OS : CentOS 4.8
+. MySQL : mysql 4.0.27
+
+0. gcc 4.1.2 설치
+ # mount /dev/cdrom /mnt
+ # cd /mnt/CentOS/RPMS
+ # rpm -ivh gcc4-4.1.2-44.EL4.i386.rpm
+ # rpm -ivh gcc4-c++-4.1.2-44.EL4.i386.rpm
+ # cd /usr/bin
+ # mv gcc gcc3.4.6
+ # mv g++ g++3.4.6
+ # ln -s g++4 g++
+ # ln -s gcc4 gcc
+ 
+1. ccache 설치
+ #./configure
+ # make
+ # make install
+ 
+2. sqlite 설치
+ # tar xvzf sqlite-autoconf-3071700.tar.gz
+ # cd sqlite-autoconf-3071700
+ # ./configure
+ # make -j2
+ # make install
+ 
+3. log4cxx 설치
+ # tar xvzf apr-1.4.6.tar.gz
+ # cd apr-1.4.6
+ # ./configure --prefix=/usr/local/apr-1.3.3
+ # make -j2
+ # make install
+ # ln -s /usr/local/apr-1.3.3 /usr/local/apr
+ 
+ # tar xvzf apr-util-1.4.6.tar.gz
+ # cd apr-util-1.4.6
+ # ./configure --with-apr=/usr/local/apr
+ # make -j2
+ # make install
+ 
+ # tar xvzf apache-log4cxx-0.10.0.tar.gz
+ # cd apache-log4cxx-0.10.0
+ # ./configure --enable-shared=no --enable-static=yes --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr
+ # make -j2
+ # make install
+ 
+4. subversion 설치
+ # tar xvzf subversion-1.7.9.tar.gz
+ # cd subversion-1.7.9
+ # ./configure --with-zlib --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr
+ # make -j2
+ # make install
+ 
+5. mysql client 설치
+ # tar xvzf mysql-4.0.27.tar.gz
+ # cd mysql-4.0.27
+ # ./configure --without-server --libdir=/usr/lib
+ # make -j2
+ # make install
+ 
+6. boost 1.53 설치
+ # tar xvzf boost_1_53_0.tar.gz
+ # cd boost_1_53_0
+ # ./bootstrap.sh
+ # ./b2 -j2 --toolset=gcc --build-type=complete --layout=versioned link=static install
+
+7. jsoncpp 설치
+ # tar xvzf jsoncpp-src-0.6.0-rc2.tar.gz
+ # cd jsoncpp-src-0.6.0-rc2/src/lib_json
+ # g++ -I../../include -O2 -c *.cpp
+ # ar rs libjsoncpp.a *.o
+ # cp libjsoncpp.a /usr/local/lib
+ 

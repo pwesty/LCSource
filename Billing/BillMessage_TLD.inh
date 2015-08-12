@@ -1,0 +1,43 @@
+#ifndef __BILL_MESSAGE_H__
+#define __BILL_MESSAGE_H__
+
+#ifdef __BILLING_SERVER__
+#define MSG_UNKNOWN 0
+#endif
+
+typedef enum __tagBillMessage
+{
+	MSG_BILL_UNKNOWN	= 0,						// 잘못된 메세지
+
+	BM_CONNECT,								// 커넥터 접속 요청: protocolversion(str:17) serverNum(uc) gameId(uc)
+											// protocolversion = "TEnterBillV1.0"
+
+	MSG_BILLITEM_CASHBALANCE_REQ,			// 사용자 잔액요청 : gameId(uc) userindex(n) userId(str:32) cpId(n)
+	MSG_BILLITEM_CASHBALANCE_REP,			// 응답	    	   : returnCode(uc) gameId(uc) userindex(n) cpId(n) cashBalance(int)
+
+	MSG_BILLITEM_CANBUY_REQ,				// 과금인증요청    : gmaeId(uc) userindex(n) userId(str:32) cpId(n) count(uc) itemId(n) requestCash(n)
+	MSG_BILLITEM_CANBUY_REP,				// 응답			   : returnCode(uc) gameId(uc) userindex(n) cpId(n) count(uc) itemId(n) cashBalance(int)
+	
+	MSG_BILLITEM_BUY_REQ,					// 과금 요청	   : serial(n) gmaeId(uc) userindex(n) userId(str:32) cpId(n) ip(str:30) count(uc) itemId(n)
+	MSG_BILLITEM_BUY_REP,					// 응답			   : serial(n) returnCode(uc) gameId(uc) userindex(n) cpId(n) count(uc) itemId(n) cashBalance(int)
+
+	MSG_BILLITEM_SERVERLIVE,				// 서버 얼라이브
+
+} BILLMESSAGE_TYPE;
+
+typedef enum __tagBillErrorMessage
+{
+	MSG_BILLITEM_ERROR_SUCCESS,				// 성공
+	MSG_BILLITEM_ERROR_LACKCASH,			// 잔액부족
+	MSG_BILLITEM_ERROR_NOTUSER,				// 해당유저 없음
+	MSG_BILLITEM_ERROR_NOTITEM,				// 해당아이템 없음
+	MSG_BILLITEM_ERROR_DATABASE,			// DB 오류
+	MSG_BILLITEM_ERROR_PACKET,				// 패킷 오류
+	MSG_BILLITEM_ERROR_ETC,					// 기타 오류
+	MSG_BILLITEM_ERROR_NOTACCOUNT	= 12,			// 결재 권한 없음 
+
+} BILL_ERROR_MESSAGE_TYPE;
+
+
+
+#endif // __BILL_MESSAGE_H__

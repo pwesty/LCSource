@@ -1,0 +1,227 @@
+﻿- 필요한 프로그램 다운로드 하는 곳
+wget http://samba.org/ftp/ccache/ccache-3.1.9.tar.gz
+wget http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tgz
+wget http://files.randombit.net/botan/v1.10/Botan-1.10.5.tgz
+wget http://mirror.apache-kr.org//apr/apr-1.5.0.tar.gz
+wget http://mirror.apache-kr.org//apr/apr-util-1.5.3.tar.gz
+wget http://www.apache.org/dyn/closer.cgi/logging/log4cxx/0.10.0/apache-log4cxx-0.10.0.tar.gz
+wget http://www.sourceforge.net/projects/jsoncpp/files/jsoncpp/0.6.0-rc2/jsoncpp-src-0.6.0-rc2.tar.gz
+wget http://www.sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.gz
+wget http://www.sourceforge.net/projects/boost/files/boost/1.54.0/boost_1_54_0.tar.gz
+wget http://mirror.apache-kr.org/subversion/subversion-1.8.5.tar.gz
+wget http://mirror.cogentco.com/pub/mysql/MySQL-5.1/mysql-5.1.71.tar.gz
+wget http://sourceforge.net/projects/sqlite.mirror/files/SQLite%203.7.17/sqlite-autoconf-3071700.tar.gz
+wget https://distcc.googlecode.com/files/distcc-3.2rc1.tar.gz
+
+< CentOS 5.9를 기준으로 작성됨 >
+yum upgrade
+ - CentOS 5.10으로 업그레이드
+ 
+- gcc 4.4.7 설치
+# yum install gcc44.i386 gcc44-c++.i386
+# cd /usr/bin
+# ln -s gcc44 gcc
+# ln -s g++44 g++
+
+- ccache 설치
+# wget http://samba.org/ftp/ccache/ccache-3.1.9.tar.gz
+# tar xvzf ccache-3.1.9.tar.gz
+# cd ccache-3.1.9
+#./configure
+# make
+# make install
+
+- Python 2.7 설치 (Botan 10.5를 설치하기 위한 작업)
+# wget --no-check-certificate http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tgz
+# tar xvzf Python-2.7.5.tgz
+# cd Python-2.7.5
+# ./configure --prefix=/usr/local/python2.7.5 --with-threads --enable-shared
+# make -j2
+# make install
+# echo "/usr/local/python2.7.5/lib/" >> /etc/ld.so.conf.d/python2.7.5.conf
+# ldconfig
+
+- Botan library 설치
+# wget http://files.randombit.net/botan/v1.10/Botan-1.10.5.tgz
+# cd /usr/bin
+# rm -rf python
+# ln -s /usr/local/python2.7.5/bin/python2.7 python
+# tar xvzf Botan-1.10.5.tgz
+# cd Botan-1.10.5
+# ./configure.py --disable-shared
+# make -j2
+# make install
+# cd /usr/bin
+# rm -rf python
+# ln -s python2.4 python
+
+- Log4cxx 설치
+# yum erase apr-devel.i386 apr-util-devel.i386
+
+apr-1.5.0기준
+# wget http://mirror.apache-kr.org/apr/apr-1.5.0.tar.gz
+# tar xvzf apr-1.5.0.tar.gz
+# cd apr-1.5.0
+# ./configure --prefix=/usr/local/apr-1.5.0 --enable-shared=no
+# make -j2
+# make install
+# ln -s /usr/local/apr-1.5.0 /usr/local/apr
+
+apr-util-1.5.3 기준
+# wget http://mirror.apache-kr.org/apr/apr-util-1.5.3.tar.gz
+# tar xvzf apr-util-1.5.3.tar.gz
+# cd apr-util-1.5.3
+# ./configure --with-apr=/usr/local/apr
+# make -j2
+# make install
+
+# wget http://mirror.apache-kr.org/logging/log4cxx/0.10.0/apache-log4cxx-0.10.0.tar.gz
+# tar xvzf apache-log4cxx-0.10.0.tar.gz
+# cd apache-log4cxx-0.10.0
+# ./configure --enable-shared=no --enable-static=yes --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr
+#아래 3개의 파일에 include <stdio.h> #include <string.h>를 포함시킴
+	- src/main/cpp/inputstreamreader.cpp
+	- src/main/cpp/socketoutputstream.cpp
+	- src/examples/cpp/console.cpp
+# make -j2  <-------  컴파일 도중 에러가 발생됨, 이때 에러가 발생한 파일에 #include <stdio.h> #include <string.h>를 포함시킴
+# make install
+
+- jsoncpp 설치
+# wget http://www.sourceforge.net/projects/jsoncpp/files/jsoncpp/0.6.0-rc2/jsoncpp-src-0.6.0-rc2.tar.gz
+# tar xvzf jsoncpp-src-0.6.0-rc2.tar.gz
+# cd jsoncpp-src-0.6.0-rc2
+# cd src/lib_json/
+# g++ -I../../include -O2 -c *.cpp
+# ar rs libjsoncpp.a *.o
+# cp libjsoncpp.a /usr/local/lib
+#cp -R /root/jsoncpp-src-0.6.0-rc2/include/json /usr/local/include
+
+- Boost 1.55.0 설치
+# wget http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.gz/download
+# tar xvzf boost_1_55_0.tar.gz
+# cd boost_1_55_0
+# ./bootstrap.sh
+# ./b2 -j2 --toolset=gcc --build-type=complete --layout=versioned link=static threading=multi install
+
+- Sqlite-autoconf-3071700 설치
+# wget http://sourceforge.net/projects/sqlite.mirror/files/SQLite%203.7.17/sqlite-autoconf-3071700.tar.gz
+# tar xzvf sqlite-autoconf-3071700.tar.gz
+# cd sqlite-autoconf-3071700
+# ./configure
+# make -j4
+# make install
+
+- zlib, zlib-devel 설치
+# yum install zlib zlib-devel
+
+- Subversion 1.8.5 기준 설치
+# wget http://mirror.apache-kr.org/subversion/subversion-1.8.8.tar.gz
+# tar xzvf subversion-1.8.8.tar.gz
+# cd subversion-1.8.8
+# ./configure --with-zlib --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr
+# make -j4
+# make install
+
+- ncurses-devel 설치
+# yum -y install ncurses-devel
+
+- MySQL (mysql-5.1.73.tar.gz) 설치
+# wget http://mirror.cogentco.com/pub/mysql/MySQL-5.1/mysql-5.1.73.tar.gz
+# tar xvzf mysql-5.1.73.tar.gz
+# cd mysql-5.1.73
+# ./configure --without-server --enable-static=yes --enable-shared=no --includedir=/usr/include --libdir=/usr/lib
+# make -j2
+# make install
+
+- curl 설치
+# wget http://curl.haxx.se/download/curl-7.31.0.tar.gz
+# tar xvzf curl-7.31.0.tar.gz
+# cd curl-7.31.0
+# ./configure --enable-shared=no --libdir=/usr/local/lib
+# make -j4
+# make install
+
+- 추가 설치
+# yum install libidn-devel.i386
+# yum install openldap-devel.i386
+# yum install openssl-devel.i386
+
+- 분산 컴파일(distcc) 설정
+# yum install python-devel.i386
+# wget https://distcc.googlecode.com/files/distcc-3.2rc1.tar.gz
+# tar xvzf distcc-3.2rc1.tar.gz
+# ./configure 
+# make -j4
+# make install
+
+.bashrc 파일 마지막에 추가
+	export CCACHE_PREFIX="distcc"
+	export DISTCC_HOSTS="10.1.90.80 10.1.90.81 10.1.90.82 10.1.90.83 10.1.90.84 10.1.90.85 10.1.90.86 10.1.90.87 10.1.90.88 10.1.90.25 10.1.90.26 10.1.90.27 10.1.90.28 10.1.90.29 10.1.90.30 10.1.90.31 10.1.90.32 10.1.90.33 localhost"
+	
+/etc/rc.local 파일 마지막에 추가	
+	/usr/local/bin/distccd --daemon -a 10.1.0.0/16
+
+수동으로 한번 실행	
+# /usr/local/bin/distccd --daemon -a 10.1.0.0/16
+#. .bashrc (재실행 해줘야 적용 됨)
+
+
+아래 검사 후 설치
+# yum list | grep expat
+# yum install expat-devel.i386
+
+# cd /usr/local/lib
+# ln -s /usr/lib/libexpat.a
+
+
+- 삼바 설치
+# yum list | grep samba
+# yum install samba
+# cd /etc/samba
+# vi smb.conf
+	[global]
+	unix charset = cp949
+	dos charset = cp949
+	display charset = cp949
+	hosts allow = 10.1.
+	
+	맨아래 추가
+	[root]
+	comment = root
+	path = /
+	writable = yes
+	guest ok = no
+	browseable = no
+	create mask = 0644
+	directory mode = 0755
+	valid users = root
+
+	
+// 주석 처리
+	;[homes]
+	;       comment = Home Directories
+	;       browseable = no
+	;       writable = yes
+	;       valid users = %S
+	;       valid users = MYDOMAIN\%S
+	
+	;[printers]
+	;       comment = All Printers
+	;       path = /var/spool/samba
+	;       browseable = no
+	;       guest ok = no
+	;       writable = no
+	;       printable = yes
+
+# service smb start
+# smbpasswd -a root
+
+# cd /usr/local/lib
+# ln -s /usr/lib/libldap.a 
+# ln -s /usr/lib/libexpat.a
+# ln -s /usr/lib/libidn.a
+# ln -s /usr/lib/liblber.a
+# ln -s /usr/lib/libsasl2.a
+# ln -s /usr/lib/libsepol.a
+
+

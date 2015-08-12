@@ -1,0 +1,24 @@
+2015/05/27 19:16:34 :: SYSTEM > Finding player limit.
+2015/05/27 19:16:34 :: SYSTEM > Opening mother connection.
+2015/05/27 19:16:34 :: SYSTEM > Max players set to32763
+2015/05/27 19:16:34 :: SYSTEM > Binding only to IP address61.104.44.150
+2015/05/27 19:16:34 :: SYS_ERR > bind
+2015/05/27 19:16:36 :: SYSTEM > Finding player limit.
+2015/05/27 19:16:36 :: SYSTEM > Opening mother connection.
+2015/05/27 19:16:36 :: SYSTEM > Max players set to32763
+2015/05/27 19:16:36 :: SYSTEM > Binding only to IP address61.104.44.150
+2015/05/27 19:16:36 :: SYS_ERR > bind
+2015/05/27 19:54:36 :: SYSTEM > Finding player limit.
+2015/05/27 19:54:36 :: SYSTEM > Opening mother connection.
+2015/05/27 19:54:36 :: SYSTEM > Max players set to32763
+2015/05/27 19:54:36 :: SYSTEM > Binding only to IP address127.0.0.1
+2015/05/27 19:54:36 :: SYSTEM > Entering game loop.
+2015/05/27 19:54:45 :: BILLING DB CONN > 
+2015/05/27 19:54:46 :: Catalog DB CONN ERROR > 
+2015/05/27 19:55:34 :: SYSTEM > Finding player limit.
+2015/05/27 19:55:34 :: SYSTEM > Opening mother connection.
+2015/05/27 19:55:34 :: SYSTEM > Max players set to32763
+2015/05/27 19:55:34 :: SYSTEM > Binding only to IP address127.0.0.1
+2015/05/27 19:55:34 :: SYSTEM > Entering game loop.
+2015/05/27 19:55:36 :: BILLING DB CONN > 
+2015/05/27 19:55:37 :: Catalog DB CONN ERROR > 

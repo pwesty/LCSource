@@ -1,0 +1,771 @@
+﻿1. Awakening the stupid computer characters (http://blog.daum.net/aswip/6584909)
+
+Over the 1970s as a transistor computer hardware evolved into a computer using an IC chip
+The exchange of information in a variety of electronic equipment is required as more time. But the fact is seen dasipyi
+Computers are an ignorant blows out 0 and 1. Let your imagination once.
+
+The computer ate out a text line to represent the characters you know?
+
+Data input and output is more than I like the original drilling holes in punched cards to represent the 0 and 1 put
+People enter this easy to express in writing, and if you know that computers would literally eat Output
+As a person ~ ah ~ really the time to learn the characters you see output like the story was a dream ...
+
+So the United States, bringing the work to establish the standard of teaching computer characters on the character of the late 70s of Electronics, Information and like to eat.
+So, now let's explain briefly the process of teaching character to your computer.
+
+For example yireongeoda ... digital, digital signal digital fortress true hearing a lot of words to eat out is a binary computer that is, only 0's and 1's.
+Grandchildren grandfather computers computers computers now is the time you have all the computers may only 0's and 1's. Like sex is not?
+
+But as usual you hear mia is a byte, bit data units that are combinations of 0 and 1, and so on.
+Once I hear repeatedly is not a runner, I trust.
+
+The important thing is you do not know the character characters computer!
+The combination of zero and one outside can not know. But people are gonna want to represent characters on the monitor.
+
+Let's start this home
+
+One bit is 0 and 1, this can be expressed in 2.
+At this time, 0 is 'a', 1 Suppose that the 'b'. ('ll Decide - one runner trust me)
+Views from person to try it in the middle of benchmarks determined that a hit on the keyboard
+Oh, this is zero. That's it stores data by changing to zero.
+
+b versa.
+
+So, while 01 101 are defined as data is entered as one bit per character if the
+And now the 01 101 computers in just sprinkle me when the monitor data as characters
+It will not show that you show to 'abbab' that character.
+
+This is represented by the letter that matches the bits of data from the computer of the alphabet in this way
+26 characters anywhere in unity so place your order as we are assuming a standard text as desired
+Is input to the data input may be able to also output.
+
+Most importantly here? "The computer is not gonna do you know only the combination of 0's and 1's!"
+
+Okay, but has a bit like we saw in the previous example, we could represent two fold at best.
+However, once the 26 alphabet letters, uppercase letters are not sseomeok or Plus? So do twice
+52, um ... there go a few simple sign or two sseuni it ejects (said like this. "! $ #% ^")
+
+What the ...? Oh ... um ... Could this guy to start a new one space or line offset this clears throat] I do not know what ...
+(Emphasis nucha but the computer does not know anything outside combination of byte stream of 0's and 1's space is what clears throat]
+
+Eating out should correspond to the particular combination of data is not a loss of space. Well .. -_- description Tricky)
+
+So empty, replace the line, even one square clearing Let's put some special characters etc ...
+So pass me put it like that was gajina grapple he can express things do slip 128 (yeah, put a lot of Ao Ao _)
+
+Once it is necessary to express the 128 kinds of do-bit stack of seven. (A power of 2 7 = 128)
+In other words, the 7-bit representation of the Will to report any water from 0 to 127 in only one of the bunch Once In terms alphabet and
+Itgetda can roughly describe the symbols
+
+It is thus defined ASCII ..
+ASCII code table can be available here.
+
+http://www.asciitable.com/
+
+Jogeonsang the size of the data to be processed in the hardware'll ever want fewer good.
+To represent a single character if the receiving means 7 bits have to pay utmost dare to there by 8 bits
+There is no reason to deal with. Thus, ASCII is initially treated by one of the 7-bit characters.
+
+2. One character 1Byte ~ (http://blog.daum.net/aswip/6584909)
+
+Let's remember some of the previous posts. The letters to the PC does not eat out only Bit Binary Flow
+In order to deal with the DA was adopted by the United States know that ASCII Code This code table
+In total 128 kinds of promises made to render it necessary in the case of a 7-bit number.
+
+But in fact it is a 7-bit groups like the beep. Attach the stand to share a favorite bit operation
+The more you hear even like it. So, as we know the basic unit is called 1Byte = 8Bit
+8 am-bit ASCII code of seven bits in an 8-bit read is to be adjusted, and since all computer
+In the first, in bytes (that is, at a time by 8Bit) of 1 byte per character when read enable loading
+Will be able to express.
+
+So how do the adjustment.
+For example
+0100001 -> 'A' (that is, one bit per digit, 7-bit, and the current is 65 decimal
+                                  This represents a capital letter A represents the ASCII Code)
+
+We add one more bit of value 0 in front of the 7-bit.
+
+00100001 -.> 'A' (8-bit precision is increased, however, was the one before it finally got zero, so
+                               When converted to decimal still has a value of 65. Therefore represents a capital letter A.)
+
+Understanding ..-_- doelryeona; In other words, by hanmunja original article written in 7-bit ASCII read (by 7 bits) that
+Will you add one to read Bit 0, can be converted to ASCII in 8-bit units.
+(In fact, this is not necessary by Fortress 7-bit encoding, transmission, because they do not use unless special.
+These days, one character is 1Byte, namely because widely recognized as 8Bit.)
+
+3. The letter, go extended to Western Europe (http://blog.daum.net/aswip/6584909)
+
+US DA ASCII Code is made for the communication of information within the country. Simply put fingers shall of course be written into
+America does not need to have taken umlaut DA O (ie, this "Ö") will not imitate things, the ASCII Codeset 128 different character.
+No matter which country Adelie this giwangyimyeon English is used in Germany and other European Huh world, but if we want also express the character of their country
+It is natural to think ...
+
+If you do not have a computer anywhere in the United States alone sseulgeo such that ... the world is about to computer world ... -_-;
+
+But I'll fill in all courses in the story, but the number of cases of already having 128 7Bit.
+If you want to put more than a character and a Bit neuleonaya.
+Fortunately, the basic unit is empty, the front one bit, not the 7-bit 8-bit.
+7 bits is 128 branches, because the 256 kinds of 8-bit, however, is a power of two 8
+That is, one more bit is added by being able to afford more applicable in the case of the back rest 128 kinds occurred.
+
+The move is one kinds Pinch umlaut days of old hardware, so if possible, try to reduce the number of letters and a few Bit
+If he put a sign by replacing some umlaut characters in the ASCII Code 128 kinds of new ahninya supposed Hit as they approach
+Guests are runners put on chest a word "compatible" ... -_-;
+
+Yes .. compatibility .. This is if you create a new character combinations as if Germany 128 kinds of assumptions above his own only in Germany
+Not be used in the exported document is written in ASCII Code and the US over the displayed error.
+
+In other words, ASCII Code assigns a "!" On the 33rd character were German DA is an exclamation point, we do not care! -_-;
+Plus, instead of saying what happens when you insert umlaut A pick up.
+United States over the body "A!" Germany sent two letters of an e-mail.
+A! That character is converted into a two-byte 00010001 leh 00,100,001 according to the ASCII Code Table is it addressed to the German.
+
+To the receiving computer bytes of 00,100,001 00010001 Germany remained unchanged.
+However, where the German side of the computer is not using the ASCII Code haneunge to convert it to text
+Use your own code as discarded express "AÅ".
+
+What is it, paying monga.'ve Completely ignore the meaning you want to transfer. -_-;
+Spoonful if more comes out even basic alphabetical order is different than ASCII Code?
+
+So it will require compatibility.
+
+ASCII Code was administered by the American National Standards Institute is to slip the development and use of computer hardware
+This area became a standard letter code at the agency that oversees the extension to the world as the ISO (International Standards Institute).
+
+Do you adopt a new character set ISO is available and fully compatible with the basic ASCII Code from Western European languages
+The so-called ISO-8859-1 / Latin1.
+
+The first 128 Latin1 character sets (ie, 0 ~ 127) is compatible with inheriting the basic ASCII Code Stay
+Maintaining and rear 128 (ie, 128 to 255.) placing unique characters, such as Western Europe umlaut letters attached to the defined character set.
+
+Now the document from Western European encoding (ISO-8859-1 / Latin1) when set to a document or created in the United States
+Is able to express the same content, paying choosing a document or created in Germany.Time is flowing in the early 1980s ....
+East to start the computer is quite popular.
+
+At that time, the DA, the most advanced order nopatdeon Japan wanted to express the Japanese computer.
+(Probably halgeotyida want to express the following courses or the following course -_-;)
+
+4. character?, Character set?, Encoding? Font?
+
+Wrong ... neither lecture proceeds from the original plan and went off to improvise wrong I stroked the order of the lectures.
+Sseundago clear meaning of the text for the novice hagoseon "charset" or "encode" also
+Now that emerged in the course content is difficult to understand how hath passed without her? ... -_-;
+That does not mean the dictionary definition getdaneun used in the book ... But Would not have to hold the concept?
+(Let's ... a long way to go to catch hold gun'll need to do about this meoleodo -_-)
+
+- The character?
+
+It's only minutes reckon you do not know the character is important is the character that we think in this area
+Case-Sensitive'll that (case sensitive words, and lowercase a capital A is different).
+If this distinction should be expressed when I lecture at A and a different story, but so will have 52 English characters is not a dog makes him 26.
+This phenomenon includes all the Sprachraum to use most of the Latin alphabet is true even Japanese.
+(Not the hiragana and katakana issues such as "あ" LA is also going to something bigger and smaller. Naturally distinguish.)
+
+- Character set?
+
+Charset a meeting of all the characters to express the language used in one of the Sprachraum (Character Set or Charset) is called.
+English is one of 56 throughout the case and collect in a row is the English character set.
+Of course, ASCII Code by adding more marks and special characters, such as spaces, but the final addition to the ASCII Character Set
+Why has gotten a major gathering of information, expression possible characters.
+What happens then our Proud Hangul charset is collect?
+19 to 14 consonant + 5 (5 is ask my ㄲ ㄸㅃ ㅆㅉ ^^, not supposed to know the b ㄲ do not dispute that battered twice runner trust me),
+10+ ㅐ ㅒ collection ㅔ ㅖ ㅘ ㅙ ㅚ ㅝ 21 to ㅞ ㅟ ㅢ ... you better ...?
+
+Korea, neither in the case (Hangul that even a small crab? It's not a lowercase letter'll smaller font size.
+Please do not confuse -_-) will write how to choose truth to see to you? We'll be drawing hold roughly 40 amendments can be called Hangul character set ...?
+Ao, Ao wrong. Unfortunately charset should be prepared as a collection of characters of text. The "a"
+To represent a keyboard type "b + trestle" Hangul order, but we will not bring up doeneunge like English, as one keyword per order
+Because. If you enter "b + trestle" in the order from the keyboard "is set to" 1 article ready for suicide should be expressed in the word, and to do so
+For this look is to have a "the" in the character set. So Hangul character set is the character of our total would happen many?
+Starting with "A" and through "each", "hold kkunkkut kkulkkum" through the so jururuk "hit" to be ready by.
+Hangul is also used Chinese characters in here Sprachraum haneunge not only use Hangul. Therefore, the use of Hangul Sprachraum Let kanji ready to put up a few thousand.
+Hey Hey ... this is more than a few? _ Ao Ao;
+
+So East Asian (Chinese, because any) character set has a large number of letters Sprachraum .. (indeed many ... and tens of thousands each.)
+
+- Encoding?
+
+Matching method and the encoding is the character set and byte order. Let's take an example.
+1 Table of ASCII Code has never linked the address listed in the lecture.
+The meeting of the ABCDE ... this, dude is a character set and A is called encoding a way that B is 66 times 65 times so the byte order and matching.
+(Encoding ... Fortress Is not a lot of words to listen? I saw instance where? Whoa video .. ~
+So ... use the word encoding when creating a video file.
+Also referred to as encoding tasks to convert Mp3 files in Wave.
+
+Dictionary meaning of encoding means to encrypt the encoded handageona sentence.
+Video encoding means to encoded analog video signal into a digital byte stream
+Our encoding is to symbolize the character into a byte stream.)
+
+Thus, ASCII is only one kind of encoding method. ABCDEF .... We have the same character set is the author
+A will that also make a rule that is 100 times B is pulverized to 101 times ... so order "SOONY-2004-1 / FUHEHE".
+This will be a new encoding. But no one else did not know -_-;
+(No one is above it does not know this one, we worked our way -_- fact'll only serious problem
+Encoding rules that you want to pass this information does not learn that it is compatible dalrajindago Hanba described in the second lecture.
+Therefore, we are following the international standard.)
+
+- Font?
+
+I am not a designer. -_-; But also in-depth knowledge of the font for the font anyway
+Referring to the information associated with the font is that we rely on encoding.
+The computer is in contrast to the ASCII Code of 00,100,001 byte encoding table when it comes to determining that the capital A
+At the same time bringing the figure for the Code 65 largest in the Arial font that picture of the shape of the picture 이 A is.
+But also on description "SOONY-2004-1 / FUHEHE" encoding is encoded as an existing ASCII encoding and discrimination
+If you enter an A in this technique are converted so 00.11001 million
+If you use a font tailored to plain ASCII order without a font that supports the encoding computer for the Code 100 번째
+Come take a picture root you ... "d" Uhh ... -_-;
+Therefore character illustration that is, when you create a font must keep to the order of encoding.
+Of course, each font has its own tailored encoding sequence and on the other encoding a non-standard encoding
+When you load a font that forced the so-called "break" character or the Sociedad game since the days before He who hasyeotdeon little Japanese
+The games get married when you turn on Hangul encoding favorite "kkuldyel dalppyarb" ​​Well ... in this way
+Will be discarded completely lost my sense forwarding.
+
+Let therefore also remember that the rides font encoding.
+
+(As an aside, I'm right, and web development needed some time to develop a website in Japanese.
+However, the designer creates a style sheet came all font families are openly "Arial", "Arial" was -_-;
+Those who engaged in the development, corresponding to a foreign language is to know the encoding and font Forget about the language they need to respond.
+Mainly Japan and China have a problem anyway.
+Japanese seem right to use the MS_Gothic or MS_Mincho font,
+China is tailored to SimSun font or font PSimsun each encoding.)
+
+5. On the computer, across the Pacific meet a new character. (Http://blog.daum.net/aswip/6584909)
+
+For the early '80s of Electronics, Information and Communication of the region to move quickly to the first labor was also Japan.
+Whether due to geography from the modern western civilization today is knowing exactly is coming across the ocean
+I do not know why the Japanese DA accepts first. -_-;
+(Well, of course these days to eat a lot of our country such as this one enough to complain, but ... there is a colorless ㅎㅎ)
+
+Also saetda sideways. -_-; Anyway Western guys who wanted to express to the computer and to encode characters in their own language
+His heart is different as Japan Caesarea DA ...
+DA, before the fact, already the Japanese ISO-8859-1 / Latin1 is confirmed to represent the Japanese in Electronics, Information and Communication
+To study the unique character set and encoding tried to define the standard.
+
+Early childhood yiraetda ... yet was the only character ASCII Code is referred to as childhood novelties deviate from the fixed notion of a byte
+
+Briefly when the memories for the empty bit (just in case you forgot, but readers mind as worries of Western Europe before the kids
+ASCII, ie 1 byte to 128 characters, and that you are using the case of an 8-bit number in the front of the 0 ~ 127) begin to discard 1
+Tries to take advantage of the space to the rear of 128-255. But this is too less space than you might think, but the 128 space.
+
+Japanese, there are two ways to use a notation that it was an "hiragana" and "katagana" Ghana.
+"Hiragana" the characters are smooth and round and round .. ^^ (あ い う え お)
+On the other hand, "katagana" the characters are used to denote the linear and mostly (a loanword from the perspective of Japan) foreign words. (ア イ ウ エ オ)
+In addition to the Chinese if I wanted to be put independent geteuna Chinese have a lot of free space too.
+
+Hiragana and even if only one of them anyway katagana pronunciation seems to have no meaning is like a great multitude.
+Besides assuming the hiragana character set and encoding to draw the font hence is difficult to draw round and round.
+(Easy to drawing straight lines.-_-)
+
+Therefore, the back moderately katagana (Ghana is the 128 space that you can think of roughly 50 to 50 um letters to Dora.
+Not exactly a dog should not be less than 50) and define the character set and put the sign of little use was defined encoding
+At that time, the width of the text is small to fit the width of the English one keyword (ie half the width of a single shred of Hangul now) katagana
+
+Letters were drawn using the font used so called "half-width (半角) character, Half-Width Katakana".
+(Full-width characters are the opposite of raneunge en character of today's full-width characters in Japanese encoding
+The font used to draw other words, a single shred the letters are expressed to be twice the width of English.)
+
+Examples of single-byte characters used: ユ ウ ナ (a writer I had written an open dashboard fan of hero FFX "Yuna" -_-;)
+An example of using full-width characters: ユ ウ ナ
+
+(You can certainly tell others the width of the letters are different. In the case of half-width is equal to the width of plain English text.
+The width of the base itself is the wrong letter. Such as font size, the size inde clearly wrong.
+
+Editor with runners know the joke chinge not sul sul _;)
+
+(However, the distinction between half-width and full-width should be distinguished from the principle that the width of the character.
+En grow up, do not be writing one byte must think even a he.
+I also remember outdated gamulgamul but when I looked out the half-width characters in the past
+Just had unforeseen consequences are to be seen half-width characters seem to remember one byte was not. Such irresponsible -_-)
+
+(When one kind of a further reference, a story MBCS that requires two bytes to represent both a full size character one keyword.
+Under the'll explain. There has also been adopted on a single-byte characters only katagana. Therefore, there is nothing called hiragana en.
+However, an interesting fact is that some engravings alphabet. Do generic ABCD "ABCD" <- Yogi is stated to em alphabet.
+On the web Learn well as problems of the font's hard to run Notepad, click the Hangul "ㅍ" When pressing the Chinese key in that state
+It will be appreciated that you can enter the English alphabet that are twice the width of plain English. ^^)
+
+6. If there is no space to create a space. MBCS - Multi Byte Character Set
+
+At first he just about usable. But that's only mothajiman katagana Where are represented.
+Being able to express the Japanese computer you've got a lot of development than the world thinks, just said ...... did not let the greed of Japan DA.
+So once you collect the letters on the mark in Japan began to make the character set. Hiragana + katagana + existing compatibility
+En katagana + the kanji for ...
+Even though I rarely used except for the Chinese were required manyeogae later or space.
+
+This is hardly troubleshooting should not have a single byte.
+So that one byte is beyond the existing framework of one character is two bytes represent one character
+Is to devise a form of MBCS.
+
+If the number of bytes that can accommodate 2 How Will?
+One byte is a power of 2 8 = 256 kinds
+Two bytes again is to the square power of 2 = 8 2 = 65536 kinds of 16 square
+
+Whoa! With the two-byte characters will be acceptable in 65,000.
+One byte is the only beorimyeon characters at most accommodating, no matter how it is possible the concept of a single character.
+
+Can I use your offhand way?
+
+It is always deeply carved chest to put in the encoding that they keep the compatibility with the encoding that is already widely used.
+In other words, the document is always to not recommend that you use only English, Japanese and Japanese are used in parallel would become.
+The problem is that some characters are single-byte characters and some characters are just stories that have double-byte characters read.
+
+In other words, it ends with this guy or that your computer is one character when read one byte to be read that the next byte
+He recognized that it must be separated.
+
+What ... the simplest distinction?
+
+If it's the first time I read one byte is zero, this guy is a top-bits and output in English because it is a plain ASCII
+If the bit is 1, then the top-tying two-byte read is to display a single Japanese character found in the Japanese character set.
+(One byte is eight bits in combination 0.00000000 referred to as a state 0, and the left and
+                                    00000001 is a requirement 1
+                                    00000100 The requirement 4
+                                    ↑
+                               Is referred to as the gel in front of the most significant bit yogil.
+
+In a state of being fixed to 0, the most significant bit that is a number which can have the remaining seven bits are a range from 0 to 127 ASCII Code and the like.
+Therefore, if the most significant bit is 0, it doegetda is ASCII.) (Learn about the hexadecimal notation as a reference.
+
+One byte is the decimal representation has a range of 0 to 255. - Of course it's time job unsigned.
+Programmers to deal with C or similar types of languages ​​are not gonna understand what you hear. If you do not know "does not think negative," so let's go over.
+
+The time is always one byte to represent a decimal number that you have any value is one digit less (0-9), up to as many as three digits (100 to 255)
+Place transforms politics is not one of the decimal digits.
+
+Banks cut half so one byte character Ao, Ao
+
+Half cut open, and the four bits can be represented with four bits of 16 branches.
+So if two digits are represented in hexadecimal can always display the value of the byte at a certain number of digits.
+In high school, there were a few guys show that the non-decimal digits of little parenthesis in the lower right corner, but
+This is neither a word nor a math notebook. _ Ao Ao;
+
+So this guy to succeed in most programming languages, and C is the C language syntax to show something called a hex
+"0x" is written as hexadecimal values ​​putting you behind that.
+
+So 0x00 ---> 0000 0000 decimal 0
+      0x09 ---> 0000 1001 decimal 9
+      0x0A ---> 0000 1010 10 decimal
+      0x0F ---> 0000 1111 15 decimal
+      0x10 ---> 0001 0000 16 decimal
+      0xFF ---> 1111 1111 255 decimal
+      0xFFFF ---> 1111 1111 1111 1111 65535 Decimal
+(Because the two-digit hexadecimal notation hangeotyigo It is one byte 2 bytes each have a value of FF
+If you think that one requires a two-byte stack will have a value of 65535.
+If you require two bytes bytes doegetda unrelated having a value of 255. If each is distinct.)
+
+The yoreon way.
+
+Written in the programming language HTML On that, but a little different. On HTML tags "& # x".
+
+From now on, when I'm labeled as a 0x80 This is not a decimal to hexadecimal 80 to 80 decimal, so is
+Means indicates a value of 128. Please do not confuse sul let him. Sul)
+
+The distinction Simple, right?
+
+Let's practice
+
+0xA172A37052A2A3
+Once kkeunja to do so based bytes.
+
+0xA1 0x72 0xA3 0x70 0x52 0xA2 0xA3
+Now, let's read by reading one byte at whether single-byte characters in the ASCII multi-byte characters in MBCS.
+(Based on the 0x80 that is, equal to or greater than 128 because one will be combined with the next byte ASCII is not that the one character.)
+
+Interpreting
+
+0xA1 0x72 0xA3 0x70 0x52 0xA2 0xA3
+-----         -----     --       ----
+A1 should be viewed as a single shred up 0xA172 than keungap Since the 0x80.
+Likewise, 0xA370 one keyword, and then meet to read and to Yogi inde it did not exceed 0x52 0x80
+Therefore 0x52 will be a single shred English.
+The following is a single shred 0xA2A3.
+
+Now, keeping only the last notes.
+I mean Western Europe shall have the encoding and compatibility. In Western European encoding can appear in more than 128 bytes having value
+Geureogie will read two bytes that blindly facing more than 128 bytes of Western European documents that can not be read correctly.
+
+Fortunately East MBCS in space are distinct and ASCII to 128-255 in order to maintain compatibility between the Western European encoding
+Only different areas were used as the key definition.
+
+So I read a single byte 0x00 ~ 0x7F (0 ~ 127) if the ASCII character values ​​up to and
+Western freezing to 0x80 ~ 0xA0 (128 ~ 160) space laid open for the East MBCS.
+
+Just the MBCS encoding and Lee will be be used.
+(Waenya Western European encoding can also have the value 0x80, but does not use up more than 0x80 ~ 0xA0
+For example bytes of 0x99, because if you think it is not eoga Western Upper byte of East MBCS characters.)
+
+To do this, the high byte is the extent to which the front is always kept as the "reserve range"
+Actual reserve coverage area of ​​Japanese and Korean are scheduled range is up to me a little bit different, but anyway 0x80 ~ 0xA0
+East All MBCS should be observed.
+
+(That is, the high byte is always easy to tell a story that should be in that range. Lower byte is fine, but ...
+Oh, and this is a problem that is not based encoding, EUC. EUC encoding sequence then let's talk.)
+
+Now ... came back ... too much cleanup if one is given a hint as to the value of the byte is not an ASCII
+Then to cover nearly all of the character set defined by manyeogae naejineun 20,000 characters as the result of the two-byte
+It is defined MBCS.
+
+7. Big Endian? Little Endian? (Http://blog.daum.net/aswip/6584909)
+
+Again, take a step back off and haebolkka a different story for a while encoding history. Subject words above
+Those who understand and or "I'll play only on Lifetime Intel or AMD CPU with Windows OS"
+Skip this section are those, feel free to skip that. -_-;
+
+Astute who is tejiman syeoteul to feel part of the story this time is Platform Independent
+(Easy to tell the program that I wrote, irrespective of the nature of any hardware or OS, Solaris, Linux, Windows
+Programs were written to be a consistent feature action)
+When you create a program for the part you need to be aware of the story.
+
+Now ... Let us suppose, for example trying to create such a program.
+"Program to convert the Japanese hiragana to katagana"
+In other words, through this program, the sentence "あ い う え お" (child Yiwu Oh) "ア イ ウ エ オ" (also children Yiwu oh) so gonna change.
+
+Showtime - I Cor ~ exciting?
+
+(Note that I have now, but for some reason there's a web programmer originally was a C programmer.
+Therefore, it seems likely out many examples during lectures using C syntax. Of course, those who do not know the C syntax
+Still C syntax, when possible efforts to reduce the information that describes the C syntax but reverse the
+If you do not know if you have the opportunity to come Programmer C is recommended at least once bosigil study.)
+
+Which is easy to enter text easily go Assume come MBCS string contains only absolute is not mixed ASCII.
+In other words, two bytes will be read at a time and also think that one character be convenient.
+
+How would you create the same for you?
+
+The most easily comes to mind (although geotyiji is not thought likely enemy in an easy way.)
+"あ" -> "ア" data read by the code table prepared in advance for matching with the code table
+A method for the control and then replace the result.
+Easy. Very good. If there are available only in hiragana data conversion table 50 may be used in this method.
+But also again our astute readers feel kkeseoneun syeotgetjiman iteunikka else other than this way, I would not say that?
+
+EUC_JP in encoding ...
+(Encoding, blah, but EUC_ appeared briefly in the former course is the original encoding method that was used in Unix-like
+EUC_JP (Japanese), EUC_KR (Korean), EUC_CN (in Chinese), and so on
+The encoding of their Western European ISO-8859-1 encoding was used even before the eowa Western realistically confirmed
+Something called "reserve range" to avoid conflict differs from the story of the whole range of lectures.
+In other words, the encoding may conflict eowa Western Europe. For more stories about the encoding will probably have the opportunity to again assuming the next-_-;)
+
+Anyway "あ" in EUC_JP -> will 0xA1A2 days.
+
+(Ugh, this is gamulgamul remember the exact value is not guaranteed. As mentioned in the first lecture
+Georaseo to mention that I've learned in my job precise data are not anymore. -_-)
+
+"あ" -> 0xA1A2
+"い" -> 0xA1A4
+"う" -> 0xA1A6
+"え" -> 0xA1A8
+"お" -> 0xA1AA
+
+On the other hand,
+
+"ア" -> 0xA3A2
+"イ" -> 0xA3A4
+"ウ" -> 0xA3A6
+"エ" -> 0xA3A8
+"オ" -> 0xA3AA
+
+Now ... ... will know the exact value yireotda At this point, I mean what is beyond the scope of even trying.
+Yes. Charset is not something haphazardly assembled. Will gather in alphabetical order for each language, as distinguished
+If the order is jumbled because I will do the matching table, the order of hiragana and katagana
+Since the same can be converted in a simple operation.
+Moreover, it was not even set the encoding haphazardly placed in free space. If possible, this distinction clearly
+High byte is to be "0xA1" in hiragana only place, "0xA3" ingot is set to katagana haenoteun-only areas.
+Hiragana is only about 50 andoemeuro site be enough "0xA105" section that is also empty ....
+But the area does not place the other characters anymore.
+Think about it. Anyway remains constant because a lot of space to write two bytes to one character.
+Giwangyimyeon it would be awesome to make a unique space for each area?
+
+Knowing these characteristics are summarized leh now all we have to do.
+
+1. Reads two bytes (ie, reads the first character), one should compare whether the high byte is "0xA1".
+    (Correct, enter the second stage, incorrect Hiragana is not ignored and the next character read)
+
+2. If the back-byte read hiragana characters adds a 2-byte value, leaving the front of the top.
+    (Ie, in 0xA1A2 to 0xA3A2)
+
+3. Save the converted content again and read the next character.
+   What do you think? I wrote words'll simply going to program in this way? There is also a table specifically need.
+
+Now ... the end .... _ Ao Ao;
+(Oh, hear the sound carried far and wide stone coming. So ... talk about Endian has turned out so far Is not never ...
+What is the title Incorporated today I just finished a lecture here -_-;)
+
+Come excited he ... Now go sit in earnest, let's talk about Endian
+
+Once you consider the details mentioned above sees actually built.
+
+C language will appear. Watch la understand.
+Once the two bytes at a time, read the 2-byte unsigned short, not because be char variable
+Is used. By letter, as one keyword is to be processed. short variable has a storage space of 2 bytes
+
++2 Will only forward one byte variable portion of the short reads.
+And again, save data to a variable short changed.
+
+Well, here it happens.
+
+If he originally intended to be read 0xA1A2 the ground should be stored later 0xA3A2.
+But the result?
+In some computer stores a value that 0xA3A2 as our intentions, but
+In other places that are stored 0xA1A4. Ugh ... -_-;
+
+Going to understand what I mean?
+We think that it is something you can actually not be the high-order byte high-order byte.
+
+In other words, the file to read data to the memory of 0xA1A2 ...
+While the upper byte order, in which the computer is to be deployed in the future to go to memory (Big Endian),
+There are computer upside down high byte is placed behind the store. (Little Endian)
+
+Therefore, it is in front of blindly think 2 + 2 bytes if the upper byte yiryeoni
+
+For Big Endian
+Memory Award: 0xA1 0xA2 ---> add operation ---> 0xA3 0xA2 ----> Save File ---> 0xA3A2
+
+In the case of Little Endian
+Memory Award: 0xA2 0xA1 ---> add operation ---> 0xA4 0xA1 ----> Save File ---> 0xA1A4
+
+The work done so.
+
+As you can see from the order of the changes are only made in memory. When the original order to be stored in the file
+Turn on the computer take care of the order as placed dimensions.
+
+Little is a sequence of bytes is Dara has a multi-byte size of the variables in the Endian.
+(One should be noted that the variable does not change the order of the individual as a sequence of bytes internal variables are different.
+
+In other words, 0xA1A2A1A4 so the two letters using a short sequence reads in Little Endian 2
+On the memory so goes.
+
+Memory Award: 0xA2 0xA1 | 0xA4 0xA1
+
+As above, the variable inside of a short sequence of byte order changed, but when I saw a bunch of two-byte short is not Is different.
+Advantage is extremely important.
+
+In other words, when processing a single shred and proceed as short size to handle the next letter arrives properly which means that the next character. )
+
+So where is wearing a Big Endian and Little Endian What Where Why do not we confused?
+The original machine was all Big Endian. People were writing an article from left to right, the first time this course
+When the design is all designed to start from the left in the memory as Big Endian.
+
+However, consider the following example.
+
+Was in the 1-byte memory space, the following value.
+
+00010000 -> 0x10 that is, 16 in decimal.
+
+However, this computer is that the guy does not work out calculations to compute this number is enough to say.
+Let us suppose that there no 256 of 16. Is a decimal number with a value of 272 is now. Bit is?
+
+00000001 00010000 -> value is 256 bytes in front devised a single byte to the pass
+                                       One further neuleonaya.
+
+Is this the right thing ... it biilbijae digit increases or decreases in dealing with a myriad of computer calculations.
+However, if the number of digits after the copy if the Big Endian byte to be placed in front of the first byte of each time was to increase
+This operation is necessary to copy the new byte in front.
+
+If, however, Little Endian?
+
+This placement is to represent the decimal number 272.
+
+00010000 00000001 -> leh will be attaching the original and still the new guy was behind the increase in the number of bytes to display digits.
+Every time you get rid putting the number of digits after the digits were back in Big Endian julmyeon increase the overall data, depending on the variation of the number of digits
+Would not have gone much better way than you need?
+
+So computers are relatively new in the Little Endian designed for the purpose of improving the computational performance
+Is adopted.
+
+("Hey, instructors, so we have to be careful what does?"
+There is no particular. -_-; This is a phenomenon that occurs only flip byte order in memory.
+
+The basic input and output at the time reverses the order back to the computer take care of it. Whatever the sequence of bytes in memory user
+There is no need to spend altogether. Why are you upset the CPU and the memory easier edges users to manually compute Hath care?
+Just bring back the computer take care of it like it no matter what setting. We will be the only calculation comes out well jangttaeng.
+Just not the relationship between the variables and parameters as illustrated in the program who want to view creates a single variable
+To date such programs are trying to directly deal with the Endian byte order problem is that jikyeojwoya.
+Naturally, if you will go directly manipulate something in the order degree in computer head will jikyeojwoya. )
+
+Finally, someone who is Big Endian and Is Little Endian?
+Computer relatively old traditions such as Sun Solaris uses Big Endian.
+Typical your computer, that is, Intel, AMD CPU are Little Endian.
+That is, Windows is, of course, be treated in Little Endian.
+If Linux is also back on the Intel CPU Little Endian.
+
+8. East Asian characters (http://blog.daum.net/aswip/6584909)
+
+Today, let's look briefly about the East Asian character set and encoding.
+
+1. Japan
+
+East Asian countries, the first set of unique Japanese character set.
+So after the way they've built up trouble early eoryeopsari Korea, China, etc.
+As it is to write words that bring to their characters. Ao. Ao
+
+(1) JIS X 0201 - including a single-byte character set is the katagana.
+                    Front 128 is compatible with the ASCII character set, and placed it in the back of sseuyideon early Japanese, katagana 128 area.
+
+(2) JIS X 0208 - Japanese character set, which is the most widely used now.
+                    Most weave and has a 2-byte write MBCS encoding based on it EUC_JP with Shift_JIS.
+                    What EUC (Extended Unix Coding) because the number of characters in the character set of Unix by many countries
+                       Encoding technique which is used to support this standard since before the "Reservation range" of MBCS led by MS
+                    I used eowa Western Europe would have a conflict. (Mainly starts from characters 0xA1.)
+
+The EUC Japanese character set encoding scheme faithfully therefore almost certainly EUC_JP katagana and half-width and 1 byte compatibility
+Keeping the MBCS encoding batch reservation becomes lost over a range compatible with the MS side, unlike EUC is the Shift_JIS.
+(Of course MS side only supports Shift_JIS. Ao. Ao) Note that the Japanese spend more than a Shift_JIS EUC_JP.
+
+(3) JIS X 0212 - JIS X 0208 If you're gathering the character used to say this is mainly
+                       Gateundeseo or occasional academic papers such as Chinese characters commonly used in watch is put together, not things.
+                    In this EUC_JP support and Shift_JIS does not support this.
+
+(4) JIS X 0213 - the latest Japanese character set. More rarely used characters unwanted high frequency churigo letters to reorder again
+                       New character sets or faded out .... MS is not yet a lot of sense to support the plan.
+                    Fortunately, MacOS X has decided to support for some time.
+
+2. Korea (Republic of)
+
+Korea has been modeled after a lot of talk, but also on the Japanese character set structure. Ao. Ao
+But there is also worried by its own development. It is a typical combination Hangul.
+
+(1) KS X 1001 - now we're writing a character set.
+                   Korean character set handling most of the process and the number of characters in one Hangul, Chinese characters, symbols, letters,
+                   Greek, Cyrillic, Hiragana, etc. Altogether the katagana LP is about 8 or so.
+                   This charset is supported encoding, such EUC_KR, combined, CP949 is.
+
+Note that I should explain more time to use the MS side KSC-5601-1987 The unusual name is the name of the old name of the KS X 1001.
+We finished, called Hangul is a combination EUC_KR writes the character set encoding method is called because the combination EUC_KR and different from this.
+(One character set encoding also has can appear in multiple Typical to EUC_JP with Shift_JIS)
+
+CP949 is also little to add and position change some text in MS is arbitrarily called extended-finished edges and EUC_KR
+EUC_KR can think of, but because he is a bit different.
+
+(CP is to say CodePage means a return character set and encoding was used as an internal code OS to IBM and Microsoft
+Dont fort is wrong both IBM and Microsoft split is the number newly assigned Ao. Ao
+Still yet, there are many many of the same number. For information on the CP will have a chance to explain later.)
+
+(2) KS X 1002 - is like the old characters and character sets that are used often frequent use collections of rare Chinese characters as JIS X 0212.
+                   The difference is EUC_JP supports JIS X 0212, but does not support EUC_KR KS X 1002 ..
+                   (In other words, this is not supported encodings, which means that the boss. Are we once Hangul encoding is finished
+                   The encoding is used primarily as a combined Are never fought the fuck, this time it did not see any light pushed the debate.
+
+(3) KS X 1005-1 - is expressed in the Korean character set for Unicode 2.0 or later.
+                     Basically the same as a finished look. However, the Unicode version.
+
+3. China (Peoples Republic of)
+
+In mainland China, the character set that starts with GB, use the encoding. GB is Guo-Biao (国 标) national standards that will reduce the bitter words.
+Note in Chinese Chinese is largely classified into two types in the "Land station" short cut "国" So I briefly displayed
+"Simplified Chinese (Simplified Chinese)" referred to sseuyimyeo lot in mainland China, "國" So what strokes are drawn correctly displayed
+"Chinese (Traditional Chinese)" referred to a form used in Taiwan, Hong Kong, Singapore, South Korea and elsewhere.
+Japan is using the most traditional, but there is also sometimes written as Simplified Chinese
+That does not even call it a Japanese Kanji wrong in the shape of a ditch Simplified Chinese mainland "Chinese".
+
+(1) GB2312 - The Simplified Chinese character set used in most cases in mainland China.
+                  This fixes some bug in some, but I just ignore and use a lot of GB2312.
+                  About 7400 Chinese characters are included that use a lot of Chinese and Traditional Chinese versions of these have the GB / T12345.
+
+(2) GB7589 - As inde rare gathering of some 7200 degree usually do not use Chinese characters
+                    MBCS encoding is not supported by this as we just have to get into Unicode.
+
+(3) GB18030 - the world's largest charset almost pushed most of the Chinese characters used in Chinese been established in 2000.
+                (In terms code letter ISO-10646-2 is only valid up to, but ...), the Chinese government in China in September 2001
+                All the OS was determined to be forced me I should support GB18030.
+                This charset is changed to a variable length of 1 to 4 bytes per Hangul perfectly compatible with GB2312.
+                UTF-8 is the single shred 1-6 so much efficiency compared to the good looks of changes to the byte position in Chinese only better.
+                Anyway, this is because it is mandatory for the government to convert MS degree from the Buryat Buryat Unicode GB18030
+                   BytesToUnicode, was solved by providing a function called UnicodeToBytes not more than a little ... name?
+                Gonna to GB18030. Bytes Rani.
+
+4. China (Republic of, Taiwan)
+
+These days between Taiwan and the mainland is more worse.
+
+(1) Big5 - Taiwan is famous for its large number of letters.
+                As mentioned above, using the traditional Chinese character set consisting of letters and a number of about 13500 Chinese characters.
+                The problem is that there are two Big5 is the case with the letters placed two spots a bug, but ...
+                Just used while you come to see wonak It catches the bug long ignored and use. Ao. Ao
+                   The Big5 is also about character sets that represent approximately 2 Swastika as extended by adding eight more puncture There is version this Big5 Plus.
+
+(2) CNS11643 - Taiwan is even better eopaedo bug Big5, a lot of clean up would produce a character set with a total of 16 Plane
+                  The character set was announced ambitious. If only finished a whopping 140,000 inde he had dreaded letters.
+               But still a step in the firm and the Big5 daemanpan I've already bored with MS or Mac wait
+                  This is extremely rare, used what became caught up period because the OS standard encoding. Ao. Ao
+
+5. Korea (Democratic Peoples Republic of)
+
+Haha .. North Korea has its own character set. You do not know a lot of people seemed to also .. ^^
+
+(1) KPS-9566 - North Korea is the only character set. I made a different CJK (Chinese, Japanese, Korea), the character set and similar structures .....
+                   Hangul shaped lot less than the 300 characters instead of Chinese characters is 200 characters less about us.
+                   Oh ... And one interesting fact is the beginning of the Hangul part, not the "A"
+                     "Kim Il Sung" is thus placed first 6 characters.
+                  (Woohehe .. Sorting monya if this is in order Hangul "Kim Il Sung," the first man emerges -_-;)
+                  Hangul and North Korea are different and we are the sort order.
+                  As an example of the sort order of the consonants "b b c d f wh oi Fucking ㅊ blah ㅌ ㅍ heh ㄲ ㄸ school boy ㅆ ㅉ o" to "o" goes back to gel.
+                  Perhaps because more SiO structure without dueum law.
+                  So anyway, but in a unique character set does not support the KPS-9566 MS actually EUC_KR side and UTF-8,
+                     Is often used. It also follows the alignment of ours also Unicode
+                     If this sort letters dealing with North Korea would need to be emulated by creating a separate function again.
+
+
+9. In a letter to one of the world's ... ISO-10646 & UNICODE (http://blog.daum.net/aswip/6584909)
+
+A whole world out there, there are a variety of languages.
+The language barrier is not just up in the real world that exists clearly in the digital world.
+Although not yet fully software technology can break down the barriers of language,
+Some day care program that alahdo one national language translations in all languages, let's expect to get out ... ^^
+Once all the language displayed'll have to know how to do that ...?
+
+Now is the beginning of UNICODE.
+
+Societe DOS I ever came to the Three Kingdoms era in Japanese in Japanese font loading modify the config.sys file in the DOS and
+Kingdoms of've got. When you run a different program to the general discomfort every time I had to return the config.sys intact
+Since loaded into Hangul environment while allowing the idea that is now in full swing jam the Three Kingdoms else ought example had to be sure to reboot. Ao. Ao
+
+DOS 6.0 days, but buteoinga techniques that can be applied to multi-boot boot multiple sets spree
+Basically the system is to fix the encoding to use one if you want to respond to different language encodings
+It replaced the relevant file to be loaded is working like a reboot.
+
+If we store the information by typing the text in the text file, the computer stores only information such as a binary byte 0xA1 0x65 0xB4 ....
+This information may be passed both the user's computer which country eseona 0xA1 0x65 0xB4 ... do the same byte information.
+Only whether the user can interpret the article correctly em one will be attached to the character set and encoding.
+
+Any such information bytes of information that can be expressed differently depending on the character set and encoding've done several times mentioned in the previous lesson.
+Therefore, the character of the world can be expressed in a large standard character set and encoding is required in order to eliminate this confusion.
+
+Unfortunately, I only have rice country to abandon humanity too narrow to hold the units of the characters in single-byte
+In East Asia, trying to avoid conflict somehow came to write all sorts of ways, such as to distinguish the upper bits.
+Once the encoding method is to ignore it and let any character set is a collection of thoughts
+Since the mid-1980s efforts are attempts to create an international standard character set with the cooperation of the agency responsible for the standards of international information representation.
+
+Let's learn a bit of history here.
+
+ISO-10646 was originally the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC)
+It was the Commission under the ISO / IEC JTC1 SC2 are international standards established by the Commission of WG2.
+
+The standard way to break the existing character set and encoding combined with the release of assigning a single shred by 4 bytes
+Alternatively, only one character set encoding to haejumyeon in any language system designed to enable use.
+However, it is to be a complex structure that consumes 4 bytes per character would rather work at a acceptable so easily.
+Let's get the idea. Uppercase 'A' letters of one 0x41 byte if you take time out to listen from anywhere in the world panguk inde
+Do I have said this notation means that a 4-byte 0x00 0x00 0x00 0x41.
+
+Meanwhile, Apple, Metaphor, RLG, Sun, Xerox, etc. in 1989 against a slow process for complaints and confirmed on 4 bytes standards of ISO-10646
+In order to strengthen the part of the multi-language support in the OS and organizations know that their Unicode Working Group.
+
+Since Unicode Working Group is Unicode.Inc the name. And because the standards for multilingual part of 1991, ISO-10646 lagged change to bring the UNICODE eotteotgetnya trustee and suggestions to the international standard ISO committee accepts it.
+
+What made the ISO-10646 attempt to single shred of four bytes, to the apex of ancient as well as modern scientific language characters that have utility value and
+In contrast to know how to add the character to be established was to grab significant space area.
+But even failed to prepare for East Asian characters in single-byte ASCII days past difficulties, even though there is manatdeon
+4-byte area is too big catch. If the number of 4 bytes can have is about 42 billion dog. Ao. Ao
+
+There are however many languages ​​and characters on the planet would not even fill up as much as 4.2 billion.
+Of course, but that is not a 4-byte structure is complicated, both are assigned only letters
+At least, except for characters that are used in modern character, besides often unused
+Collect the letters in each country so practical enough to hold everything in double-byte character set, if the ISO approach in academic standards
+Unicode.Inc will have access to the character set in the practical aspects.
+
+The structural parts Group 00 and Plane 00 referred to in the ISO-10646 BMP (Basic Multiingual Plane)
+Think structural terms aside once used in practice because the current letter is assigned area.
+
+The BMP coding regions may be two-byte code itself will Unicode.Inc proposed character set for this part
+ISO will accept this double-byte actual area of ​​the ISO-10646 is the same as UNICODE character set.
+
+Since 1992, the character of the world gather in one place is not to proceed with efforts from both La yeogyeotneun effort is not wasted integrated with ISO and UNICODE
+ISO / IEC JTC1 / SC2 / WG2 was enacted in the ISO-10646 at the 22nd meeting established international standards.
+However, ISO-10646 is the name of the name for easy reach and the public ahnigie
+We have generally better known by the name of UNICODE.

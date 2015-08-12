@@ -1,0 +1,15 @@
+﻿- Since the log under the log that is used by the Kami and Do not change or delete arbitrary -
+
+LOGIN 
+CHAR_CREATE 
+JOIN 
+CHAR_DEATH 
+CHAR_DELETE 
+LOGIN REQ 
+CASH_ITEM_PURCHASE_REQ 
+CASH_ITEM_PURCHASE 
+DISCONNECT 
+LEVEL UP 
+ITEM_PICK 
+QUEST COMPLETE 
+CHAR_UPDATE

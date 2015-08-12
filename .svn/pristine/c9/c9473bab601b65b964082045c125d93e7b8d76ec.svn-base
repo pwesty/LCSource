@@ -1,0 +1,19 @@
+cd APPLOG
+make clean
+cd ..
+
+cd SHMUTIL_LIB
+make clean
+cd ..
+
+cd HASHSHM_LIB
+make clean
+cd ..
+
+cd SOCKLIB
+make clean
+cd ..
+
+cd ../LIB
+rm -f *
+cd ../LIBSRC

@@ -1,0 +1,40 @@
+; 주석문은 처음 문자가 반드시 세미콜론(;) 이어야 하고 인라인 주석은 불가능
+; [그룹]
+; 필드=값
+; '=' 앞뒤에는 공백 문자 없게
+; 값에는 공백 가능
+; 주석문은
+
+[Server]
+Number=1
+MaxSubServer=1
+IP=61.104.44.146
+Port=4006
+
+
+[User DB]
+IP=61.104.44.152
+DBName=newproject_db_auth
+User=laka
+Password=lakabsdh
+
+
+[Auth DB]
+IP=61.104.44.152
+DBName=newproject_db_auth
+User=laka
+Password=lakabsdh
+
+
+[Event DB]
+IP=61.104.44.152
+DBName=newproject_db_auth
+User=laka
+Password=lakabsdh
+
+
+[Billing Server]
+IP=222.122.55.212
+Port=2072
+;IP=61.104.44.146
+;Port=5999

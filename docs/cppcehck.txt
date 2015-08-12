@@ -1,0 +1,74 @@
+* CppCheck
+
+1. 다운로드
+http://sourceforge.net/projects/cppcheck/
+
+2. Wiki
+http://sourceforge.net/apps/mediawiki/cppcheck/index.php?title=Main_Page
+
+3. Manual
+http://cppcheck.sourceforge.net/manual.html
+
+4. Options
+
+--enable 옵션
+=error : 
+배열 침범(out of bounds) 체크(언더 플로우, 오버 플로우)
+메모리 할당 해제 Pairing 체크(배열 new 는 배열 delete 로 지우기)
+상속 관계의 부모 클래스의 소멸자가 virtual 이 아닌 경우 체크
+등등...
+error 는 디폴트 옵션 이기 때문에 다른 옵션을 사용 해도 항상 출력된다
+=warning : 
+메모리 릭이 발생할 수 있는 코드 체크
+초기화 안 된 지역 변수 체크
+초기화 안 된 멤버 변수 체크
+등등...
+=style :
+생성하고 사용하지 않은 변수 체크
+등등...
+역사적인(개발 역사) 이유로 style 옵션은 warning, performance, portability, style 옵션을 enable 시킨다
+=performance :
+성능 관련 체크 인듯(내용에 대한 확인은 아직 못하였음)
+=information :
+내용에 대한 확인은 아직 못하였음
+=all :
+모든 옵션을 enable 시킨다
+
+
+-j 옵션
+cppcheck를 멀티쓰레드로 실행시킨다
+
+
+--template 옵션
+출력 방식을 설정한다
+매뉴얼 참조
+
+
+5. 사용예
+
+* file.c 에서 error를 체크하고 싶을 때
+> cppcheck file.c
+
+* file.c 에서 warning을 체크하고 싶을 때
+> cppcheck --enable=warning file.c
+
+* path 경로의 모든 파일에서 style을 체크하고 싶을 때
+> cppcheck --enable=style path
+
+* path 경로의 모든 파일에서 style을 체크하여 Visual Studio 출력 형태로 출력하고 싶을 때
+> cppcheck --enable=style path --template vs
+
+* path 경로의 모든 파일에서 style을 체크하여 Visual Studio 출력 형태로 파일에 저장하고 싶을 때
+> cppcheck --enable=style path --template vs 2> err.txt
+
+* 스레드 4개를 이용하여 path 경로의 모든 파일에서 style을 체크하여 Visual Studio 출력 형태로 파일에 저장하고 싶을 때
+> cppcheck -j 4 --enable=style path --template vs 2> err.txt
+
+
+6. Visual Studio 와 연동하기
+http://gyuyoul-textcube.blogspot.kr/2009/12/cppcheck%EB%A5%BC-vs%EC%97%90-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0.html
+
+
+7. 참고 사항
+리다이렉션 2> : 표준 오류 stderr
+http://ko.wikipedia.org/wiki/%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%EC%85%98

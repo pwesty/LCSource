@@ -1,0 +1,5 @@
+echo '[Daum]' > /etc/yum.repos.d/Daum.repo
+echo 'name=Daum' >> /etc/yum.repos.d/Daum.repo
+echo 'baseurl=http://ftp.daum.net/centos/$releasever/os/$basearch/' >> /etc/yum.repos.d/Daum.repo
+echo 'gpgcheck=0' >> /etc/yum.repos.d/Daum.repo
+cat /etc/yum.repos.d/Daum.repo

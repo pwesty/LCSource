@@ -1,0 +1,73 @@
+﻿* Hong Kong server build Act
+. OS: CentOS 4.8
+. MySQL: mysql 4.0.27
+
+0. gcc 4.1.2 installed
+ # Mount / dev / cdrom / mnt
+ # Cd / mnt / CentOS / RPMS
+ # Rpm -ivh gcc4-4.1.2-44.EL4.i386.rpm
+ # Rpm -ivh gcc4-c ++ - 4.1.2-44.EL4.i386.rpm
+ # Cd / usr / bin
+ # Mv gcc gcc3.4.6
+ # Mv g ++ g ++ 3.4.6
+ # Ln -s g ++ 4 g ++
+ # Ln -s gcc4 gcc
+ 
+1. ccache installation
+ #. / Configure
+ # Make
+ # Make install
+ 
+2. sqlite installation
+ # Tar xvzf sqlite-autoconf-3071700.tar.gz
+ # Cd sqlite-autoconf-3071700
+ # ./configure
+ # Make -j2
+ # Make install
+ 
+3. log4cxx installation
+ # Tar xvzf apr-1.4.6.tar.gz
+ # Cd apr-1.4.6
+ # ./configure --prefix = / Usr / local / apr-1.3.3
+ # Make -j2
+ # Make install
+ # Ln -s /usr/local/apr-1.3.3 / usr / local / apr
+ 
+ # Tar xvzf apr-util-1.4.6.tar.gz
+ # Cd apr-util-1.4.6
+ # ./configure --with-Apr = / usr / local / apr
+ # Make -j2
+ # Make install
+ 
+ # Tar xvzf apache-log4cxx-0.10.0.tar.gz
+ # Cd apache-log4cxx-0.10.0
+ # ./configure --enable-Shared = no --enable-static = yes --with-apr = / usr / local / apr --with-apr-util = / usr / local / apr
+ # Make -j2
+ # Make install
+ 
+4. subversion installation
+ # Tar xvzf subversion-1.7.9.tar.gz
+ # Cd subversion-1.7.9
+ # ./configure --with-Zlib --with-apr = / usr / local / apr --with-apr-util = / usr / local / apr
+ # Make -j2
+ # Make install
+ 
+5. mysql client installation
+ # Tar xvzf mysql-4.0.27.tar.gz
+ # Cd mysql-4.0.27
+ # ./configure --without-Server --libdir = / usr / lib
+ # Make -j2
+ # Make install
+ 
+6. boost 1.53 installation
+ # Tar xvzf boost_1_53_0.tar.gz
+ # Cd boost_1_53_0
+ # ./bootstrap.sh
+ # ./b2 -j2 --toolset = Gcc --build-type = complete --layout = versioned link = static install
+
+7. jsoncpp installation
+ # Tar xvzf jsoncpp-src-0.6.0-rc2.tar.gz
+ # Cd jsoncpp-src-0.6.0-rc2 / src / lib_json
+ # G ++ -I ../../ include -O2 -c * .cpp
+ # Ar rs libjsoncpp.a * .o
+ # Cp libjsoncpp.a / usr / local / lib

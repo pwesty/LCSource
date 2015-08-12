@@ -1,0 +1,2625 @@
+- 맵 추가
+1. 속성맵 확인
+2. t_zonedata  확인
+3. t_mapinfo 확인
+4. 해당 맵의 몬스터 리젠 확인(t_npc_regen)
+5. 공간술사 확인(t_npc)(t_npc_regen)
+6. t_quest
+7s. GameServer의 newStobm.bin 확인
+
+
+- 레벨 제한
+1. Exp.h 에서 #define MAX_LEVEL
+2. 해당 레벨까지의 아이템과 스킬 확인(t_item, t_skill, t_skillLevel, t_magic, t_magicLevel)
+3. 관련 항목 : [레벨 제한 140 이후] 
+
+- 고급 생산 스킬 추가s
+1. t_special_skill
+
+// ---------------- Zone ---------------- //
+
+[마르가듐 던전]
+   - 월드 : 9
+   - NPC : 180 ~ 190, 177, 218
+   - 스킬(몬스터관련): 149, 150, 151
+     스킬 매직(몬스터관련): 189, 190, 191
+
+[차원의 문]
+   - 월드 : 11
+   - NPC : 210 ~ 214, 220
+   - 스킬(몬스터관련): 151
+     스킬 매직(몬스터관련): 191
+
+[망각의 신전]
+   - 월드 : 12
+   - NPC : 260 ~ 269
+   - 스킬(몬스터관련): 340, 341, 342
+     스킬 매직(몬스터관련): 350, 351, 352, 120
+
+- 드라탄 신규 공성
+1. #define DRATAN_CASTLE 
+   #define NEW_GUILD
+   #define NEW_GUILD_POINT_RANKING_NOTICE
+   #define NEW_GUILD_BUG_FIX							
+   #define PULSE_GUILD_POINT_UPDATE        (5 * 60)		
+2. t_npc, t_npc_regen
+3. t_item 
+4. t_shop, t_shopitem
+5. t_skill, t_skillLevel, t_magic, t_magicLevel
+6. t_zonedata
+7. t_castle_guard, t_castle_reinforce, t_castle_rebrith, t_castle_tower
+8. SkillTool 에 a_learnGP 확인
+9. 드라탄 신규 공성 Data
+ - 스킬 445~451, 매직 489~501, NPC 351~401(400이 SHOP), 404~406, 아이템 2380~2381
+
+
+- 테오의 무덤
+0. #define DYNAMIC_DUNGEON
+1. 21번존 추가
+2. npc 468 ~ 480 추가(t_npc, t_npc_regen)
+3. 테오스 몬스터 스킬 476 ~ 482, 341
+4. 매직 522 ~ 529, 351
+5. item : 2570 ~ 2581, 2766~2839
+
+
+[스트레이아나]
+   - 월드 : 23 
+   - NPC : 494 ~ 510
+   - SHOP: 506 ~ 508, 510
+   - 아이템: 2766 ~ 2839, 2854, 2859
+   - 스킬(몬스터관련): 494 ~ 503, 511 ~ 513, 564
+     스킬 매직(몬스터관련): 542 ~ 558, 563, 590
+
+[혼돈의 탑 8~10]
+   - npc : 325~330, 332, 333, 339
+   - zone : 18, 19, 20
+
+[스트레이아나 동굴 3종]
+    - t_item			:	3004 ~ 3005, 3167 ~ 3178, 3018 ~ 3163
+	- t_npc				:	835 ~ 842, 844 ~ 859
+	- t_skill			:	570 ~ 588
+	- t_magic			:	594 ~ 606
+	- t_special_skill	:	49 ~ 50
+	- t_zonedata		:	23, 26 ~ 28
+	- t_mapinfo			:	23
+
+
+// ---------------- Event ---------------- //
+- OX 퀴즈 
+1. OXQuiz툴 로컬라이징 후 전달
+2. #define ENABLE_OXQUIZ	// OX 퀴즈 활성화
+3. 14번 맵 추가(t_zonedata)
+4. #define OX_QUIZ_COUNTRY_CODE		국가코드	// 국가별 OX 퀴즈 코드
+
+- 부활절 이벤트
+#define EVENT_EGGS_HUNT_2007
+#define EVENT_EGGS_HUNT_2008_ITEM
+t_item 있는지 확인하고 추가
+  2148 알
+  85  고급제련석
+  723 문스톤 
+  45  대형 체력회복 물약
+  883 숙련도 증폭제  
+  885 나스 증폭제
+
+-  곰돌이 이벤트
+   - #define : EVENT_GOMDORI_2007
+   - Item : 2335 ~ 2343
+   - 보상품 : 2149~2172(교복체험)
+   - 아이템 : 2173 ~ 2184
+   - npc : 340(사로얀)
+   - DB table : t_event_gomdori_2007
+
+- 빗방울 이벤트
+1. #define EVENT_RAIN_2006 20
+2. 빗방울, 빗물병 확인(1517, 1518)
+3. 보상 아이템 확인(556, 45, 500, 501, 498, 499, 973, 972, 85)
+
+- 판도라 이벤트
+1. #define EVENT_HALLOWEEN_2006	26		// 할로윈 이벤트 
+	#define PANDOR_REGEN_TIME		PULSE_REAL_TENMIN // 판도라 상자 공격이 없을 경우  10분 뒤 설정
+2. 몬스터 (314 ~ 320)확인     t_npc 만 확인 
+3. 아이템 17개(723, 85, 498, 499, 500, 501, 19, 43, 44, 45, 1334, 1331, 1338, 1335, 1336, 1340, 1342) 확인
+
+- 곤충채집이벤트
+1.
+#define EVENT_COLLECT_BUG		
+#define EVENT_COLLECT_BUG_DROP
+
+2. 아이템확인
+상자:1577, 1578
+보상아이템: 19,47,724,45, 723,1628,1629,1627,85
+곤충아이템: 1579,1580,1581,1582,1583,1584,1585,1586,1587,1588
+
+
+- 종이접기 이벤트
+1. 
+#define EVENT_SUMMER_VACATION_2007		41		// 2007 여름 방학 이벤트
+#ifdef EVENT_SUMMER_VACATION_2007
+#define PAPER_FIGURE_GREEN_FLOWER		1
+#define PAPER_FIGURE_RED_FROG			2
+#define PAPER_FIGURE_RED_CRANE			3
+#define PAPER_FIGURE_RED_DRAGON			4
+#define PAPER_FIGURE_SILVER_FROG		5
+#define PAPER_FIGURE_SILVER_CRANE		6
+#define PAPER_FIGURE_SILVER_DRAGON		7
+#define PAPER_FIGURE_GOLD_FROG			8
+#define PAPER_FIGURE_GOLD_CRANE			9
+#define PAPER_FIGURE_GOLD_DRAGON		10
+
+#define GREEN_PAPER_ITEM				2367			
+#define RED_PAPER_ITEM					2368
+#define SILVER_PAPER_ITEM				2369
+#define GOLD_PAPER_ITEM					2370
+#endif // EVENT_SUMMER_VACATION_2007
+
+2. 아이템 
+종이 : 2367, 2368, 2369, 2370
+
+
+- 2007 할로윈 이벤트
+1. EVENT_HALLOWEEN_2007
+2. t_npc_regen(454, 455), t_item(2464-2491), t_npc(454, 455), 
+	t_skill t_skillLevel (470-474), t_magic t_magicLevel(518-519)
+3. t_event_halloween2007
+4. #define FIRECRACKER_ITEM				2403  보상 용 폭죽 아이템
+
+
+- 브라질 독립기념일 이벤트
+1. EVENT_INDEPENDENCE_DAY_2007_USA
+2. t_item 2409, 2410, 2411, 2412, 2413, 2414, 2415, 2416
+3. t_skill t_skillLevel 437, 438
+4. t_magic t_magicLevel 481, 482, 483
+
+
+[ 크리스마스 이벤트 2006 ]
+  - #define : EVENT_XMAS_2006, PULSE_XMAS_2006_MOVE, EVENT_XMAS_2006_NODROP_HAT(산타모자 드롭 안할 경우)
+  - npc : 334, 335, 336
+  - Item : 1975, 1976, 1844, 1977
+
+- 크리스마스 이벤트 2007
+1. #define EVENT_XMAS_2007						50
+2. #define PET_TURNTO_NPC
+3. chardb t_pet add column a_pet_turnto_npc int(11) default 0
+4. authdb add table t_event_xmastree_point
+3. t_item(2584 ~ 2618) 나라별로 차이가 있음
+4. t_skill t_skillLevel (485 ~ 490)
+5. t_magic t_magicLevel (530 ~ 532)
+6. t_npc(483, 484, 485, 486), t_npc_regen (486, 484) 
+7. 이벤트 종료 시 아래 쿼리 CharDB에 적용 (루돌프  펫 변신 풀림 쿼리)
+   update t_pet set a_pet_turnto_npc = 0 where a_pet_turnto_npc = 485;
+
+- 신년 이벤트 2008
+1. #define NEWYEAR_EVENT_2008					51
+2. t_skill t_skillLevel (491, 492)
+3. t_magic t_magicLevel (533, 534, 535, 536)
+
+
+- 오픈 베타 이벤트(무기 지급)
+1. #define EVENT_OPEN_BETA_GIFT
+2. #define		ETC_EVENT_OPEN_BETA_GIFT				(1 << 3)
+3. t_item  (460, 427, 462, 461, 951, 1069) 확인
+
+- 러브러브 이벤트(2008년 구정 이벤트)
+1. #define EVENT_VALENTINE_2007				52		// 2008년도 구정 이벤트
+2. #define EVENT_VALENTINE_2008_ITEM
+3. 아이템 2629 - 2636, 508, 509, 2033, 2034, 2382, 1819, 779 확인
+3. shop item 2632, 2633 확인
+
+
+- 발렌타인 이벤트 2007년 
+1.  #define EVENT_VALENTINE_2007			29
+2. 아이템 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 971, 973, 1820, 1819, 1821, 1822, 779 확인
+3. shop item 2046, 2047 확인
+4. skill 417 확인 (magic 459, 460)
+
+
+- 2008년 벚꽃 이벤트
+1. SAKURA_EVENT_2008
+2. npc npc_regen 341  // , 342 <- 벚꽃이벤트가 아님
+3. item 2345, 2747
+
+[빼빼로 데이]
+  - #define : EVENT_PEPERO
+  - item  : 1056, 1057 (skill 있음)
+
+
+
+[풍년 이벤트 - Local]
+   - #define : EVENT_RICHYEAR_2007
+   - Item : 876~881, 2422
+   - 보상아이템 : 723,884,2347,2143,2142
+
+[피닉스 이벤트]
+  - #define EVENT_PHOENIX
+  - t_charaters 테이블에 a_phoenix(int) 추가 : DB에 int(11)로     ALTER TABLE `t_characters` ADD `a_phoenix` INT(11) DEFAULT -1 NOT NULL AFTER `a_lastpktime`;
+  - t_pet 테이블에 a_color(char) 변경 : char(1) 에서 char(2)로    ALTER TABLE `t_pet` CHANGE `a_color` `a_color` CHAR(2)  DEFAULT "0" NOT NULL;
+  - t_skill, t_skillLevel : 516, 589
+  - t_magic, t_magicLevel : 591~593, 607
+  - t_item                : 3006~3011, 3217 ~ 3262
+  - t_npc, t_npc_regen    : 834
+
+
+[카니발 이벤트]
+    - t_npc : 334, 335
+    - t_item : 2619 ~ 2628, 2637 ~ 2641
+	- #define EVENT_XMAS_2006
+	- #define EVENT_CARNIVAL
+
+[추석이벤트] - 독일, 미국은 추수감사절 이벤트
+   - #define : EVENT_CHUSEOK_2006, EVENT_CHUSEOK_2006_GIFT
+   - Item : 1814, 1815, 1816, 1817, 1818
+   - skill : 388
+   - magic : 420, 358
+
+[발렌타인 이벤트 2009년]
+    - #define : EVENT_VALENTINE_2007, EVENT_VALENTINE_2009_ITEM
+    - t_item			:	2043 ~ 2050, 971, 973, 1820, 1819, 884, 85, 2844
+	- t_shoptitem		:	2046, 2047
+    - t_skill           :   417
+    - t_magic           :   459, 460
+
+[초보 지원 이벤트]
+    - #define HANARO_EVENT
+	- t_item				: 740 741 2658 2659 2667
+	- t_skill, t_skillLevel : 654
+	- t_magic, magicLevel	: 408 409
+	- t_npc, t_npc_regen	: 893
+
+[발렌타인 이벤트(러브러브) 2010년]
+
+	- #define : EVENT_VALENTINE_2007, EVENT_VALENTINE_2008_ITEM
+	(유료 아이템 추가 - 이벤트와 관련 없음)
+	- t_item	: 4946 ~ 4965, 5020 ~ 5054
+	
+
+// ---------------- System or Etc.. ---------------- //
+
+- 레이드 몬스터
+1.
+#define MONSTER_RAID_SYSTEM				// 몬스터 레이드 시스템
+#ifdef MONSTER_RAID_SYSTEM
+#define RAID_NPC_RAGE_SKILL				394		// 레이드 몹 분노 스킬 인덱스
+#define RAID_NPC_RAGE_SKILL_LEVEL		2		// 레이드 몹 분노 스킬 레벨
+#define RAID_NPC_NOTICE_CELL_EXT		5
+#define MAX_RARE_OPTION_SETTING			10		// 레어 옵션당 옵션 세팅 수
+#define MAX_RARE_OPTION_ITEM			10		// 아이템당 레어 옵션 수
+#endif
+
+#define PULSE_MONSTER_RAID_MOVE		(14 * PULSE_REAL_MIN)	// 몬스터 레이드 이동 시간
+
+2. 몬스터 307, 308, 309, 331 확인(t_npc, t_npc_regen)
+3. newproject_data.t_npc_dropraid 확인
+4. 아이템 673, 168 1828 - 1837 확인(t_item)
+5. 스킬 390, 391, 392, 393 확인(t_skill, t_skillLevel)
+6. 매직 421 ~ 425 확인(t_magic, t_magicLevel)
+7. dataDB : 번역 완료 확인 후 newproject_data.t_rareoption을 모두 옮김
+8. t_rareoption 들어감
+9. Area.cpp Line : 708, 734에 국가를 추가해야 쥬노에 발록이 소환됨
+
+
+- 전사의 축복
+1. #define BLESS_WARRIOR
+2. NPC 확인(310, 311, 312, 313)
+3. ITEM 확인(85, 391, 884, 883, 786, 1315, 490, 1314, 493)
+
+
+- 유료아이템  7종
+1. 
+#define PET_NAME_CHANGE			// 펫 이름 변경
+#define PET_EXP_UP				// 펫 경험치 증가
+#define BLOOD_SWEAT_FRUIT		// 피와 땀의 결정
+#define CASH_EXCHANGE_EQUIP		// 무기 및 장비 교환
+#define MP_STEEL_POTION			// MP 스틸 포션
+#define HP_STEEL_POTION			// HP 스틸 포션
+
+2. Data 확인
+Item : ( 2355, 2356, 2357, 2358, 2359, 2360, 2361 )
+Skill, SkillLevel : ( 439, 440, 441, 442)
+Magic, MagicLevel : ( 484, 485, 486 ) 
+
+
+- 레어 펫
+1. 아이템 1706, 1707, 1710, 1711
+2. 퀘스트 145, 146
+
+
+- 제련 보호 아이템
+#define RUNE_PROTECTION_ITEM
+#ifdef RUNE_PROTECTION_ITEM
+#define LOW_RUNE_PROTECTION_ITEM		2394
+#define HIGH_RUNE_PROTECTION_ITEM		2395
+#endif // RUNE_PROTECTION_ITEM
+
+- 펫의 차별화 아이템
+#define PET_DIFFERENTIATION_ITEM
+#ifdef PET_DIFFERENTIATION_ITEM
+#define PET_RED_COLOR_ITEM				2396	// 빨간색
+#define PET_SCARLET_COLOR_ITEM			2397	// 주홍
+#define PET_YELLOW_COLOR_ITEM			2398	// 노랑
+#define PET_GREEN_COLOR_ITEM			2399	// 초록
+#define PET_BLUE_COLOR_ITEM				2400	// 파랑
+#define PET_DEEP_BLUE_COLOR_ITEM		2401	// 남색
+#define PET_VIOLET_COLOR_ITEM			2402	// 보라
+#endif //PET_DIFFERENTIATION_ITEM
+
+t_pet add column a_color
+
+- 폭죽 아이템
+#define FIRECRACKER_ITEM				2403
+
+- 자동 물약 아이템
+#define AUTO_POTION		
+#ifdef	AUTO_POTION
+#define ONE_PERIOD_ITEM					2404
+#define SEVEN_PERIOD_ITEM				2405
+#define THIRTY_PERIOD_ITEM				2406
+#endif	// AUTO_POTION
+
+- 대전용 아이템
+#define COMPETITION_ITEM
+#ifdef COMPETITION_ITEM
+#define EXPERIENCE_COMPETITION_ITEM		2407
+#define	PERIOD_COMPETITION_ITEM			2408
+#define USE_COMPETITION_ITEM_NAS		1000
+
+
+- 신규 길드 
+1. NEW_GUILDE NEW_GUILD_POINT_RANKING_NOTICE
+2. t_skill t_skillLevel 443, 444 ( t_skillLevel 에 a_learnGP 추가)
+3. t_magic t_magicLevel 487, 488
+4. t_extend_guild, t_extend_guildmember, t_guild_notice
+5. t_characters_guildpoint
+6. 
+
+- 신규 길드 경험치 상납 제한
+1. update t_extend_guildmember set a_contribute_exp = '제한하고자 하는 최대 퍼센트' where a_contribute_exp > '제한하고자 하는 최대 퍼센트';
+
+
+- 문스톤 개편 
+(** ATTACK_PET이 미적용 상태이면 ATTACK_PET관련 보상 아이템을 빼줘야 한다.)
+1. #define EVENT_NEW_MOONSTONE
+2. newproject_data t_moonstone_reward
+3. 2552, 2553, 2554, 2555, 2556, 2544, 2545, 2546, 2547, 2548
+
+
+- 결합 주문서 만료 시간
+1. #define COMPOSITE_TIME					//
+2. t_invenxx 에 a_used0_2, a_used1_2, a_used2_2, a_used3_2,  a_used4_2 추가
+3. t_stashxx 에 a_used_2 추가
+3. t_auto_give 에 a_item_used2 추가
+4. 위의 추가된 컬럼의 초기값은 -1로 해야 한다.
+5. 절대시간제 아이템은 m_num4에 시간이 들어간다
+
+- 80 레벨 장비
+select * from newproject_data.t_item
+where (a_index>=2501 AND a_index<=2512) 
+OR (a_index>=2570 AND a_index<=2581) 
+OR (a_index>=2797 AND a_index<=2808) 
+OR (a_index>=2513 AND a_index<=2543) 
+OR (a_index>=2766 AND a_index<=2796) 
+OR (a_index>=2809 AND a_index<=2839) 
+
+[몬스터 콤보]
+  - #define : MONSTER_COMBO, MONSTER_COMBO_COIN_CHANGE
+  - mysqldump : t_missioncase , t_npc_regen_combo, t_item, t_penalty, t_action  | t_zonedata(22번), t_shop, t_shopitem
+  - db 권한 : t_missioncase에 로컬 필드와 권한 확인
+  - 몬스터 콤보 맵파일 .sat .sht
+  - npc : 488, 489, 490, 491, 492
+    shop_npc : 몬스터콤보 마스터(488), 몬스터콤보 관리인(489)
+    shop_item 
+	2740, 2741, 2742, 2743, 2744
+	2715, 2716, 2717, 2718, 2719
+	2720, 2721, 2722, 2723, 2724
+	2725, 2726, 2727, 2728, 2729
+	2730, 2731, 2732, 2733, 2734
+	2735, 2736, 2737, 2738, 2739 
+	2710, 2711, 2712, 2713, 2714
+
+[Non-PvP] - (* NON_PK_SYSTEM이 define 되어 있어야 한다.)
+ - Server.cpp : LoadSettingFile() 로컬 추가
+ - newStobm.bin : [Server]항목에 NON_PK=TRUE/FALSE 추가
+
+
+
+[새 악세사리 4종]
+   - #define : NEW_ACCERY_ADD
+   - Item : 2039~2042
+
+[라카기자단]
+   - #define : LAKA_PRESSCORPS
+   - Item : 2882(확성기)
+   - DB table : t_event_presscorps
+
+[PvP zone - 아레나/24]
+   - npc : 519, 520
+   - zonedata : 24
+   - teleport_tax : 24
+
+
+[신규 펫 - 공격형 펫 시스템]
+   - #define : ATTACK_PET
+   - item : 2896~2898, 2900~2914, 2947~2967, 2970~2976
+   - npc : 512, 513, 517
+   - npc_regen : 1번존 512, 7번존 513
+   - skill : 556~563
+   - magic : 579~589
+   - rareoption : 104~121
+   - quest : 162 ~ 177
+   - shop : 0번존 517
+   - newproject_data : t_moonstone_reward, t_bigpet
+   - newproject_db : t_apets, t_apets_inven
+-- ATTACK_PET --
+data
+t_item
+t_skill
+t_skillLevel
+t_magic
+t_magicLevel
+t_npc
+t_npc_regen
+t_bigpet
+t_quest
+
+db
+t_apets
+t_apets_inven
+
+[펫 AI]
+   - #defined : APET_AI
+   - newproject_db : t_apets_ai
+                     t_apets에 a_ai_enable, a_ai_slot 필드 추가
+   - Item : AI 아이템..
+
+[신규 UI]
+   - #defined : NEW_UI, COMPOSITE_TIME
+
+[경험치 2차 테이블 수정]
+  - #defined : LC_KOR_EXP_DOWN2
+  - svn의 쿼리폴더 파일 "한번만"적용
+
+
+[핵 프로그램 유저 방출]
+   - #define DISCONNECT_HACK_CHARACTER 
+   - charDB : t_hack_characters
+CREATE TABLE `t_hack_characters` (
+	`a_index` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`a_user_idx` INT(11) UNSIGNED NOT NULL DEFAULT '0',
+	`a_user_id` VARCHAR(20) NULL,
+	`a_char_idx` INT(11) UNSIGNED NOT NULL DEFAULT '0',
+	`a_char_id` VARCHAR(20) NULL,
+	`a_time` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	`a_hacktype` VARCHAR(20) NULL,
+	`a_delay` FLOAT NOT NULL DEFAULT '0',
+	PRIMARY KEY (`a_index`)
+)
+ENGINE=MyISAM
+ROW_FORMAT=DEFAULT
+
+
+[채팅금지]
+   - #define NO_CHATTING 
+   - newproject_db : t_characters 의 m_flag 필드가 있는지 확인
+
+
+[큐브]
+   - #define EXTREME_CUBE (#defined MONSTER_COMBO_GOLDBOX 와 같이 적용되어야 함)
+   - #define EXTREME_CUBE_TIMEREG
+   - newproject_data : t_npc_cube, t_npc_regen_cube 테이블 추가
+   - t_shop : 521 ~ 525
+   - t_shopitem : 2986, 2987
+   - t_zonedata : 25 존
+   - t_item : 2986, 2987, 3529 ~ 3543
+   - t_npc : 521 ~ 833
+   - t_regdate
+   - newproject_db_071120_ger: t_cubepoint, t_cubepoint_personal 테이블 추가(길드 큐브)
+
+[큐브개편]
+   - #define EXTREME_CUBE_VER2
+   - newproject_data
+	 t_item : 5972~5973, 5975~6079, 6100	
+	 t_quest : 384~385	
+	 t_skill : 1066~1070, 1075, 1086~1091		
+	 t_magic : 937~940, 949, 985~991	
+	 t_title : 9, 10	
+	 t_luckydrawbox : 43~47	
+	 t_npc : 531~833	
+	 t_set_item : 44~57	
+   - newproject_db
+	 t_cubepoint, t_cubepoint_personal (기존과 틀림 다시 넣어줘야 함)
+	 ALTER TABLE `t_cubepoint`  ADD COLUMN `a_week_date` INT(11) NOT NULL DEFAULT '0' FIRST;
+	 ALTER TABLE `t_cubepoint`  DROP PRIMARY KEY,  ADD PRIMARY KEY (`a_week_date`, `a_guild_index`);
+	 ALTER TABLE `t_cubepoint_personal`  ADD COLUMN `a_week_date` INT(11) NOT NULL DEFAULT '0' FIRST;
+	 ALTER TABLE `t_cubepoint_personal`  DROP PRIMARY KEY,  ADD PRIMARY KEY (`a_week_date`, `a_char_idx`);
+	 t_cuberank
+   - Cube_1536_1536_0.sat 속성맵
+   - t_zonedata a_zone_index = 25;
+
+[거래대행]
+	- #define TRADE_AGENT 
+	- newproject_db(char db) : t_tradeagent 
+	- t_npc : 899, 900
+
+[상급 디버프 치료제]
+   - t_item :				2854, 2899, 3577 ~ 3583
+   - t_skill t_skillLevel : 71, 241 ~ 243
+   - t_magic t_magicLevel : 129, 268 ~ 270
+
+[레벨 제한 140 이후]
+  - #define LC_KOR_EXP_LOAD_DB
+  - 주석처리 : //#define LC_KOR_EXP_DOWN2
+  - newproject_data t_exp
+
+[확장팩 작업]
+1. newproject_data
+  - 각 국가별 세트아이템 이름 추가
+   -- ALTER TABLE `t_set_item` ADD `a_set_name_usa` VARCHAR(50)  NOT NULL
+   -- ALTER TABLE `t_factory_item` ADD `a_name_usa` VARCHAR(50)  NOT NULL
+   -- ALTER TABLE `t_affinity` ADD `a_name_usa` VARCHAR(50) NOT NULL
+
+  - newproject_data에서 t_npc_regen은 다음의 쿼리를 이용한다.
+    select a_zone_num, a_npc_idx, a_pos_x, a_pos_z, a_pos_h, a_pos_r, a_y_layer, a_regen_sec, a_total_num from t_npc_regen where a_zone_num in (0, 15, 27, 28, 29, 30, 31, 34);
+
+  - newproject_data에서 t_action t_affinity t_affinity_npc t_affinity_reward_item t_affinity_work t_factory_item t_magic t_magicLevel t_mapinfo t_npc_dropraid 
+    t_npc_regen_raid t_option t_rareoption t_set_item t_shop t_shopitem t_trigger_set t_zonedata t_item t_npc t_quest t_skill t_skillLevel t_exp 테이블은 통채로 덮는다.
+
+  - 타 로컬 데이터 옮겨 올 때 필요한 컬럼 추가
+		ALTER TABLE `t_skill` ADD `a_soul_consum` 	       INT(4)  	DEFAULT "0"  NOT NULL AFTER `a_targetparam`;
+		ALTER TABLE `t_skill` ADD `a_use_needWearingType` INT(11)  DEFAULT "-1" NOT NULL AFTER `a_useWeaponType1`;
+		ALTER TABLE `t_skill` ADD `a_app_needWearingType` INT(11)  DEFAULT "-1" NOT NULL AFTER `a_appWeaponType1`;
+		ALTER TABLE `t_skill` ADD `a_cd_fe_after` VARCHAR(255)  DEFAULT " " NOT NULL AFTER `a_cd_dd`;
+		ALTER TABLE `t_skill` ADD `a_cd_fe_after2` VARCHAR(255)  DEFAULT " " NOT NULL AFTER `a_cd_fe_after`;
+		ALTER TABLE `t_npc` ADD `a_skill2` VARCHAR(255)  DEFAULT " -1" NOT NULL AFTER `a_skill1`;
+		ALTER TABLE `t_npc` ADD `a_skill3` VARCHAR(255)  DEFAULT " -1" NOT NULL AFTER `a_skill2`;
+		ALTER TABLE `t_magic` ADD `a_togle` TINYINT(1)  UNSIGNED DEFAULT "0" NOT NULL;
+		ALTER TABLE t_quest ADD a_opt_prize_type5  INT NOT NULL DEFAULT -1;
+		ALTER TABLE t_quest ADD a_opt_prize_index5 INT NOT NULL DEFAULT 0;
+		ALTER TABLE t_quest ADD a_opt_prize_data5 INT NOT NULL DEFAULT 0;
+		ALTER TABLE t_quest ADD a_opt_prize_plus5 INT NOT NULL DEFAULT 0;
+		ALTER TABLE t_quest ADD a_opt_prize_type6 INT NOT NULL DEFAULT -1;
+		ALTER TABLE t_quest ADD a_opt_prize_index6 INT NOT NULL DEFAULT 0;
+		ALTER TABLE t_quest ADD a_opt_prize_data6 INT NOT NULL DEFAULT 0;
+		ALTER TABLE t_quest ADD a_opt_prize_plus6 INT NOT NULL DEFAULT 0;
+		ALTER TABLE t_quest ADD a_only_opt_prize INT NOT NULL DEFAULT 0;
+		ALTER TABLE `t_item` ADD `a_attack_effect_name` VARCHAR(255)  AFTER `a_effect_name`;
+		ALTER TABLE `t_item` ADD `a_damage_effect_name` VARCHAR(255)  AFTER `a_attack_effect_name`;
+		ALTER TABLE `t_npc` ADD `a_ai_summonHp` INT(11)  DEFAULT "0" NOT NULL  AFTER `a_aileader_flag`;
+		ALTER TABLE `t_quest` ADD `a_failvalue` INT(11)  DEFAULT "-1" NOT NULL  AFTER `a_desc3_rus`;
+		ALTER TABLE `t_quest` ADD `a_partyscale` INT(11)  DEFAULT "0" NOT NULL  AFTER `a_failvalue`;
+
+  - npc 사로얀(340) 과 피닉스 클럽 마스터(834)가 좌표가 중복됨. 필요에 따라 둘 중 하나를 disable 시키자. 
+	update t_npc set a_enable = 0 where a_index = 340;
+	update t_npc set a_enable = 1 where a_index = 834;
+	update t_item set a_enable = 0 where a_index = 4790;
+	update t_item set a_enable = 0 where a_index between 4910 and 4914;
+	update t_item set a_enable = 0 where a_index between 4933 and 4939;
+	update t_npc_regen_raid set a_pos_x = 881, a_pos_z = 404, a_pos_h = 0.5125 where a_npc_idx = 965;
+	delete from t_item where a_enable = 0;
+
+2. newproject_db
+  - 캐릭터 테이블에 컬럼 추가
+   -- ALTER TABLE `t_characters` ADD `a_seal_skill_index` VARCHAR(255)  NOT NULL AFTER `a_etc_skill_level`;
+   -- ALTER TABLE `t_characters` ADD `a_seal_skill_exp` VARCHAR(255)  NOT NULL AFTER `a_seal_skill_index`;
+
+  - t_trigger_saveinfo t_affinity_keep t_affinity_reward_step t_inzonejoin t_characters_factory 테이블 가져오기
+  - t_characters의 a_admin default를 10 -> 0으로 바꾼다. (ALTER)
+  - t_inzonejoin
+  - t_questdata
+	ALTER TABLE t_questdata00 ADD a_quest_failvalue INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata01 ADD a_quest_failvalue INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata02 ADD a_quest_failvalue INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata03 ADD a_quest_failvalue INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata04 ADD a_quest_failvalue INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata05 ADD a_quest_failvalue INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata06 ADD a_quest_failvalue INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata07 ADD a_quest_failvalue INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata08 ADD a_quest_failvalue INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata09 ADD a_quest_failvalue INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata00 ADD a_complete_time INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata01 ADD a_complete_time INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata02 ADD a_complete_time INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata03 ADD a_complete_time INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata04 ADD a_complete_time INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata05 ADD a_complete_time INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata06 ADD a_complete_time INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata07 ADD a_complete_time INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata08 ADD a_complete_time INT NOT NULL DEFAULT 0;
+	ALTER TABLE t_questdata09 ADD a_complete_time INT NOT NULL DEFAULT 0;
+
+
+3. 서버 Config_Localize 설정
+	#define NIGHT_SHADOW							// 직업 나이트 쉐도우
+	#define ENABLE_BACKWING							// 등 방어구 
+	#define SET_ITEM                                // 세트 아이템
+	#define RUNE_UPGRADE                            // 인첸트
+	#define FACTORY_SYSTEM                          // 제작 시스템
+	#define PARTY_RAID								// 파티 타입 확장
+	#define	EXPEDITION_RAID							// 원정대 
+	#define RAID									// 레이드
+	#define	QUEST_EXTEND							// 퀘스트 확장
+	#define TRIGGER_SYSTEM							// 트리거 시스템
+	#define RAID_NPC_REGEN							// 레이드 npc 리젠 level별로 하기
+	#define NIGHTSHADOW_SKILL						// 나이트 쉐도우 스킬
+	#define RAID_MONSTER_SKILL						// 레이드 몬스터 스킬
+	#define AFFINITY
+	#define PARTY_ONLINESYSTEM						// 파티 온라인 시스템
+	#define EXPEND_ONLINESYSTEM						// 원정대온라인시스템
+	#define RESTRICT_PVP_SKILL         3			// 엄격한 스킬 규칙 : 몹에 타겟팅 되어 있을 경우, PK모드, 정당방위 모드 인비/데스모션 불가능
+													// 암흑의 제단에서 인비저빌리티가 안써지려면 있어야 하는 define
+	#define UNION_EXPEDITION_TRIGGER				// 원정대 트리거 연동 패치(레이드 부분)
+	#define RAID_CASHITEM							// 레이드 관련 캐쉬 아이템
+
+	#define NS_CREATE_CARD						// 나이트쉐도우 생성 카드
+	#define NPC_PORTAL_SCROLL					// npc 포탈 스크롤
+	#define QUEST_RESTORE_ABANDON				// 포기 퀘스트 복구
+	#define ITEM_PLUS_VALANCE_2010				// Item Plus 수치 조정 (클라이언트 확인 시켜줄것)
+
+4. 국내 레이드 및 신규캐릭터 제한 작업
+	- newstobm.bin 33, 34, 35 해제
+	- UPDATE t_item SET a_enable=0 WHERE a_job_flag=64;
+
+5. Exp.h 에서 레벨 165로 상향 조정
+    - 140 이상부터는 [레벨 제한 140 이후] 참고하여 바뀌어야 함
+
+
+
+[거래대행 핼퍼 분리]
+
+1. #define SUB_HELPER
+
+2. newStombn.bin
+	[SubHelper Server]
+	IP=61.104.44.150
+	Port=4101
+
+
+[NHN 신규 튜토리얼]
+1. #define NEW_TUTORIAL
+2. t_zonedata : 0 (쥬노)
+
+
+[럭키 드로우 상자]
+1. #define LUCKYDRAWBOX_TOOL
+2. db 테이블
+	newproejct_data < t_luckydrawbox	
+	newproejct_data < t_luckydrawResult 
+	newproejct_data < t_luckydrawNeed
+3. LuckyDrawBox.exe에 해외로컬을 추가한다.(config.bin에 추가)
+4. t_item : (25 가지, 데이터가 있어도 지우고 다시 넣는다.)
+   2037, 2544, 2597, 2887, 2888, 2889, 2890, 2891, 2892, 2893, 2968, 3576, 
+   3713, 3714, 3715, 3716, 3717, 3718, 3762, 4664, 4786, 4787, 4788, 4915, 4916
+   (이후 추가되는 아이템은 ITEM_FLAG_BOX 플레그를 이용하여 검색.)
+
+
+[해외 로컬 접근 제한] : 신규 유저와 기존 유저를 모두 차단
+1. #define INTERNATIONAL_LOCAL_ACCESS_RESTRICTIONS
+2. newproject_db_auth   t_iplist
+
+[해외 로컬 접근 제한 - new 버젼 ] : 기존 유저는 유지, 신규 유저만 차단
+1. #define INTERNATIONAL_LOCAL_ACCESS_RESTRICTIONS_NEW_USER
+2. newproject_db_auth   t_iplist
+
+[보상 이벤트]
+1. #define REQUITAL_EVENT
+2. newproject_data
+  - t_requital_setup
+3. newproject_db_auth
+  - t_requital_check0
+  - t_requital_check1
+  - t_requital_log
+4. Connector의 소스 부분을 수정할 필요가 있으면 한다.
+  - 업데이트 전에 소스 부분 확인
+5. Requital Event Tool 전달
+  - 이벤트 보상품에 대한 설정 가능
+  - 날짜 설정은 아직 안되어 있다. 주의~!
+6. npc 408
+
+
+[NHN npc포탈 스크롤]
+1. #define NPC_PORTAL_SCROLL
+2. item : 4790
+
+[나이트 쉐도우 생성카드]
+1. #define NS_CREATE_CARD
+2. item : 4914
+3. 캐릭터 디비: t_nscard
+
+[레이드 던젼 입장레벨 감소 && 레이드 던전 귀속 초기화 카드]
+#define UNION_EXPEDITION_TRIGGER				// 원정대 트리거 연동 패치(레이드 부분)
+#define RAID_CASHITEM							// 레이드 관련 캐쉬 아이템
+item : 4911, 4913
+
+[모든 상태 이상 회복 아이템]
+item : 4912
+skill, skillLevel : 927
+magic, magicLevel : 816
+
+[북극곰 폴리]
+1. item : 531, 662~664, 2897, 2900~2914, 2970, 2980, 2984, 2985, 3165, 3166, 3765, 3766, 4867~4909
+2. skill, skillLevel : 928~948, 557~560
+3. magic, magicLevel : 817~837, 579~582
+4. quest : 334
+5. SHOP, shopitem : 517(0번존), 1031(32번존) (모든 판매품목 전부), 235(0, 4번존)
+6. NPC : 1032(32번존) (진화 메뉴 추가)
+7. ATTACK_PET이 사전에 업데이트 되어야 함
+8. t_bigpet : 4 ~ 6
+  - ALTER TABLE `t_bigpet` ADD `a_evo_level` INT(11)  DEFAULT "0" NOT NULL;
+  - ALTER TABLE `t_bigpet` ADD `a_evo_idx` INT(11)  DEFAULT "0" NOT NULL;
+
+[재규어]
+1. item : 4969~4972
+2. skill, skillLevel : 972~991, 994
+3. magic, magicLevel : 857~876
+4. quest : 335
+8. t_bigpet : 7 ~ 9
+
+[팬더곰]
+1. t_item : 5944 ~ 5947
+2. t_skill, t_skillLevel : 1034 ~ 1054
+3. t_magic, t_magicLevel : 928, 817 ~ 837
+4. t_quest : 362
+5. t_bigpet : 11, 12, 13
+
+[아이리스 / 아스카디아 전용 파티리콜 아이템]
+
+#define CONTINENT_PARTY_RECALL			// 대륙별 파티리콜 아이템 추가
+
+주의사항 : 아이리스 대륙, 아스카디아 대륙을 구별하여 파티를 리콜하는 아이템이기 때문에
+           이 아이템이 들어가는 로컬은 기존의 파티리콜 아이템이 삭제될 예정임.
+
+기존 파티리콜 item 		: 1298, 1299, 1300, 1413, 1414, 1415
+대륙전용 파티리콜 item	: 2945(아이리스 파티리콜 정액권)
+						  2946(아스카디아 파티리콜 정액권)
+
+아이리스 대륙 (Zone_1 ~ Zone_31)
+아스카디아 대륙 (Zone32~ )
+각 대륙에 Zone이 새로 추가 될 가능성 있음.
+위 대륙 외 새로운 대륙이 추가될 수 있음.
+
+대륙구별을 위해 t_zonedata에 대륙넘버를 추가함.
+1. t_zonedata
+	- ALTER TABLE `t_zonedata` ADD `a_continent_no` TINYINT(4) DEFAULT -1 NOT NULL;
+    - UPDATE t_zonedata set a_continent_no = 0 where a_zone_index <= 31;
+	- UPDATE t_zonedata set a_continent_no = 1 where a_zone_index >= 32;
+
+값 정보
+-1 : 미설정 상태
+0  : 아이리스 대륙
+1  : 아스카디아 대륙
+
+GameServer Class CZone에 
+int m_iContinent_no에 zonedata 로딩 시 대륙번호 저장.
+
+[호칭 시스템]
+1.	#define TITLE_SYSTEM
+2.	newproject_data (data DB)
+	- t_title 테이블 추가 (SVN\DevDoc\TitleSystem\dataDB_title.sql)
+
+3.	newproject_db (char DB)
+	- t_characters 테이블에 a_title_index 필드 추가 (SVN\DevDoc\TitleSystem\charDB_add_field.sql)
+	- t_titlelist 테이블 추가 (SVN\DevDoc\TitleSystem\charDB_Create_table.sql)
+
+4. 아이템 속성
+	- 아이템 Type : 일회용 -> Subtype : 호칭(IONCE_TITLE)
+	- 호칭 아이템 미 개발 (현재 아이템 index 5005, 5006만 item에 추가되어 있음.) - 2010/01/18	
+
+5. 기타 
+	- DB관련 처리를 SubHelper에서함.
+
+[기존 퀘스트 일일 퀘스트로 변경]
+1. #define QUEST_EXTEND_REPEAT_DAY
+2. newproject_data t_quest: a_type2 2로 변경
+3. newproject_db t_questdata: a_complete_time, a_quest_failvalue 추가
+	- alter table t_questdata add a_complete_time int not null default 0;
+	- alter table t_questdata add a_quest_failvalue int not null default 0;
+
+[게임서버로 로그인시도 방지]
+1. #define LOGIN_TIME_CHECK
+2. 유저디비 t_users:
+	- ALTER TABLE t_users ADD a_login_time INT NOT NULL DEFAULT 0;
+	- ALTER TABLE t_users ADD a_restart INT NOT NULL DEFAULT 0;
+
+[확장팩 2차 - 퀘스트 트리거]
+1. #define QUEST_TRIGGER
+2. data DB
+	ALTER TABLE `t_quest` ADD `a_start_give_item` VARCHAR(50) NOT NULL;
+	ALTER TABLE `t_quest` ADD `a_start_give_kindcount` INT(5) NOT NULL AFTER `a_start_give_item` ;
+	ALTER TABLE `t_quest` ADD `a_start_give_numcount` VARCHAR(50) NOT NULL AFTER `a_start_give_kindcount` ;
+	ALTER TABLE `t_quest` ADD `a_start_trigger_id` INT(11) NOT NULL AFTER `a_start_give_numcount` ;
+	ALTER TABLE `t_quest` ADD `a_quest_flag` INT(11) NOT NULL AFTER `a_start_trigger_id` ;
+
+	ALTER TABLE `t_item` ADD `a_quest_trigger_count` INT(3) NOT NULL;
+	ALTER TABLE `t_item` ADD `a_quest_trigger_ids` VARCHAR(50) NOT NULL AFTER `a_quest_trigger_count` ;
+
+	ALTER TABLE `t_npc` ADD `a_npc_choice_trigger_count` INT(3) NOT NULL AFTER `a_descr_nld`;
+	ALTER TABLE `t_npc` ADD `a_npc_choice_trigger_ids` VARCHAR(50) NOT NULL AFTER `a_npc_choice_trigger_count` ;
+	ALTER TABLE `t_npc` ADD `a_npc_kill_trigger_count` INT(3) NOT NULL AFTER `a_npc_choice_trigger_ids` ;
+	ALTER TABLE `t_npc` ADD `a_npc_kill_trigger_ids` VARCHAR(50) NOT NULL AFTER `a_npc_kill_trigger_count` ;
+
+[포기 퀘스트 복구]
+  - 확장팩이 업데이트가 되어 있어야 함
+#define QUEST_RESTORE_ABANDON
+
+
+[일본 신규 아이템 2010년]
+1. #define _JPN_NEWITEM_2010
+2. t_item : 5079~5092
+3. t_skill : 239,240,412,413
+4. t_skillLevel : 239(2 Level), 240(3,4 Level), 412(2 Level), 413(2 Level)
+5. t_magic : 267
+6. t_magicLevel : 267 (3,4 Level)
+7. #define HPRS_BUG_FIX		// 보호석 버그 패치 (권상욱) 들어가야함 
+8. #define ENHANCE_ITEM_LEVEL // 레벨제한 최소/최대 ( 다른 item의 a_level2 값이 들어가야함)
+
+[Zone 레벨 제한 추가]
+34번 존 캐릭터 입장레벨 제한을 위한 필드 추가
+1. #define LIMIT_ZONE_LEVEL
+2. 추가필드
+   - ALTER TABLE `t_zonedata` ADD `a_minlevel` tinyint(3) unsigned DEFAULT '0' NOT NULL AFTER `a_continent_no`;
+   - ALTER TABLE `t_zonedata` ADD `a_maxlevel` tinyint(3) unsigned DEFAULT '999' NOT NULL AFTER `a_minlevel`;
+   - UPDATE t_zonedata SET a_minlevel = 150 WHERE a_zone_index = 34;
+
+
+[라카렛 시스템] // 문스톤2 
+1. #define LACARETTE_SYSTEM , #define _LACARETTE_DB_INSERT_BUG_PIX (라카렛 DB 기록 버그 관련 버그 수정 패치)
+2. dataDB 테이블 추가 t_lacarette (데이터 포함)
+3. userDB 테이블 추가 t_lacarette_log (테이블만)
+4. t_npc, t_npc_regen 1084(토큰 교환기) 추가
+5. t_item 5123, 5124 토큰 아이템은 추가 될 수 있으므로 기획에 문의.
+ 
+
+
+
+[골드위크 이벤트]
+1. #define EVENT_GOLDWEEK 62
+2. #define LUCKYDRAWBOX_TOOL // 아이템 교환을 이넘을 이용해서 함
+3. t_item : 5125,5126 추가
+4. t_luckydrawbox, t_luckydrawResult : 36, 37 추가 (t_luckydrawNeed는 없음)
+
+[스킬 붙은 아이템 버그 픽스]
+1. #define ITEM_SKILL_BUG_FIX
+2. 버그 수정
+   문제점 : 1) 스킬이 붙어있는 아이템을 장착하고 강화도중 아이템이 파괴될 경우 스킬이 목록에서 빠지지 않는 버그
+            2) 빠지지 않는 스킬은 해당 장비를 다시 장착하고 해제를 하여야 정상적으로 빠지고, 해당장비를 장착하지
+               않으면 버그를 이용한 캐릭터에게 영원히 스킬이 남음.
+
+   대  책 : 1) 아이템 파괴 시 해당 아이템의 스킬을 목록에서 제거
+            2) 스킬에 Flag를 추가하여 그 Flag에 해당하는 스킬은 캐릭터 로그아웃 시 목록에서 제거됨. 
+               DB업데이트 필요.
+3. 해당 버그는 dataDB t_skill에 스킬 이름 앞에 (I)가 붙은 스킬이 해당됨.
+   해당 스킬에는 'SF_INSTANT' FLAG가 추가 되었으며, 캐릭터 로그아웃 시 스킬 검사를 하여 FLAG에 해당하는 스킬은 
+   스킬 목록에서 제거함.
+   버그 수정 시 t_skill 업데이트 필요.
+
+4. 해당 스킬 인덱스(20100427기준)
+   - 662,845,846,847,848,849,850,851,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,871,872,873,874,875,876,877,878,879,880,881,882,883,884,885,886,887,888,889,890,891,892,893,894,895,896,897
+
+[코스튬2]
+(기획:김길현, 클라이언트:기태욱, 서버:권상욱)
+1. #define COSTUME2_SYSTEM
+2. 코스튬2 의상이 따로 있으며, ITEM_FLAG_COSTUME2 (1 << 26) 가 체크되어 있음.
+3. 서비스 도입 시 해당 아이템들을 dataDB에 Insert 필요.
+   - 현재 등록된 아이템 인덱스 - 4713, 5012~5015, 5139~5145, 5162~5249 100종(웨스턴 세트, 해적 세트, 축제 세트)
+4. EP2버전에 적용가능.
+
+[0번존 쥬노 리뉴얼]
+(기획:김현정, 클라이언트:이언호, 서버:권상욱)
+1. 기존 아프론 성인서버의 쥬노 지역을 블리스로 대체.(TestDB : 개발DB의 newproject_data_kor)
+   - 속성맵, 월드데이터 변경
+   - t_npc_regen, t_shop, t_zonedata, t_mapinfo에 0번존에 관련된 데이터 업데이트.
+
+[중저렙 지원사]
+(기획:조일우, 클라이언트:이언호, 서버:권상욱)
+1. #define MID_LEVEL_SUPPORT
+2. MSG추가
+   - MSG_SKILL_MIDLEVEL_SUPPORT
+3. 공업 버프 추가
+4. 61~90레벨까지 지원
+5. npc index : 1107
+6. skill index : 1002
+
+[고렙 지원사]
+(기획:조일우, 클라이언트:이언호, 서버:권상욱)
+1. #define HIGH_LEVEL_SUPPORT
+2. MSG추가
+   - MSG_SKILL_HIGHLEVEL_SUPPORT
+3. ? 버프 추가
+4. ?~?레벨까지 지원
+5. npc index : 1108
+6. skill index : ?
+
+[던전타임]
+(기획:조일우, 클라이언트:이언호, 서버:권상욱)
+1.	#define DUNGEON_TIME							// 존별 자동으로 세팅된 시간만 경험치 증가.
+	#ifdef DUNGEON_TIME								
+	#define DUNGEON_TIME_SAVEFILE	".dungeontime"	// 던전타임 세팅 저장 파일.
+	#endif	
+
+   - #define LIMIT_AMP_QUEST_EXP가 들어가 있어야 한다. 현재 받는 경험치가 퀘스트 경험치인지 npc사냥으로 받는 경험치인지 확인하기 위해서 임.
+
+2. 자동으로 지정해둔 시간으로 부터 정해진 시간까지 지정한 존에 EXP 보상.(SP제외)
+3. 세팅 내용은 파일(.dungeontime)에 저장함.(서버에 저장됨)
+4. 존이 추가되어도 상관 없음.
+5. 설정해둔 시간에 설정한 시간만큼 동안 던전타임이 적용되어 설정된 존에서 몬스터 사냥을 하였을 경우 설정된 경험치의 배수만큼 보상 받는다.
+   ex) 0, 3, 6, 9, 12, 15, 18, 21시에 던전타임이 시작하고 1시간이면 1시간 뒤에 던전타임은 자동종료가 된다.
+       설정해둔 존은 소스에 설정되어 있으며, 운영자 임의로 바꿀 수 없다. 
+
+6. 운영자 명령어
+   - /dt_timeset [0 | 1 | 2 | 3 | ......... | 22 | 23 | all] [on | off]
+     각 시간별 on/off 세팅 0이 on이면 0시에 던전타임이 시작되는 것이다. 
+	 /dt_timeset ing
+	 현재 세팅된 던전타임이 몇시인지 확인한다.
+	 !던전타임 시스템이 실행되고 있는 도중에는 세팅변경이 안된다. /dt_toggle off 로 시스템을 완전 종료 하고 명령어를 입력할 수 있다.
+	 ex) dt_timeset 13 on	// 13시에 던전타임 시작.
+		 dt_timeset 13 off	// 13시는 시작시간이 아님.
+		 dt_timeset ing		// 현재 세팅된 시간 확인하기.
+
+   - /dt_expset [100~600]
+     서버에서 강제로 100에서 600범위를 넘어가게 되면 세팅이 안됨.
+	 입력단위는 %이며 200이면 200%(즉, 2배)이다. 던전타임 이외의 시간에 100의 경험치를 받으면 던전타임에서는 200의 경험치를 받게 된다.
+	 /dt_expset ing
+	 현재 설정된 세팅을 확인한다.
+	 ex) /dt_expset 340		// 340%로 세팅하기.
+		 /dt_expset ing		// 현재 설정 확인.
+
+   - /dt_timeinterval [1 | 2 | 3 | .... | 10 | 11 | 12]
+     던전타임 시작 후 몇시간 동안 할 것인지 세팅할 수 있다. 1로 세팅하고 3시에 던전타임이 시작되면 4시에 종료가 된다.
+	 1시간 부터 12시간까지 설정가능하다.
+     /dt_timeinterval ing
+	 현재 interval 값을 확인한다.
+	 !던전타임이 실행되고 있는 도중에는 세팅변경이 안된다. /dt_toggle off 로 시스템을 완전 종료 하고 명령어를 입력할 수 있다.
+	 ex) /dt_timeinterval 1		// /dt_timeset에서 설정된 시간이 되면 던전타임이 시작하고, 1시간뒤에 자동 종료 된다.
+	     /dt_timeinterval 12	// /dt_timeset에서 설정된 시간이 되면 던전타임이 시작하고, 12시간뒤에 자동 종료 된다.
+		 /dt_timeinterval ing	// 현재 상황 학인.
+
+   - /dt_toggle [on | off | ing]
+     운영자 임의로 던전타임을 on/off 시킨다.
+	 던전타임이지만 운영자가 off를 할 경우 경험치 보상을 못받게 된다. 
+	 단 던전타임이 아닐때 on을 시켜도 경험치 보상을 받지 못한다. 세팅된 시간이 되어야 겸험치 보상을 받게 된다.
+	 ing는 현재 상태를 확인하게 된다. 
+	 ex) /dt_toggle on			// 던전타임이 /dt_timeset에 설정된 시간이 되면 자동으로 시작이 된다. on을 한 현재시간이 /dt_timeset에 설정된 시간이면 자동으로 던전타임이 시작된다.
+		 /dt_toggle off			// 던전타임 중일땐 던전타임이 종료가 되고, /dt_timeset에 설정된 시간이 되어도 던전타임이 시작되지 않는다.
+		 /dt_toggle ing			// 현재 상황 확인.
+
+7. 마지막으로 세팅된 설정으로 파일에 저장되므로 서버가 내려갔다 올라가도 마지막 설정을 따라간다.
+
+8. 한개의 채널에서 운영자 임의 설정을 하게 되면 전 서버군 채널에 세팅이 적용이 된다. 그 채널(GameServer)이 접속된 Messenger에 접속된
+   모든 GameServer가 동일하게 적용된다.
+   ! 절대 개별세팅을 할 수 없다. 
+
+9. 세팅된 파일이 삭제가 되면 기획서 초기 내용대로 설정이 세팅이 된다.
+
+
+
+
+[2010 월드컵 이벤트 ]
+0. 월드컵 이벤트 진행 단계별 define
+
+  1단계 :: 트라이앵글 볼 npc 출현, 우승국가 응모/현황 메뉴, 황금 축구공/축제상자 교환
+     - #define EVENT_WORLDCUP_2010				63		// 2010 월드컵 이벤트 축구공 교환, NPC 축구공 drop
+	 - #define EVENT_WORLDCUP_2010_TOTO			64		// 2010 월드컵 이벤트 TOTO 등록, 현황
+
+  2단계 :: 우승 국가 현황만 남긴다.
+     - #define EVENT_WORLDCUP_2010_TOTO_STATUS	65		// 2010 월드컵 이벤트 TOTO 현황
+
+  3단계 :: 우승 국가 결과 상품 지급
+     - 쿼리문 전달 update t_event_worldcup_toto set a_result=1 where a_item_idx=[승리국 국기 아이템 인덱스];
+	 - #define EVENT_WORLDCUP_2010_TOTO_GIFT	66		// 2010 월드컵 이벤트 TOTO 현황, 상품 지급
+  
+  4단계 :: 이벤트 종료
+
+1.define 각각의 성격에 따라 그때 그때 define을 설정한다.
+
+	- #define EVENT_WORLDCUP_2010				63		// 2010 월드컵 이벤트 축구공 교환, NPC 축구공 drop
+	- #define EVENT_WORLDCUP_2010_TOTO			64		// 2010 월드컵 이벤트 TOTO 등록, 현황
+	- #define EVENT_WORLDCUP_2010_TOTO_STATUS	65		// 2010 월드컵 이벤트 TOTO 현황  
+	- #define EVENT_WORLDCUP_2010_TOTO_GIFT		66		// 2010 월드컵 이벤트 TOTO 현황, 상품 지급
+	- #define EVENT_WORLDCUP_2010_ATTENDANCE	67		// 2010 월드컵 이벤트 출석 이벤트(사용하지 않는 출석 이벤트 나중에 사용할지 몰라 소스 남겨놨음)
+	- #define EVENT_WORLDCUP_2010_KOREA					// 2010 월드컵 이벤트 한국 16강
+    
+ 2. t_npc, t_npc_regen 1105 트라이앵글 볼 추가
+ 3. t_item 5331~5347(국기, 축구공, 황금축구공, 월드축제상자), 1485~1516(국기), 5349~5908(축구 응원복:560개)
+ 4. charDB에 t_event_worldcup_toto 빈 테이블 추가 (a_result 상태값 설명 0:응모, 1:당첨, 2:상품지급완료)
+ 5. charDB에 t_event_worldcup_attendance 테이블 추가 (EVENT_WORLDCUP_2010_ATTENDANCE 출석 이벤트 사용 시 필요)
+ 6. 이벤트가 완료되어 승리국가 당첨 아이템 지급 시에는 t_event_worldcup_toto 테이블 안에 기록된 레코드에서
+    당첨된 캐릭터의 a_result 값을 1로 직접 변경 해줘야한다.
+	update t_event_worldcup_toto set a_result=1 where a_item_idx=[승리국 국기 아이템 인덱스];
+
+ # 주의 사항 
+  - 로컬 클라에서 이벤트 슬롯을 25개까지만 보여주면 아래 디파인이 걸려 있어야함.
+    #define INVENTORY_QUANTITY_LIMIT 
+    위 디파인이 걸려있지 않으면 서버에서 이벤트 슬롯을 100개로 계산을 하여 이벤트 슬롯25개가 꽉 찼는데도 아이템을 계속 지급하는 문제가 생김.
+
+
+
+[소켓 시스템]
+1. #define SOCKET_SYSTEM
+   #define BUGFIX_SOCKET_SYSTEM_COMPOSITE_ITEM
+2. t_npc 필드추가 및 업데이트: Update_DataDB_AddField_Socket.sql, Update_DataDB_SocketDropSetting.sql -> SVN에 있음
+3. t_npc, t_shop, t_shopitem : 1106
+4. t_item: 
+5016,5017,5250,5251,5252,5253,5254,5255,5256,5257,5258,5259,5260,5261,5262,5263,5264,
+5265,5266,5267,5268,5269,5270,5271,5272,5273,5274,5275,5276,5277,5278,5279,5280,5281,
+5282,5283,5284,5285,5286,5287,5288,5289,5290,5291,5292,5293,5294,5295,5296,
+5297,5298,5299,5300,5301,5302,5303,5304,5305,5306,5307,5308,5309,5310,5311,
+5312,5313,5314,5315,5316,5317,5318,5319,5320,5321,5322,5323,5324,5325,5326,5327,5328,5329
+5. t_option : 68 ~ 81
+6. newproject_db 필드 추가 : Update_CharDB_SocketSystem.sql
+
+[이벤트 운영자 명령어 수정]
+(서버 : 권상욱)
+
+변경서버 : GameServer, Messenger
+
+!!!주의!!! 각 명령어의 시간설정은 중복으로 설정이 불가능하다. 
+
+#ifdef NEW_DOUBLE_GM
+#define NEW_DOUBLE_GM_AUTO
+#endif // NEW_DOUBLE_GM
+
+기존 : /double_event all all start all 200 200 200 200 200 1
+변경 : /double_event all all start all 200 200 200 200 200 1 2010-06-14 09:00:00 2010-06-15 17:00:00
+
+/명령어 <서버군 all | cur | No.> <채널 all | cur | No.> <start | ing | stop> <zonenum all | No.> <nasdrop> <nasget> <exp> <sp> <Produce> <Producenum> <Start DateTime> <End DateTime>
+
+날짜시간 입력형식
+<YYYY-MM-DD hh:mm:ss> (띄어쓰기는 반드시 되어야 한다)
+
+위의 예는 시작날짜에서 종료날짜까지 nasdrop = 200%, nasget = 200%, exp = 200%, sp = 200%, Produce = 200%, Producenum = 1 의 값으로 실행이 되며
+종료시간 이후로는 nasdrop = 100%, nasget = 100%, exp = 100%, sp = 100%, Produce = 100%, Producenum = 1의 값으로 변경이 된다.
+종료시간 이후의 값은 DEFAULT 값이다.
+
+/double_event all all ing 입력 시 현재 채널의 이벤트 시작 시간과 종료시간이 표시가 되며, 현재 설정된 값이 표시가 된다.
+설정된 내용은 서버로컬의 파일로 저장이 되므로 서버가 종료되었다가 다시 올라와도 현재시간과 비교를 하여 이벤트 진행여부를 판단하게 된다.
+이벤트 시간에는 설정된 값(위의 경우 200 200 200 200 200 1)으로 진행이 되며 그외 시간의 경우는 DEFAULT 값인(100 100 100 100 100 1)로 진행이 된다.
+/double_event all all stop를 입력할 경우 입력한 시간 부로 종료가 된다.
+
+===================================================================================================================================================================================================
+
+#define GM_EXP_LIMIT_AUTO
+#ifdef GM_EXP_LIMIT_AUTO
+#define GM_EXP_LIMIT_AUTO_SAVEFILE ".explimitsave"
+#endif
+
+기존 : /exp_limit all 600
+변경 : /exp_limit all 600 400 2010-06-14 09:00:00 2010-06-15 17:00:00
+
+/명령어 <서버군 all | cur | No.> <시작경험치 제한> <종료경험치 제한> <Start DateTime> <End DateTime>
+
+날짜시간 입력형식
+<YYYY-MM-DD hh:mm:ss> (띄어쓰기는 반드시 되어야 한다)
+
+위의 예는 시작시간에 경험치제한을 600%로 제한하며 종료시간 이후로는 400%로 제한하게 된다.
+설정된 내용은 서버로컬의 파일로 저장이 되므로 서버가 종료되었다가 다시 올라와도 현재시간과 비교를 하여 이벤트 진행여부를 판단하게 된다.
+이벤트 시간에는 설정된 값(위의 경우 600%)으로 진행이 되며 그 외 시간의 경우 (위의 경우400%)로 진행이 된다.
+
+/exp_limit ing 로 현재 설정된 제한값과 시작시간, 종료시간을 확인 할 수 있다.
+
+===================================================================================================================================================================================================
+
+#ifdef NEW_DOUBLE_EVENT_AUTO
+#define NEW_DOUBLE_EVENT_AUTO_TIME
+#ifdef NEW_DOUBLE_EVENT_AUTO_TIME
+#define NEW_DOUBLE_EVENT_AUTO_SAVEFILE ".doubleeventautotime"
+#endif
+#endif
+
+기존 : /double_event_auto all start
+변경 : /double_event_auto all start 2010-06-14 09:00:00 2010-06-15 17:00:00
+/명령어 <서버군 all | cur | No.> <start | ing | stop> <Start DateTime> <End DateTime>
+
+날짜시간 입력형식
+<YYYY-MM-DD hh:mm:ss> (띄어쓰기는 반드시 되어야 한다)
+
+위의 예는 시작날짜에서 종료날짜까지 몬스터콤보 타임을 할것인지에 대한 설정이다.
+설정된 시간은 서버로컬의 파일로 저장이 되므로 서버가 종료되었다가 다시 올라와도 현재시간과 비교를 하여 이벤트 진행여부를 판단하게 된다.
+
+/double_event_auto all ing로 콤보타임 시작시간과 종료시간을 알 수 있다.
+/double_event_auto all stop을 입력할 경우 입력한 시간 부로 종료가 된다.
+
+===================================================================================================================================================================================================
+
+#define EVENT_ITEMDROP_AUTO
+#ifdef EVENT_ITEMDROP_AUTO
+#define EVENT_ITEMDROP_AUTO_SAVEFILE ".eventitemdropauto"
+#endif
+
+기존 : /event itemdrop all start 200
+변경 : /event itemdrop all start 200 2010-06-14 09:00:00 2010-06-15 17:00:00
+/명령어 <서버군 all | cur | No.> <start <rate> | ing | stop>
+
+날짜시간 입력형식
+<YYYY-MM-DD hh:mm:ss> (띄어쓰기는 반드시 되어야 한다)
+
+위의 예는 시작날짜에서 종료날짜까지 아이템드롭율(위의 예 경우 200%) 이벤트를 할것인지에 대한 설정이다.
+이벤트 이외의 시간은 100%으로 설정이 된다.
+설정된 시간은 서버로컬의 파일로 저장이 되므로 서버가 종료되었다가 다시 올라와도 현재시간과 비교를 하여 이벤트 진행여부를 판단하게 된다.
+
+/event itemdrop all ing으로 현재 아이템드롭율과 시작시간, 종료시간을 알 수 있다.
+/event itemdrop all stop으로 아이템 드롭율을 즉시 100%로 변경할 수 있다.
+
+===================================================================================================================================================================================================
+
+[길드 스킬 추가]
+1. #define GUILD_SKILL
+2. dataDB.t_skillLevel field 추가
+   - ALTER TABLE `t_skillLevel` ADD `a_needGP` INT(11) DEFAULT "0" NOT NULL AFTER `a_needMP`;
+   - UPDATE t_skill SET a_type = 3, a_flag = 512 WHERE a_index in (443, 444);
+
+3. charDB.t_extend_guild field name 
+   - ALTER TABLE `t_extend_guild` CHANGE COLUMN `a_skill_index` `a_passiveskill_index` VARCHAR(255);
+   - ALTER TABLE `t_extend_guild` CHANGE COLUMN `a_skill_level` `a_passiveskill_level` VARCHAR(255);
+   - ALTER TABLE `t_extend_guild` ADD `a_activeskill_index` VARCHAR(255) AFTER `a_guild_land`;
+   - ALTER TABLE `t_extend_guild` ADD `a_activeskill_level` VARCHAR(255) AFTER `a_activeskill_index`;
+   - ALTER TABLE `t_extend_guild` ADD `a_etcskill_index` VARCHAR(255) AFTER `a_passiveskill_level`;
+   - ALTER TABLE `t_extend_guild` ADD `a_etcskill_level` VARCHAR(255) AFTER `a_etcskill_index`;
+
+4. 길드 스킬
+   - Skill Index	: 443, 444, 1057, 1058, 1059, 1076, 1077, 1078, 1079, 1080, 1081
+   - 참고사항		: 443, 444의 Type 값과 Flag값이 변경됨.
+						Type : 7 -> 3 (GUILD SKILL PASSIVE -> PASSIVE)
+						Flag : 0 -> 512
+
+5. 추가된 Magic Index : 950,951,952,953,954,955,956,957,958,959,960,961,962,963
+
+[연속 출석 시스템]
+1. SYSTEM Desc. :	연속 출석일수를 저장하여 2,3,4,5 일에 따른 경험치 상승제공.
+					연속 출석일수 100,200,365 일이상이면 보상
+2. Define :			ATTENDANCE_EXP_SYSTEM
+3. Update Server :	GameServer, SubHelper
+4. DataBase :		newproject_db.t_attendance_exp_system
+					newproject_data.t_skill(1060) .t_skillLevel, t_magic (929), t_magicLevel
+5. DB Fields :		a_last_date ( 최근 접속일 ) , a_acc_count ( 현재 누적일 ),
+					a_max_acc ( 최대 연속누적일 ), a_last_reward_point ( 마지막으로 보상받은 연속 출석일 )
+
+6. skill index : 1060
+   skillLevel index : 1060
+   magic index : 929
+   magicLevel index : 929
+   item : 5967
+   title : 20
+
+
+
+[팬더 곰]
+
+1. t_item  5944~5947
+2. t_skill, t_skillLevel 1034~1054
+3. t_magic, t_magicLevel 928, 817~837
+4. t_quest 362
+5. t_bigpet 10~13 (10번을 넣어야 클라 lod 정상적으로 뽑혀짐)
+
+
+[튜토리얼 개편]
+1. #define TUTORIAL_RENEWER
+  - #define NEW_TUTORIAL 가 디파인 되어 있어야 함
+2. char_db.t_characters 필드 추가
+  - ALTER TABLE `t_characters` ADD `a_newtuto_complete` INT(4) DEFAULT "1" NOT NULL;
+
+3. t_item : 6085, 5954~5957 
+   t_title : 23
+
+4. t_npc
+  - 1129,1130,1132~1134
+
+4. t_npc_regen 6번존
+  - 1129,1130,1132~1134
+
+5. 부활 주문서 2 포함 
+	t_item 추가 4933, 5958
+
+6. t_optoin a_index in (72,73) a_level 갱신 필요
+
+[초보 지원 퀘스트]
+
+1. define LOW_LEVEL_SUPPORT_QUEST
+2. t_quest 추가 367~371, 375~380
+3. t_npc , t_npc_regen 893(초보지원 npc) 서버 하드 코딩으로 특정 채널만 리젠되게 되어 있으니 각 로컬 확인 작업.
+
+
+[후견인 시스템 개편]
+
+1. #define GUARDIAN_SYSTEM_RENEWAL
+ #define TEACH_FAMEUP_BUG_FIX // 같이 디파인 되어 있어야함
+
+2. charDB t_characters update
+
+	// 후견인 관계만 모두 초기화 해준다.
+	update t_characters set a_teach_idx=' -1 -1 -1 -1 -1 -1 -1 -1 -1 -1', a_teach_sec=' 0 0', a_teach_type=-1, a_teach_list = 0;
+
+
+3. charDB t_guardian_gift 테이블 생성
+
+	DROP TABLE IF EXISTS `t_guardian_gift`;
+	CREATE TABLE `t_guardian_gift` (
+	   `a_char_idx` int(11) unsigned NOT NULL default '0',
+	   `a_gift_count` int(11) unsigned NOT NULL default '0',
+	   PRIMARY KEY  (`a_char_idx`),
+	   UNIQUE KEY `a_char_idx` (`a_char_idx`)
+	 )TYPE=MyISAM ;
+
+4. t_item where a_index in (5952, 5953)
+5. t_item where a_index in (6105, 6106, 6107, 6108, 6109, 6110) // 20레벨 달성 아이템 
+5. t_title where a_index=22
+6. t_skill 1061
+7. t_skillLevel 1061
+8. t_magic 964, 965
+9. t_magicLevel 964, 965
+
+
+[몬트샤인 밸런스 조정(입장레벨 다운/ 입장권 판매)]
+
+1. dataDB에 하단 쿼리 적용.
+   - 퀘스트 레벨 다운 패치
+update t_quest set a_need_min_level=130 where a_index in (234,236,237,238,239,240,241,242,243,244,245,246,247,248,249);
+
+2. 입장권 판매(상점판매)는 로컬에 따라 자율 선택 
+ t_item 4913
+ 
+[아칸사원]
+
+#define AKAN_TEMPLE
+#ifdef MONSTER_COMBO
+#define GROUND_EFFECT2
+#endif // MOSTER_COMBO
+
+HELPER, GAMESERVER 업데이트 필요
+아칸사원은 레이드와 원정대 컨텐츠가 있는 로컬에서만 작동이 가능합니다.
+
+File 추가
+RaidData.h
+RaidData.cpp
+
+MAP 추가
+akantemple_1024_1024_0.sat
+akantemple_1024_1024_0.sht
+
+newStobm.bin 업데이트
+
+[Zones]
+Count=36
+.....
+[Zone_35]
+No=36
+Remote=FALSE
+
+DATA DB
+Table 추가(dump)
+t_raid_data (주의!! 아칸사원 난이도 구분 이전 버전에는 a_difficulty = 1 인 것만 들어가야 합니다.
+t_raid_object_data
+t_raid_object_list
+
+t_zonedata
+a_zone_index = 36(추가)
+a_zone_index = 15(수정)
+
+t_npc_regen_raid
+a_zone_num = 36
+
+t_item
+a_index in (6101,6102,6131,6132,6133,6134,6135,6136,6137,6138,6139,6140,6141,6142,6143,6144,6145,6146,6147,6148,6149,6150,6151,6152,6162,6153,6154,6155,6156,6157,6158,6159,6160,6161,6163,6164,6165)
+
+t_skill
+a_index in (1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1015,1016,1084,1017,1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033,1071,1072,1073,1074,1082,1083)
+
+t_skillLevel
+a_index in (1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1015,1016,1084,1017,1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033,1071,1072,1073,1074,1082,1083)
+,)
+
+t_magic
+a_index in (887,888,889,890,891,892,893,894,895,896,897,898,899,900,901,902,903,904,905,906,907,908,909,910,911,912,913,914,915,916,917,918,919,920,921,922,923,943,944,945,946,947,948,966,967,968,969)
+
+t_magicLevel
+a_index in (887,888,889,890,891,892,893,894,895,896,897,898,899,900,901,902,903,904,905,906,907,908,909,910,911,912,913,914,915,916,917,918,919,920,921,922,923,943,944,945,946,947,948,966,967,968,969)
+
+t_npc_dropraid
+a_npc_index in (1109,1110,1111,1112,1113,1114,1115,1116,1117,1118,1119,1120,1121,1122,1123,1124,1126,1127,1128)
+
+t_npc
+a_index in (1109,1110,1111,1112,1113,1114,1115,1116,1117,1118,1119,1120,1121,1122,1123,1124,1126,1127,1128, 1137)
+
+t_npc_regen
+a_npc_idx = 1137
+
+t_set_item
+a_set_idx in (58,59,60,61,62,63,64)
+
+[아칸사원 EVENT]
+1. #define EVENT_AKAN_TEMPLE
+2. 운영자 명령어(반드시 소문자 입력 필요)
+   - /event akan start		// 아칸사원 이벤트 시작 보스 몬스터들에게서 영혼의 징표 아이템이 드롭됨.
+							// 드롭 몬스터 (1112,1116,1120,1128,1124)
+   - /event akan stop		// 영혼의 징표 아이템이 드롭되지 않는다.
+   - /event akan ing		// 현재 아칸사원 이벤트가 진행중인지 중지 되었는지 확인 할 수 있다.
+   - /event akan exchange	// 현재 갖고 있는 영혼의 징표를 보상 아이템으로 교환 할 수 있다. 
+							// 교환은 가장 큰 숫자부터 한번씩만 보상아이템을 지급하고 프로세스가 종료된다.
+   - 필요 아이템 #6217
+3. CHAR DB TABLE 추가
+
+	CREATE TABLE `t_event_akan_temple` (
+		`a_index` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		`a_char_index` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+		`a_char_name` CHAR(50) NOT NULL DEFAULT '0',
+		`a_user_index` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+		`a_exchange_count` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+		PRIMARY KEY (`a_index`)
+	)
+	COMMENT='아칸사원 이벤트 : 영혼의 징표 교환 기록'
+	ENGINE=MyISAM
+	ROW_FORMAT=DEFAULT
+
+[인챈트 확장]
+서버:권상욱, 클라이언트:문대권
+1. DEFINE
+	#ifdef SET_ITEM						// 편의상 SET_ITEM 시스템이 들어간 부분만 개발함.
+	#define EXTEND_ENCHANT_2010			// Plus +17까지 가능, 정화된룰 아르, 악마의 룬아르 공식 및 성공확률 변화, 플래티늄 최상급 제련 보호석 기능 구현.
+	#ifdef EXTEND_ENCHANT_2010
+	#undef MAX_UPGRADE_PLUS
+	#define MAX_UPGRADE_PLUS	16		// EXTEND_ENCHANT_2010일경우 MAX_UPGRADE_PLUS를 15 -> 16 변경
+	#endif // EXTEND_ENCHANT_2010
+	#endif // SET_ITEM
+
+2. 개요
+   - 기존 +15까지 되던것을 +16까지 상향 시키고.. 플래티늄 제련석을 사용할 경우 +17까지 적용되도록 수정함.
+
+3. 추가 아이템
+INDEX : 6218 (플래티늄 최상급제련보호석(유료))
+
+[성주 코스튬]
+
+1. #define QA_SYSTEM_CASTLLAN_COSTUME
+   #define TITLE_SYSTEM // 필요
+   #define COSTUME2_SYSTEM // 필요
+2. t_item where a_index between 6181 and 6215 or a_index=5968;
+3. t_title where a_index=21
+4. dataDB.t_title.a_castle 존재 확인
+   (ALTER TABLE `t_title` ADD `a_castle_num` INT(11) UNSIGNED NOT NULL;)
+
+[스페셜 상자 아이템 확률조정]수
+1. DEFINE 
+	#define BUGFIX_SPECIALBOX_DROPRATE
+	
+2. Table 
+	t_npc_dropraid	t_spec_min, t_spec_max 변경. // 테이블 전체 옮기기 추천
+
+
+[이그니션 시스템]
+
+1. #define ENERGY_IGNITION_SYSTEM					// 몬스터 에너지 이그니션 시스템
+2. skill 1062 ~ 1065
+2. magic 931 ~ 936
+
+[100~140 추가 퀘스트]
+1. t_quest 389~413
+
+[UPGRADE_EVENT 시간설정 기능 추가]
+서버 : 권상욱
+내용 : UPGRADE_EVENT 시작과 종료시간을 설정하여 운영의 편의를 제공한다.
+
+#ifdef UPGRADE_EVENT
+#define UPGRADE_EVENT_AUTO			// 업그레이드 이벤트 자동화
+#define UPGRADE_EVENT_AUTO_SAVEFILE		".upgradeevent"
+#endif // UPGRADE_EVENT
+
+사용방법
+					    서버 그룹				   명령				    확률						  시작시간	   종료시간
+- 기존 : /upgrade_event [all | cur | server group] [start | ing | stop] [100 | 125 | 150 | 175 | 200]
+- 변경 : /upgrade_event [all | cur | server group] [start | ing | stop] [100 | 125 | 150 | 175 | 200] [Start time] [End time]
+
+확률과 시작시간 종료시간은 명령이 start일때만 적용이 됩니다.
+
+start time 형식	: 2010-09-29 10:00:00
+end time 형식	: 2010-09-29 14:00:00
+
+변경된 운영자 명령어는 시작시간, 종료시간, 확률을 각 게임서버에 파일로 저장을 하기 때문에 
+서버 재시작시 자동으로 저장된 내용을 로드하게 됩니다.
+
+[몬스터 밸런스 조정 2차]
+작성자 : 김정래
+1.DataDB(newproject_data) 에 
+  svn\SERVER\Query\Update_DataDB_MonsterBalance_2nd.sql 적용
+  적용전 t_npc 백업 해두는게 좋을 것입니다.
+
+
+[포로모션2 이벤트]
+1. define DEV_EVENT_PROMOTION2 69 
+2. 한 유저와 쿠폰 key 매칭하여 지급 
+3. userDB.t_promotion2_key 테이블만 생성
+3. dataDB.t_promotion2 테이블만 생성 후 데이터 설정 삽입.
+4. dataDB.t_promotion2 안에는 a_kind에 따른 지급될 상품 등록 한다. userDB.t_promotion2_key.a_kind 와 매칭하여 지급한다.
+
+[드라탄 NPC포탈 스크롤]
+1. #define NPC_PORTAL_SCROLL_DRATAN
+2. 캐릭터 생성 시 드라탄 NPC스크롤을 지급.
+
+
+
+[몬스터 용병 카드 시스템]
+
+0. 최영준(서버), 김기선(클라), 기획(원대한)
+1. #define SYSTEM_MONSTER_MERCENARY_CARD
+	필수 define
+	#define NIGHT_SHADOW
+	#define SET_ITEM
+
+2. MonsterMercenary.cpp
+   MonsterMercenary.h
+
+3. DB 
+	t_item where a_index in (6251, 6252,6253,6254,6255,6256,6257,6258,6259,6260);
+	t_luckydrawbox  where a_index in (60, 61, 62, 63, 64, 65 );
+	t_luckydrawResult where a_luckydraw_idx in (60, 61, 62, 63, 64, 65 );
+	t_skill where a_index = 1134;
+	t_skillLevel where a_index = 1134;
+	t_magic where a_index = 1000;
+	t_magicLevel where a_index = 1000;
+
+	--add-drop-table newproject_data t_monster_mercenary 
+
+
+[몬스터 용병 카드 시스템 확장] // 2011-03-30 // 작업 진행중.
+
+0.	최영준(서버), 김기선(클라), 기획(원대한)
+
+1.	
+	- 클래스별 다른 몬스터 용병 지급 (B클래스 능력치)
+	걷기, 달리기, 크기 설정 기능 추가.
+	
+2.	
+	#ifdef SYSTEM_MONSTER_MERCENARY_CARD
+	#define SYSTEM_MONSTER_MERCENARY_CARD_EX
+	#endif
+
+3.	GameServer
+
+4.	dataDB.t_monster_mercenary 사용하지 않음.
+	dataDB.t_monster_mercenary_ex 사용. (--add-drop-table)
+	
+
+[몬스터 용병 카드 초보 지원] 
+
+0.	최영준(서버), 김기선(클라), 기획(원대한) 
+
+1.	퀘스트를 통한 초보자용 몬스터 용병카드 지급.
+	- 각 클래스별 다른 몬스터 용병 지급
+	- 능력치는 B 클래스로 고정 (하드코딩 되어 있음 doFuncQuest.cpp)
+
+1. 
+	#ifdef SYSTEM_MONSTER_MERCENARY_CARD
+	#define SYSTEM_MONSTER_MERCENARY_CARD_LOW_LEVEL_SUPPORT
+	#endif
+
+3.	GameServer
+
+
+4	t_item WHERE a_index in (6805);	
+	t_quest WHERE a_index in (494);
+
+
+
+[펫 경험치 이벤트 명령]
+서버 : 권상욱
+#define DOUBLE_PET_EXP
+#ifdef DOUBLE_PET_EXP
+#define DOUBLE_PET_EXP_AUTO
+#define DOUBLE_PET_EXP_SAVEFILE	".doublepetexp"
+#endif
+
+/doublepetexp_event <serverno | all | cur> <start | stop | ing> <100~1000%> <start time> <end time>
+
+start time 형식	(2010-10-29 16:00:00)
+end time 형식	(2010-10-29 17:00:00)
+
+*확률과 시작시간, 종료시간은 start 입력 시에만 넣어주면 됩니다.
+*서버가 다운되거나, 정상종료 후 재실행 되었을 경우에도 이벤트 시간 중이라면 자동으로 이벤트는 시작됩니다.
+
+
+[캐릭터 외형 변경]
+0. 최영준(서버), 기태욱(클라)
+1. #define SYSTEM_FACEOFF
+2. DB
+	t_item where a_index in 5969, 6083;
+
+
+[캐릭터 스킬 확장] // 2010-11-19
+
+0. 최영준(서버), 기태욱(클라)
+
+1. #define SYSTEM_SUMMON_SKILL
+		#define SYSTEM_MONSTER_MERCENARY_CARD // 필수 
+		#define NIGHTSHADOW_SKILL // 필수
+
+2. DB
+
+	ALTER TABLE `t_skill` ADD `a_summon_idx` INT(10) NULL DEFAULT '-1' AFTER `a_soul_consum`; // skillTool 오류시 확인 후.
+
+	t_item where a_index=6331 or a_index between 6269 and 6280;
+
+	t_npc where a_index between 1140 and 1151 or a_index in (1153,1154,1158,1159,1160,1161,1162,1163);
+
+	t_skill where a_index between 1101 and 1133 or a_index between 1141 and 1152 or a_index in (152, 1158);
+
+	t_SkillLevel where a_index between 1101 and 1133 or a_index between 1141 and 1152 or a_index in (152, 1158);
+
+	t_magic	where a_index between 1001 and 1020 or a_index between 1022 and 1069  or a_index between 1074 and 1076;
+
+	t_magicLevel where a_index between 1001 and 1020 or a_index between 1022 and 1069  or a_index between 1074 and 1076;
+
+	t_luckydrawbox where a_index=68;
+	
+
+
+[랭킹 시스템]
+0. Author : 			김정래(서버), 박세흠(클라)
+1. Define : 			#define SYSTEM_RANKING
+2. Dependency Define : 	#define TITLE_SYSTEM
+3. Update Server :		GameServer, SubHelper
+4. DataBase : 			newproject_db.t_ranking (랭킹 목록)
+						newproject_db.t_ranking_date (갱신 시간 기록)
+5. DB Fields : 			t_ranking - a_charindex(랭커 캐릭터 Index), 
+									a_type(랭킹 타입 <0~7 : 캐릭터 최고 레벨, 100 : 만렙, 101 : 최고의 후견인>),
+									a_rank(등록된 등수),
+									a_rankdate(등록된 날짜/시간),									
+									a_checked(캐릭터에게 랭킹 등록 메시지를 보냈는지 아닌지 <0 : 아직 안보냈다, 1 : 이미 보냈다>),
+									a_extra(확장성 고려 extra 필드, 최고의 후견인에서는 후견인 양성 성공 수),
+									a_titleindex(보상 받을 호칭 인덱스)
+						t_ranking_date - a_date(랭킹 갱신한 제일 마지막 시간)
+6. DB Data :			t_item WHERE a_index>=6236 AND a_index<=6244
+						t_title WHERE a_index>=24 AND a_index<=32
+						t_action WHERE a_index=51
+
+[친화도 확장]
+ - #define AFFINITY_FIX ( #define AFFINITY 가 있어야 함)
+ - newproject_data 
+   1. t_affinity t_affinity_npc t_affinity_reward_item t_affinity_work
+   2. t_npc, t_shop, t_shopitem 1085, 1086, 1072, 1088, 1089, 1090, 1091, 1092, 1093, 1094, 1095, 1096, 1097, 1098, 1099, 1100, 1101, 1102, 1103, 1104
+
+[공성 시간 설정 개선: 메라크, 드라탄 공성 동시 진행하지 못하게 수정] 
+ - #define CHECK_OVERLAP_WARCASTLE
+ - t_npc: 1155
+
+[스트레이아나 동굴 통합] // 26, 27, 28존을 37번존 트리비아로 통합한다.
+0. 서버:권상욱 클라:이언호
+
+1. Database
+update t_npc set a_enable = 0 where a_index in (850,851,858,859);
+t_zonedata where a_zone_index = 37
+t_npc_regen where a_zone_num = 37
+
+2. 맵파일
+STREIANA_TRIVIA_CANYON_1024_1024_0.sat
+STREIANA_TRIVIA_CANYON_1024_1024_0.sht
+
+3. newStobm.bin
+[Zones]
+Count=34 // 카운트는 26~28을 삭제하고 개수에 맞게 입력
+
+[Zone_36]
+No=37
+Remote=FALSE
+
+// No=26, 27, 28인 존정보를 삭제한다.
+
+
+[캐쉬샵 개편 작업]
+※캐쉬샵 업데이트 시 툴이 재배포 되어야 하며, 
+t_string이 업데이트 되어야 합니다. 툴이 t_string테이블의 로컬 언어를 사용합니다.
+
+config.bin파일이 재배포 되어야 합니다.
+svn\Tools_Expansion\NewCashItemTool에 config.bin파일의 [Server] 항목에 각로컬에 맞는
+Server list가 반드시 추가 되어야 합니다.
+
+0. 서버:권상욱, 클라:이언호
+1. Database
+소망상자
+UserDB.t_wishlist
+
+CREATE TABLE `t_wishlist` (
+`a_userindex` INT(10) UNSIGNED NOT NULL,
+`a_ctids` VARCHAR(50) NULL,
+PRIMARY KEY (`a_userindex`)	
+)
+ENGINE=MyISAM
+ROW_FORMAT=DEFAULT
+
+소망상자는 자기가 사고 싶은 카탈로그 아이템을 저장한다. 
+한계정당 8개 까지 저장한다. 카탈로그 아이템은 ctid만 스트링으로 변환해서 저장한다.
+
+DataDB.t_catalog
+Alter table t_catalog add `a_category` int not null default 0 after `a_ctname`;
+Alter table t_catalog add `a_subtype` int not null default 0 after `a_type`;
+Update t_catalog set a_category = 0, a_subtype = 0, a_type = 90000, a_enable = 0, a_category = 90000;
+기존 카탈로그 아이템은 전부 구상품으로 등록한다.(90000=구상품)
+// a_icon 이 없는 곳은 이걸 꼭 넣어주자. (국내만 들어갔던 것으로 타 로컬에 없을 가능성이 큼)
+ALTER TABLE `t_catalog`  ADD `a_icon` TINYINT(3) UNSIGNED NULL DEFAULT '0' AFTER `a_flag`;
+
+2. Define
+#define EXTEND_CASH_SHOP
+
+3. 운영자 명령어 ? 가격 변경 명령어
+   - /modifycashshop 명령어 사용
+   - argument ( lock | unlock | reload_cash )
+   - 운영자 명령어 사용방법
+	/modifycashshop lock		// 캐쉬샵 가격수정을 위해 캐쉬상점 lock 사용 못함.
+					// 클라이언트로 메시지를 발송하며 클라이언트에서 메시지를 받을 경우 Shop이 닫히고, 열리지 않는다.
+	/modifycashshop reload_cash	// 캐쉬샵 툴로 가격을 수정한 후 Table의 내용을 Live DataDB로 옮긴 후 이 명령어를 사용하면
+					// 수정된 가격정보가 게임서버에 적용된다.
+	/modifycashshop unlock		// 수정이 모두 완료가 되었으면 이 명령어를 사용하여 cashshop unlock을 해준다.
+
+
+[ DEMON PET (서큐버스) ]
+0. 서버:권용대, 클라:이두영
+1. Database
+	newproject_data
+	펫정보 테이블 변경 ( t_bigpet 은 더이상 사용하지 않음 )
+		. t_attack_pet		( 기존 t_bigpet 의 확장 )
+		. t_attack_pet_ev ( 진화에 관련된 정보 )
+		
+	추가된 목록
+		. t_action,t_item,t_skill,t_skillLevel,t_magic,t_magicLevel,t_quest, t_rareoption, t_option
+	
+	newproject_db
+		. t_apets 에 컬럼 추가
+			ALTER TABLE t_apets ADD a_accFaith int unsigned default 0;
+			ALTER TABLE t_apets ADD a_accStm int unsigned default 0;
+	
+2. Define
+#define ATTACK_PET_S2
+
+3. 기타
+	. 새로운 툴 사용 필요
+
+
+[인첸트 확장]
+#define MAX_UPGRADE_PLUS	16			// EXTEND_ENCHANT_2010일경우 MAX_UPGRADE_PLUS를 15 -> 16 변경(Line 1318 참조)
+
+[공성관련 스킬문제 버그 수정]
+서버:권상욱
+#define BUGFIX_USE_SKILL_TO_NPC
+기존에 추가되었던 공성시간중 공성지역에서 텔레키네시스를 사용하지 못하게 한것을 삭제
+
+effect에 taming과 drain이 있는 스킬들은
+평화, 공성, 공격수호상, 성주의 증명 플래그가 체크된 NPC에게는 
+잘못된 대상으로 스킬을 사용하지 못하게 함.
+
+#169 스킬(텔레키네시스), #401 스킬(대쉬)는
+평화, 공성, 공격수호상, 성주의 증명 플래그가 체크된 NPC에게는 
+잘못된 대상으로 스킬을 사용하지 못하게 함.
+
+
+[인스턴트 던전 어려움 설정]
+(아칸사원 난이도 설정)
+서버 : 권상욱, 클라이언트 : 이언호
+#define DEV_DUNGEON_DIFFICULTY
+
+적용서버 : GameServer, Helper
+
+DataDB 
+--add-drop-table t_raid_data t_raid_object_data
+
+t_skill where a_index in
+(1003, 1004, 1005, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1084, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1006, 1007, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1020, 1021, 1027, 1082, 1083)
+
+t_skillLevel where a_index in
+(1003, 1004, 1005, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1084, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1006, 1007, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1020, 1021, 1027, 1082, 1083)
+
+t_magic where a_index in
+(887, 888, 889, 890, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 966, 967, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 891, 892, 893, 917, 918, 919, 920, 921, 922, 923, 909, 910, 911, 917, 918, 919)
+
+t_magicLevel where a_index in
+(887, 888, 889, 890, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 966, 967, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 891, 892, 893, 917, 918, 919, 920, 921, 922, 923, 909, 910, 911, 917, 918, 919)
+
+t_npc where a_index in
+(1164, 1165, 1166, 1167, 1168, 1169, 1170, 1171, 1172, 1173, 1174, 1175, 1176, 1177, 1178, 1179, 1180, 1181, 1182)
+
+update t_npc set a_exp where a_index in
+(1109,1110,1111,1112,1113,1114,1115,1116,1117,1118,1119,1120,1121,1122,1123,1124,1126,1127,1128)
+
+t_npc_regen_raid where a_npc_idx in
+(1164, 1165, 1166, 1167, 1168, 1169, 1170, 1171, 1172, 1173, 1174, 1175, 1176, 1177, 1178, 1179, 1180, 1181, 1182)
+
+t_npc_dropraid where a_npc_index in
+(1164, 1165, 1166, 1167, 1168, 1169, 1170, 1171, 1172, 1173, 1174, 1175, 1176, 1177, 1178, 1179, 1180, 1181, 1182)
+
+t_item where a_index in
+(6568, 6569, 6570, 6571, 6572, 6573, 6574, 6575, 6576, 6577, 6578, 6579, 6580, 6581, 6582, 6583, 6584, 6585, 6586, 6587, 6588, 6589, 6590, 6591)
+
+t_item where a_index between 6131 and 6165
+
+CharDB
+ALTER TABLE `t_inzonejoin` add `a_difficulty` int not null default -1 after `a_charindex`;
+ALTER TABLE `t_trigger_saveinfo` add `a_difficulty` int not null default -1 after `a_save_time`;
+
+
+[ 펫스텟 초기화 카드 ]
+1. 권용대, 문대권
+2. DEV_APETSTAT_INITCARD
+3. item index : 6281
+
+[2011년 출석 이벤트]
+서버 : 권상욱, 클라이언트 : 김기선
+
+Define
+
+#ifdef ATTENDANCE_EXP_SYSTEM			// 출석 시스템 필요
+#ifdef UPGRADE_EVENT					// 업그레이드 이벤트 필요
+#ifdef UPGRADE_EVENT_AUTO				// 업그레이드 이벤트 오토(시간설정) 기능 필요
+#ifdef SUB_HELPER						// 서브헬퍼 필요
+#define EVENT_ATTENDANCE_2011
+#define ATTENDANCE_SAVE_FILE ".attendance"
+#endif
+#endif
+#endif
+#endif
+
+적용서버 : GameServer, SubHelper
+
+CharDB
+
+CREATE TABLE `t_attendance_event_2011` (
+	`a_char_idx` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+	`a_tda` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0',
+	`a_tda_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	`a_oda` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0',
+	`a_oda_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	`a_today` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0',
+	`a_today_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	`a_accday` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+	`a_reward` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+	PRIMARY KEY (`a_char_idx`),
+	INDEX `a_tda` (`a_tda`)
+)
+ENGINE=INNODB
+ROW_FORMAT=DEFAULT
+
+DataDB
+t_skill t_skillLevel : a_index = 1183
+t_magic t_magicLevel : a_index in (1126,1127)
+t_item a_index (6598~6644, 6649~6652, 5965, 5966, 6566)
+t_luckydrawbox a_index in (86, 87, 92, 95, 96, 97)
+t_luckydrawResult a_luckydraw_idx in (86, 87, 92, 95, 96, 97)
+
+-- 출석 시스템이 먼저 들어간 국가는 t_attendance_event_2011 table CREATE 후 아래 쿼리 실행 필요
+-- 출석 시스템에서 금일 출석한 유저 정보 를 이벤트 테이블로 insert
+Insert into t_attendance_event_2011(a_char_idx, a_today, a_today_date, a_accday) select a_char_index, 1 , a_last_date, 1 from t_attendance_exp_system where TO_DAYS(NOW())=TO_DAYS(a_last_date);
+
+
+[길드 직위 편성] 공성 역활 강화 // 공성 리폼.
+
+1. 김태욱(클라), 최영준(서버), 원대한(기획)
+2. #define DEV_SYSTEM_GUILD_GRADE_EX
+3. GameServer, Helper
+
+
+[코스튬2 한 벌 의상]
+
+1. 박세흠(클라), 김정래(서버), 김길현(기획)
+2. #define SYSTEM_COSTUME2_SUIT
+3. GameServer
+
+
+
+[휴먼 유저 이벤트]
+
+1.	등록된 휴먼 유저에게 캐릭터별 보상 아이템 지급.
+2.	김길현(기획), 김태욱(클라), 최영준(서버)
+3.	#define EVENT_USER_COMEBACK 70 //휴먼 유저 이벤트
+	#ifdef EVENT_USER_COMEBACK
+		#define EVENT_USER_COMEBACK_AUTO_REG_DAY 180 // 휴먼 유저 자동 DB 등록 (정의 된 숫자는 인터벌 날짜)
+	#endif
+4.	GameServer, Connector
+5.	DB
+	* userDB.t_event_usercomeback (테이블만 복사 한 후 보상 받을 유저 인덱스를 넣어준다.)
+	  - a_user_idx		:: 보상 받을 유저 인덱스
+	  - a_server_num		:: 보상 받은 캐릭터의 서버 번호
+	  - a_char_idx		:: 보상 받은 캐릭터 인덱스
+	  - a_gift_date		:: 보상 받은 시간.
+
+	 CREATE TABLE `t_event_usercomeback` (
+		`a_user_idx` int(11) unsigned NOT NULL default '0',
+		`a_server_num` tinyint(3) unsigned default '0',
+		`a_char_idx` int(11) unsigned default '0',
+		`a_gift_date` datetime NOT NULL default '0000-00-00 00:00:00',
+		PRIMARY KEY  (`a_user_idx`),
+		UNIQUE KEY `a_user_idx` (`a_user_idx`)
+	) TYPE=MyISAM;
+	    
+	* dataDB
+		- t_item where a_index between 6711 and 6717 or a_index = 6700;
+		- t_luckydraw where a_index between 102 and 108;
+		- t_luckydrawResult where a_luckydraw_idx between 102 and 108;
+		- t_title where a_index=57;
+
+
+[캐릭터 1주년 기념 이벤트]
+
+1. 캐릭터 생성한지 1년이 넘은 캐릭터에 생일 선물을 지급한다.
+2. 김길현(기획), 기태욱(클라), 최영준(서버)
+3. #define EVENT_CHAR_BIRTHDAY 71  //캐릭터 1주년 기념 이벤트
+4. GameServer, Helper
+5. DB
+	* charDB.t_event_char_birthday
+		- a_char_idx		:: 캐릭터 인덱스
+		- a_create_date	:: 캐릭터 생성 일
+		- a_gift_date	:: 선물 지급 일
+
+	 CREATE TABLE `t_event_char_birthday` (
+		`a_char_idx` int(11) unsigned NOT NULL default '0',
+		`a_create_date` date NOT NULL default '0000-00-00',
+		`a_gift_date` date NOT NULL default '0000-00-00',
+		`a_count` INT(11) UNSIGNED DEFAULT '0' NOT NULL,
+		PRIMARY KEY  (`a_char_idx`),
+		UNIQUE KEY `a_char_idx` (`a_char_idx`)
+	) TYPE=MyISAM;
+	 		
+	* dataDB
+		- t_item where a_index between 6701 and 6710 or a_index between 6718 and 6727;
+		- t_luckydraw where a_index between 109 and 118;
+		- t_luckydrawResult where a_luckydraw_idx between 109 and 118;
+		- t_title where a_index between 58 and 67;
+
+
+
+[파티원이 잡아주는 NPC 퀘스트 완료]
+서버 : 권상욱
+1. define
+#define HUNT_QUEST_COMPLETE_FOR_OTHER_PARTYMEMBER
+
+2. 파티원이 몬스터 잡을 시 내가 그 몬스터를 잡는 퀘스트를 갖고 있다면, 퀘스트 자동 완료됨. 원정대는 원정대용 퀘스트만 됨.
+
+[로그인할때 국가로그 남기기]
+1. 로그인 할때 마다 접속 국가와 IP , ID를 DB에 저장한다. ( 누적 )
+2. 권용대
+3. #define LOCAL_LOGIN_LOG
+4. Login Server
+5. DB ( 용량이나, 부하가 적은 쪽 DB )
+	CREATE TABLE `t_loginlocallog` (
+		`a_index` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		`a_user_index` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+		`a_idname` VARCHAR(32) NOT NULL DEFAULT '0',
+		`a_ip` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+		`a_local` CHAR(2) NOT NULL DEFAULT '0',
+		`a_timestamp` INT(11) UNSIGNED NOT NULL,
+		PRIMARY KEY (`a_index`),
+		INDEX `date` (`a_timestamp`, `a_user_index`)
+	)
+6. LoginServer newStobm.bin
+	[LocalLog DB] 로 	IP,DBName,User,Password 셋팅
+7. 검색 예
+	select a_idname, a_local, INET_NTOA(a_ip) from t_loginlocallog 
+	where a_timestamp > UNIX_TIMESTAMP('2011-02-23 11:39:00') and a_timestamp < UNIX_TIMESTAMP('2011-02-24 11:41:00')
+	group by a_user_index;
+
+[유럽2국 프로모션 이벤트]	
+서버:권상욱, 클라:김기선, 기획:김길현
+1. define
+#define EVENT_EUR2_PROMOTION
+
+2. Connector, GameServer 수정
+
+3. Table Scheme
+(User DB)
+CREATE TABLE `t_eur2_promotion` (
+    `a_key` VARCHAR(20) NOT NULL DEFAULT '',
+    `a_user_index` INT(11) NOT NULL DEFAULT '0',
+    `a_char_index` INT(11) NOT NULL DEFAULT '0',
+    `a_use_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+    UNIQUE INDEX `a_key` (`a_key`),
+    INDEX `a_user_index` (`a_user_index`)
+)
+ENGINE=MyISAM
+ROW_FORMAT=DEFAULT
+
+4. Insert Data
+http://10.1.90.250/projects/promotion/wiki/Wiki/ 첨부파일확인(promotion_key_Insert_Query.sql)
+
+[스킬 쿨타임 감소 아이템]
+개발 : 권상욱
+
+1. define
+#define DEV_COOLTIME_SKILL
+
+2. item index : 6792(테스트용)
+
+3. 스킬 툴 수정(SVN 업데이트 필요)
+
+4. 스킬 쿨타임을 줄여주는 스킬이 생겼습니다. skill index : 1340, magic index : 1161(테스트 데이터입니다.)
+
+[거래대행 경량화]
+권상욱
+SUBHELPER
+#define TRADE_AGENT_LIGHT
+
+(CharDB)
+DROP TABLE IF EXIST `t_backup_tradeagent`;
+CREATE TABLE `t_backup_tradeagent` (
+	`a_index` INT(11) NOT NULL DEFAULT '0',
+	`a_item_serial` INT(11) NOT NULL DEFAULT '0',
+	`a_item_serial2` VARCHAR(20) NOT NULL DEFAULT '',
+	`a_item_plus` INT(11) NOT NULL DEFAULT '0',
+	`a_item_flag` INT(11) NOT NULL DEFAULT '0',
+	`a_option_count` INT(11) NULL DEFAULT '0',
+	`a_option_0_type` INT(11) NULL DEFAULT '0',
+	`a_option_0_level` INT(11) NULL DEFAULT '0',
+	`a_option_1_type` INT(11) NULL DEFAULT '0',
+	`a_option_1_level` INT(11) NULL DEFAULT '0',
+	`a_option_2_type` INT(11) NULL DEFAULT '0',
+	`a_option_2_level` INT(11) NULL DEFAULT '0',
+	`a_option_3_type` INT(11) NULL DEFAULT '0',
+	`a_option_3_level` INT(11) NULL DEFAULT '0',
+	`a_option_4_type` INT(11) NULL DEFAULT '0',
+	`a_option_4_level` INT(11) NULL DEFAULT '0',
+	`a_item_name` VARCHAR(50) NOT NULL DEFAULT '\'\'',
+	`a_item_level` INT(11) NOT NULL DEFAULT '0',
+	`a_item_type` INT(11) NOT NULL DEFAULT '0',
+	`a_item_subtype` TINYINT(3) NOT NULL DEFAULT '0',
+	`a_item_class` INT(11) NOT NULL DEFAULT '0',
+	`a_quantity` INT(11) NOT NULL DEFAULT '0',
+	`a_totalmoney` BIGINT(20) NOT NULL DEFAULT '0',
+	`a_regist_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	`a_process_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	`a_account_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	`a_sell_charindex` INT(11) NOT NULL DEFAULT '0',
+	`a_sell_charname` VARCHAR(50) NOT NULL DEFAULT '\'\'',
+	`a_buy_charindex` INT(11) NOT NULL DEFAULT '0',
+	`a_buy_charname` VARCHAR(50) NOT NULL DEFAULT '\'\'',
+	`a_state` TINYINT(4) NOT NULL DEFAULT '0',
+	`a_buycalc_state` TINYINT(4) NOT NULL DEFAULT '0',
+	`a_sellcalc_state` TINYINT(4) NOT NULL DEFAULT '0',
+	`a_guaranty` INT(11) NOT NULL DEFAULT '0',
+	`a_process_state` TINYINT(2) UNSIGNED NOT NULL DEFAULT '0'
+)
+ENGINE=MyISAM
+ROW_FORMAT=DEFAULT;
+
+#!지난 목록 백업하기와 지난 목록 지우기, table optimzie 까지 100만건 데이터 기준으로 약 15분 정도 시간이 소요됩니다.
+
+#지난 목록 백업하기
+INSERT t_backup_tradeagent 
+SELECT * FROM t_tradeagent WHERE 
+((now() > DATE_ADD(a_account_date, interval 8 day)) AND 
+((a_state = 1 AND a_buycalc_state = 3 AND a_sellcalc_state = 3) OR 
+(a_state = 2 AND a_sellcalc_state = 3))) OR 
+(now() > DATE_ADD(a_process_date, interval 16 day));
+
+#지난 목록 지우기
+DELETE FROM t_tradeagent WHERE
+((now() > DATE_ADD(a_account_date, interval 8 day)) AND 
+((a_state = 1 AND a_buycalc_state = 3 AND a_sellcalc_state = 3) OR 
+(a_state = 2 AND a_sellcalc_state = 3))) OR 
+(now() > DATE_ADD(a_process_date, interval 16 day));
+
+#optimize 지우고 최적화 하기
+OPTIMIZE TABLE t_tradeagent;
+
+[전직 시 조랑말 받기]
+서버 : 권상욱
+
+#define DEV_JOB_CHANGE_REWARD
+
+아이템 인덱스
+BETWEEN 6893 AND 6904
+
+퀘스트인덱스
+BETWEEN 500 AND 505
+
+[레이드 던전 자동 초기화]
+서버 : 권상욱
+클라이언트 : 김기선
+
+#ifdef BUGFIX_DIFF_RAIDROOMNO
+#ifdef DEV_DUNGEON_DIFFICULTY
+	#define DEV_AUTO_RESET_RAID
+#endif
+#endif
+
+ - 개발문서
+http://10.1.90.250/projects/init-raid/wiki
+
+ - 운영자 명령어
+/resetraid                          // 기존의 방식입니다. 이 명령어는 외부오픈 전에 시행해야하는 명령어 입니다. 바로 리셋이 됩니다.
+/resetraid check                    // 현재 서버가 Reset이 되는 시간을 클라이언트로 보여주게 됩니다.
+/resetraid now                      // 외부오픈 중(혹은 유저가 들어와 있는 상태, 서비스 도중) 부득이 하게 레이드 던전을 리셋 해야할 필요가 있을 때 사용합니다.
+                                    // 현재 시간부터 10분간 던전 리셋 프로세스를 시행합니다.
+레이드 던전 리셋 시간 설정
+미설정 시 기본적으로 매일 03:00 에 리셋이 됩니다.
+/resetraid [요일] [시간] [분]
+/resetraid [sun | mon | tue | wed | thu | fri | sat | all] [0 | 1 | 2 | 3 | ... | 23] [0 | 1 | 2 | 3 | ... | 59]
+(실사용 예)
+/resetraid all                      // 매일 00:00 레이드 던전을 리셋 합니다.
+/resetraid mon                      // 매주 월요일 00:00 레이드 던전을 리셋합니다.
+/resetraid all 4                    // 매일 04:00에 레이드 던전을 리셋합니다.
+/resetraid fri 4 30                 // 매주 금요일 04:30에 레이드 던전을 리셋합니다.
+
+ - 기타 설명
+
+시간 설정 시 게임서버는 로컬 directory에 .setraidinittime 파일을 생성하게 됩니다.
+이 파일에는 레이드를 리셋하는 요일, 시간, 분이 저장이 됩니다.
+게임서버가 실행이 될때마다 파일 로딩을 하게 됩니다.
+이 파일이 없을 시 서버는 기본 값으로 매일 03:00에 자동으로 레이드 던전이 리셋 됩니다.
+이 기본값은 소스 수정으로 로컬별로 다르게 정할 수도 있습니다.
+
+설정해놓은 시간에 레이드 던전 초기화는 시작됩니다.
+① 설정시간이 월요일 03:00이라면 매주 월요일 03:00에
+03:04까지 "n분 뒤 레이드 던전이 초기화 됩니다." 라는 카운트다운
+메시지가 레이드채널에 있는 모든 클라이언트에게 발송됩니다.
+② 03:05에는 "레이드 던전 초기화 중입니다"라는 메시지가 출력이되며,
+레이드 던전에 입장을 시도 하는 유저들에게는 
+"레이드 던전 초기화 중입니다. 잠시후 다시 시도하여 주십시오."라는
+메시지 박스가 출력이 됩니다.
+③ 03:06에 실질적으로 레이드 던전이 초기화가 됩니다.
+단, 이미 입장한 유저들과 그 유저들의 방번호에 귀속된 입장하지 않은
+유저들은 초기화가 안됩니다. 
+④ 03:10에 "레이드 던전 초기화가 완료되었습니다."라는 메시지가 출력이 되며,
+레이드 던전에 입장이 가능합니다.
+
+[신규 쥬노]
+패치문서 : http://10.1.90.250/documents/168/
+#define JUNO_RENEWAL
+#define JUNO_RENEWAL_MESSAGEBOX (가미고 서비스는 넣어줘야 함)
+
+newproject_data_juno_dev
+ - t_npc_regen :  a_zone_num=0
+ - t_shop : a_zone_num = 0
+ - t_zonedata : a_zone_index=0
+
+newproject_data
+ - t_npc : 1, 2, 4, 29~31, 52, 53, 60, 61, 63, 115, 117, 119, 120, 145, 146
+		   191, 308, 410~413, 429~438 (Exp 및 SP 수정)
+		   137, 1155 (모델변경) 
+		   1152, 1131, 1251~1254 (신규제작)
+ - t_skill, t_skillLevel: 1198~1202, 1354
+ - t_magic, t_magicLevel: 1131,1132,1133,1134,1135,1136,1137,1138,1139,1140,1173,
+ - t_quest : 1~4, 13~25, 27~43, 47~57, 63, 72, 79, 80, 81, 104, 105, 114, 115,
+			 149~160, 234, 237~239, 364~371, 372, 373, 375~380, 386~388 414~416, 420~425,
+			 495~499
+ - t_mapinfo : a_zone_index=0
+ - 속성맵 : StartZone_1536_1536_0.sat, StartZone_1536_1536_0.sht
+
+[러시아 인형 : 마트로시카]
+서버 없음
+클라이언트 : 기태욱
+1. 서버 소스 작업 없음
+2. DataDB
+ - t_item where a_index between 6905 and 6921
+ - t_luckydrawbox where a_index between 131 and 137
+ - t_luckydrawresult where a_index between 1490 and 1502 or a_index between 1520 and 1522
+
+[전장 - 로얄럼블(Royal Rumble)]
+패치문서 : http://10.1.90.250/documents/169
+개발문서 : http://10.1.90.250/projects/royalrumble/wiki
+클라이언트 : 문대권
+서버 : 권상욱
+기획 : 서태원
+
+1. define 
+#define DEV_ROYAL_RUMBLE
+
+2. DB
+(DataDB)
+t_zonedata
+a_zone_index = 38
+
+(CharDB)
+CREATE TABLE `t_warground` (
+	`a_char_index` INT(10) NOT NULL DEFAULT '0',
+	`a_total_kill_count` INT(10) NOT NULL DEFAULT '0',
+	`a_total_death_count` INT(10) NOT NULL DEFAULT '0',
+	`a_warground_point` INT(10) NOT NULL DEFAULT '0',
+	`a_warground_acc_point` INT(10) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`a_char_index`)
+)
+ENGINE=INNODB
+ROW_FORMAT=DEFAULT
+
+CREATE TABLE `t_royalrumble_winner_log` (
+	`a_char_index` INT(10) NOT NULL DEFAULT '0',
+	`a_name` VARCHAR(50) NOT NULL DEFAULT '',
+	`a_nick` VARCHAR(50) NOT NULL DEFAULT '',
+	`a_leveltype` VARCHAR(50) NOT NULL DEFAULT '',
+	`a_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	INDEX `charindex` (`a_char_index`)
+)
+ENGINE=MyISAM
+ROW_FORMAT=DEFAULT
+
+3. newStobm.bin
+   - 존추가
+
+4. map
+   - Pk_RoyalRumble_256_256_0.sht
+   - Pk_RoyalRumble_256_256_0.sat
+
+[아그로]  // 탈것 
+
+1. DB
+	t_item where a_index in (6801,6802)
+	t_quest where a_index in (493)
+	t_attack_pet where a_index in (31)
+
+[레이드 던전 귀속 초기화 카드]
+패치문서 : http://10.1.90.250/documents/171
+	#define BUGFIX_RAID_RESET_INIT_CARD				// 미국(전로컬) 던전 귀속 초기화 카드 버그
+
+[공격형펫 appearmsg수정]
+패치문서 : http://10.1.90.250/documents/172
+	// #define BUGFIX_APET_TYPE						// 공격형펫 존 이동 시 화면 표시 제대로 안됨.
+	디파인 삭제함.
+
+
+[파티형 아이템]
+- 아이템을 사용하면 파티원에게 사용 아이템을 알려주는 메세지
+
+1. define DEV_LETS_PARTYTIME  
+// 아이템 FLAG 추가됨
+2. 현제 아이템 제작 되지않음
+
+
+
+[보물 찾기 시스템] // 이벤트
+
+1.	기획 원대한, 클라 이두영, 서버 최영준
+
+2.	#define SYSTEM_TREASURE_MAP	// 보물 찾기 시스템
+	#define GM_TREASURE_MAP_SAVE_FILE		 ".treasuremapsave"
+	#define SYSTEM_TREASURE_MAP_LINKZONE_DROP // 링크존 보물 지도 드랍( 기본설정만 true로 바꿔주고 운영자 명령어로 설정(변경)이 가능하다.)
+
+3.	DB
+	* dataDB
+		t_item where a_index between 6937 and 6941) or a_index in (6922);
+		t_npc where a_index in (1255);
+		t_luckydrawbox where a_index in (138,139);
+		t_luckydrawNeed where a_luckydraw_idx in (138,139);
+		t_luckydrawResult where a_luckydraw_idx in (138,139);
+		--add-drop-table t_zonedata ( 쥬노 리뉴얼 들어간 곳만)
+
+	
+4.	운영자 명령어.
+	
+	* 드랍 설정하기
+	/treasuremapdrop set [ all | cur ] [ on | off ] [ on | off ] [ all | zoneindex.... ]
+		ex) /treasuremapdrop set all on on 0 4 7 15 23 32
+
+			- argument 설명  (순서대로)
+			
+			// 서버군 선택
+			all : 모든 서버군 설정 
+			cur : 현재 서버군 설정 
+
+			// 링크존 드랍 선택. 여기서 On을 해줘도 존별 세팅에서 off가 되어 있다면 드랍되지 않는다.
+			on  : 링크존 보물 지도 drop O 
+			off : 링크존 보물 지도 drop X
+
+			// 존별 드랍 선택. (레이드 던전,퍼스널 던전, 길드방, ox 퀴즈방 등에서는 드랍되지 않는다.)
+			on  : 존별 보물 지도 drop O 
+			off : 존별 보물 지도 drop X
+
+			// 드랍 설정할 존 선택. 나열된 존 인덱스에만 세팅한다. 
+			all : 모든 존에 대해 설정. (레이드 던전과 퍼스널 던전은 드랍하지 않으며로 세팅되지 않는다.)
+			zoneindex... : 적어놓은 존에만 설정 (스페이스로 구분). 
+
+	* 드랍 설정 상태 보기
+	/treasuremapdrop ing
+
+5.	SaveFile
+	#define GM_TREASURE_MAP_SAVE_FILE		 ".treasuremapsave"
+	- zonedata tool로 입력된 상태 값을 기본으로 먼저 로딩 후에
+	  save 파일 내용을 다시 세팅함. save 파일이 없을 경우 기분 로딩 상태로 진행됨.
+	- 던정 드랍 설정과 드랍 설정된 존 번호만 표시됨
+
+[베니건스 응모권 이벤트]	  
+서버 : 권상욱
+#define BENNIGANS_EVENT
+패치문서 : http://10.1.90.250/documents/187
+
+
+[미국 마스터 스톤]
+- 아이템을 현재무기 +1 로 변경 ( 5월 9일 NPC 를 이용하도록 변경 )
+
+서버 : 권용대
+클라 : 최소영
+
+#define DEV_MASTERSTONE_USA
+Item : 6111, 6112, 6113, 6114, 6115, 6124, 6120
+NPC : 1261 ( t_npc_regen 필요 )
+
+
+
+
+[가미고 10주년 기념 이벤트]
+1. 김길현, 이두영, 최영준
+
+2. 할로윈 이벤트와 크리스마스 이벤트를 이용하여 이벤트를 진행.
+   할로윈 이벤트에서는 호박 몬스터를 다른 몬스터로 변경(추가)하고 호막탈을 케이크 모자로 변경(추가) 한다.
+   크리스마스 이벤트는 트리를 케이크 모양으로 변경 한다.
+   보상 아이템 및 스킬 아이콘 크리스마스 장식 아이콘을 변경하여 사용한다.
+
+3. 
+	#define EVENT_HALLOWEEN_2007					49      // 할로윈 이벤트
+	#define EVENT_HALLOWEEN_2007_GAMIGO_10TH_ITEMDROP		// 가미고 10주년 아이템 드랍 설정.
+	#define EVENT_XMAS_2007					50				// 크리스마스 이벤트
+
+
+4. DB
+	추가
+		t_npc where a_index in (1283,1304);
+		t_npc_regen a_npc_idx in (1283,1304);
+		t_item where a_index between 7252 and 7259;
+		t_luckydrawbox where a_index = 178;
+		t_luckydrawResult where a_luckydraw_idx = 178;
+
+	변경
+		t_item where a_idnex between 2584 and 2589;
+		t_skill where between 485 and 489;
+		t_npc where a_index = 483;
+
+5. 이벤트 종료 방법
+	update t_npc set a_enable=0 where a_index in (483,1283,1304,1305);
+
+[망각의 신전 리폼] tag: update 1106
+1. 원대한, 권상욱, 문대권
+
+2. 망각의 신전 개인레이드 던전으로 수정
+
+3. define
+#if defined (AKAN_TEMPLE) && defined(DEV_DUNGEON_DIFFICULTY)
+#define DEV_FORGOTTEN_TEMPLE
+#endif
+#define DEV_NPC_JOB_ITEM_DROP
+#define DEV_NPC_DROP_ITEM_ALL
+
+4. map
+data/P_Dungeon1_1152_1152_0.sat
+data/P_Dungeon1_1152_1152_0.sht
+
+5. DataDB
+
+t_raid_data
+WHERE a_index BETWEEN 45 AND 57
+
+t_raid_object_data
+WHERE (a_index BETWEEN 165 AND 191) or (a_index = 274)
+
+t_shop
+WHERE a_index = 1279
+
+t_shopitem 
+WHERE a_keeper_idx = 1279
+
+t_item
+WHERE (a_index BETWEEN 7065 AND 7108) or (a_index = 7111) or (a_index BETWEEN 7126 AND 7136) or (a_index BETWEEN 7260 AND 7273)
+
+t_luckydrawbox
+WHERE a_index BETWEEN 164 AND 170
+
+t_luckydrawNeed
+WHERE a_luckydraw_idx = 170
+
+t_luckydrawResult
+WHERE a_luckydraw_idx BETWEEN 164 AND 170
+
+t_skill
+WHERE a_index BETWEEN 1359 AND 1362
+
+t_skillLevel
+WHERE a_index BETWEEN 1359 AND 1362
+
+t_magic
+WHERE a_index BETWEEN 1184 AND 1187
+
+t_magicLevel
+WHERE a_index BETWEEN 1184 AND 1187
+
+t_npc
+#수정된 NPC
+WHERE a_index IN (262,263,264,265,266,267,268,269) #수정된 부분만 업데이트 할 것
+#추가된 NPC
+WHERE (a_index IN (1259, 1303)) or (a_index BETWEEN 1262 AND 1282)
+
+t_npc_dropjob
+--add-drop-table
+
+t_npc_drop_all
+--add-drop-table
+
+t_npc_regen_raid
+WHERE a_zone_num = 12
+
+t_quest
+WHERE a_index IN (568, 569, 570, 572)
+
+t_title
+WHERE a_index = 71
+
+t_set_item
+WHERE a_set_idx BETWEEN 76 AND 81
+
+t_string
+WHERE a_index IN (5492, 5493, 5494, 5496, 5497)
+
+[로얄럼블 개선] tag: UPDATE 1106
+
+서태원, 권상욱, 문대권
+
+로얄럼블 개선
+#define DEV_ROYAL_RUMBLE_IMPROVE
+
+t_item
+WHERE a_index BETWEEN 7340 AND 7342
+
+
+
+[랭킹 시스템 확장]
+1. 작업자 : 김길현(기획), 원대한(기획), 기태욱(서버), 최소영(클라)
+
+2. 내용
+	- 최근 3개월동안 접속한 모든 캐릭터의 순위를 매김
+	- 일주일에 한번(디폴트 : 월요일 오전 6시) 서브 헬퍼를 통해 갱신
+
+3. define
+	#define SYSTEM_RANKING_EX
+	#ifdef SYSTEM_RANKING_EX
+	#undef SYSTEM_RANKING
+	#endif
+	
+	※ #define SYSTEM_RANKING은 빼야함
+
+4. DB
+	- t_characters 수정 : a_exp_weekly, a_levelup_date 필드 추가
+	ALTER TABLE `t_characters`  
+	ADD COLUMN `a_exp_weekly` BIGINT(20) UNSIGNED NOT NULL DEFAULT '0' AFTER `a_newtuto_complete`,  
+	ADD COLUMN `a_levelup_date` DATETIME NULL DEFAULT '0000-00-00 00:00:00' AFTER `a_exp_weekly`;
+
+	- t_ranking_ex 추가
+	CREATE TABLE `t_ranking_ex` 
+	(`a_char_index` INT(11) NOT NULL DEFAULT '0', 
+	`a_rank_by_level` INT(11) NOT NULL DEFAULT '0', 
+	`a_rank_by_job` INT(11) NOT NULL DEFAULT '0', 
+	`a_refresh_date` DATETIME NULL DEFAULT NULL, 
+	INDEX `a_char_index` (`a_char_index`) )ENGINE=MyISAM ROW_FORMAT=FIXED
+
+	- t_ranking_ex_backup 추가
+	CREATE TABLE `t_ranking_ex_backup` 
+	(`a_char_index` INT(11) NOT NULL DEFAULT '0', 
+	`a_rank_by_level` INT(11) NOT NULL DEFAULT '0', 
+	`a_rank_by_job` INT(11) NOT NULL DEFAULT '0', 
+	`a_refresh_date` DATETIME NULL DEFAULT NULL, 
+	INDEX `a_char_index` (`a_char_index`) )ENGINE=MyISAM ROW_FORMAT=FIXED
+
+	- t_ranking_data 추가
+	CREATE TABLE `t_ranking_data` 
+	(`a_char_index` INT(11) NOT NULL DEFAULT '0', 
+	`a_job` INT(11) NOT NULL DEFAULT '0', 
+	`a_level` INT(11) NOT NULL DEFAULT '0', 
+	`a_exp` BIGINT(20) NULL DEFAULT '0', 
+	`a_levelup_date` DATETIME NULL DEFAULT NULL, 
+	`a_refresh_date` DATETIME NULL DEFAULT NULL, 
+	INDEX `a_char_index` (`a_char_index`))ENGINE=MyISAM ROW_FORMAT=FIXED
+
+	- t_ranking_data_backup 추가
+	CREATE TABLE `t_ranking_data_backup` 
+	(`a_char_index` INT(11) NOT NULL DEFAULT '0', 
+	`a_job` INT(11) NOT NULL DEFAULT '0', 
+	`a_level` INT(11) NOT NULL DEFAULT '0', 
+	`a_exp` BIGINT(20) NULL DEFAULT '0', 
+	`a_levelup_date` DATETIME NULL DEFAULT NULL, 
+	`a_refresh_date` DATETIME NULL DEFAULT NULL, 
+	INDEX `a_char_index` (`a_char_index`))ENGINE=MyISAM ROW_FORMAT=FIXED
+
+	- t_title 수정 (기간 1일 -> 7일 변경)
+	- UPDATE `t_title` SET a_time = 7 where `a_index` between 24 and 31
+
+[ PK 패널티 리폼 ] :: 카오 시스템 개선
+1.	기획 : 원대한
+	클라 : 박동진
+	서버 : 최영준
+	
+2.	GameServer, SubHelper
+
+3.	#define REFORM_PK_PENALTY_201108 // 2011-08 PK 패널티 리폼 
+
+4.	dataDB
+	- 추가
+		t_title where a_index between 85 and 90 ;
+		t_item where a_index between 7392 and 7397 ;
+
+	- 캐쉬 아이템 추가
+		t_item where a_index between 7474 and 7480;
+		t_skill where a_index between 1389 and 1395;
+		t_skillLevel where a_index between 1389 and 1395;
+		t_magic where a_index in (1212,1215,1218);
+		t_magicLvel where a_index in (1212,1215,1218);
+
+5. charDB
+	
+	- add column t_characters
+		ALTER TABLE `t_characters`  ADD COLUMN `a_lcdatestamp` INT(11) NOT NULL DEFAULT '0' AFTER `a_datestamp`;
+
+	- create table
+		CREATE TABLE `t_pkpenalty_reward` (
+			`a_char_idx` INT(11) NULL DEFAULT '0',
+			`a_reward_flag` INT(8) NULL DEFAULT '0',
+			UNIQUE INDEX `a_char_idx` (`a_char_idx`),
+			INDEX `a_char_idx` (`a_char_idx`)
+		)
+		ENGINE=MyISAM
+		ROW_FORMAT=DEFAULT
+
+[ 헤비메탈 코스튬 관련 DB ]
+1. dataDB
+	- t_item where (a_index between 7000 and 7041) or (a_index between 7057 and 7063)
+
+[ 독일 전통 의상 관련 DB ]
+1. dataDB
+	- t_item where a_index between 6806 and 6847
+
+[ 뮤지컬 조로 이벤트 ]
+1. Event DB
+CREATE TABLE `TBL_EventZorro` (
+	`a_user_index` INT(10) NOT NULL DEFAULT '0',
+	`a_count` INT(10) NOT NULL DEFAULT '0',
+	`a_last_update_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	INDEX `UserIndex` (`a_user_index`)
+)
+ENGINE=MyISAM
+ROW_FORMAT=FIXED
+CREATE TABLE `TBL_EventIpad` (
+	`a_user_index` INT(10) NOT NULL DEFAULT '0',
+	`a_count` INT(10) NOT NULL DEFAULT '0',
+	`a_last_update_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	INDEX `UserIndex` (`a_user_index`)
+)
+ENGINE=MyISAM
+ROW_FORMAT=FIXED;
+2. dataDB
+	t_item
+		7473, 7485 ~ 7512, 7514 ~ 7520, 7522 ~ 7528, 7529 ~ 7535, 7521
+	상자관련
+		209
+
+3. define
+	#define EVENT_BILA_IPAD
+
+
+[ 조로 코스튬 관련 DB]
+1. dataDB
+	- t_item where a_index between 7485 and 7512 or a_index between 7514 and 7520 or a_index between 7522 and 7535
+
+[인챈트 +18]
+#ifdef EXTEND_ENCHANT_2010
+#define DEV_EXTEND_ENCHANT_2011
+#undef MAX_UPGRADE_PLUS
+#define MAX_UPGRADE_PLUS	18
+#endif // EXTEND_ENCHANT_2010
+
+item - 6218
+
+[길드 마스터 추방 시스템]
+1. define GUILD_MASTER_AUTO_KICK
+
+2. charDB
+ - ALTER TABLE `t_extend_guild`  
+ ADD COLUMN `a_kick_status` INT(10) NOT NULL DEFAULT '0' AFTER `a_marktime`,  
+ ADD COLUMN `a_kick_request_char_index` INT(10) NOT NULL DEFAULT '0' AFTER `a_kick_status`,  
+ ADD COLUMN `a_kick_request_time` INT(11) NOT NULL DEFAULT '0' AFTER `a_kick_request_char_index`,  
+ ADD COLUMN `a_lastdate_change_boss` INT(11) NOT NULL DEFAULT '0' AFTER `a_kick_request_time`;
+
+ [길드 원격 초대 시스템]
+ 1. define GUILD_REMOTE_INVITE
+
+
+ [공지 시스템]
+ 1. define NOTICE_SYSTEM
+
+ 2. dataDB (신규 아이템 추가)
+	- t_item WHERE a_index = 7736;
+
+
+[럭키드로우박스 아이템리스트 비교 운영자 명령어]
+
+설명 : 럭키드로우박스에 있는 아이템 리스트가 제대로 로드 되었는지 확인하며(isExist= exist(존재), not exist(미존재)),
+	박스의 타입(Random, Prob, All), 확률(Prob), 아이템인덱스(rewardIndex) 를 확인시켜 줍니다.
+	마지막에 박스에 존재하는 아이템 리스트의 갯수(existCount)가 출력됩니다.
+
+사용법 : compare_boxitem (박스 인덱스)
+
+Ex) compare_boxitem 1
+결과 :	[BoxIndex :1]  [rewardIndex :2032]  [isExist :exist]  [type : Random]  [prob : 10000]
+		[BoxIndex :1]  [rewardIndex :1840]  [isExist :exist]  [type : Random]  [prob : 0]
+		[BoxIndex :1]  [rewardIndex :2033]  [isExist :exist]  [type : Random]  [prob : 0]
+		[BoxIndex :1]  [rewardIndex :2034]  [isExist :exist]  [type : Random]  [prob : 0]
+		[BoxIndex :1]  [rewardIndex :2035]  [isExist :exist]  [type : Random]  [prob : 0]
+		[BoxIndex :1]  [rewardIndex :2036]  [isExist :exist]  [type : Random]  [prob : 0]
+		[existCount : 6]
+
+[미국 BCrypt]
+
+적용서버(LoginServer, Connector)
+필요 library Botan library : libbotan-1.10.so.0
+#define BCRYPT_USA
+BCRYPT_USA 들어가면서 클라이언트 MD5 해제가 필요함.
+
+[캐쉬아이템 선물 금지]
+최소영
+1. #define CATALOG_FLAG_NOGIFT
+
+[운영자 명령어 직업변경,아이템얻기 추가]
+최소영
+<> : 필수 지정
+[] : 옵션 지정
+1. 전직 초기화 => /jobreset
+2. 직업 변경(재접속 필요함) => /jobchange <jobtype> [2ndjobtype]
+3. 아이템 바로 인벤토리에 얻기 => /itemget <index> [plus] [flag] [count] [option_count] [option_type] [option_level]
+4. 아이템 바로 인벤토리에 인덱스 범위 얻기 => /itemgetrange <index_from> <index_to> [plus] [flag] [count] [option_count] [option_type] [option_level]
+
+[운영자 명령어 개발]
+1. 한번에 NPC 사냥하기
+	- /func kill_npc <거리>
+	- (ex) /func kill_npc 20
+	- 너무 많은 NPC 를 소환하여 사냥하면 부하가 심합니다.
+2. 바닥에 드롭된 아이템 일괄 삭제 하기
+	- /func del_item <아이템 인덱스>
+	- (ex) /func del_item 19
+	- 19번 아이템(나스) 삭제
+	- (ex) /func del_item 0
+	- 아이템 모두 삭제
+	- 캐릭터 주변 4X4 cell 만 검색하여 지웁니다.
+
+[크리스마스 이벤트 2012]
+1. #define XMAS_2012
+2. 이벤트 DB 50번이 활성화 되어 있어야 합니다.
+3. 추가 NPC #340 샤로얀 (퍼즐 게임과 가위바위보 게임 진행을 위해 추가)
+4. 추가 테이블
+	- t_rps_list (가위바위보 게임 리스트)
+		CREATE TABLE `t_rps_list` 
+		(
+			`a_index` INT(10) NOT NULL AUTO_INCREMENT,
+			`a_name` VARCHAR(50) NOT NULL DEFAULT '',
+			PRIMARY KEY (`a_index`),
+			UNIQUE INDEX `a_index` (`a_index`),
+			CONSTRAINT `FK_t_rps_list_t_rps_prob` FOREIGN KEY (`a_index`) REFERENCES `t_rps_prob` (`a_system_idx`)
+		)ENGINE=INNODB;
+	- t_rps_prob (가위바위보 게임 확률)
+		CREATE TABLE `t_rps_prob` 
+		(
+			`a_system_idx` INT(10) NOT NULL DEFAULT '0',
+			`a_level` INT(10) NOT NULL DEFAULT '0',
+			`a_userWinProb` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0',
+			`a_serverWinProb` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0',
+			`a_drawProb` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0',
+			UNIQUE INDEX `a_system_idx_a_level` (`a_system_idx`, `a_level`)
+		)ENGINE=INNODB;
+5. 운영자 명령어
+	- xmaspuzzle ing : 현재 가위바위보 확률 보기
+	- xmaspuzzle changeprob [level] [userWinProb] [serverWinProb] : 승리확률 변경하기
+
+[로얄럴블 개선 사항(설정 변경)]
+1. 운영자 명령어
+	- /royalrumble <minimum player> <maximum player> <start hour>
+	- minimum player 10 ~ 50명까지 설정 가능
+	- maximum player minimum player ~ 50명 까지 설정 가능
+	- start hour 0 ~ 23
+
+2. #define ROYAL_RUMBLE_SETTING_ENABLE
+	- #ifdef DEV_ROYAL_RUMBLE
+
+
+3. dataDB
+	DROP TABLE IF EXISTS `t_royalrumble`;
+	CREATE TABLE `t_royalrumble` (
+		`a_minPlayer` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0',
+		`a_maxPlayer` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0',
+		`a_startHour` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0'
+	)
+	ENGINE=MyISAM;
+
+	DELETE FROM t_royalrumble;
+	#미국
+	INSERT INTO `t_royalrumble` (`a_minPlayer`, `a_maxPlayer`, `a_startHour`) VALUES (10, 50, 16);
+	#태국
+	INSERT INTO `t_royalrumble` (`a_minPlayer`, `a_maxPlayer`, `a_startHour`) VALUES (10, 50, 21);
+	#가미고,빌라,홍콩,러시아
+	INSERT INTO `t_royalrumble` (`a_minPlayer`, `a_maxPlayer`, `a_startHour`) VALUES (10, 50, 22);
+
+4. 주의점
+	- DB의 min값이 10미만 50초과일 경우, max값이 min의 미만 50초과일 경우 기본값 min = 10, max = 50, 시작시간은 각 로컬별 기본 설정시간으로 시작됩니다.
