@@ -1,2 +1,1 @@
-WELCOME AND ENJOY WORKING ON THIS SOURCE TO HELP BETTER THE LC COMMUNITY!
-
+Welcome and enjoy working on this source to help better the LC community!
